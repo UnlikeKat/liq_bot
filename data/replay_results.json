@@ -1,0 +1,4253 @@
+[
+  {
+    "event": {
+      "blockNumber": "41005323",
+      "transactionHash": "0x29a6700ec5fc7b1661eabf1839f3323c8a7d6f9fa6898f2a0217b6f4af7e7ab0",
+      "user": "0xE4FE58eCF12e5597dff57b2A2607c6dC3c8Af99A",
+      "debtToCover": "105331024115315909",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7fdf39569Caa512D66175dF0c4924BCe4993D20c"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9835827761296932,
+    "healthFactorAtN1": 0.9835827761296932,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41010974",
+      "transactionHash": "0xa81879ef654efe2c974f939ed0c91e1061dcf78f6abe2ed12a7868ba5b9bfbca",
+      "user": "0x718EE38a0093c80359F0B550C6d67F1295d5bC2f",
+      "debtToCover": "1000716658659927",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000000011194081,
+    "healthFactorAtN1": 1.0000000005907987,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0000, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41027759",
+      "transactionHash": "0xc29af4e57789149d9cb37e698c5a859506d383a95cb92e730b30cc4bb12b4368",
+      "user": "0xb351c53c784b9215F899b1AeA78dEEcc1f4f4841",
+      "debtToCover": "53713828",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.000000017784209,
+    "healthFactorAtN1": 0.9999999991620007,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41035366",
+      "transactionHash": "0x09fad350fcd8fdaad8639b98af6a7a17320263cdd2d9764d6aa4a31ecab21a80",
+      "user": "0x5fF5eD2b440Ae36f54eeb47C7BB66e520a231e42",
+      "debtToCover": "2575380",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999999283795784,
+    "healthFactorAtN1": 0.9999999283795784,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41047973",
+      "transactionHash": "0x9f7aede330c53c41806f63659542a5a8b53756f802e60909927b38c41b7f123a",
+      "user": "0x97f31ACe913e5BE6eF7CEED0B545473F5A316BBF",
+      "debtToCover": "14671262",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0033704001964558,
+    "healthFactorAtN1": 0.9997295277141924,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41050617",
+      "transactionHash": "0x4e951dbe0b2720fce4687506c5266e7683188daaff8a58fe5578381c39667cb2",
+      "user": "0x35f1b333Fc0B643c7920fCB05B21Ad3f2a21D34D",
+      "debtToCover": "2",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9877,
+    "healthFactorAtN1": 0.9877,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41053735",
+      "transactionHash": "0x8ca20f40c5745046512bb52df8c4d313a38c7d1f3b679f53c10bc3ab5ea5aad8",
+      "user": "0xF08D1eCb7F393C53891991f46188d9875619aa40",
+      "debtToCover": "12052294917",
+      "collateralAsset": "0x63706e401c06ac8513145b7687A14804d17f814b",
+      "liquidator": "0x06eeeF704d6B7B0F76EAe9B24a0a087b7A40010D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0051810044133511,
+    "healthFactorAtN1": 1.0025864166269498,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0026, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41054411",
+      "transactionHash": "0x0eebf6ffac7e6a0e34b77bd5e2247bac393dc39a6ed18cbec6662ca98a05cde5",
+      "user": "0xF22AFE095BB98E6867BE24bbB0788013e5CE324B",
+      "debtToCover": "30795851239678216",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0015476072986644,
+    "healthFactorAtN1": 1.0015476034188924,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0015, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41054673",
+      "transactionHash": "0xdcfc4255463a42c78400e0274618dc23c0e29e183f94cde81ba8319b42a6dc57",
+      "user": "0xDc25ba40483DDE5dc638ae2feE941C900A7bBe57",
+      "debtToCover": "101605848",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999999968027841,
+    "healthFactorAtN1": 0.9999999946371823,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41058325",
+      "transactionHash": "0xc3acf24cd476862e240776614f559706aac4729ccca05fe04a8a0d5befa081bd",
+      "user": "0x03adFaA573aC1a9b19D2b8F79a5aAFFb9c2A0532",
+      "debtToCover": "100670",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9966587675582704,
+    "healthFactorAtN1": 0.9966587675582704,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x4200000000000000000000000000000000000006"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x4200, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41064646",
+      "transactionHash": "0x7f9c9bbb1e629eeecf0d4175a22063cb1bd28a1e1c4334d08a49933004fe01bb",
+      "user": "0x0C947AF6d22E0258Ce5815B0F798335358f8dd43",
+      "debtToCover": "1276125356",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.001794104788522,
+    "healthFactorAtN1": 1.001794099579285,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0018, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41064676",
+      "transactionHash": "0x8e7bf578a8e999c2456db9669c22ad3085de4795f1c325729055380192bd4ca5",
+      "user": "0x65f58D444dDe2bD62D9f6627bE7f57B93041F321",
+      "debtToCover": "25491869",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0003427620388892,
+    "healthFactorAtN1": 1.0003427247444032,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0003, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41064677",
+      "transactionHash": "0x39f092007c297032c81dbd4cb641d89ed2601d6091b33c3341d52349cb57a814",
+      "user": "0xeeD1Cef15b245d7086D5907E7395C47f4f1B2594",
+      "debtToCover": "25491875",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0003425521045841,
+    "healthFactorAtN1": 0.997913684469623,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41065578",
+      "transactionHash": "0xa26066984cb7aeb47004ba42f92d989ecb6e1ece25571db85ea9a96e9bd2e631",
+      "user": "0x41A74Cc22C646FC57D989eFDaDBD20c7c9Ca1442",
+      "debtToCover": "13157435981",
+      "collateralAsset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.001707327943559,
+    "healthFactorAtN1": 1.0017073210982756,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0017, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41065644",
+      "transactionHash": "0xe4b46ff7414388a8b6f356b00ce97fb6a6723c58e15356cfa074f316dab9cde5",
+      "user": "0x4039AFBee76230a59cF7Ff8a30A41C49151688cD",
+      "debtToCover": "1307041573",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9994886005668212,
+    "healthFactorAtN1": 0.9995994555809292,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41066166",
+      "transactionHash": "0x623f13fe7e5874a7679a72a749501024364b61f02eb514e98e1c5e438b890222",
+      "user": "0xfB759cEA9171c1464176C2a84c03749De342d400",
+      "debtToCover": "1501386925",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xD5D7254812f9f272a4ec0758B203579eF013Af77"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0013942349825977,
+    "healthFactorAtN1": 1.0013942298303824,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0014, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41066319",
+      "transactionHash": "0x3eb23061a3418e727846239eb8531f96f2d0336ec1f0ec369e1fc6401be0680d",
+      "user": "0xc8d2f2456C227939D62a4359F6510fE112d40645",
+      "debtToCover": "572",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9887702610550612,
+    "healthFactorAtN1": 0.9887702610550612,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41066747",
+      "transactionHash": "0x18ef6a91f1c69fb8cee058daf46b2793e3c2bc9f69bcc93ed396f0812dbf8566",
+      "user": "0x5E2b73Fc69642AA16FeD213AE3000dF6e726C6cB",
+      "debtToCover": "2602962",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000001515457944,
+    "healthFactorAtN1": 0.9999997673019833,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41068989",
+      "transactionHash": "0xf782117232f680fb345abb4752afab5dd4fc31407fc038a697a14e8fde5b37b1",
+      "user": "0x9d906E1Cd453F6b78Da421e0f9D6E5B87A4be80a",
+      "debtToCover": "627877",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9995171980123101,
+    "healthFactorAtN1": 0.9995171980123101,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41069113",
+      "transactionHash": "0x9e1a0c417b221fdf7492f01190a4d571d8960fefffbaa1239fd4b82cab9d4a00",
+      "user": "0xB3D1e517F5764F20afFB6AaE2C2CE17b22caE5AB",
+      "debtToCover": "11734915",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9995544824642296,
+    "healthFactorAtN1": 0.9995544367781737,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0xd9aA, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070238",
+      "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+      "user": "0x3358c3873a731d73c0d699C07096c4ACC7724A9e",
+      "debtToCover": "260805",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999988242069783,
+    "healthFactorAtN1": 0.9999988242069783,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070238",
+      "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+      "user": "0x5a425620420240624F7aF2348518E27774298078",
+      "debtToCover": "174852",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9835881678473442,
+    "healthFactorAtN1": 0.9835881678473442,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070238",
+      "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+      "user": "0x6824d73f2aE90243994B25551F3B5E6aBc9e29ED",
+      "debtToCover": "103301",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999608571573803,
+    "healthFactorAtN1": 0.9999608571573803,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070238",
+      "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+      "user": "0xF7e213EFded175060fEd643846402d40E3BcAE5d",
+      "debtToCover": "1002871360292",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.967390847828126,
+    "healthFactorAtN1": 0.967390847828126,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x60a3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070238",
+      "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+      "user": "0xB16Aa5BA62c75C644e8F0972FF6A3b14A53A2097",
+      "debtToCover": "62035",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999867374646791,
+    "healthFactorAtN1": 0.9999867374646791,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070239",
+      "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+      "user": "0x70b8605e2B8A97A5d27F7ed46CC6C6CB0dFeE1Ee",
+      "debtToCover": "15756059317826",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9999671225736715,
+    "healthFactorAtN1": 0.9999671225736715,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0xc1CB, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070239",
+      "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+      "user": "0x41828A7E03eE3a0e89Ad40a9a4EDa535A17902Df",
+      "debtToCover": "13570183952419",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.911758831151956,
+    "healthFactorAtN1": 0.911758831151956,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x4200000000000000000000000000000000000006"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x4200, Expected 0xd9aA/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070239",
+      "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+      "user": "0xAe49A00A61221732c1858873EaF22d5c224D5349",
+      "debtToCover": "39564280085981211",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9776252089005537,
+    "healthFactorAtN1": 0.9776252089005537,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070239",
+      "transactionHash": "0x1c90eea2d7c4869a441ab3415f68367be55ffad5f52e26919de6197f49aa2066",
+      "user": "0x7529b91118b84DA4ad7f089F46459adAFec4C983",
+      "debtToCover": "12209305036603",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.911221569039502,
+    "healthFactorAtN1": 0.911221569039502,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070240",
+      "transactionHash": "0xfa5e91808eafb4eaf3519855450e370f29753774d991474bd6e2d9bc7a3d0287",
+      "user": "0x72EA289C93F37f4C43856301dD45D6dD30dE908E",
+      "debtToCover": "35",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9927481360925484,
+    "healthFactorAtN1": 0.9927481360925484,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070240",
+      "transactionHash": "0xfa5e91808eafb4eaf3519855450e370f29753774d991474bd6e2d9bc7a3d0287",
+      "user": "0xA6cB71D3991FE13b1a77Fb771b94626FaE1Bf3D0",
+      "debtToCover": "28988502175782757",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9970368052721579,
+    "healthFactorAtN1": 0.9970368052721579,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070240",
+      "transactionHash": "0x8adc5137ce82d4d0419cbde6e6ae8ce112ed4fcbf03abba762f2af1b8a436783",
+      "user": "0x80011333672176A7a20d2F760e7D6C3dB2C475B0",
+      "debtToCover": "9208130166326",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9087492754324126,
+    "healthFactorAtN1": 0.9087492754324126,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070241",
+      "transactionHash": "0xd6d15370457487e874578eec2dfe01c1b411de0ae3645eecab5daaacb17fedf8",
+      "user": "0x44cf0c30ce2CA578BFadF6d71743F3a1f8525b36",
+      "debtToCover": "8402525739824",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9994926330546928,
+    "healthFactorAtN1": 0.9994926330546928,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070293",
+      "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+      "user": "0xB05Ed8D08Af44A4DECb46fb24A27302921bE5917",
+      "debtToCover": "56510",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9128719162326423,
+    "healthFactorAtN1": 0.9128719162326423,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070293",
+      "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+      "user": "0x3785151EABDd683D5AbF53492e6CA06130ba2258",
+      "debtToCover": "12205200982938",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9143736754237896,
+    "healthFactorAtN1": 0.9143736754237896,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070293",
+      "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+      "user": "0xC7Ee4BaE265927FF2f5Ddc3948A2c3B0Bdc45048",
+      "debtToCover": "12129798390519",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9200363973824791,
+    "healthFactorAtN1": 0.9200363973824791,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070293",
+      "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+      "user": "0xAbf2248C6C66c0e15365af48Fb3ebAdaEE510e56",
+      "debtToCover": "12028305918498",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9278210641928064,
+    "healthFactorAtN1": 0.9278210641928064,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+      "user": "0x5C48A2286f48108bb5A00e6d3480Dfa4Ca9deC71",
+      "debtToCover": "41",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9953240370528814,
+    "healthFactorAtN1": 0.9953240370528814,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+      "user": "0xD7B5cb1a2B3c051d3cd566d5EeA67F7Ff8b18fC7",
+      "debtToCover": "10614606928249",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9093521593332102,
+    "healthFactorAtN1": 0.9093521593332102,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+      "user": "0xFb1df71Bc234Db50fe891111D5fEe3db59ce0a16",
+      "debtToCover": "9555368715875",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9467927701942681,
+    "healthFactorAtN1": 0.9467927701942681,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+      "user": "0x268FCD9B96b0877e4128E3DcfEF3b95Eaf27ed5a",
+      "debtToCover": "14168112233636222",
+      "collateralAsset": "0x63706e401c06ac8513145b7687A14804d17f814b",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9603003000416196,
+    "healthFactorAtN1": 0.9603003000416196,
+    "assetsFound": {
+      "collateral": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x236a/0x6Bb7, Expected 0x6370/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+      "user": "0x69517f85D228881D3A88aEb3Bb21b88CCEE935e8",
+      "debtToCover": "9265799507390",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9034287743411873,
+    "healthFactorAtN1": 0.9034287743411873,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070294",
+      "transactionHash": "0xabe16e824e577e3d5ed20394b5f097593f8d452d601b6967d69485bb394b8484",
+      "user": "0x66C4A438fd349B8d7032e8107DFd37597725278C",
+      "debtToCover": "9226989791582",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9066391791641514,
+    "healthFactorAtN1": 0.9066391791641514,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070295",
+      "transactionHash": "0x5b871ec11c8b485decf7f31b226121fbcf4655e879593a610ea06fe582fd4d76",
+      "user": "0x89556295CA61F832471D382c073be1aBaE01eFE2",
+      "debtToCover": "28",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.991811862573737,
+    "healthFactorAtN1": 0.991811862573737,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41070551",
+      "transactionHash": "0x4cef4bf4ad648d7ee242cd89a6e25209175ef35c605e72f08b8e73725b7afe17",
+      "user": "0x048177A5ce6b11c44b9245fb571831eFa6C61488",
+      "debtToCover": "11693103242",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x58246D40E7563Bb054f6C33cCBB0382FFD63d981"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0006540190799604,
+    "healthFactorAtN1": 1.0006540138535398,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0007, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41070551",
+      "transactionHash": "0x9801411c4ddbbf380d99faa0a14518a9adb03e3e5291c8ba42f0675db03a72f6",
+      "user": "0x5D25BCf7Ea8bc3eA6805321F78c5F38a1d752EfC",
+      "debtToCover": "12543082954",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0008522838124325,
+    "healthFactorAtN1": 1.0008522785579934,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0009, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41070551",
+      "transactionHash": "0x99129ab002873562305edb7949a4da1f734abcdf63491c35acebcf8da5173acc",
+      "user": "0x6fA76F9947fB4e79e726641e049197848f144323",
+      "debtToCover": "1642732337",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0011436328820937,
+    "healthFactorAtN1": 1.0011436273869605,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0011, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41070925",
+      "transactionHash": "0xc3e5afc673693a2e77d17a0a5319d5b8a1c47ae5f429f792d9d15c28d5dc7eff",
+      "user": "0x3b27ac5E240E895a861533733D2A96644427157B",
+      "debtToCover": "26027084684",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0x9d49576e33Ce1E6EAb2198338A3760dCeCdd98A0"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0012916190509182,
+    "healthFactorAtN1": 1.0012916126911169,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0013, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41070935",
+      "transactionHash": "0x043e1e10168e2a74c1de16ebf67cf6bdecca4124b424410a9675ca8b63f14cad",
+      "user": "0x9773da74cEEA5eD2c036b1997B931b48820087Da",
+      "debtToCover": "100097212",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0019301867274126,
+    "healthFactorAtN1": 1.001930178540661,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0019, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41070935",
+      "transactionHash": "0x901c51f7818c9717e10ee073788e82fee9b0a1f572a3e039241dc421ac3e954c",
+      "user": "0x0ddF9c3EF925a2a5FE61201B7F0ed73c6CB5Fd07",
+      "debtToCover": "509008513",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0015830687243832,
+    "healthFactorAtN1": 1.0015830640657395,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0016, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41074041",
+      "transactionHash": "0xa565f0e8e1b633b7bf3eed3dfa5d1b77a206b1e75138c8ac143f252760966f3c",
+      "user": "0x1f2e8CE2885818e681DC13C6d3665dA63F47AcDd",
+      "debtToCover": "1429269",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.001678446518338,
+    "healthFactorAtN1": 1.0016784523265005,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0017, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41079538",
+      "transactionHash": "0x54a33326259476c205b5b2a5614d68d81e0b806b67f355ca4f0cf94809d80db4",
+      "user": "0x74c0E96cC0f3d0555c6102BD72479B4E5B298Aa1",
+      "debtToCover": "3770486372",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0012742297271109,
+    "healthFactorAtN1": 1.0012742245368127,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0013, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41079540",
+      "transactionHash": "0x5ba9e6606d863d8516c062d008b672dec295915c187038a94db210e4908ce0bb",
+      "user": "0x4448f4cC9eD7f334314dD2638BdD2266376b5a38",
+      "debtToCover": "6072597",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 1.001773511982617,
+    "healthFactorAtN1": 0.9970383695123998,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x2Ae3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41079557",
+      "transactionHash": "0x893e7ee5f13047cf7900635f46cb77e091f85679149e12adb21b1a57973976a8",
+      "user": "0xF08D1eCb7F393C53891991f46188d9875619aa40",
+      "debtToCover": "17693695915",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0091719759345996,
+    "healthFactorAtN1": 1.009171970723714,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0092, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41079557",
+      "transactionHash": "0x045aafbbb1fd394de23b7331d805ed6d6920085013c5f9e961e3680574029ef8",
+      "user": "0x25D1Ba459D3195E070D460ab25B9781B64264742",
+      "debtToCover": "3704099027",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0061084438447125,
+    "healthFactorAtN1": 1.0061084395162125,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0061, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41079558",
+      "transactionHash": "0x0b6b8d4d65a069ae7391f2b2cb66afc0187446cff1d6201eafbcbfc96f03b5b9",
+      "user": "0x52B414A70b6D21d1A11d981Da07D25f449411e38",
+      "debtToCover": "3755379701",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x74F5568F74399fD556F84f9C0719BF3BCb084A2C"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 1.0020934527430865,
+    "healthFactorAtN1": 0.9937218404571787,
+    "assetsFound": {
+      "collateral": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x6Bb7/0x6Bb7, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41079573",
+      "transactionHash": "0xedaadc7e7786b7adb4609182816e5348262591ad329ffa8d13b0309ea105607f",
+      "user": "0xA64f2228cceC96076c82abb903021C33859082F8",
+      "debtToCover": "150089955",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9906660078278178,
+    "healthFactorAtN1": 0.9906660029957346,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41079575",
+      "transactionHash": "0x7d0302722741ae60697199d61c879b6c7e51d4fff5f58de495b9ee0c1bc27e9b",
+      "user": "0xbdE5fe88d95f54C72b54e643f6BdBe6a653E9740",
+      "debtToCover": "22017111",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9966649714386954,
+    "healthFactorAtN1": 0.9966649733240639,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41080856",
+      "transactionHash": "0xb111b774d2cea572006936d8494f204115b1d801e6e55e15ad8f293f8937671f",
+      "user": "0xCb090e1b99a5d1e57F874e7b10BcA5BE64b79b2c",
+      "debtToCover": "360264697",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.001821017868702,
+    "healthFactorAtN1": 1.0018210123057294,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0018, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41084154",
+      "transactionHash": "0xa1a348cc501f740ff9504518880dcfa303233ddb27cd434b8a25064f76d7ef3c",
+      "user": "0x5Abf48966600CCC2570C670162C415F968394D62",
+      "debtToCover": "15924",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9907602302649998,
+    "healthFactorAtN1": 0.9907602302649998,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41084170",
+      "transactionHash": "0x2c430cacd8e522950b61f391fd6707e425f3e0945ea10e50f8e1a9e3520f404b",
+      "user": "0x7f6F7A9D5d2DeAd0AA596Fc4e9DEF2B043b10F4a",
+      "debtToCover": "264",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9623584905660377,
+    "healthFactorAtN1": 0.9623584905660377,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41084185",
+      "transactionHash": "0x1f44c413774b362a2e74f20aef6f2dceab5ed2db107d03500d032a5767fc5c99",
+      "user": "0x65985942514193a37d59a056a30A4570f6EAdA13",
+      "debtToCover": "113555",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9869758578250885,
+    "healthFactorAtN1": 0.9869758578250885,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41084200",
+      "transactionHash": "0xd7a36e17fc5e361c444ac8adadeb6d872411563b9d1c611d3e752b77248e63fb",
+      "user": "0x2215F02ae20D438AAfa1b923b5E2979A67e4e36c",
+      "debtToCover": "501014",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9809339738373504,
+    "healthFactorAtN1": 0.9809339738373504,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087128",
+      "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+      "user": "0x2D835675df92d93F0A1Cf309e5168E60ac3865CB",
+      "debtToCover": "58812",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9877440315306888,
+    "healthFactorAtN1": 0.9877440315306888,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087128",
+      "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+      "user": "0x7Cd23EAf17D9723E16F8Dea4Da2E83000Ed7d122",
+      "debtToCover": "40239",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.904153966235758,
+    "healthFactorAtN1": 0.904153966235758,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087128",
+      "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+      "user": "0x2f19CFf544Bf360b3D097A7729Fafc4f6fcc3adf",
+      "debtToCover": "9918737995217",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9148352321058166,
+    "healthFactorAtN1": 0.9148352321058166,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087237",
+      "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+      "user": "0xB4Af5D91a6798F33e16e9Ea98eb1bb894d677318",
+      "debtToCover": "9392284458098",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9058539828405141,
+    "healthFactorAtN1": 0.9058539828405141,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087237",
+      "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+      "user": "0x06FB4b4718Ae56Ee8a73af5Dac0F97F6859899A3",
+      "debtToCover": "9205587938622",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9238247150875063,
+    "healthFactorAtN1": 0.9238247150875063,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41087237",
+      "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+      "user": "0x44aA2ca24ed50cDC92FE00a5a39629462d72C44E",
+      "debtToCover": "8356786441690",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9388329664750865,
+    "healthFactorAtN1": 0.9388329664750865,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088010",
+      "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+      "user": "0x1382Be73Bf716084276deFe361bf63736BF63ba4",
+      "debtToCover": "9067978330598",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9067148423277697,
+    "healthFactorAtN1": 0.9067148423277697,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088010",
+      "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+      "user": "0x699b91d38D7FC0E13fdc4A1B6CB5a8498Cd1656A",
+      "debtToCover": "9053706394516",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9390526840159678,
+    "healthFactorAtN1": 0.9390526840159678,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088010",
+      "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+      "user": "0x6720a94F9FfFD76c57E18aF1703A9BB07cdff2D1",
+      "debtToCover": "26768",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9059570716242696,
+    "healthFactorAtN1": 0.9059570716242696,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088010",
+      "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+      "user": "0xBe29023DB90099dD827C12D53167741fC24bdB7E",
+      "debtToCover": "26737",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9543025881087139,
+    "healthFactorAtN1": 0.9543025881087139,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088010",
+      "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+      "user": "0x2588Af829c7837eFB393D909548B8BE86442293F",
+      "debtToCover": "8817631070976",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9543212946619856,
+    "healthFactorAtN1": 0.9543212946619856,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x8335, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088048",
+      "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+      "user": "0x83d390f49d855cC03CaF48C4C12FaCDa1389BaAC",
+      "debtToCover": "8425127194048",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9062686789294514,
+    "healthFactorAtN1": 0.9062686789294514,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088048",
+      "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+      "user": "0x732feb92b5Ad31a4e4c939491449cD28E6B2cD53",
+      "debtToCover": "7503923679500",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.900671787106607,
+    "healthFactorAtN1": 0.900671787106607,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088048",
+      "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+      "user": "0x2CD7fa599F046A6A7bb37bc0fb0969135F888204",
+      "debtToCover": "7369204213816",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9060088561675509,
+    "healthFactorAtN1": 0.9060088561675509,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088048",
+      "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+      "user": "0xD3a5A3B167fF2eab162E1E8a69B5CDbb9C68BA3E",
+      "debtToCover": "14325406341975159",
+      "collateralAsset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9632325755423405,
+    "healthFactorAtN1": 0.9632325755423405,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088048",
+      "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+      "user": "0xaEdF90B1C727BEA2F7567364cAE60c907AC3699c",
+      "debtToCover": "6629685480001",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.901117574826916,
+    "healthFactorAtN1": 0.901117574826916,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x04C0, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+      "user": "0xc476bc378F18D3e8Bf1f44b7C5eEadB725Bf02E3",
+      "debtToCover": "20899",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9337939454737508,
+    "healthFactorAtN1": 0.9337939454737508,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+      "user": "0x0297A8e76861792679de492E6453280468e67f8A",
+      "debtToCover": "6235321048926",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9813360802429395,
+    "healthFactorAtN1": 0.9813360802429395,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+      "user": "0x14Ab8C5644a133727806049cD8bcD611E9b23992",
+      "debtToCover": "6568339813295",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9041083300191155,
+    "healthFactorAtN1": 0.9041083300191155,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+      "user": "0x3bb638c1FDF2EaCc053bcA17149aD64C11Ca09cD",
+      "debtToCover": "19432829271892056",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9892411553026502,
+    "healthFactorAtN1": 0.9892411553026502,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+      "user": "0xa37AF563EF7Ab0D064c0966C061d88db3324B0D6",
+      "debtToCover": "16271",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9840095096416013,
+    "healthFactorAtN1": 0.9840095096416013,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x60a3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+      "user": "0xC85af6aa4c9D9Ed8dAEE1a234b49e98d401f7cA8",
+      "debtToCover": "6245753746611",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9059010421641785,
+    "healthFactorAtN1": 0.9059010421641785,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+      "user": "0x8587849d8D090a20218389D0D3ef2A24e4255B9B",
+      "debtToCover": "6192326381030",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9247086120075924,
+    "healthFactorAtN1": 0.9247086120075924,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+      "user": "0x72402539827aFC8e7b3d082570fB1eE2b6DA3A3c",
+      "debtToCover": "6176115249515",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9369692153788304,
+    "healthFactorAtN1": 0.9369692153788304,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xe272529aa21fe6b0c8576cebde09984b548ba31831703496e0cd4def5ebd71c3",
+      "user": "0x1981bDa8e86728ef726bA1eB16842a15256F9Dcb",
+      "debtToCover": "4785731307524",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9345512014446645,
+    "healthFactorAtN1": 0.9345512014446645,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0xc1CB, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xe272529aa21fe6b0c8576cebde09984b548ba31831703496e0cd4def5ebd71c3",
+      "user": "0x84Ba92B20Ed74713Dce9550b2f549D3ae9F5283b",
+      "debtToCover": "4783428141213",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9342637930952977,
+    "healthFactorAtN1": 0.9342637930952977,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0xc1CB, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+      "user": "0xC7393F0Dd7860e8129d43d40E1fFC92E682542A5",
+      "debtToCover": "17342",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9163869509528925,
+    "healthFactorAtN1": 0.9163869509528925,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x2Ae3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+      "user": "0x60629C0359A5C49b79d5eBd48b8248aA2fc372EB",
+      "debtToCover": "17151",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9814507813156202,
+    "healthFactorAtN1": 0.9814507813156202,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x04C0, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+      "user": "0xC5D8e972E252A759E41788d917A51413c930e460",
+      "debtToCover": "17135",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9297149450140186,
+    "healthFactorAtN1": 0.9297149450140186,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+      "user": "0xeE4AAC739517ad35b0Be7bcb59A08e7eafE1b65B",
+      "debtToCover": "19",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.958160012054529,
+    "healthFactorAtN1": 0.958160012054529,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088112",
+      "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+      "user": "0xe4DB2Eb825150Ec84802c9615A53205FD56cAdfE",
+      "debtToCover": "5654639077016",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9242748067031433,
+    "healthFactorAtN1": 0.9242748067031433,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088135",
+      "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+      "user": "0xCA832bFFa4642A43eF39aF83Dad5ebc19B3fAb9B",
+      "debtToCover": "6109361433472",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9258239333696366,
+    "healthFactorAtN1": 0.9258239333696366,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088135",
+      "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+      "user": "0x2F5Ff1d768A8AE55F1be407a14caa58D61afcbD9",
+      "debtToCover": "6090764379847",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9290396123053323,
+    "healthFactorAtN1": 0.9290396123053323,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088135",
+      "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+      "user": "0x83EccB8519b172Efb7ce0c51B07fFA1B888b60C2",
+      "debtToCover": "5951870166221",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9509845547272796,
+    "healthFactorAtN1": 0.9509845547272796,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088135",
+      "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+      "user": "0xEda068063894311A7AC634B3d68e42AA06f7d3ef",
+      "debtToCover": "5859260694177",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9670918962577403,
+    "healthFactorAtN1": 0.9670918962577403,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088136",
+      "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+      "user": "0xF4341f7169552318A4Ccc1bef9431B90a1a1c671",
+      "debtToCover": "4915072098666",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9722521840272956,
+    "healthFactorAtN1": 0.9722521840272956,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x2Ae3, Expected 0xd9aA/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41088136",
+      "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+      "user": "0xfF9E65B8dd40b07f2da0B7cf22E14A326964085f",
+      "debtToCover": "3230488877465",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9053431925564355,
+    "healthFactorAtN1": 0.9053431925564355,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088136",
+      "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+      "user": "0x7D38347E49ec44ff95605dd66797CA5C9094965E",
+      "debtToCover": "15859",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9458358793166085,
+    "healthFactorAtN1": 0.9458358793166085,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088136",
+      "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+      "user": "0x15e5Ab993D24f8FD70F440b0f76F1323b50a55a5",
+      "debtToCover": "5340365588264",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9019844315980619,
+    "healthFactorAtN1": 0.9019844315980619,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088136",
+      "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+      "user": "0xaf2d0b9579566fC198c2999b40aEaF88f92E96d9",
+      "debtToCover": "15657",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9064287051310636,
+    "healthFactorAtN1": 0.9064287051310636,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088156",
+      "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+      "user": "0xA390701E6B7982e92e4810527BcA7Dd5d236147F",
+      "debtToCover": "5944971793452",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9520882717141341,
+    "healthFactorAtN1": 0.9520882717141341,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088156",
+      "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+      "user": "0xD81cccb79bB00795bfF8cab91b42ea325ce36170",
+      "debtToCover": "4882650242381",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9034747371545732,
+    "healthFactorAtN1": 0.9034747371545732,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088156",
+      "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+      "user": "0x3dFEDdb144b7351b7e9F9d796101534e075df7e5",
+      "debtToCover": "14386",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9524477677941319,
+    "healthFactorAtN1": 0.9524477677941319,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088156",
+      "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+      "user": "0xc208ee64B4C5cA1e19fC5799b36ca57CF7718CaA",
+      "debtToCover": "4844323919489",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9285284501311231,
+    "healthFactorAtN1": 0.9285284501311231,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41088156",
+      "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+      "user": "0x9141a6A9c589B3a5740482136DEcAcecac1A16b6",
+      "debtToCover": "14207",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9526937872884494,
+    "healthFactorAtN1": 0.9526937872884494,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091710",
+      "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+      "user": "0x7195a8901e24Fbc2EDacc699c31D7c69660c6e56",
+      "debtToCover": "14186",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9472859292393562,
+    "healthFactorAtN1": 0.9472859292393562,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091710",
+      "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+      "user": "0x44A9a6C222BC183B78ac96272CaDd51b39f3030D",
+      "debtToCover": "13767",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9986428884366484,
+    "healthFactorAtN1": 0.9986428884366484,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091710",
+      "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+      "user": "0x7a35f86D63A40251Bd2A084e468838555F68e3dd",
+      "debtToCover": "13732",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116422383086962,
+    "healthFactorAtN1": 0.9116422383086962,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091710",
+      "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+      "user": "0xc3c550Aaf33D699063CF441F10fde5cc7dAD8931",
+      "debtToCover": "13731",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116330700677031,
+    "healthFactorAtN1": 0.9116330700677031,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091710",
+      "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+      "user": "0xB3Ccea114CF2555F0DA243dD6D45133503eE630B",
+      "debtToCover": "13731",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116391162899797,
+    "healthFactorAtN1": 0.9116391162899797,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091711",
+      "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+      "user": "0x7CE6bfa0F76e3D2Ecb92A9c6Be7bd7D21e2fE1cc",
+      "debtToCover": "13731",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116614873124032,
+    "healthFactorAtN1": 0.9116614873124032,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091711",
+      "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+      "user": "0x2126d4666160C7f22A431f0e38740Eaf698d6FAE",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9105905258265351,
+    "healthFactorAtN1": 0.9105905258265351,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091711",
+      "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+      "user": "0xE42566FE5Ec68Dfb38e50645bb9F637bb79eE7FC",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.910598991154388,
+    "healthFactorAtN1": 0.910598991154388,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091711",
+      "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+      "user": "0x13209488c6C06c7fb86F88D2b3a3F6BC99C2ABB9",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.911628133154799,
+    "healthFactorAtN1": 0.911628133154799,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+      "user": "0x3A565f8B70C97e1b58aD0f30C73527e63fd4e464",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.911631156486175,
+    "healthFactorAtN1": 0.911631156486175,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+      "user": "0x34Cb79d2Df8efcd15260f70156b7c75c63e13d12",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116329704850006,
+    "healthFactorAtN1": 0.9116329704850006,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+      "user": "0x536c494753F333767635aAf96635DF4fB7Cbf1e1",
+      "debtToCover": "13730",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116365984826519,
+    "healthFactorAtN1": 0.9116365984826519,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+      "user": "0x4814bbEc4fA3ca515838aE501E248b4EDe9a80D0",
+      "debtToCover": "13729",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9105256462750573,
+    "healthFactorAtN1": 0.9105256462750573,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+      "user": "0xAD4e1642c071556B975fB0221621bF9831299D4d",
+      "debtToCover": "13729",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9105462064262494,
+    "healthFactorAtN1": 0.9105462064262494,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+      "user": "0xf13aD430956A007b55E555A853fCEeAF36A74faC",
+      "debtToCover": "13729",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9116419415427254,
+    "healthFactorAtN1": 0.9116419415427254,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+      "user": "0x3DD90714CDe049da1A1a3292a9562b4B289Af64B",
+      "debtToCover": "12395",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9555544867578929,
+    "healthFactorAtN1": 0.9555544867578929,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+      "user": "0xE95cFd777A55787f20F1D4b85eE61d16B961C2AC",
+      "debtToCover": "4090680695057",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9183905119875471,
+    "healthFactorAtN1": 0.9183905119875471,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091734",
+      "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+      "user": "0x76663c84479Ec52669C1A5CE3fB13c180dCD8962",
+      "debtToCover": "10322",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9655229284023624,
+    "healthFactorAtN1": 0.9655229284023624,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+      "user": "0x07C196dD079fEEe033f01d2ba43BAd8B1Cf19eD0",
+      "debtToCover": "12034",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9598866179037486,
+    "healthFactorAtN1": 0.9598866179037486,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+      "user": "0xB59722fcd84a9D1a127084A50642C4a9d96e2D7f",
+      "debtToCover": "11945",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9949328589300638,
+    "healthFactorAtN1": 0.9949328589300638,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+      "user": "0x88A51a8Ceb0F98a06f74b4f0e04bf4C49Eb9C0cd",
+      "debtToCover": "11642",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9515922794717805,
+    "healthFactorAtN1": 0.9515922794717805,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+      "user": "0xf2d1F7076ADCf2CA7021204E60eA4d44c92664b1",
+      "debtToCover": "3806778551436",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9102542291472964,
+    "healthFactorAtN1": 0.9102542291472964,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+      "user": "0x7dbF746b2C10392Ad0d3D627a35912a6581cC1C3",
+      "debtToCover": "3776014818026",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9184320422206723,
+    "healthFactorAtN1": 0.9184320422206723,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+      "user": "0xd43470e376A494a55AdFF57F25c1E702b13EceE9",
+      "debtToCover": "11172",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999245783721499,
+    "healthFactorAtN1": 0.9999245783721499,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+      "user": "0x2da9D6069c91456741F2F763e4112DC6cCe28fE7",
+      "debtToCover": "3738366098679",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9187943924982029,
+    "healthFactorAtN1": 0.9187943924982029,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+      "user": "0xD24807DB9723Ae21c980af386dD2Cd66960B7b19",
+      "debtToCover": "3672942669299",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9759880141615942,
+    "healthFactorAtN1": 0.9759880141615942,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+      "user": "0x71de02e6860169467B59c8aa0280d2D2c95D7EAE",
+      "debtToCover": "3598979358499",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9281369308298516,
+    "healthFactorAtN1": 0.9281369308298516,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+      "user": "0xA47ff5574f43eAC2188E9BAD75E62046D10aFdF6",
+      "debtToCover": "2870164868138",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9440069355248116,
+    "healthFactorAtN1": 0.9440069355248116,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+      "user": "0x0e97862e0E9D7bFE430C90eFcEf0D6f0530Ef6C6",
+      "debtToCover": "10443105259657143",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9338362730843247,
+    "healthFactorAtN1": 0.9338362730843247,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+      "user": "0x06eA3b4fc6E7f8E8CEb712b641c49479963CCa46",
+      "debtToCover": "10270",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9863549223515082,
+    "healthFactorAtN1": 0.9863549223515082,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+      "user": "0x9F55FFc852f3504Ffc49E1495D69C1f47a560bD2",
+      "debtToCover": "12",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.96370669310297,
+    "healthFactorAtN1": 0.96370669310297,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41091759",
+      "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+      "user": "0xd63650cF6480F1Ee4d737D9F0A50D9239FDa650a",
+      "debtToCover": "12",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9800937106221205,
+    "healthFactorAtN1": 0.9800937106221205,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41091850",
+      "transactionHash": "0xf1c48b55743b64d9fc27cf47e645ae574616854f5c6db0e116b9e7f465f9f8e7",
+      "user": "0x43be421627C25daa8BD03B84B8390fdDaB4A7B7c",
+      "debtToCover": "2033625178195",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.997753625195355,
+    "healthFactorAtN1": 0.997753625195355,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x04C0, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41091871",
+      "transactionHash": "0xe49383aa4f188aa6678b103d9cadd679b708fc43d70dd6905ddaa1c37d9e1d95",
+      "user": "0x025789EbF14C9F00569FB8c4E8A4D213FCE419a9",
+      "debtToCover": "1811874631103",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9545287542571405,
+    "healthFactorAtN1": 0.9545287542571405,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x2Ae3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41093466",
+      "transactionHash": "0x54a24fc795425f2684b972526d3a81355f0680f8d2a4906f42c7a7cf7f3fb1c5",
+      "user": "0xAc4a60C5C5f5D67ea905355791db2Bbc04C7370C",
+      "debtToCover": "21766",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9033935737896571,
+    "healthFactorAtN1": 0.9033935737896571,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41093466",
+      "transactionHash": "0x54a24fc795425f2684b972526d3a81355f0680f8d2a4906f42c7a7cf7f3fb1c5",
+      "user": "0x902543d78AAB9fd96d6D92C210CE4bb7459bB67e",
+      "debtToCover": "18098",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9061544821670569,
+    "healthFactorAtN1": 0.9061544821670569,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41095458",
+      "transactionHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
+      "user": "0xC15C6b3148d243a71ebd8d97d5c7E8571C67F996",
+      "debtToCover": "33",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.999217950506394,
+    "healthFactorAtN1": 0.999217950506394,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41095458",
+      "transactionHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
+      "user": "0xa6e6804a5fCbfC272Add75B2CAa6E9B0Ae6eF812",
+      "debtToCover": "15",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9972063563478933,
+    "healthFactorAtN1": 0.9972063563478933,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41097766",
+      "transactionHash": "0x861073a9abdc8a67635aa0f42892104a46995a3b3ac874e19af5f83a4aadd4d3",
+      "user": "0xB0AB5032Fc3CD8ded5623801E5653872382e56ce",
+      "debtToCover": "9434474977550",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.901558561281764,
+    "healthFactorAtN1": 0.901558561281764,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41097766",
+      "transactionHash": "0x861073a9abdc8a67635aa0f42892104a46995a3b3ac874e19af5f83a4aadd4d3",
+      "user": "0xc05B27297849C9044d3775629122618Bee6FDe76",
+      "debtToCover": "11802",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9990380420135163,
+    "healthFactorAtN1": 0.9990380420135163,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41097958",
+      "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+      "user": "0x08BF525E775A2e76Bc93858c430D640B23Fe28AC",
+      "debtToCover": "45826",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9997805173726431,
+    "healthFactorAtN1": 0.9997805173726431,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41097958",
+      "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+      "user": "0x2486E7826e961539a267Ae5Dc651b5aDF05b0C4a",
+      "debtToCover": "11076248852545",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9997681449812043,
+    "healthFactorAtN1": 0.9997681449812043,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0xd9aA, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41097958",
+      "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+      "user": "0xBc72516172913d9F33597ACF67494C1C410ee8c3",
+      "debtToCover": "5047067866730",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9004813920752409,
+    "healthFactorAtN1": 0.9004813920752409,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41098325",
+      "transactionHash": "0x2378b59e7624f80790386b162edc110ccc9b16551a810388b42a981e846fa305",
+      "user": "0xB09134a1D2EaC5F27264F3858cf2153CaF1Ab0f2",
+      "debtToCover": "1327610",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000006845592286,
+    "healthFactorAtN1": 0.9999999311372811,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41100171",
+      "transactionHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
+      "user": "0x026552F9c268Ca282Ed02A24ec23931310D6d749",
+      "debtToCover": "11566450633284",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9004245455654508,
+    "healthFactorAtN1": 0.9004245455654508,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41100171",
+      "transactionHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
+      "user": "0x196fa509adf1bde7b6D07eB201189323e243C2A8",
+      "debtToCover": "9137811207518",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9006695212058108,
+    "healthFactorAtN1": 0.9006695212058108,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41103653",
+      "transactionHash": "0xd3201f1f9f19831cae34681ff435df03fc04e483537b7f5911e73aed90d67338",
+      "user": "0x80a99aff93cFD7060d3D2655561C202987B9AC45",
+      "debtToCover": "11179",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999962062273346,
+    "healthFactorAtN1": 0.9999962062273346,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41104099",
+      "transactionHash": "0x96223269c444d97ae0fd7d8ad3a480490dc6b4a23015746194b38bda8ae1fa2a",
+      "user": "0xecf8FA864cDc912052a9C5410619cCd0e12451CA",
+      "debtToCover": "1133320634883314028",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9975489247910364,
+    "healthFactorAtN1": 0.9975489159890355,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41104129",
+      "transactionHash": "0x6e81d4228ee15962cf37527a97a1fe8589d6945015a155e9904d8fdfc4b00d18",
+      "user": "0x30C1fd89217Ddb02Ee8547c419eDcB6042404Bd1",
+      "debtToCover": "15352",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9985073855710486,
+    "healthFactorAtN1": 0.9985073855710486,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41104511",
+      "transactionHash": "0x8b6b606dfc4f9b65beb65e1d3e9950460f9eaef38a6bc497644010b68f00fb2e",
+      "user": "0x6760Ffa7343aC465af13d9A84eFf8F45C07EEc3F",
+      "debtToCover": "8254578187",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0014144328597294,
+    "healthFactorAtN1": 1.0014144276594532,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0014, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41104928",
+      "transactionHash": "0x60d99e9d00ced5ce7c2222881cd4b3a90e534d71f5019d1b8ea5eabfd6677a4d",
+      "user": "0xccdA2bBB2151D5C20c532d3e82D978de1734E5cb",
+      "debtToCover": "300479",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9998590071801653,
+    "healthFactorAtN1": 0.9998590071801653,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41104928",
+      "transactionHash": "0x60d99e9d00ced5ce7c2222881cd4b3a90e534d71f5019d1b8ea5eabfd6677a4d",
+      "user": "0xef243Aa4f940E72Eb1d7eBAB724672d88B4f18ed",
+      "debtToCover": "74907235962626768",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9916082108231411,
+    "healthFactorAtN1": 0.9916082108231411,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0xd9aA, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41112031",
+      "transactionHash": "0x05fe9db170f8493ddf57c3faa1435e7a0116959b2e0a0bfe2bede146ee7adf82",
+      "user": "0xe24b80150E5c379248d95dBEF7Bf1b6f8B9af984",
+      "debtToCover": "3059487630382",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9010813472698791,
+    "healthFactorAtN1": 0.9035146141717576,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41112255",
+      "transactionHash": "0xcc52c80d5cfda286612a6bdd3f577a208e19591f99581c040bc7b5bcd3a037a7",
+      "user": "0x4862FeC300432962368fA8cB76c3e57C3df0Dfb4",
+      "debtToCover": "1631291154",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.001353048887125,
+    "healthFactorAtN1": 1.0013530439714649,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0014, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41112286",
+      "transactionHash": "0x2ac279563ca4e9352927d7c322a1359347f7ed893403b322966bded9d1e2e083",
+      "user": "0x8051481aab57D5B7D89Bd126920400aBCaC08Fb9",
+      "debtToCover": "29993796908",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0010137658730978,
+    "healthFactorAtN1": 1.001013759311492,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0010, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41113208",
+      "transactionHash": "0xa37912f4102dfd9372519bc7cccc23f89287cdeffaf0dc430f0abd16d99bcfc3",
+      "user": "0x2fc9e309fa0e5868DD650E0827326B9ba14aC6DF",
+      "debtToCover": "10342841127",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0016173637432564,
+    "healthFactorAtN1": 1.0016173568188056,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0016, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41113214",
+      "transactionHash": "0xc614ff901af6a6a920f9e6846acaf17431f176902aa8b30b05bc5172134f6099",
+      "user": "0x44eEc821eE71ae9Be875113CCA8a7b9bb7a82F09",
+      "debtToCover": "13994139460",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x587742157DFD128496d953a9CDc341D8276565da"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0067276564279386,
+    "healthFactorAtN1": 1.006727651275237,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0067, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41113214",
+      "transactionHash": "0x9f9f85bf421fb2adcdf3f4eab1684bd1755e15de5a1e1c6e7dc5068fa4fe1e8a",
+      "user": "0x50A792e9ef2E13221F12608b2A8a751B0f03f63F",
+      "debtToCover": "11726037422",
+      "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.005789635390804,
+    "healthFactorAtN1": 1.005789628400864,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0058, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41113228",
+      "transactionHash": "0xab16dcec46d0294aff90b029f4b85eab1cb249aaacd33c56ec7231b2e2128ee9",
+      "user": "0xC4Da129E6be5134420D48523922A66F9c8EF1c51",
+      "debtToCover": "2400252219",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.998376165624215,
+    "healthFactorAtN1": 0.9988906739744167,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0xcbB7/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41113239",
+      "transactionHash": "0x3c98ce1ca118d2eae3375fe9572c93defa6840d4c71c4a63c6022258bdd75a67",
+      "user": "0x428709D69a5583b2243bB1C61E063060F0afB025",
+      "debtToCover": "304513698",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9942569309065902,
+    "healthFactorAtN1": 0.9942569229083321,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41113903",
+      "transactionHash": "0x00766faca4435053214f70951bb155ea3efe8dcb55615e4d2d0dd78e84f29ebd",
+      "user": "0x6ca964D265B43079e8923E3c0295303E6A30070C",
+      "debtToCover": "2062328",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9987231966999535,
+    "healthFactorAtN1": 0.9987232001369775,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x4200000000000000000000000000000000000006"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x4200, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41117741",
+      "transactionHash": "0x63432c563220c8589e338c6fac7f5431dfd58a678eb65749ad3e5d63a52c1916",
+      "user": "0x36F06fdD09B68911a49cAFb4BcB4fA58F3a3c387",
+      "debtToCover": "22421127443916000",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9000481733079466,
+    "healthFactorAtN1": 0.9000481733079466,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41118165",
+      "transactionHash": "0x38179aa5caaaf878c2af66136548fb2d552a8b23d3813634fca5fb0d3dacaa58",
+      "user": "0xBb4c44eCBDFD31a00EFECA03f1FD68526062c723",
+      "debtToCover": "3723135",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000002655415927,
+    "healthFactorAtN1": 0.9999999968835678,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41124715",
+      "transactionHash": "0x6ab47e8ef703bc23bd268a5dd6d852d2681bef380aed28c0eb5b2a5d1131c727",
+      "user": "0x3776C4533c8fe41cb29D1B091A8128d7dBfcb063",
+      "debtToCover": "5002259",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0015161160182953,
+    "healthFactorAtN1": 0.9993281921094139,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41124760",
+      "transactionHash": "0x904e866d47a46a5403f040dc3ade053b79fe2dce84f249dd8f417494cdec42a2",
+      "user": "0x8a4C37A20FAD9f5c779dcF750975D5eB604D3749",
+      "debtToCover": "55065100",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0007412116720866,
+    "healthFactorAtN1": 0.9988393194092395,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41128813",
+      "transactionHash": "0xa353baff472d3affd6b7614264f99fc324e05be86bdb2487adb92ba2e2950c7b",
+      "user": "0x6dFd1241F15ce2E25C5c654997b5E7b156fE52eC",
+      "debtToCover": "109282",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999989877461454,
+    "healthFactorAtN1": 0.9999989877461454,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41132279",
+      "transactionHash": "0x5321ed623f35bb88a3d72b8718e35c35a461d0ebb0a3d9f2d38e3c77d67718d1",
+      "user": "0xEa55bEd7edD8D1E8AD9273f3B06A2a845cb99463",
+      "debtToCover": "8893380",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000000027666314,
+    "healthFactorAtN1": 0.9999998903019556,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41140662",
+      "transactionHash": "0x037424c71c67b3e362d71a8a90ec7821b498663fc513c99c226362dc8b971e44",
+      "user": "0x8a4C37A20FAD9f5c779dcF750975D5eB604D3749",
+      "debtToCover": "321",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0007895556801893,
+    "healthFactorAtN1": 0.999160279179909,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41153037",
+      "transactionHash": "0x0986bec5bc55ec9382e2b38cb4cbe6e53dead09af0b294ac0e9ae9359023ea8d",
+      "user": "0x6A8010ad695547E01De3Aa8bBa4BfF2Fe2f72f6C",
+      "debtToCover": "28082",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9995929848324191,
+    "healthFactorAtN1": 0.9995929848324191,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x8335, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41154562",
+      "transactionHash": "0x3a42d8462b1aca3e08422d9b5258f99f17380881ed83dfa636aabfba9e7376e3",
+      "user": "0x1de6920d2E6a069DCf12EC3C7e30e9d4081a7843",
+      "debtToCover": "30517",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.997540330311817,
+    "healthFactorAtN1": 0.997540330311817,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41154775",
+      "transactionHash": "0xe6f2a7aafc7ae380cfaa2044e060a91b0d8ea24c59a3d8d1a1a19acc451d5b5b",
+      "user": "0xC4aa03B7dF61EEd98A73461E26F3B8143FD4128F",
+      "debtToCover": "36079",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9973628046709772,
+    "healthFactorAtN1": 0.9973628046709772,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41155867",
+      "transactionHash": "0xa494c2a7ad7e91d096424cfeb4ba2587eb443dcf608158456da9c6519df7487a",
+      "user": "0x83e3a99Fd0a8d9a18f96A7287B4B47652EB50c23",
+      "debtToCover": "18103",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9972993077797293,
+    "healthFactorAtN1": 0.9972993077797293,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x8335, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41163742",
+      "transactionHash": "0xbf265d085a23bb3bb8c7e18992ea5b211dcca57ea4508f8bf7e076b2bd9f35f9",
+      "user": "0xF0Fa199eF30fdab32B1468e3104392664f42B63d",
+      "debtToCover": "9299113098883",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999823996616147,
+    "healthFactorAtN1": 0.9999823996616147,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41186136",
+      "transactionHash": "0x8f980420855c51a75769bea26dbc4bffe646727e6f5f002f2bae4db60dc0cfeb",
+      "user": "0x9a08624B5D57c00FDa407de2dea43450B9A0a243",
+      "debtToCover": "1164975214",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x4d0E1d61d7A44690C8781E1324a73207C1f2e344"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0017494481656204,
+    "healthFactorAtN1": 1.001749443187544,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0017, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41186356",
+      "transactionHash": "0x97b9cf02d1fe3c4bd65c89d09ef451259c6b28d99d39c0ff6a6663c05c660e56",
+      "user": "0x10Ef3C1D67493D6b4104F48777b991B058CBFd56",
+      "debtToCover": "10634",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9987409136742618,
+    "healthFactorAtN1": 0.9987409136742618,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41195233",
+      "transactionHash": "0xe99ad85cfe6a21951e0c822284af8996f4d70244a66e568025bb17924dc73f88",
+      "user": "0x2986Fa3Cb0E672224AAF416668Cb7308206Bf845",
+      "debtToCover": "10790",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9967143306082228,
+    "healthFactorAtN1": 0.9967143306082228,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41195331",
+      "transactionHash": "0xb43b2f8255600b8facffe30bd7244a53459f26d4378c9a7cf8050719359906d4",
+      "user": "0x304b10eb2FbBd31fAC6826839FF4a5096f6B621f",
+      "debtToCover": "10511",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999521334857195,
+    "healthFactorAtN1": 0.9999521334857195,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41197522",
+      "transactionHash": "0x5712a1e15f943f406f65dd12a06fbfa9b7c4fbb00390627d439eee2bea995453",
+      "user": "0x7D12D0f0fDF46b0f28cF12645ab520750AAF9d17",
+      "debtToCover": "26144",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.999971405080285,
+    "healthFactorAtN1": 0.999971405080285,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41199929",
+      "transactionHash": "0x349235511e89f2814f9c6000a3b98d1acffa90b54a8b9167d3d3f009acfc06c2",
+      "user": "0x650B1d8DAD57Ef50a879B60Fb19Cc8C8EE003E9A",
+      "debtToCover": "130068",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0021130679470691,
+    "healthFactorAtN1": 1.0021130745783926,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0021, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41200694",
+      "transactionHash": "0xae0d88f37a8972455646daffdc0f8c106d54b0dabe55b029b9ed6020b9ef3d9f",
+      "user": "0xa27E62720Aeab8DeC5f0745E4C7e17b04fedeD62",
+      "debtToCover": "11",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9787681643611322,
+    "healthFactorAtN1": 0.9787681643611322,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41203454",
+      "transactionHash": "0x7a5d02e44fb02f4f38ea2330c9a2c40b4c9b02327e47213924f994b1201ce386",
+      "user": "0xB15149Df80D280fF6282fDc6E69fc98F775BED12",
+      "debtToCover": "111701397938356",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9999925472827547,
+    "healthFactorAtN1": 0.9999925472827547,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x04C0, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41203664",
+      "transactionHash": "0x43c24f35dc700e0520a262afa94576eb85b3225e24cd2e84b656d2c5be9de564",
+      "user": "0xB350bB048B7dEf8328Ece1a454F59070e0b05336",
+      "debtToCover": "10293",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9998310471292504,
+    "healthFactorAtN1": 0.9998310471292504,
+    "assetsFound": {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x8335/0x6Bb7, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41214527",
+      "transactionHash": "0x6184c1ff2b8aafe5f07c24ff6385667bcd760685690bafa7e94306daa89d6f2d",
+      "user": "0x74Cac6a763135B4Ca6C7492092D07702E159800d",
+      "debtToCover": "20326",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x65baF22017b365FCeAa6638D09691b8dE36c846C"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.7844386283251703,
+    "healthFactorAtN1": 0.7844386283251703,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41220636",
+      "transactionHash": "0x4ad2371f7a8738f1ca4d607cc222ca19b1874c3f9738c94757c4fd365173d0ba",
+      "user": "0xc8c92d3526748be9F4B42D60e2A94e0CbEd64394",
+      "debtToCover": "3348513",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0000002063205318,
+    "healthFactorAtN1": 0.9999999075650833,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41223534",
+      "transactionHash": "0x6f1844e69800d4d89e974caf81fe57cfb381d61dbabd4b8bcf89883797029e8c",
+      "user": "0x4C95dbe1c496F830d45194287846a7518289Fd55",
+      "debtToCover": "121510",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9995971434421905,
+    "healthFactorAtN1": 0.9995971434421905,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41223534",
+      "transactionHash": "0x6f1844e69800d4d89e974caf81fe57cfb381d61dbabd4b8bcf89883797029e8c",
+      "user": "0xFd59358aBCC21abaE91816F1B7e675B664e0DaD6",
+      "debtToCover": "60159",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9988002614072612,
+    "healthFactorAtN1": 0.9988002614072612,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41250396",
+      "transactionHash": "0x4106165f50fd455447b2e324a3e846f72313082bc28094d35a912a4813657aed",
+      "user": "0x526dC13A2A6F25D8dDe2Ae8bccF3e16edf86e61a",
+      "debtToCover": "22451081287875",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999487892268705,
+    "healthFactorAtN1": 0.9999487892268705,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41270404",
+      "transactionHash": "0x023617052e871efb4d562c39c2058d994fd0d2d7d98946bd169390ab9f143d8b",
+      "user": "0x234f6d416601aCFd0ad519Ed1E899b487C24470b",
+      "debtToCover": "3489",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9660949478500697,
+    "healthFactorAtN1": 0.9660949478500697,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41270497",
+      "transactionHash": "0x65029ca534a62819af087c2e6d99c261748426cfae041885fc4d423d0adfe506",
+      "user": "0xB4a420f03000B171DA0d4EDeD471bbBD0EA3da5e",
+      "debtToCover": "9658",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0035780112021608,
+    "healthFactorAtN1": 0.9999649725331632,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41270513",
+      "transactionHash": "0xf1272432e457b8be9ffc2e2039676d6ec470849f1afc5f402e8b4bfa3adadea4",
+      "user": "0x74D1BCf5eFC538e0e17a84866265Ce9C9B67E26c",
+      "debtToCover": "213929",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.999191998415476,
+    "healthFactorAtN1": 0.999191998415476,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41270557",
+      "transactionHash": "0x8122a03800ad6044c546ee3a6932d169d84f8fb31c90ccd2dd1f106bc2848116",
+      "user": "0x987c7e7E9e5820e0074d9CcC5C1E27b34535978D",
+      "debtToCover": "12503433",
+      "collateralAsset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.000586778644007,
+    "healthFactorAtN1": 1.000586778644007,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0006, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41270558",
+      "transactionHash": "0x753b8a7679675b255e8e2776227f0ce90cca54dc4968b002c21884e94bfef762",
+      "user": "0xDaD04138C07B6b5c7Ae605331e059d5f2cA99487",
+      "debtToCover": "228467355034594570",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0009384535278913,
+    "healthFactorAtN1": 0.9994270201222617,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41270639",
+      "transactionHash": "0x142d0a2487eb93bba40bd0feb41071244b7310c3ff5b93cc7466aa1190fef32a",
+      "user": "0x7610942174948B3f72c45b1E60Bbd4a6f3225EA5",
+      "debtToCover": "8229344",
+      "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.000000116737272,
+    "healthFactorAtN1": 0.9999999951865937,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41271164",
+      "transactionHash": "0x40b4c870f1d2be0273bc8e1c6ac9a352effff6d766abc8b6ed91c2c2ba53420d",
+      "user": "0x412Dd50d904e6F9A3343114f2edA6Da2591f04df",
+      "debtToCover": "109",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9648169220886482,
+    "healthFactorAtN1": 0.9648169220886482,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41271167",
+      "transactionHash": "0xb93bed29784622018d886562a3cb5494f14a321b790c0b2b5bce2796abf5cfdf",
+      "user": "0xE8063e0fbE1F1776C1cA8228D5B15f03F992d5a9",
+      "debtToCover": "2642",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.989455752632507,
+    "healthFactorAtN1": 0.989455752632507,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x04C0, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41271170",
+      "transactionHash": "0xb7392b6f1c735e09c3cd814cfdb823a555679cf4692f486845f9c0ae6201a82d",
+      "user": "0xEBE0Cd51BF76E52C49992A2f16EE5CEAD75059A1",
+      "debtToCover": "1679",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9358533955306131,
+    "healthFactorAtN1": 0.9358533955306131,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41271580",
+      "transactionHash": "0xd275f62ebfb51a5ded28888aacd7acee00d7d6e422f6ee5f1965a9b8f7b369f8",
+      "user": "0x3246EF49846DFD3dda6D592cDCb80d956b3CF864",
+      "debtToCover": "713865900",
+      "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9530377103323919,
+    "healthFactorAtN1": 0.9530377103323919,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0xc1CB/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41272017",
+      "transactionHash": "0x01a1b6156fec2b7e1c0e1f0305cf928d9c9a10fada97f933838a1ec44c72d67b",
+      "user": "0x2AEe4A054ce01a4d1F698064B8d90ec34f9FaC48",
+      "debtToCover": "77",
+      "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "liquidator": "0xD6E4DD0bb1401E94453971b126e963be2D552847"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.961312156078039,
+    "healthFactorAtN1": 0.961312156078039,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0xc1CB/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41274378",
+      "transactionHash": "0x41faf0e74da3e4c1540f62d036b9f6b5c6a7fd82460c6881dce56825f883e66c",
+      "user": "0xDE2a5dA19B18DcFD454193e014a32d1841104ade",
+      "debtToCover": "24790017371584",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999999519842311,
+    "healthFactorAtN1": 0.9999999519842311,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41277447",
+      "transactionHash": "0x99a49e8c784a10818e943238be905f73611e6c1f65b9055df9cd38436a7fecf3",
+      "user": "0x16E1D6A968d268373400a84a4bBc999840b52580",
+      "debtToCover": "26729024468300",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9999940258466994,
+    "healthFactorAtN1": 0.9999940258466994,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x04C0, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41283810",
+      "transactionHash": "0xb859e033842ac8c42aa5a70c3b26ddb13cf1d194b4bdc81c8ba90dbed1456f82",
+      "user": "0xd9A5421a6F923490AbA43f924290D28Bc5c6F72a",
+      "debtToCover": "20875",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0007605112242395,
+    "healthFactorAtN1": 0.9963709107044284,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41286331",
+      "transactionHash": "0x1c08856d12b7b39878ec780cf3f4754da51b6b57db82910e238f8bf7b9fce3ca",
+      "user": "0x11a92Be1f16AB639c8187C4Bc5f99BcC91FfE41e",
+      "debtToCover": "11276448",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 1.0005638958761944,
+    "healthFactorAtN1": 0.9994280611599826,
+    "assetsFound": {
+      "collateral": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x6Bb7/0x6Bb7, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41287739",
+      "transactionHash": "0x79ae3c392a18ce0ae5ca4df9ecf10d0b0b4c70eb44bfe48a0d870843a9c96567",
+      "user": "0xf60373e00792781475eC34b55760CfDc863E5278",
+      "debtToCover": "1133425614",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0074457353634134,
+    "healthFactorAtN1": 1.007445730301604,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0074, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41287778",
+      "transactionHash": "0x207ca3e22f85c6c16b1365cc952c06000fbaa19159f51490ce2fa5d0418b7355",
+      "user": "0xF300E080b2b98E110C096a3C9FDB9825F2c4BF25",
+      "debtToCover": "10024",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9962906582607639,
+    "healthFactorAtN1": 0.996290656347758,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x6Bb7, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41287779",
+      "transactionHash": "0x09ddebcb89464352bee177544d6d273406184a2ca4b10644afe9d50cdfb02fca",
+      "user": "0x9546F2922AA1767ee1c2228B163C4073523A689c",
+      "debtToCover": "138",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9982854606159887,
+    "healthFactorAtN1": 0.9982854606159887,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41288314",
+      "transactionHash": "0x74235f7d4b805baed954fc53b4a759b1e2ced948fc5664d135b58e8cbf25c6fd",
+      "user": "0xC14844e90F5d3fa71d8779E647182BD5076F616e",
+      "debtToCover": "6665937886",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.002223883967947,
+    "healthFactorAtN1": 1.0022238792431446,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0022, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41288462",
+      "transactionHash": "0xdc2dc6c417ad81f11821f854753d57a4a2428a214366b14d590951cf5517c860",
+      "user": "0x24BCbDb7298eFEd7988ADE19aa3c5A50dbd5F1c4",
+      "debtToCover": "17447107",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0013089500785146,
+    "healthFactorAtN1": 0.9996659021427723,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41288477",
+      "transactionHash": "0xa71f1fcdc1a039f765d6f00d2a80b3266b7aaa1c3d964e487d6bdc94dbd57881",
+      "user": "0x7Fe9c9f041EEA865b31D41616746Cdc4809B579D",
+      "debtToCover": "7894572338",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 1.0002491639943545,
+    "healthFactorAtN1": 0.9985840949990341,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41289797",
+      "transactionHash": "0x2876ebb462c7e9bea7b873b95805cd53990e9b67257bc9821480b9cfca155597",
+      "user": "0x2484c0E6D8e598193e9064B350443dCC0D9A1c44",
+      "debtToCover": "15258889077",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0005421192085264,
+    "healthFactorAtN1": 1.0005421144571716,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0005, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41289932",
+      "transactionHash": "0x0797205d1f185bec907f533fc2219c4ee683f8f04ed657813c1f897ac00df931",
+      "user": "0xf5166B3D0Baf1eC2110808d4D560536dE666e366",
+      "debtToCover": "1455511728",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0005689563391995,
+    "healthFactorAtN1": 1.0005689515061442,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0006, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41290023",
+      "transactionHash": "0x70c09cec986e9e0be32ca6398584cdc7ecee0aaebe31fbbe9da925d8a4d513c4",
+      "user": "0x3b6819FDF78af3A797795ffB72245a5454885Ee6",
+      "debtToCover": "1662652135",
+      "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0014345919311691,
+    "healthFactorAtN1": 1.0014345850056459,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0014, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41290743",
+      "transactionHash": "0x66cdca8a8d969faec96f8c553641bab0ddaee06de30fe0d2f86afdb431993ac3",
+      "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+      "debtToCover": "1325481020",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.002389651849655,
+    "healthFactorAtN1": 1.0023896470778555,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0024, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41290744",
+      "transactionHash": "0x0ac6cfd277c786ea5a17ffde827a8424ed22b54edfe0e98c90ce1bc600e09548",
+      "user": "0xB7d130473D5043fC3c2dB9B4AEE6e6d21adBcFB8",
+      "debtToCover": "3810631",
+      "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 1.0008475227343727,
+    "healthFactorAtN1": 0.9999450213665574,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x8335, Expected 0x8335/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41290744",
+      "transactionHash": "0x88ec7ecf272fa1990bba420ec0d1b63ccb50c3e70a65f2be59fb40a6554648e3",
+      "user": "0xf13b7074386FD7618344B429794F7d878a979453",
+      "debtToCover": "16297524",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.003345030612507,
+    "healthFactorAtN1": 0.99924751439638,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41290760",
+      "transactionHash": "0x742d730b74fc13912922ede1f21451b230c05f0f3653b8ef0949851fa5aedfd2",
+      "user": "0xB1aC5033E4E8Ab07ea2fcbde49Bbac5e38530F9d",
+      "debtToCover": "1884005",
+      "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9971122660859623,
+    "healthFactorAtN1": 0.9971122660859623,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41291666",
+      "transactionHash": "0xea899825b7e39bb0a80bea1ca409f7a9a3d99b0eeb060d13515f3a2f15e39b15",
+      "user": "0x41A74Cc22C646FC57D989eFDaDBD20c7c9Ca1442",
+      "debtToCover": "6926604205",
+      "collateralAsset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.0020341089338216,
+    "healthFactorAtN1": 1.0020341024257566,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0020, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41292874",
+      "transactionHash": "0x6d8871cfb86b18a497be1d1fd008246d5b9f9bdd479959ea369961063945b16f",
+      "user": "0xdc9ed7193b2516C84cB73f7F076426165c0ab459",
+      "debtToCover": "1006",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": true,
+    "healthFactorAtN3": 0.9956535195095791,
+    "healthFactorAtN1": 0.9956535195095791,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
+    },
+    "simulationSuccess": true,
+    "estimatedBlockAdvantage": 2,
+    "failureReason": "Asset mismatch: Found 0x4200/0x2Ae3, Expected 0x4200/unknown"
+  },
+  {
+    "event": {
+      "blockNumber": "41296418",
+      "transactionHash": "0x5b174d11668e10259e5405f2a03f673751edab41a262ba34dcdbc51a5b073e62",
+      "user": "0xE8DDC60a06A94f91DBCD72e4366B68812AB00c24",
+      "debtToCover": "1849321850",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 1.002053773398876,
+    "healthFactorAtN1": 1.0020537684033433,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "HF at N-1 was 1.0021, above liquidation threshold"
+  },
+  {
+    "event": {
+      "blockNumber": "41296426",
+      "transactionHash": "0xb18e348162fb4c4299a65eda5a1f674d196e28b255dff171e7b0f09db86077bc",
+      "user": "0x46e31bD6A5F5fEFb908C10393265268058072539",
+      "debtToCover": "14651276",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.999355490094787,
+    "healthFactorAtN1": 0.9993554923614456,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41296426",
+      "transactionHash": "0x826fe7f02c6cb8b4f9bd1443fcb7eb0eda3ca21d355c9cca465fca9fe3cc76b7",
+      "user": "0x1D11f466d51CED7F27123C11566A233347Aa39B8",
+      "debtToCover": "8706341",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9996047213945354,
+    "healthFactorAtN1": 0.9996047233017339,
+    "assetsFound": null,
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Asset discovery failed"
+  },
+  {
+    "event": {
+      "blockNumber": "41297679",
+      "transactionHash": "0xcd477bcd4aee0e024700c933e73d33194254dfaad786ccf29f86e267072f8a42",
+      "user": "0xCcd837De7eCB814690A1AeF8C1f556A026abbC73",
+      "debtToCover": "100551590146321",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    },
+    "botWouldDetect": true,
+    "botWouldExecute": false,
+    "healthFactorAtN3": 0.9999308154712745,
+    "healthFactorAtN1": 0.9999308154712745,
+    "assetsFound": {
+      "collateral": "0x4200000000000000000000000000000000000006",
+      "debt": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+    },
+    "simulationSuccess": false,
+    "estimatedBlockAdvantage": 0,
+    "failureReason": "Simulation failed: The contract function \"executeLiquidation\" reverted."
+  }
+]

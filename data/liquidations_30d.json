@@ -1,0 +1,3354 @@
+[
+  {
+    "blockNumber": "40031624",
+    "transactionHash": "0x5c0d0fcd191cb238b6dd3fb1eb02e3757270d11a9eeaf20daa6b2c241cdba8a1",
+    "user": "0x86efC7032aD1d85f11c63d07F5f770d6F3BCAF75",
+    "debtToCover": "20262026821471",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40036544",
+    "transactionHash": "0x0f0b85483eede627cb9bb67f1a7b7317cd09d03d5c4f5fb7daab01db628e9aa8",
+    "user": "0x547ec667A34Fde868d9011921eb4677Dc6Dd6202",
+    "debtToCover": "302442548775659",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40036544",
+    "transactionHash": "0x7997234d97c841a11b8bb8173eefd7618e1881264a5ad7142011bb8f9cc2c8cd",
+    "user": "0x955eA92E6f7C5fEb2abda18D77a48BB74F2C0c9f",
+    "debtToCover": "846586911455991",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40089444",
+    "transactionHash": "0x6d61e134bc43c461b933fbd54bcd40ad983344dc547992d919b38974af8a3ff7",
+    "user": "0xF8E54bF3DEC03FE46644B1eA243Ad8040FF2F307",
+    "debtToCover": "300357709729272",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40106022",
+    "transactionHash": "0x07c2901b0b312f715f079725586e3ac1704f70e9ad05c15d71ca433ce004af39",
+    "user": "0xB9B572EA2eB76c93e3ea9460d79D3f79157Eb089",
+    "debtToCover": "1044145",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40205018",
+    "transactionHash": "0x48654c72fd48f1a40b0c9a69051c36adcca697a4ec88d9a350933eb4780cfe16",
+    "user": "0x0c81323Aa78E0Ff1FaFA38211B6A631B8e770688",
+    "debtToCover": "51759075",
+    "collateralAsset": "0x63706e401c06ac8513145b7687A14804d17f814b",
+    "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+  },
+  {
+    "blockNumber": "40279556",
+    "transactionHash": "0x59fca4f087e7ab1bced14157b7a9e20a0d6c8162e13e18b50480759e8aad4cdd",
+    "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+    "debtToCover": "330529505673389027",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x2aA562fC43f21A247CF406Bb289582c16ee3eeB6"
+  },
+  {
+    "blockNumber": "40280438",
+    "transactionHash": "0x3ba4a45deed14930127df7bde76a470a7a528003564d793c11b0d7e549fd2602",
+    "user": "0xE170ED9D77792397271d564c7161351d69fe9300",
+    "debtToCover": "69939872701911",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40283971",
+    "transactionHash": "0x326d0e96bdc5ec60d1bbab0df30353495a4b0641f6f480009ae913e853c3c406",
+    "user": "0x20bf42c4732bBCB1E4B91cc09fd0b79A1B798CBB",
+    "debtToCover": "9",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40287991",
+    "transactionHash": "0x491261a589ccd3932b914f739eacf53803f9003fb451c2b06e3f2b7b8bd7442d",
+    "user": "0x712067Ad39Cc5823F41156c69450Ff4E821DA6F5",
+    "debtToCover": "6339814899307028",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40287991",
+    "transactionHash": "0xeb730e9dd39857a2bc7bd93d32f717d07f2da93b40ddbf7ae74bd3f050e075b2",
+    "user": "0x1f8c87f15Dbc78a2f931cB184AEBea058BbF1734",
+    "debtToCover": "3050792155236793",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40288051",
+    "transactionHash": "0x12f91a7577ddc383eadb8d072809e7ecd2fa621b541cbf64b726bda50ba92066",
+    "user": "0xd7bECBf3a26bD7F72d824626c2C8a7b621752777",
+    "debtToCover": "6447622665910357",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40288051",
+    "transactionHash": "0x785fad025e1910a7e56da3076b4186fb9417cb5f00fe50adacc9d112b326d071",
+    "user": "0x5336f09076C1F353744da9f8c2dd20E54f342948",
+    "debtToCover": "3780182014898986",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40288051",
+    "transactionHash": "0x0e313550746919fc5f03fec16d80c81c8c4707633785ce07dc32b0d813af0271",
+    "user": "0x3De6B0d4B2f5aA6a6A18eefd2AF4743d96B4a541",
+    "debtToCover": "3156367576174692",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40317632",
+    "transactionHash": "0x1aa3b1b18e7cec8e12908ed93a79c2bc0a2847d9ba5cbf5480f36853eb43a43f",
+    "user": "0x10e20dBa3a1E8faA06e3FC6EBa8B725FD13F036c",
+    "debtToCover": "17428237",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "40317708",
+    "transactionHash": "0x9eab1518ebc11e07343df9a2b066d8a815e312c138acb50f6d6c63c1dc75790f",
+    "user": "0x4B5A4A2FC08d8ABAa7535D16Dd6672BA8B38fDd7",
+    "debtToCover": "500294",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40347903",
+    "transactionHash": "0xdc17e03f9b3fba1dfeb6d0b6a15f549f8cb35105fed92e7f45fa6934c7920718",
+    "user": "0x984573E30a7db8575BA4D71c4Af59D22933E173d",
+    "debtToCover": "1002",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40356067",
+    "transactionHash": "0x4b175e8f40ebfd59de8aabc6d6359bf800bb812c30e8a18688428b3c2866239e",
+    "user": "0xe4aa34B4b47b241aBD4F4A5CFD84959bb1278312",
+    "debtToCover": "10675",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40392929",
+    "transactionHash": "0xd03565591921db5509fbc34781335df53abcf656dcf893032428054759b211fd",
+    "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+    "debtToCover": "512170884026312413",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x1deaC049a4F38141675D13F7f12C8ce6A2fe4E49"
+  },
+  {
+    "blockNumber": "40392931",
+    "transactionHash": "0xac3a44cc493a63d1b61628c667e4f27f138846c15a57f2d4d8446b03f1e9f36e",
+    "user": "0xC1bff9e56A6A8e07a3015747837d40A07B4c2354",
+    "debtToCover": "314079355837005",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40392959",
+    "transactionHash": "0xb2292ebdb8ac480f32f140dc7f7f2eaa259e6a9b585739409899059b76c27226",
+    "user": "0x5f63942e29e120AB9392ebD4892F730019dFF70c",
+    "debtToCover": "623295913734705",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40393807",
+    "transactionHash": "0x08a031a10c0939626c7cddbc5079c9cc3e4727328179283ef73cc781a9325380",
+    "user": "0x65BC420852C42768Ece626E19b618A064A43a278",
+    "debtToCover": "20172",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40393867",
+    "transactionHash": "0x24d8651ffcca5837a3736cf67d8e225cc7b666f7e23b979a14db45a0e215976e",
+    "user": "0x8603213d82723613021C6454832b64a24dE3B8bC",
+    "debtToCover": "167847",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xC3aaDE7Fb416c80EE57c686f0746222147596e22"
+  },
+  {
+    "blockNumber": "40394208",
+    "transactionHash": "0x649a240606f5f52c34ed846b3337c08726653769d046cc99356d6a6437bb7613",
+    "user": "0x3cC08E7E0D42a379F46F38BDF3e631a38FC13130",
+    "debtToCover": "337",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40418213",
+    "transactionHash": "0xd46e94594fd12c2d0bae00b6e0d66caeb308ca15eaeb030d3a92a111acbc6d1b",
+    "user": "0xa346A6Dc553Fb1985b45D970C943238C1809e2ca",
+    "debtToCover": "20196912805291",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40427058",
+    "transactionHash": "0x1988823f0cda5c6988327e1ea767b075eea0393793b42f955e57625672dc14d0",
+    "user": "0x90103653692F3113a709eeEf2c94f492ce49396d",
+    "debtToCover": "812935612831510",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40427060",
+    "transactionHash": "0xc436cabfde4b2066fa99bc0b518ab97ec4fdd1738f39474597c4d72d17422931",
+    "user": "0x6C25D69Bd29463256c14449ac14CF1141Fe1c355",
+    "debtToCover": "49647226926",
+    "collateralAsset": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40427778",
+    "transactionHash": "0x7577fcbc78f1e66819d5904f4c92b2bbccb6bdc3a0c7e2417e74dcb0c466aff7",
+    "user": "0x92dd7ADF4014Df2049fA89ADE7F2CF8B7d434ca3",
+    "debtToCover": "1092",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40427823",
+    "transactionHash": "0x9e6bff1e3bb111ed3f2d3d9bf9d8b644af72ad5a35bd41add594b60741723824",
+    "user": "0xDE690B43C9B46878704e05e4856837932Ba14D32",
+    "debtToCover": "6004876745485845",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40427825",
+    "transactionHash": "0x05e147056d2a752b40dbdb2acbcb43983d45af627f03ed3a7122061b236d134b",
+    "user": "0x8E6f55a472641F1030fBebDb174F3688E25966Cb",
+    "debtToCover": "118015492677911",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40429371",
+    "transactionHash": "0x661a36dfb0106a3804377ce828ae79505150639a98ff91e78c7b9cc24f8b817e",
+    "user": "0x75212b049d6c0B4cCfC9698d4F91e7aBa7B4633F",
+    "debtToCover": "6999660179",
+    "collateralAsset": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40459701",
+    "transactionHash": "0x1cad548a76657404a38bdd8832cb8d4ae46c1cfad34858311d9a93fd3be4a4c9",
+    "user": "0x541E0fa1D301E1e313Fef12441DABD2C006D198d",
+    "debtToCover": "545368246623232758",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40460513",
+    "transactionHash": "0xb0b00dc4204da4383d37bf31607400318a0d9f5ad867b97b20249d73a2f7eb59",
+    "user": "0x8F1Bda80a5680902a905DdCDaF3fDf04fEc423E4",
+    "debtToCover": "213509573805475",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40465870",
+    "transactionHash": "0x132681a04a63b224d4f40623869012a3e8b22a31b7a3b9186c3e28ce9c138918",
+    "user": "0x54Ff94cAB4fcD720803546361c569A2e3B46EFcb",
+    "debtToCover": "559664453119368282",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+  },
+  {
+    "blockNumber": "40472460",
+    "transactionHash": "0x8bef9f73a436fd3779949bb5f3c7e6cbaf48d11a9dc5cb968ae34b2cb3aba67a",
+    "user": "0xedE883bD07677F2F6347A48Ba0DE691C54b8DCe7",
+    "debtToCover": "12702109244023396",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40502625",
+    "transactionHash": "0x048bbf7beea630a33f29f6acf3133226dda298f3c08e5b6483a9f1347414a493",
+    "user": "0xa42E4685069F9E9D5345fa2aa85Fd1Af4F3a4dA0",
+    "debtToCover": "521014988",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xe891D94f29dED98C4c0F600A02Fe925622D2B940"
+  },
+  {
+    "blockNumber": "40504413",
+    "transactionHash": "0x96b394a85b98d3e00af2e3e8c94dfa5b39791a76a1bb34ef170c5974f86e160b",
+    "user": "0xacE684c0a79e24b81B49e105e81568235f9f462F",
+    "debtToCover": "35048",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40512053",
+    "transactionHash": "0x74a822801f7ac602b8680d8a0d384fbff14976b69d1e3d9e5434f1fe65358d96",
+    "user": "0x91BE9D764F49C09d9Dee895c62447d0CA7f08b43",
+    "debtToCover": "7578",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40531857",
+    "transactionHash": "0xd073823d548657fcc37da09c6831ef49e206e0ce1b7410515a7d53c4f89fbd9d",
+    "user": "0xc8f46013c04273EFe04ABE7eb0b6A1BF3Ae01B3a",
+    "debtToCover": "9054",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40532256",
+    "transactionHash": "0xed9f668006dfedaccef7c28872d98d8328e621f82b4752c48e9e8f3d363748fb",
+    "user": "0x27868557F3bBe2Af98A76D7e2Ea90b214BDE0CAe",
+    "debtToCover": "7868",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40533041",
+    "transactionHash": "0x9892f4c5ab2cdbb63bd6a4e4e5bcce0946aa9ad213606ed1faaea94addb5c8a0",
+    "user": "0x4e46Aa003f82121335a55ABA069c8c705C510f04",
+    "debtToCover": "25114852",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40533131",
+    "transactionHash": "0x07e1c23985911dad972ef2e71f3e52febb2c8444a6f54d53e2a88c2373609dc3",
+    "user": "0x486e9ea47eB1E8650AAf6586Af5C5a504214f58C",
+    "debtToCover": "12988296",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40542822",
+    "transactionHash": "0x6830e1a43c8535ed9c32867a2017203b1578aab84889d4dd60cc698c0e6c5656",
+    "user": "0x9AD3f5E147609f0129F84e51EAb1C95B3DD07A35",
+    "debtToCover": "9437",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40543591",
+    "transactionHash": "0x19740f22627db8424dc949be389d2e2c5c6c85d6e5a56bb5b501e44db3265e6e",
+    "user": "0xFC99a83262A8212a3fd97637954F4F9e86c19E0A",
+    "debtToCover": "11071",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x50297bb0eb38dc13461dE4e2CbBBfeFDeFdAa885"
+  },
+  {
+    "blockNumber": "40545886",
+    "transactionHash": "0x6820b41e6528f3ae385a65cd2414d8e11f78487b5d35a6b55122c485224d3ebe",
+    "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+    "debtToCover": "1416573400",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD5D7254812f9f272a4ec0758B203579eF013Af77"
+  },
+  {
+    "blockNumber": "40546535",
+    "transactionHash": "0xc7ae0d1c7856372a4f509c24d2a361c46121c69ec62ef4f41793216b09331d9e",
+    "user": "0x633653043D622ad588C0bd5C3c604070c931110c",
+    "debtToCover": "30025710",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40601978",
+    "transactionHash": "0x74b43fa4af15e622abcde0f2cc7e79fe9f6c67838e4f0dc488315fe6c79d5b8e",
+    "user": "0xCC7AEF0317Ade81789Ef4003BD1DAee99dDBbFDb",
+    "debtToCover": "200435516305756",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40686314",
+    "transactionHash": "0x3a2c31ebd8be889390acbb6f6f32fe73bb073ac97d03698556e0e6730c08df52",
+    "user": "0xeD03A054539155680Bf113dd2F74F031B977F8a1",
+    "debtToCover": "713662077",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+  },
+  {
+    "blockNumber": "40710476",
+    "transactionHash": "0x7ccb21936ae4d3b6193de3c0d6b882cbefbbefe6d08da59439c0c66a9c465b62",
+    "user": "0x351A414A64FeA9Bc188b7e7b33d08863092d451d",
+    "debtToCover": "186747",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40713583",
+    "transactionHash": "0xfb25e8a229b833d5f26e259d9b1e3b5ea9d471a8af291c8ea066793a8e8cd9e1",
+    "user": "0xf57Fe1C4205e9F8C3AC1E365498c7579E2321710",
+    "debtToCover": "233410",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40726854",
+    "transactionHash": "0x1d18d55fae7af893e67cdede87065cc8bf39ab607594d3efced3d2558c121704",
+    "user": "0x896159741C56CdC2CfC67c9Aa2AeC61f84597D5A",
+    "debtToCover": "94794443777850297",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40734289",
+    "transactionHash": "0x41283509096b109857fb6b27580fcaad4d3e678503996312034e9068978b7c3e",
+    "user": "0x9dBcC7CE35C37c1595049A4BCaC1A9407F659Af5",
+    "debtToCover": "33718468628585",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40740830",
+    "transactionHash": "0x60a90f06fb7e0943053a9d6bd6f1786cd92a55efdec7fcda5a14d83b5cfc10df",
+    "user": "0x3201F35fCCf81aeA62aF674380fF638BbBf46974",
+    "debtToCover": "31994303027144",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40770383",
+    "transactionHash": "0x678043a2d263faff67d1dd5e6f8dcb1a200467e078a4a6a90ec8a40ba6355c84",
+    "user": "0x7591429B975C87E89Eb04b41Df3cb3c1eA49794f",
+    "debtToCover": "150211489585466",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40776388",
+    "transactionHash": "0xd1bace70e452251ae0ce7205aad5fac6a4468290ef35d8fbea72e5e64c26b1cf",
+    "user": "0x1657Ff40D564c241497350b357B3f36b1e51b8de",
+    "debtToCover": "14478156670415203",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40776402",
+    "transactionHash": "0x465cda0c7f76720afba5fb945d8618224920945393992fa24d54bcdb9935b47a",
+    "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+    "debtToCover": "534245944654861397",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xC5937820Ab88aE4D8aE473083Bb17B30B4dEd184"
+  },
+  {
+    "blockNumber": "40776402",
+    "transactionHash": "0xf7d9a30a8857a23905e049517cb4b45025cd62cbcb0f3589d49f55d394e24f3a",
+    "user": "0x1FEBa13aAcC1A86353605CFca3EBEf407BBB1Cb3",
+    "debtToCover": "6008656392308013",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x135195a379B7e915cfb3B483513612AaDB258C81"
+  },
+  {
+    "blockNumber": "40776402",
+    "transactionHash": "0xfa678ada611000f380c187a8c336cb39ff3ab8d7eccaec49d0f0645b8bf04ca0",
+    "user": "0xdE2e52AA72C8e6C60dB7854fDd2Cc52FE2905031",
+    "debtToCover": "12452220137643446",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40776417",
+    "transactionHash": "0x3f8212d12f57c99206a8610dc20b99a8ff12df8504e441a8cd73b2f342473b5b",
+    "user": "0x4e0D6B5a49373806c0a4f47a3bEe6Dc34625299c",
+    "debtToCover": "5969606453194701",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40776448",
+    "transactionHash": "0xa21acf98907a6004415d87dd1aa66215d9ccf76d4327e0c60da753b8b917a222",
+    "user": "0x79b6b3B18222FFe33C1360D9Fa4AC92da47Cb8FF",
+    "debtToCover": "5945685518993447",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40776448",
+    "transactionHash": "0xc0b028bd7fa64d85be174dc1a191791f4d9592bd20747941e255ea1bedeb270f",
+    "user": "0x3575EF1f71D1adfC6768f939dAE3780f17796C13",
+    "debtToCover": "5932251718096447",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40776455",
+    "transactionHash": "0xb4c95fbb1c0543caf8223af044d5babd955b49c598bdcdcee4b6d5b3d6109e2a",
+    "user": "0xe53897Fa26Fd0F2402dFE8F2cADD2A1B96d868ed",
+    "debtToCover": "23366",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x81B66C921A9d4eBc31e137149e8ed123df5EF857"
+  },
+  {
+    "blockNumber": "40776462",
+    "transactionHash": "0x045043d4415922af8b887722fee4b941c73a093cbec21d5e65f1cafd5fef786c",
+    "user": "0x3467631602116530ae8aB09e64b5B2685cAD847F",
+    "debtToCover": "5841034859861566",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xcCbF4049203E09dFD3534BBf72585a3e799cf1b2"
+  },
+  {
+    "blockNumber": "40783382",
+    "transactionHash": "0x351338f3cbca63e537fc14bc747fb1b908211dbac99a3bc4a9850a19f41742f1",
+    "user": "0xdA0d95c69D3BDB65BC98e5889025Ecbc1A23094F",
+    "debtToCover": "5582031838068947177",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x2aA562fC43f21A247CF406Bb289582c16ee3eeB6"
+  },
+  {
+    "blockNumber": "40796513",
+    "transactionHash": "0x24031de038e5619391576238512109de843d402ea77bf34478a947f0ce9b5d31",
+    "user": "0x895aEcDc86cf9295C483E65C2b5C82E2d5C7586F",
+    "debtToCover": "2479608025542846",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x135195a379B7e915cfb3B483513612AaDB258C81"
+  },
+  {
+    "blockNumber": "40808082",
+    "transactionHash": "0xaaa4135ac83fd64fd1922394e109284a9391f9a827a19376bab73187b6dc8834",
+    "user": "0x9FaEFa180BC5B98cE02F5F3bd77785314ABdC249",
+    "debtToCover": "820",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xBCEe12cD25365faE7d6051aA57618943EcB4C3b9"
+  },
+  {
+    "blockNumber": "40809510",
+    "transactionHash": "0x985950c7dfeee721e369687e8046433b51554aaa1e52258793468238bac835bd",
+    "user": "0x00181B00bbEb5d48ebdC9767b4C19762b076bdF7",
+    "debtToCover": "2300801538527891",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "40822323",
+    "transactionHash": "0x69e109c7f6b793209ee749286f1f54ede0f74e121f08c5a9cd56723767a6ea11",
+    "user": "0x687fa84Fa5AAfC44F85204652f39E1CDfD47d114",
+    "debtToCover": "85908",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xBCEe12cD25365faE7d6051aA57618943EcB4C3b9"
+  },
+  {
+    "blockNumber": "40826174",
+    "transactionHash": "0x676ba691ac6d211e67068f2bc389e39d29931450d59ff3413282d5d35d73ffbd",
+    "user": "0x1698606EC37c41F0A4ff289CeE78B663c8Bf912C",
+    "debtToCover": "1138127",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x135195a379B7e915cfb3B483513612AaDB258C81"
+  },
+  {
+    "blockNumber": "40839341",
+    "transactionHash": "0xcfd4f9985f1da5bc0cf9330ce9a97634f1cb25cb12ca153003e3035081cdfeab",
+    "user": "0x18142643D98bBE956E1ceffa93F8b2884dF86c0b",
+    "debtToCover": "30945759735999",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40839343",
+    "transactionHash": "0x36d07b873018215ecf210990c89b726642a7437c95276cf27abae26be56896c9",
+    "user": "0x73532368eBf5D078821c22439867C57B5B24fb2b",
+    "debtToCover": "13449356686908",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40839345",
+    "transactionHash": "0x2deaf4f390978b38d0901ea80546b398fbe7ae8e27ce3d1104cfc0bd348235bd",
+    "user": "0x697E7A65f9c7d1619FB492E000D5FFf3D7FC2857",
+    "debtToCover": "10746028842400",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40839585",
+    "transactionHash": "0xfeca24e7763d8074ff23dfd4b99c6b0b84d866517daf07c3ff4adc7932a169b3",
+    "user": "0x1b6F921D37953E321472Dd7530C4171a59A10142",
+    "debtToCover": "38292340104884",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40839587",
+    "transactionHash": "0x6c636adca87ed7c8976cfc3301f2ee4e664b51250fba7f2481c247cee2ca222b",
+    "user": "0xe066c3cCaaD5228BA9B982087f234C52d31509f4",
+    "debtToCover": "10890515046437",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40839589",
+    "transactionHash": "0xf3282f414f96a9eb9a3ccb30a888224c71bdb59a863dcf8797cb14c1a94d553b",
+    "user": "0x13ff77C9315DdE5aC9CFdB7258f99d7d70011803",
+    "debtToCover": "30011800530820",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40851340",
+    "transactionHash": "0x8d538f5704ca7cf615c2810d74bab1ee30a482d4ec40d3db2c8c88ba6eb62b44",
+    "user": "0x7392bC850B0068E3bfdF871E4e9e40a67D5A6856",
+    "debtToCover": "884208",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40851415",
+    "transactionHash": "0x771cdf9b65701bce97748d3b9780f0f169effcf1639b9ea8c78327efb7005032",
+    "user": "0x9C8BeF5876632e09de0172c3a69B4AA812C24af2",
+    "debtToCover": "22852156",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "40851415",
+    "transactionHash": "0xb9dbbae62f5a8f536b623f8fd972c7fe0261661ca1719e59384d6e5f162143ca",
+    "user": "0x3d3754d5A65EB57967972913685C6861d688a28c",
+    "debtToCover": "11342",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40856577",
+    "transactionHash": "0xa64177f9ec1b43a72c10612b165ea370cb53eebd89967ca627d4866229ebbe50",
+    "user": "0xE8C913Ef5214b122cd5649Ae02a5e33bee0261A9",
+    "debtToCover": "32641",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40892464",
+    "transactionHash": "0xf43a5e805722376191390646ebbc58f93e4a9144cba1c09e12d7edd917ae000a",
+    "user": "0x304C330C5A8243B023948b1cc624C33159E98AaE",
+    "debtToCover": "4149405",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40894143",
+    "transactionHash": "0x367ffbef4c482a983ddfa7fb1ab9a85e3253084e6d0e67a9797dce2de3e21055",
+    "user": "0x6417cAbaA38c7308dD8265452fB5020dea164E8F",
+    "debtToCover": "1698088",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40894144",
+    "transactionHash": "0x92c65a797ca20c0914bc89c07740009afb717a5bfd0cc29848f9fc99c939a303",
+    "user": "0xE27B214207B2665D77bD7EbA0026e61114DF4Cf9",
+    "debtToCover": "1379690",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40894608",
+    "transactionHash": "0x5f6308c907d22e36a1aaa3b79321c0660701041aca43e6a56415200d86bd6cd0",
+    "user": "0x48553f3733c2823500333E593fC423d9A327Afc5",
+    "debtToCover": "15021",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40898036",
+    "transactionHash": "0x95854193b4216671ff233edaebe076ec617b62ce3d77e84c714d89952f24c864",
+    "user": "0x795C546b7a86bd070805268626B80cD9d01d87AE",
+    "debtToCover": "858585",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40904328",
+    "transactionHash": "0x72e77590dd4bba7a5c928f349ed0adfe7672e754606ba9cbd7d4aa6d2b53b5a7",
+    "user": "0xA98C63fCEDE2a706e4D198683c243524249e2c43",
+    "debtToCover": "945924",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40923441",
+    "transactionHash": "0x68c54bb3e32518e6dd6990ed78d4f998998435f089d51bfd4f0e188fea57a69c",
+    "user": "0xA60ea8b086D9d392ccCF1fF7E5686Cb91A06142A",
+    "debtToCover": "10907379849935",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xad69B2bA14402b51A9F1e8C335A3345c5e367D3a"
+  },
+  {
+    "blockNumber": "40923441",
+    "transactionHash": "0x68c54bb3e32518e6dd6990ed78d4f998998435f089d51bfd4f0e188fea57a69c",
+    "user": "0x1eF23964FbA07310D4aA22fEef4e79f0523B296f",
+    "debtToCover": "16202775213850",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xad69B2bA14402b51A9F1e8C335A3345c5e367D3a"
+  },
+  {
+    "blockNumber": "40923441",
+    "transactionHash": "0x68c54bb3e32518e6dd6990ed78d4f998998435f089d51bfd4f0e188fea57a69c",
+    "user": "0x32Fe820051Cb5FD94DEd120a348e27243205bDF0",
+    "debtToCover": "4878201401168",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xad69B2bA14402b51A9F1e8C335A3345c5e367D3a"
+  },
+  {
+    "blockNumber": "40932825",
+    "transactionHash": "0x58887bafae1fdb3de01965c8e919302510ae47fdafeac5bf5483fd15b4f92535",
+    "user": "0xb33977aE3133263D976F4327F450153a3Aa376a3",
+    "debtToCover": "858575",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40938009",
+    "transactionHash": "0xe3ed06093cf4c80771cf724cbe65426a3f53277e8a05adf934e8b7df467a737e",
+    "user": "0x7d0CdE20c8145ef88f09cfC360cc8e23f7f0A0c7",
+    "debtToCover": "30614985196460",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40938020",
+    "transactionHash": "0x44ea91b7ff52c28602d37251cbb9990778e2710fff0781a2b19bf2bd71e7786a",
+    "user": "0x91d38a628866D0E3FFa7B54AC3B1F19504E3014d",
+    "debtToCover": "111804",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "40938399",
+    "transactionHash": "0xb881daffed3e456b76aa8b8b8b610bf871dfdd34648196a63cf39d75887f1638",
+    "user": "0xBAfD8FC4858f9b0Ec486Af6dd61876ad970D471D",
+    "debtToCover": "10715391238654",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xad69B2bA14402b51A9F1e8C335A3345c5e367D3a"
+  },
+  {
+    "blockNumber": "40952098",
+    "transactionHash": "0x8018ee25314db42cef9d9c6ceba98782e65aa5c6895bc774cb00ced9fb62019c",
+    "user": "0x74e087Ea42B5272787c0e5561FD79F5666c331C6",
+    "debtToCover": "1287835",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xB2E9B0979eA1F0D4e5565644823998Be3829da6d"
+  },
+  {
+    "blockNumber": "40961861",
+    "transactionHash": "0xb8ab0217697dcabe49878b1a7dddc2c12ef28cf88183760f6352817f65c0289a",
+    "user": "0x3C5538EA9756aE7fC9b8659E55Ba03140e43ECbE",
+    "debtToCover": "19567120979063",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40961861",
+    "transactionHash": "0xb8ab0217697dcabe49878b1a7dddc2c12ef28cf88183760f6352817f65c0289a",
+    "user": "0x8EAe4044d3Da689995b278e27dcc382cB75645e3",
+    "debtToCover": "19525247470686",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40961861",
+    "transactionHash": "0xb8ab0217697dcabe49878b1a7dddc2c12ef28cf88183760f6352817f65c0289a",
+    "user": "0x0913d8930FC5387F41cA2f8f18d2F6914757fF3F",
+    "debtToCover": "20846715753054",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40962401",
+    "transactionHash": "0x27a865ef12e88deef46b3ad35017c9239c1f47c2232c65fc259d115e5e6e4f4c",
+    "user": "0xc713FE574bE9F120B47ecbDa44B5a7bb5d57Fc1c",
+    "debtToCover": "45346",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40963744",
+    "transactionHash": "0x6403eee2fdedd0d1591c912ca6b1d0da31ed881edcedaa88d6e2ec2d42894fe8",
+    "user": "0x8A25A5AbfF85b25919a651C96b1C412B8a3137E0",
+    "debtToCover": "80024",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964270",
+    "transactionHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
+    "user": "0x35b456C548eC6dEDEA3EEaA96708d397285b32d4",
+    "debtToCover": "10715395594985",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964270",
+    "transactionHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
+    "user": "0xceF01E5475176eB7567a4e3A53F91a6C5aBB848d",
+    "debtToCover": "10715395594985",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964270",
+    "transactionHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
+    "user": "0x0c95b09F20F574f6029b43f8180077aCE6dd3b2f",
+    "debtToCover": "10715395594985",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964270",
+    "transactionHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
+    "user": "0x3DD9dd15122d9eDF927fEd1ff0bEc4853A5400b6",
+    "debtToCover": "10344613536565",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964270",
+    "transactionHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
+    "user": "0x53DB9685df91Afef8f2B40D77859E886E972f8Aa",
+    "debtToCover": "10842479938773",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964461",
+    "transactionHash": "0x1e3358c570705e19893604873517a7c7210411cdd305d64e1706dbb68afb7711",
+    "user": "0x0C0658A30e3Cef4A30e65D1162EF1c983a017a0b",
+    "debtToCover": "10820129247339",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964461",
+    "transactionHash": "0x1e3358c570705e19893604873517a7c7210411cdd305d64e1706dbb68afb7711",
+    "user": "0x7b4ad4e9e118c6d4e9fc21d4BF2eA11D9424047E",
+    "debtToCover": "10332829276668",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964461",
+    "transactionHash": "0x1e3358c570705e19893604873517a7c7210411cdd305d64e1706dbb68afb7711",
+    "user": "0xf77749f8c2F12a4264edaBbbB9d6C92b612D6273",
+    "debtToCover": "7526961316486",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964806",
+    "transactionHash": "0x2579ee2f54800a14e54aadde25c9b0287f52d5c56118dcb7e2c40f451ed92087",
+    "user": "0xC0a32E6f3914D13dfa99460E80FA3B0fc03755F0",
+    "debtToCover": "28396",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964806",
+    "transactionHash": "0x0a3a3df42aa6535c4c8c2c8963decda20891875fe5b45005aed75237b6ecb541",
+    "user": "0x64e823E9272081325704E2588dBFfDAE7Ab273a9",
+    "debtToCover": "7566129464848",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964807",
+    "transactionHash": "0xc3fe3c2392e894be7a1610b124dd3742e5cddcbc566fed27357c51d17e821d0c",
+    "user": "0xa75326457c41606Df0fB9062839624d4dfB531AF",
+    "debtToCover": "28030",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964807",
+    "transactionHash": "0x4c13d64ade99daf225e3be0e33fbe017eeab163b55d26c05821308390c109d95",
+    "user": "0xF145343B7934176BEfCcb0cD8e3168de2EeB9022",
+    "debtToCover": "8287492801933",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964809",
+    "transactionHash": "0xeb79713396c7bd6f6c08893a47ad801363665b77190df35c1d578f7b4435fa03",
+    "user": "0xd77Ea0883D656036284079F7A4f0284a25550FE6",
+    "debtToCover": "6952889445438",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964809",
+    "transactionHash": "0x56470632aa708c6b149132dead05bf74d262d2147755552c893770e5feca6beb",
+    "user": "0x0425aBc2d23bb1C7C0d3A3D0064f947bB4716417",
+    "debtToCover": "6880908146447",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964810",
+    "transactionHash": "0x2e0f709f0c562f25474c168d80af3509cc65f26eac1a221b218d1c2ff4a53961",
+    "user": "0xE92d774f3314EE884471c234aA546E521756bb2F",
+    "debtToCover": "6618883225465",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964810",
+    "transactionHash": "0xfaa81921a020d34db3af784baf6831150f0d40cea5cef455e978f5a5a5d00689",
+    "user": "0x105bC5f84E4dDaA9f589c0137C51C1f1DC8DdE91",
+    "debtToCover": "5327733641302",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964811",
+    "transactionHash": "0x5383d068284c78e6851a6eff71268621ee9bce6c04c3c41292cd3ce60d098a42",
+    "user": "0x0fAcfFD7f414260d12167Af692BFAbB7C4f01D80",
+    "debtToCover": "22976",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964812",
+    "transactionHash": "0x355314f8ef48ced9c18761e6c639e07ad81d1983fb08c7ad90eb0a3a5f9fe1b5",
+    "user": "0x710528F422053D6e891e286feeEca7759973C30e",
+    "debtToCover": "6205958443523",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40964812",
+    "transactionHash": "0x154f5c46b09d4ae448b6ec41eaa2737d677dc7a9ee6fae0e973b08195bb88fbe",
+    "user": "0xFBbd85bfC66b5FE00aef559152FdCd3a24906E52",
+    "debtToCover": "21721",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0xe7aB49beB3C6981c8C0303a9D1AaA86398cdA934",
+    "debtToCover": "10350791977251",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0xDBbC11d4db1fA43944ff0791BaA684d262aD1Bc5",
+    "debtToCover": "10172798829669",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0xaA981b68174f719082b5874A8CB8133ec160EE4a",
+    "debtToCover": "7945831751785",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0x11c44C80c0A0a4107274D9bbb53A7f779E89ffa6",
+    "debtToCover": "6789582828944",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0x4c904637f1BF33b4F77d89DBcF71e09376DC3d6E",
+    "debtToCover": "6000190344473",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0xC1b94BbdBA7cF440E523aD00D56Dfccd1dCdda77",
+    "debtToCover": "5790235750912",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965097",
+    "transactionHash": "0x1a87ecf475667069a9d3d03ac9d618d8e6402df200c149f3ec349b02b0a595ee",
+    "user": "0x1B95Bd89Ce65E74701C82702f43E2C4CFFb8D1f9",
+    "debtToCover": "5882924742014",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x9Ebe340b6DC3496E260250ae1B24883515966B63",
+    "debtToCover": "6208864297665",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x6BCe9EbC201CD6DA3519B9cA73b54D1f50a035f7",
+    "debtToCover": "5623949574095",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0xe215B69405BF45092AE417C3aAC13D02c3A9B0e1",
+    "debtToCover": "5320313113303",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x8EB48F7dCc00655E931fDe29BeaA3311021438F9",
+    "debtToCover": "5082981634284",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x3ED2b32726FE789397Bdd7EA929f140347fDfEdE",
+    "debtToCover": "18777",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x584D81001C4136a5CcBe7202A48E59906801B2dA",
+    "debtToCover": "3403718063940",
+    "collateralAsset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x29c351990Be06698B46A2FddACB22502cA1Fc553",
+    "debtToCover": "4968529922789",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0x31aDEAf7E9bEF4457BDa9090c5ba6A78eb6651eC",
+    "debtToCover": "17420",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x5a9271f4428638365750ff0a6d2c6393bac71b1192b053ad6c0ccc90157dea90",
+    "user": "0xd40E4b1F56e293449Bab9160894eB84989421113",
+    "debtToCover": "17365",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x36ac57e53bab3a982fb65ccd618100819a62ec3bb07ba8e0fe518c9022160a8a",
+    "user": "0x7AA1587D23A4f3c54904B6aAb8721A8A369ef9d0",
+    "debtToCover": "4513954894940",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x36ac57e53bab3a982fb65ccd618100819a62ec3bb07ba8e0fe518c9022160a8a",
+    "user": "0x6372f6DF5d1565a1FA22B79667004Fa01cb0C3A3",
+    "debtToCover": "4413826299862",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x36ac57e53bab3a982fb65ccd618100819a62ec3bb07ba8e0fe518c9022160a8a",
+    "user": "0xCB6BaD4A577d61F78F351971C1C2C324D355baaF",
+    "debtToCover": "15703",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x36ac57e53bab3a982fb65ccd618100819a62ec3bb07ba8e0fe518c9022160a8a",
+    "user": "0x75248103DE58321b1E8d46949D91cbAb21fE5dC3",
+    "debtToCover": "15468",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965098",
+    "transactionHash": "0x36ac57e53bab3a982fb65ccd618100819a62ec3bb07ba8e0fe518c9022160a8a",
+    "user": "0x90Fb39Ea59E46bDF6CFDACd5058c059Ec22AcB6b",
+    "debtToCover": "15410",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0xA57ae6295a79dcA823EBc29b7aA231Fe125b8347",
+    "debtToCover": "4224169389987",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x4b040a88cB4Edd02b97F0AB8C97d3da540FC2Cf0",
+    "debtToCover": "15000",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x64E2a5cAcebbC28B94Bc66C6473397CAACcb9A51",
+    "debtToCover": "4020338017507",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0xeF7A291B7381Bc689f227a092f4F503aCdE5A591",
+    "debtToCover": "4138502230169",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x73c1954D978087A9Fb41Ab46671d53fAeA0Fc919",
+    "debtToCover": "3937996760864",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x324A8A3edd120b6569c0cAcda5eDcF989D5D1e44",
+    "debtToCover": "3800936079576",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0xE3b9fF42A21dCb598Dcd792D3a87B6AF41d12Af1",
+    "debtToCover": "13475",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x78124B41a3a8B4E2f0DE7df75467dbC3F40E6a82",
+    "debtToCover": "3621231811137",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x6d1844b0bf4dca6999c26e050863ecc8a94c59454685972c8d300ca55d6136e4",
+    "user": "0x1036A988D389D78c7186F4E03e420831aA21AeDc",
+    "debtToCover": "3517413359483",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x03d184B55d06EdBa6590494E731a22B8aDbb2bA4",
+    "debtToCover": "3204605989202",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x520184b941C7f7900F5e439F312E447855E8801F",
+    "debtToCover": "3204605989202",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x7bF73408CE300453c27fFC42efEDD73c69091667",
+    "debtToCover": "3204605989202",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x772f0c2E55E4c5BcBFF61549C6f34F0055cE46d6",
+    "debtToCover": "3204605988066",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x20DD9406F9Ea390037af93B36f77B08C8917485B",
+    "debtToCover": "3204605984657",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0xE93AfE33D3b672F240600B7B2288a9c76101cf2D",
+    "debtToCover": "12872",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0xddCa6886b00120A066156DC9093544Ba09a05E34",
+    "debtToCover": "12250",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0x93F4f5360f9af9c7dA012a334E9EC61C901B3BaA",
+    "debtToCover": "3682269076686",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40965099",
+    "transactionHash": "0x834e6a401ef21cbf2a364e2055ccf5a2d4fb3eab76805dc7047488501a0a41d2",
+    "user": "0xEd06e8fe0a5b8417FFA1e57B83059df77114bd6C",
+    "debtToCover": "3357425819796",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x11991696F2d5187c7A6436B28eA3bEA2ac87b240",
+    "debtToCover": "12008",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x16C26c1eBD3D0df46E3102cA64C09136016869FA",
+    "debtToCover": "11870",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x2503017a7EbF0EA6174B3051EBe71Be3bE07C66a",
+    "debtToCover": "2770046113958",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x810C491FB216cdDB0CBCff3834c305006971C7B1",
+    "debtToCover": "3088158561171",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x0764D427309537Cdc7F425D5cD7260cdb681060D",
+    "debtToCover": "3035925889383",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x7bD0d51AF9f912CAABD3Fa46a7af0f73663A1fFd",
+    "debtToCover": "2685581993480",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0x200e61f6394bc6a87b85EB54ba5716e3415033c7",
+    "debtToCover": "10829",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
+    "user": "0xCBce30F310B5fd76d6EB11164a5A2c845C168dCA",
+    "debtToCover": "2937765364307",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0xF471a64d4f8d7e8f701F8d18AD47248A9C5e0969",
+    "debtToCover": "2803572967795",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0xEB5714f6767F4BBe1F3A6eFE667E426a3Cf5c906",
+    "debtToCover": "2870815797541",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0x3b6514326eD0362566E241210D43a90edb6287C9",
+    "debtToCover": "2840978032565",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0x3C288842AA6314148dF1BEF9C31b101033B34B43",
+    "debtToCover": "2467086666614",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0x3bD96007bA2308657F11FD49Be09CeB6419af79b",
+    "debtToCover": "7",
+    "collateralAsset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0xd18790965b06ac63281A5831407C12d72fC24DE3",
+    "debtToCover": "2722208440060",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xb51cb148c5e9f6aaeffc9b14962dc2bc012b365a43dfe4b42486c7dae95d3531",
+    "user": "0x38d231C15C106F4D0F837De1d0ADC6B50216525A",
+    "debtToCover": "2406036777160",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0x7a42Fb8be8E956bC79834fc499002D3C79072dA7",
+    "debtToCover": "2705828816244",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0x6a5370351f5558fC2d7BE85504Bb1E65Ef229E35",
+    "debtToCover": "2637850982982",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0x2e6133757dFCC5F87a251760D5A41BE2960284d1",
+    "debtToCover": "2582183620939",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0xC1dAC8Bc269FA9c99b77591278516C3D806292F3",
+    "debtToCover": "8953",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0x54C51B94B2Da683b9751dB4ADdcd2b96c498cb23",
+    "debtToCover": "2699602705550",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0xDA497d9e0d98d1Ce09Bf15819D72f20a259F0ff0",
+    "debtToCover": "9",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966166",
+    "transactionHash": "0xc640e49ae45cc22a097a47080b9f5c671f0a00b99730950e2955dda404073fd3",
+    "user": "0xFa7F35a7dF5Bbe685aE2e59ae8a5bB3A8CBB265e",
+    "debtToCover": "2304887095000",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966167",
+    "transactionHash": "0x9df0e94f3cf441248cece06bbe31b49caf71b8f85d61c06c2aed0390e995e107",
+    "user": "0x3Ada986C83d651994652DF1f61bf3Ed7056D144d",
+    "debtToCover": "8461",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40966167",
+    "transactionHash": "0x9df0e94f3cf441248cece06bbe31b49caf71b8f85d61c06c2aed0390e995e107",
+    "user": "0x97c35b1921F6e54923483C9EDdc8629aC82bCbDC",
+    "debtToCover": "2305158853223",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40979226",
+    "transactionHash": "0x448a8d43fc4519d44a9fad9e3ad5916dec5bc05197ba955f4f9d477e40bc19fe",
+    "user": "0x8BcCCD0D7C57201c3EcF8C4e115A628851D2326B",
+    "debtToCover": "1118082",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "40979771",
+    "transactionHash": "0x21c407e0d0be8f530be041cd00abde84c3ddc5dc18d4515f4e25ae555f7df114",
+    "user": "0x087f373867C2167d178eB5d5D32eD63091D15512",
+    "debtToCover": "12460",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40979771",
+    "transactionHash": "0x21c407e0d0be8f530be041cd00abde84c3ddc5dc18d4515f4e25ae555f7df114",
+    "user": "0xd46246C117CC3070F83a5bdfD5e57EF71ef7e323",
+    "debtToCover": "11882",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40979771",
+    "transactionHash": "0x21c407e0d0be8f530be041cd00abde84c3ddc5dc18d4515f4e25ae555f7df114",
+    "user": "0xc14E7F1Ff73C2b0210936aa6189F4839a986C85D",
+    "debtToCover": "12",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40979771",
+    "transactionHash": "0x21c407e0d0be8f530be041cd00abde84c3ddc5dc18d4515f4e25ae555f7df114",
+    "user": "0x1f1564E98Ac508a9C73E06F335c83142a545F283",
+    "debtToCover": "8330",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x7c85f864D5DAEB11a532E2811504Ef431E98a1f8"
+  },
+  {
+    "blockNumber": "40992927",
+    "transactionHash": "0xdb9d942efe5bf239e275f88d32edf047d90435455c24e9a4dde04ce007ab48c6",
+    "user": "0x2Dd2B83539629401983C4C61B403d2122Ee6f783",
+    "debtToCover": "872275",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "40995773",
+    "transactionHash": "0x26684d0cace26ecd3d11b28cedeaef1fd405a95c20c85c85ccdcfa1970a83ccf",
+    "user": "0xcEcb6Ad4AF48172244CeA9124c40a2eC0417a1D1",
+    "debtToCover": "960232062",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x25ce9cf5737f8734bE9f60DCAB62b27dDEF0f2B5"
+  },
+  {
+    "blockNumber": "40995811",
+    "transactionHash": "0x2866abdcb28c8d8f8c7ed7d829059577fb269aebe09be043c18f863409a0b6f2",
+    "user": "0x4d6c606EB50AdAE9912132d449Bba4B2564D07a0",
+    "debtToCover": "92465626",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+  },
+  {
+    "blockNumber": "40996358",
+    "transactionHash": "0x0cb6f2748633e670efd64abf64e9682f6db707c9eddff31193fddb55bb669784",
+    "user": "0x2935b17c8d4d1068725dC37D98FffcD0854d140F",
+    "debtToCover": "100798455",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "40997078",
+    "transactionHash": "0x39777b9b295be055a0945fb43b7614f104c6abbb2560669ea3a76b4423858f5b",
+    "user": "0xA8f0BeF371a7bEc147cF314783a53cF61e8a96F8",
+    "debtToCover": "995340",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41005323",
+    "transactionHash": "0x29a6700ec5fc7b1661eabf1839f3323c8a7d6f9fa6898f2a0217b6f4af7e7ab0",
+    "user": "0xE4FE58eCF12e5597dff57b2A2607c6dC3c8Af99A",
+    "debtToCover": "105331024115315909",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7fdf39569Caa512D66175dF0c4924BCe4993D20c"
+  },
+  {
+    "blockNumber": "41010974",
+    "transactionHash": "0xa81879ef654efe2c974f939ed0c91e1061dcf78f6abe2ed12a7868ba5b9bfbca",
+    "user": "0x718EE38a0093c80359F0B550C6d67F1295d5bC2f",
+    "debtToCover": "1000716658659927",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41027759",
+    "transactionHash": "0xc29af4e57789149d9cb37e698c5a859506d383a95cb92e730b30cc4bb12b4368",
+    "user": "0xb351c53c784b9215F899b1AeA78dEEcc1f4f4841",
+    "debtToCover": "53713828",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+  },
+  {
+    "blockNumber": "41035366",
+    "transactionHash": "0x09fad350fcd8fdaad8639b98af6a7a17320263cdd2d9764d6aa4a31ecab21a80",
+    "user": "0x5fF5eD2b440Ae36f54eeb47C7BB66e520a231e42",
+    "debtToCover": "2575380",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41047973",
+    "transactionHash": "0x9f7aede330c53c41806f63659542a5a8b53756f802e60909927b38c41b7f123a",
+    "user": "0x97f31ACe913e5BE6eF7CEED0B545473F5A316BBF",
+    "debtToCover": "14671262",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "41050617",
+    "transactionHash": "0x4e951dbe0b2720fce4687506c5266e7683188daaff8a58fe5578381c39667cb2",
+    "user": "0x35f1b333Fc0B643c7920fCB05B21Ad3f2a21D34D",
+    "debtToCover": "2",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "41053735",
+    "transactionHash": "0x8ca20f40c5745046512bb52df8c4d313a38c7d1f3b679f53c10bc3ab5ea5aad8",
+    "user": "0xF08D1eCb7F393C53891991f46188d9875619aa40",
+    "debtToCover": "12052294917",
+    "collateralAsset": "0x63706e401c06ac8513145b7687A14804d17f814b",
+    "liquidator": "0x06eeeF704d6B7B0F76EAe9B24a0a087b7A40010D"
+  },
+  {
+    "blockNumber": "41054411",
+    "transactionHash": "0x0eebf6ffac7e6a0e34b77bd5e2247bac393dc39a6ed18cbec6662ca98a05cde5",
+    "user": "0xF22AFE095BB98E6867BE24bbB0788013e5CE324B",
+    "debtToCover": "30795851239678216",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+  },
+  {
+    "blockNumber": "41054673",
+    "transactionHash": "0xdcfc4255463a42c78400e0274618dc23c0e29e183f94cde81ba8319b42a6dc57",
+    "user": "0xDc25ba40483DDE5dc638ae2feE941C900A7bBe57",
+    "debtToCover": "101605848",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+  },
+  {
+    "blockNumber": "41058325",
+    "transactionHash": "0xc3acf24cd476862e240776614f559706aac4729ccca05fe04a8a0d5befa081bd",
+    "user": "0x03adFaA573aC1a9b19D2b8F79a5aAFFb9c2A0532",
+    "debtToCover": "100670",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "41064646",
+    "transactionHash": "0x7f9c9bbb1e629eeecf0d4175a22063cb1bd28a1e1c4334d08a49933004fe01bb",
+    "user": "0x0C947AF6d22E0258Ce5815B0F798335358f8dd43",
+    "debtToCover": "1276125356",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41064676",
+    "transactionHash": "0x8e7bf578a8e999c2456db9669c22ad3085de4795f1c325729055380192bd4ca5",
+    "user": "0x65f58D444dDe2bD62D9f6627bE7f57B93041F321",
+    "debtToCover": "25491869",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "41064677",
+    "transactionHash": "0x39f092007c297032c81dbd4cb641d89ed2601d6091b33c3341d52349cb57a814",
+    "user": "0xeeD1Cef15b245d7086D5907E7395C47f4f1B2594",
+    "debtToCover": "25491875",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "41065578",
+    "transactionHash": "0xa26066984cb7aeb47004ba42f92d989ecb6e1ece25571db85ea9a96e9bd2e631",
+    "user": "0x41A74Cc22C646FC57D989eFDaDBD20c7c9Ca1442",
+    "debtToCover": "13157435981",
+    "collateralAsset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41065644",
+    "transactionHash": "0xe4b46ff7414388a8b6f356b00ce97fb6a6723c58e15356cfa074f316dab9cde5",
+    "user": "0x4039AFBee76230a59cF7Ff8a30A41C49151688cD",
+    "debtToCover": "1307041573",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+  },
+  {
+    "blockNumber": "41066166",
+    "transactionHash": "0x623f13fe7e5874a7679a72a749501024364b61f02eb514e98e1c5e438b890222",
+    "user": "0xfB759cEA9171c1464176C2a84c03749De342d400",
+    "debtToCover": "1501386925",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD5D7254812f9f272a4ec0758B203579eF013Af77"
+  },
+  {
+    "blockNumber": "41066319",
+    "transactionHash": "0x3eb23061a3418e727846239eb8531f96f2d0336ec1f0ec369e1fc6401be0680d",
+    "user": "0xc8d2f2456C227939D62a4359F6510fE112d40645",
+    "debtToCover": "572",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x734aFC7273fCdc8d6dBaf5691fE86E00055F26Ab"
+  },
+  {
+    "blockNumber": "41066747",
+    "transactionHash": "0x18ef6a91f1c69fb8cee058daf46b2793e3c2bc9f69bcc93ed396f0812dbf8566",
+    "user": "0x5E2b73Fc69642AA16FeD213AE3000dF6e726C6cB",
+    "debtToCover": "2602962",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41068989",
+    "transactionHash": "0xf782117232f680fb345abb4752afab5dd4fc31407fc038a697a14e8fde5b37b1",
+    "user": "0x9d906E1Cd453F6b78Da421e0f9D6E5B87A4be80a",
+    "debtToCover": "627877",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41069113",
+    "transactionHash": "0x9e1a0c417b221fdf7492f01190a4d571d8960fefffbaa1239fd4b82cab9d4a00",
+    "user": "0xB3D1e517F5764F20afFB6AaE2C2CE17b22caE5AB",
+    "debtToCover": "11734915",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+  },
+  {
+    "blockNumber": "41070238",
+    "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+    "user": "0x3358c3873a731d73c0d699C07096c4ACC7724A9e",
+    "debtToCover": "260805",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070238",
+    "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+    "user": "0x5a425620420240624F7aF2348518E27774298078",
+    "debtToCover": "174852",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070238",
+    "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+    "user": "0x6824d73f2aE90243994B25551F3B5E6aBc9e29ED",
+    "debtToCover": "103301",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070238",
+    "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+    "user": "0xF7e213EFded175060fEd643846402d40E3BcAE5d",
+    "debtToCover": "1002871360292",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070238",
+    "transactionHash": "0xa9cc4a6a967cfb107323ffe433ace6741563e1be22f6f323294756c66004a662",
+    "user": "0xB16Aa5BA62c75C644e8F0972FF6A3b14A53A2097",
+    "debtToCover": "62035",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070239",
+    "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+    "user": "0x70b8605e2B8A97A5d27F7ed46CC6C6CB0dFeE1Ee",
+    "debtToCover": "15756059317826",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070239",
+    "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+    "user": "0x41828A7E03eE3a0e89Ad40a9a4EDa535A17902Df",
+    "debtToCover": "13570183952419",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070239",
+    "transactionHash": "0xa15df037ba35ef80bf6b1b31338cd1ffcebe61a6b1d469bc2585908f04c72fa6",
+    "user": "0xAe49A00A61221732c1858873EaF22d5c224D5349",
+    "debtToCover": "39564280085981211",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070239",
+    "transactionHash": "0x1c90eea2d7c4869a441ab3415f68367be55ffad5f52e26919de6197f49aa2066",
+    "user": "0x7529b91118b84DA4ad7f089F46459adAFec4C983",
+    "debtToCover": "12209305036603",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070240",
+    "transactionHash": "0xfa5e91808eafb4eaf3519855450e370f29753774d991474bd6e2d9bc7a3d0287",
+    "user": "0x72EA289C93F37f4C43856301dD45D6dD30dE908E",
+    "debtToCover": "35",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070240",
+    "transactionHash": "0xfa5e91808eafb4eaf3519855450e370f29753774d991474bd6e2d9bc7a3d0287",
+    "user": "0xA6cB71D3991FE13b1a77Fb771b94626FaE1Bf3D0",
+    "debtToCover": "28988502175782757",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070240",
+    "transactionHash": "0x8adc5137ce82d4d0419cbde6e6ae8ce112ed4fcbf03abba762f2af1b8a436783",
+    "user": "0x80011333672176A7a20d2F760e7D6C3dB2C475B0",
+    "debtToCover": "9208130166326",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070241",
+    "transactionHash": "0xd6d15370457487e874578eec2dfe01c1b411de0ae3645eecab5daaacb17fedf8",
+    "user": "0x44cf0c30ce2CA578BFadF6d71743F3a1f8525b36",
+    "debtToCover": "8402525739824",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070293",
+    "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+    "user": "0xB05Ed8D08Af44A4DECb46fb24A27302921bE5917",
+    "debtToCover": "56510",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070293",
+    "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+    "user": "0x3785151EABDd683D5AbF53492e6CA06130ba2258",
+    "debtToCover": "12205200982938",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070293",
+    "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+    "user": "0xC7Ee4BaE265927FF2f5Ddc3948A2c3B0Bdc45048",
+    "debtToCover": "12129798390519",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070293",
+    "transactionHash": "0xec6a4c1bb0667db28ff84e81946c0bb6acaf805bb7be3b53dbaafe42c24607ef",
+    "user": "0xAbf2248C6C66c0e15365af48Fb3ebAdaEE510e56",
+    "debtToCover": "12028305918498",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+    "user": "0x5C48A2286f48108bb5A00e6d3480Dfa4Ca9deC71",
+    "debtToCover": "41",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+    "user": "0xD7B5cb1a2B3c051d3cd566d5EeA67F7Ff8b18fC7",
+    "debtToCover": "10614606928249",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+    "user": "0xFb1df71Bc234Db50fe891111D5fEe3db59ce0a16",
+    "debtToCover": "9555368715875",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+    "user": "0x268FCD9B96b0877e4128E3DcfEF3b95Eaf27ed5a",
+    "debtToCover": "14168112233636222",
+    "collateralAsset": "0x63706e401c06ac8513145b7687A14804d17f814b",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
+    "user": "0x69517f85D228881D3A88aEb3Bb21b88CCEE935e8",
+    "debtToCover": "9265799507390",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070294",
+    "transactionHash": "0xabe16e824e577e3d5ed20394b5f097593f8d452d601b6967d69485bb394b8484",
+    "user": "0x66C4A438fd349B8d7032e8107DFd37597725278C",
+    "debtToCover": "9226989791582",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070295",
+    "transactionHash": "0x5b871ec11c8b485decf7f31b226121fbcf4655e879593a610ea06fe582fd4d76",
+    "user": "0x89556295CA61F832471D382c073be1aBaE01eFE2",
+    "debtToCover": "28",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41070551",
+    "transactionHash": "0x4cef4bf4ad648d7ee242cd89a6e25209175ef35c605e72f08b8e73725b7afe17",
+    "user": "0x048177A5ce6b11c44b9245fb571831eFa6C61488",
+    "debtToCover": "11693103242",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x58246D40E7563Bb054f6C33cCBB0382FFD63d981"
+  },
+  {
+    "blockNumber": "41070551",
+    "transactionHash": "0x9801411c4ddbbf380d99faa0a14518a9adb03e3e5291c8ba42f0675db03a72f6",
+    "user": "0x5D25BCf7Ea8bc3eA6805321F78c5F38a1d752EfC",
+    "debtToCover": "12543082954",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41070551",
+    "transactionHash": "0x99129ab002873562305edb7949a4da1f734abcdf63491c35acebcf8da5173acc",
+    "user": "0x6fA76F9947fB4e79e726641e049197848f144323",
+    "debtToCover": "1642732337",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41070925",
+    "transactionHash": "0xc3e5afc673693a2e77d17a0a5319d5b8a1c47ae5f429f792d9d15c28d5dc7eff",
+    "user": "0x3b27ac5E240E895a861533733D2A96644427157B",
+    "debtToCover": "26027084684",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x9d49576e33Ce1E6EAb2198338A3760dCeCdd98A0"
+  },
+  {
+    "blockNumber": "41070935",
+    "transactionHash": "0x043e1e10168e2a74c1de16ebf67cf6bdecca4124b424410a9675ca8b63f14cad",
+    "user": "0x9773da74cEEA5eD2c036b1997B931b48820087Da",
+    "debtToCover": "100097212",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+  },
+  {
+    "blockNumber": "41070935",
+    "transactionHash": "0x901c51f7818c9717e10ee073788e82fee9b0a1f572a3e039241dc421ac3e954c",
+    "user": "0x0ddF9c3EF925a2a5FE61201B7F0ed73c6CB5Fd07",
+    "debtToCover": "509008513",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+  },
+  {
+    "blockNumber": "41074041",
+    "transactionHash": "0xa565f0e8e1b633b7bf3eed3dfa5d1b77a206b1e75138c8ac143f252760966f3c",
+    "user": "0x1f2e8CE2885818e681DC13C6d3665dA63F47AcDd",
+    "debtToCover": "1429269",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+  },
+  {
+    "blockNumber": "41079538",
+    "transactionHash": "0x54a33326259476c205b5b2a5614d68d81e0b806b67f355ca4f0cf94809d80db4",
+    "user": "0x74c0E96cC0f3d0555c6102BD72479B4E5B298Aa1",
+    "debtToCover": "3770486372",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41079540",
+    "transactionHash": "0x5ba9e6606d863d8516c062d008b672dec295915c187038a94db210e4908ce0bb",
+    "user": "0x4448f4cC9eD7f334314dD2638BdD2266376b5a38",
+    "debtToCover": "6072597",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x78f7aBD2bf8dEF334894886f60744465B793Ca47"
+  },
+  {
+    "blockNumber": "41079557",
+    "transactionHash": "0x893e7ee5f13047cf7900635f46cb77e091f85679149e12adb21b1a57973976a8",
+    "user": "0xF08D1eCb7F393C53891991f46188d9875619aa40",
+    "debtToCover": "17693695915",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41079557",
+    "transactionHash": "0x045aafbbb1fd394de23b7331d805ed6d6920085013c5f9e961e3680574029ef8",
+    "user": "0x25D1Ba459D3195E070D460ab25B9781B64264742",
+    "debtToCover": "3704099027",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41079558",
+    "transactionHash": "0x0b6b8d4d65a069ae7391f2b2cb66afc0187446cff1d6201eafbcbfc96f03b5b9",
+    "user": "0x52B414A70b6D21d1A11d981Da07D25f449411e38",
+    "debtToCover": "3755379701",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x74F5568F74399fD556F84f9C0719BF3BCb084A2C"
+  },
+  {
+    "blockNumber": "41079573",
+    "transactionHash": "0xedaadc7e7786b7adb4609182816e5348262591ad329ffa8d13b0309ea105607f",
+    "user": "0xA64f2228cceC96076c82abb903021C33859082F8",
+    "debtToCover": "150089955",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+  },
+  {
+    "blockNumber": "41079575",
+    "transactionHash": "0x7d0302722741ae60697199d61c879b6c7e51d4fff5f58de495b9ee0c1bc27e9b",
+    "user": "0xbdE5fe88d95f54C72b54e643f6BdBe6a653E9740",
+    "debtToCover": "22017111",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41080856",
+    "transactionHash": "0xb111b774d2cea572006936d8494f204115b1d801e6e55e15ad8f293f8937671f",
+    "user": "0xCb090e1b99a5d1e57F874e7b10BcA5BE64b79b2c",
+    "debtToCover": "360264697",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+  },
+  {
+    "blockNumber": "41084154",
+    "transactionHash": "0xa1a348cc501f740ff9504518880dcfa303233ddb27cd434b8a25064f76d7ef3c",
+    "user": "0x5Abf48966600CCC2570C670162C415F968394D62",
+    "debtToCover": "15924",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41084170",
+    "transactionHash": "0x2c430cacd8e522950b61f391fd6707e425f3e0945ea10e50f8e1a9e3520f404b",
+    "user": "0x7f6F7A9D5d2DeAd0AA596Fc4e9DEF2B043b10F4a",
+    "debtToCover": "264",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41084185",
+    "transactionHash": "0x1f44c413774b362a2e74f20aef6f2dceab5ed2db107d03500d032a5767fc5c99",
+    "user": "0x65985942514193a37d59a056a30A4570f6EAdA13",
+    "debtToCover": "113555",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41084200",
+    "transactionHash": "0xd7a36e17fc5e361c444ac8adadeb6d872411563b9d1c611d3e752b77248e63fb",
+    "user": "0x2215F02ae20D438AAfa1b923b5E2979A67e4e36c",
+    "debtToCover": "501014",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41087128",
+    "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+    "user": "0x2D835675df92d93F0A1Cf309e5168E60ac3865CB",
+    "debtToCover": "58812",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41087128",
+    "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+    "user": "0x7Cd23EAf17D9723E16F8Dea4Da2E83000Ed7d122",
+    "debtToCover": "40239",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41087128",
+    "transactionHash": "0xd2450e417164999dc15a74150a9ab5cc340e7c7a4584991a4dff9995feaf95f4",
+    "user": "0x2f19CFf544Bf360b3D097A7729Fafc4f6fcc3adf",
+    "debtToCover": "9918737995217",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41087237",
+    "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+    "user": "0xB4Af5D91a6798F33e16e9Ea98eb1bb894d677318",
+    "debtToCover": "9392284458098",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41087237",
+    "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+    "user": "0x06FB4b4718Ae56Ee8a73af5Dac0F97F6859899A3",
+    "debtToCover": "9205587938622",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41087237",
+    "transactionHash": "0x124512e79e902fbe00184c02fcd62a2053be8882173de6ceb93072f644e05a06",
+    "user": "0x44aA2ca24ed50cDC92FE00a5a39629462d72C44E",
+    "debtToCover": "8356786441690",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088010",
+    "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+    "user": "0x1382Be73Bf716084276deFe361bf63736BF63ba4",
+    "debtToCover": "9067978330598",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088010",
+    "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+    "user": "0x699b91d38D7FC0E13fdc4A1B6CB5a8498Cd1656A",
+    "debtToCover": "9053706394516",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088010",
+    "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+    "user": "0x6720a94F9FfFD76c57E18aF1703A9BB07cdff2D1",
+    "debtToCover": "26768",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088010",
+    "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+    "user": "0xBe29023DB90099dD827C12D53167741fC24bdB7E",
+    "debtToCover": "26737",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088010",
+    "transactionHash": "0x0b785abffa4926c417a2a9aebabc2dc8b51ec1611c8c1ee82b09ed53e54a7dd5",
+    "user": "0x2588Af829c7837eFB393D909548B8BE86442293F",
+    "debtToCover": "8817631070976",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088048",
+    "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+    "user": "0x83d390f49d855cC03CaF48C4C12FaCDa1389BaAC",
+    "debtToCover": "8425127194048",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088048",
+    "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+    "user": "0x732feb92b5Ad31a4e4c939491449cD28E6B2cD53",
+    "debtToCover": "7503923679500",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088048",
+    "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+    "user": "0x2CD7fa599F046A6A7bb37bc0fb0969135F888204",
+    "debtToCover": "7369204213816",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088048",
+    "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+    "user": "0xD3a5A3B167fF2eab162E1E8a69B5CDbb9C68BA3E",
+    "debtToCover": "14325406341975159",
+    "collateralAsset": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088048",
+    "transactionHash": "0x8fae48fb7152be28d57131dfacee20265e80c8cda660f33c28a8a3f67709059f",
+    "user": "0xaEdF90B1C727BEA2F7567364cAE60c907AC3699c",
+    "debtToCover": "6629685480001",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+    "user": "0xc476bc378F18D3e8Bf1f44b7C5eEadB725Bf02E3",
+    "debtToCover": "20899",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+    "user": "0x0297A8e76861792679de492E6453280468e67f8A",
+    "debtToCover": "6235321048926",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+    "user": "0x14Ab8C5644a133727806049cD8bcD611E9b23992",
+    "debtToCover": "6568339813295",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+    "user": "0x3bb638c1FDF2EaCc053bcA17149aD64C11Ca09cD",
+    "debtToCover": "19432829271892056",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x0ac25cde38984b56bbc722cc6acb12128670f03644ebfb73e56aeafbe097240a",
+    "user": "0xa37AF563EF7Ab0D064c0966C061d88db3324B0D6",
+    "debtToCover": "16271",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+    "user": "0xC85af6aa4c9D9Ed8dAEE1a234b49e98d401f7cA8",
+    "debtToCover": "6245753746611",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+    "user": "0x8587849d8D090a20218389D0D3ef2A24e4255B9B",
+    "debtToCover": "6192326381030",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0x26a9561d44fb82a956cd297247bacfaa979de2160063e74e8b9addf9f149cbe9",
+    "user": "0x72402539827aFC8e7b3d082570fB1eE2b6DA3A3c",
+    "debtToCover": "6176115249515",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xe272529aa21fe6b0c8576cebde09984b548ba31831703496e0cd4def5ebd71c3",
+    "user": "0x1981bDa8e86728ef726bA1eB16842a15256F9Dcb",
+    "debtToCover": "4785731307524",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xe272529aa21fe6b0c8576cebde09984b548ba31831703496e0cd4def5ebd71c3",
+    "user": "0x84Ba92B20Ed74713Dce9550b2f549D3ae9F5283b",
+    "debtToCover": "4783428141213",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+    "user": "0xC7393F0Dd7860e8129d43d40E1fFC92E682542A5",
+    "debtToCover": "17342",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+    "user": "0x60629C0359A5C49b79d5eBd48b8248aA2fc372EB",
+    "debtToCover": "17151",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+    "user": "0xC5D8e972E252A759E41788d917A51413c930e460",
+    "debtToCover": "17135",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+    "user": "0xeE4AAC739517ad35b0Be7bcb59A08e7eafE1b65B",
+    "debtToCover": "19",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088112",
+    "transactionHash": "0xfe191ff25a9aae06e2b0d128f3398d365658b400ad2f313df48893f95f6dc46b",
+    "user": "0xe4DB2Eb825150Ec84802c9615A53205FD56cAdfE",
+    "debtToCover": "5654639077016",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088135",
+    "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+    "user": "0xCA832bFFa4642A43eF39aF83Dad5ebc19B3fAb9B",
+    "debtToCover": "6109361433472",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088135",
+    "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+    "user": "0x2F5Ff1d768A8AE55F1be407a14caa58D61afcbD9",
+    "debtToCover": "6090764379847",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088135",
+    "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+    "user": "0x83EccB8519b172Efb7ce0c51B07fFA1B888b60C2",
+    "debtToCover": "5951870166221",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088135",
+    "transactionHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
+    "user": "0xEda068063894311A7AC634B3d68e42AA06f7d3ef",
+    "debtToCover": "5859260694177",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088136",
+    "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+    "user": "0xF4341f7169552318A4Ccc1bef9431B90a1a1c671",
+    "debtToCover": "4915072098666",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088136",
+    "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+    "user": "0xfF9E65B8dd40b07f2da0B7cf22E14A326964085f",
+    "debtToCover": "3230488877465",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088136",
+    "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+    "user": "0x7D38347E49ec44ff95605dd66797CA5C9094965E",
+    "debtToCover": "15859",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088136",
+    "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+    "user": "0x15e5Ab993D24f8FD70F440b0f76F1323b50a55a5",
+    "debtToCover": "5340365588264",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088136",
+    "transactionHash": "0xf2e6c7a008925d141f6e9b4a1b7baccd50e1c1008c47dc1f3c12620b11cc0ba7",
+    "user": "0xaf2d0b9579566fC198c2999b40aEaF88f92E96d9",
+    "debtToCover": "15657",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088156",
+    "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+    "user": "0xA390701E6B7982e92e4810527BcA7Dd5d236147F",
+    "debtToCover": "5944971793452",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088156",
+    "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+    "user": "0xD81cccb79bB00795bfF8cab91b42ea325ce36170",
+    "debtToCover": "4882650242381",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088156",
+    "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+    "user": "0x3dFEDdb144b7351b7e9F9d796101534e075df7e5",
+    "debtToCover": "14386",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088156",
+    "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+    "user": "0xc208ee64B4C5cA1e19fC5799b36ca57CF7718CaA",
+    "debtToCover": "4844323919489",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41088156",
+    "transactionHash": "0xd5a542a1d626650ca744b3d505d4010441e88e9fd0426650fbd84287a14522f7",
+    "user": "0x9141a6A9c589B3a5740482136DEcAcecac1A16b6",
+    "debtToCover": "14207",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091710",
+    "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+    "user": "0x7195a8901e24Fbc2EDacc699c31D7c69660c6e56",
+    "debtToCover": "14186",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091710",
+    "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+    "user": "0x44A9a6C222BC183B78ac96272CaDd51b39f3030D",
+    "debtToCover": "13767",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091710",
+    "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+    "user": "0x7a35f86D63A40251Bd2A084e468838555F68e3dd",
+    "debtToCover": "13732",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091710",
+    "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+    "user": "0xc3c550Aaf33D699063CF441F10fde5cc7dAD8931",
+    "debtToCover": "13731",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091710",
+    "transactionHash": "0x9e657b8ce6a31a84824c886342e0a0dcfdbfc588a2bbc47908b7388691dda8e2",
+    "user": "0xB3Ccea114CF2555F0DA243dD6D45133503eE630B",
+    "debtToCover": "13731",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091711",
+    "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+    "user": "0x7CE6bfa0F76e3D2Ecb92A9c6Be7bd7D21e2fE1cc",
+    "debtToCover": "13731",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091711",
+    "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+    "user": "0x2126d4666160C7f22A431f0e38740Eaf698d6FAE",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091711",
+    "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+    "user": "0xE42566FE5Ec68Dfb38e50645bb9F637bb79eE7FC",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091711",
+    "transactionHash": "0xff385e4053bbc62a6962c7a872c3128b5e926d9127d657d9ddae3d210ecdb47e",
+    "user": "0x13209488c6C06c7fb86F88D2b3a3F6BC99C2ABB9",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+    "user": "0x3A565f8B70C97e1b58aD0f30C73527e63fd4e464",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+    "user": "0x34Cb79d2Df8efcd15260f70156b7c75c63e13d12",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+    "user": "0x536c494753F333767635aAf96635DF4fB7Cbf1e1",
+    "debtToCover": "13730",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+    "user": "0x4814bbEc4fA3ca515838aE501E248b4EDe9a80D0",
+    "debtToCover": "13729",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
+    "user": "0xAD4e1642c071556B975fB0221621bF9831299D4d",
+    "debtToCover": "13729",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+    "user": "0xf13aD430956A007b55E555A853fCEeAF36A74faC",
+    "debtToCover": "13729",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+    "user": "0x3DD90714CDe049da1A1a3292a9562b4B289Af64B",
+    "debtToCover": "12395",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+    "user": "0xE95cFd777A55787f20F1D4b85eE61d16B961C2AC",
+    "debtToCover": "4090680695057",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091734",
+    "transactionHash": "0xed725f5a0820f862f54bb6057c3a1d89cf54ca2df7164c04881b4c78be8c0a2f",
+    "user": "0x76663c84479Ec52669C1A5CE3fB13c180dCD8962",
+    "debtToCover": "10322",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+    "user": "0x07C196dD079fEEe033f01d2ba43BAd8B1Cf19eD0",
+    "debtToCover": "12034",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+    "user": "0xB59722fcd84a9D1a127084A50642C4a9d96e2D7f",
+    "debtToCover": "11945",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+    "user": "0x88A51a8Ceb0F98a06f74b4f0e04bf4C49Eb9C0cd",
+    "debtToCover": "11642",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x8d74e5229d96c9c10d60f82577b6a417bcc5acd0db74aa7cde2994186e298dcd",
+    "user": "0xf2d1F7076ADCf2CA7021204E60eA4d44c92664b1",
+    "debtToCover": "3806778551436",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+    "user": "0x7dbF746b2C10392Ad0d3D627a35912a6581cC1C3",
+    "debtToCover": "3776014818026",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+    "user": "0xd43470e376A494a55AdFF57F25c1E702b13EceE9",
+    "debtToCover": "11172",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+    "user": "0x2da9D6069c91456741F2F763e4112DC6cCe28fE7",
+    "debtToCover": "3738366098679",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+    "user": "0xD24807DB9723Ae21c980af386dD2Cd66960B7b19",
+    "debtToCover": "3672942669299",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0xfe9652dff31a96ff31adbb513da7ddf3980a94a21cd464650e45f2019fd41802",
+    "user": "0x71de02e6860169467B59c8aa0280d2D2c95D7EAE",
+    "debtToCover": "3598979358499",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+    "user": "0xA47ff5574f43eAC2188E9BAD75E62046D10aFdF6",
+    "debtToCover": "2870164868138",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+    "user": "0x0e97862e0E9D7bFE430C90eFcEf0D6f0530Ef6C6",
+    "debtToCover": "10443105259657143",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+    "user": "0x06eA3b4fc6E7f8E8CEb712b641c49479963CCa46",
+    "debtToCover": "10270",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+    "user": "0x9F55FFc852f3504Ffc49E1495D69C1f47a560bD2",
+    "debtToCover": "12",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091759",
+    "transactionHash": "0x218a8124f7654b3cef02d04d5617ca97b8f55f0784ca9313d59954636529ea30",
+    "user": "0xd63650cF6480F1Ee4d737D9F0A50D9239FDa650a",
+    "debtToCover": "12",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091850",
+    "transactionHash": "0xf1c48b55743b64d9fc27cf47e645ae574616854f5c6db0e116b9e7f465f9f8e7",
+    "user": "0x43be421627C25daa8BD03B84B8390fdDaB4A7B7c",
+    "debtToCover": "2033625178195",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41091871",
+    "transactionHash": "0xe49383aa4f188aa6678b103d9cadd679b708fc43d70dd6905ddaa1c37d9e1d95",
+    "user": "0x025789EbF14C9F00569FB8c4E8A4D213FCE419a9",
+    "debtToCover": "1811874631103",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41093466",
+    "transactionHash": "0x54a24fc795425f2684b972526d3a81355f0680f8d2a4906f42c7a7cf7f3fb1c5",
+    "user": "0xAc4a60C5C5f5D67ea905355791db2Bbc04C7370C",
+    "debtToCover": "21766",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41093466",
+    "transactionHash": "0x54a24fc795425f2684b972526d3a81355f0680f8d2a4906f42c7a7cf7f3fb1c5",
+    "user": "0x902543d78AAB9fd96d6D92C210CE4bb7459bB67e",
+    "debtToCover": "18098",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41095458",
+    "transactionHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
+    "user": "0xC15C6b3148d243a71ebd8d97d5c7E8571C67F996",
+    "debtToCover": "33",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41095458",
+    "transactionHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
+    "user": "0xa6e6804a5fCbfC272Add75B2CAa6E9B0Ae6eF812",
+    "debtToCover": "15",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41097766",
+    "transactionHash": "0x861073a9abdc8a67635aa0f42892104a46995a3b3ac874e19af5f83a4aadd4d3",
+    "user": "0xB0AB5032Fc3CD8ded5623801E5653872382e56ce",
+    "debtToCover": "9434474977550",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41097766",
+    "transactionHash": "0x861073a9abdc8a67635aa0f42892104a46995a3b3ac874e19af5f83a4aadd4d3",
+    "user": "0xc05B27297849C9044d3775629122618Bee6FDe76",
+    "debtToCover": "11802",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41097958",
+    "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+    "user": "0x08BF525E775A2e76Bc93858c430D640B23Fe28AC",
+    "debtToCover": "45826",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41097958",
+    "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+    "user": "0x2486E7826e961539a267Ae5Dc651b5aDF05b0C4a",
+    "debtToCover": "11076248852545",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41097958",
+    "transactionHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
+    "user": "0xBc72516172913d9F33597ACF67494C1C410ee8c3",
+    "debtToCover": "5047067866730",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41098325",
+    "transactionHash": "0x2378b59e7624f80790386b162edc110ccc9b16551a810388b42a981e846fa305",
+    "user": "0xB09134a1D2EaC5F27264F3858cf2153CaF1Ab0f2",
+    "debtToCover": "1327610",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41100171",
+    "transactionHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
+    "user": "0x026552F9c268Ca282Ed02A24ec23931310D6d749",
+    "debtToCover": "11566450633284",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41100171",
+    "transactionHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
+    "user": "0x196fa509adf1bde7b6D07eB201189323e243C2A8",
+    "debtToCover": "9137811207518",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41103653",
+    "transactionHash": "0xd3201f1f9f19831cae34681ff435df03fc04e483537b7f5911e73aed90d67338",
+    "user": "0x80a99aff93cFD7060d3D2655561C202987B9AC45",
+    "debtToCover": "11179",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41104099",
+    "transactionHash": "0x96223269c444d97ae0fd7d8ad3a480490dc6b4a23015746194b38bda8ae1fa2a",
+    "user": "0xecf8FA864cDc912052a9C5410619cCd0e12451CA",
+    "debtToCover": "1133320634883314028",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41104129",
+    "transactionHash": "0x6e81d4228ee15962cf37527a97a1fe8589d6945015a155e9904d8fdfc4b00d18",
+    "user": "0x30C1fd89217Ddb02Ee8547c419eDcB6042404Bd1",
+    "debtToCover": "15352",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41104511",
+    "transactionHash": "0x8b6b606dfc4f9b65beb65e1d3e9950460f9eaef38a6bc497644010b68f00fb2e",
+    "user": "0x6760Ffa7343aC465af13d9A84eFf8F45C07EEc3F",
+    "debtToCover": "8254578187",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41104928",
+    "transactionHash": "0x60d99e9d00ced5ce7c2222881cd4b3a90e534d71f5019d1b8ea5eabfd6677a4d",
+    "user": "0xccdA2bBB2151D5C20c532d3e82D978de1734E5cb",
+    "debtToCover": "300479",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41104928",
+    "transactionHash": "0x60d99e9d00ced5ce7c2222881cd4b3a90e534d71f5019d1b8ea5eabfd6677a4d",
+    "user": "0xef243Aa4f940E72Eb1d7eBAB724672d88B4f18ed",
+    "debtToCover": "74907235962626768",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41112031",
+    "transactionHash": "0x05fe9db170f8493ddf57c3faa1435e7a0116959b2e0a0bfe2bede146ee7adf82",
+    "user": "0xe24b80150E5c379248d95dBEF7Bf1b6f8B9af984",
+    "debtToCover": "3059487630382",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41112255",
+    "transactionHash": "0xcc52c80d5cfda286612a6bdd3f577a208e19591f99581c040bc7b5bcd3a037a7",
+    "user": "0x4862FeC300432962368fA8cB76c3e57C3df0Dfb4",
+    "debtToCover": "1631291154",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41112286",
+    "transactionHash": "0x2ac279563ca4e9352927d7c322a1359347f7ed893403b322966bded9d1e2e083",
+    "user": "0x8051481aab57D5B7D89Bd126920400aBCaC08Fb9",
+    "debtToCover": "29993796908",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41113208",
+    "transactionHash": "0xa37912f4102dfd9372519bc7cccc23f89287cdeffaf0dc430f0abd16d99bcfc3",
+    "user": "0x2fc9e309fa0e5868DD650E0827326B9ba14aC6DF",
+    "debtToCover": "10342841127",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41113214",
+    "transactionHash": "0xc614ff901af6a6a920f9e6846acaf17431f176902aa8b30b05bc5172134f6099",
+    "user": "0x44eEc821eE71ae9Be875113CCA8a7b9bb7a82F09",
+    "debtToCover": "13994139460",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x587742157DFD128496d953a9CDc341D8276565da"
+  },
+  {
+    "blockNumber": "41113214",
+    "transactionHash": "0x9f9f85bf421fb2adcdf3f4eab1684bd1755e15de5a1e1c6e7dc5068fa4fe1e8a",
+    "user": "0x50A792e9ef2E13221F12608b2A8a751B0f03f63F",
+    "debtToCover": "11726037422",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0x17c14d25b912F7Ca94FE8BFAa2816408FD184F00"
+  },
+  {
+    "blockNumber": "41113228",
+    "transactionHash": "0xab16dcec46d0294aff90b029f4b85eab1cb249aaacd33c56ec7231b2e2128ee9",
+    "user": "0xC4Da129E6be5134420D48523922A66F9c8EF1c51",
+    "debtToCover": "2400252219",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41113239",
+    "transactionHash": "0x3c98ce1ca118d2eae3375fe9572c93defa6840d4c71c4a63c6022258bdd75a67",
+    "user": "0x428709D69a5583b2243bB1C61E063060F0afB025",
+    "debtToCover": "304513698",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x56631F0d6A5b6b80d1996C5dC2086E2a62759c16"
+  },
+  {
+    "blockNumber": "41113903",
+    "transactionHash": "0x00766faca4435053214f70951bb155ea3efe8dcb55615e4d2d0dd78e84f29ebd",
+    "user": "0x6ca964D265B43079e8923E3c0295303E6A30070C",
+    "debtToCover": "2062328",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+  },
+  {
+    "blockNumber": "41117741",
+    "transactionHash": "0x63432c563220c8589e338c6fac7f5431dfd58a678eb65749ad3e5d63a52c1916",
+    "user": "0x36F06fdD09B68911a49cAFb4BcB4fA58F3a3c387",
+    "debtToCover": "22421127443916000",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41118165",
+    "transactionHash": "0x38179aa5caaaf878c2af66136548fb2d552a8b23d3813634fca5fb0d3dacaa58",
+    "user": "0xBb4c44eCBDFD31a00EFECA03f1FD68526062c723",
+    "debtToCover": "3723135",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41124715",
+    "transactionHash": "0x6ab47e8ef703bc23bd268a5dd6d852d2681bef380aed28c0eb5b2a5d1131c727",
+    "user": "0x3776C4533c8fe41cb29D1B091A8128d7dBfcb063",
+    "debtToCover": "5002259",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41124760",
+    "transactionHash": "0x904e866d47a46a5403f040dc3ade053b79fe2dce84f249dd8f417494cdec42a2",
+    "user": "0x8a4C37A20FAD9f5c779dcF750975D5eB604D3749",
+    "debtToCover": "55065100",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41128813",
+    "transactionHash": "0xa353baff472d3affd6b7614264f99fc324e05be86bdb2487adb92ba2e2950c7b",
+    "user": "0x6dFd1241F15ce2E25C5c654997b5E7b156fE52eC",
+    "debtToCover": "109282",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41132279",
+    "transactionHash": "0x5321ed623f35bb88a3d72b8718e35c35a461d0ebb0a3d9f2d38e3c77d67718d1",
+    "user": "0xEa55bEd7edD8D1E8AD9273f3B06A2a845cb99463",
+    "debtToCover": "8893380",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41140662",
+    "transactionHash": "0x037424c71c67b3e362d71a8a90ec7821b498663fc513c99c226362dc8b971e44",
+    "user": "0x8a4C37A20FAD9f5c779dcF750975D5eB604D3749",
+    "debtToCover": "321",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41153037",
+    "transactionHash": "0x0986bec5bc55ec9382e2b38cb4cbe6e53dead09af0b294ac0e9ae9359023ea8d",
+    "user": "0x6A8010ad695547E01De3Aa8bBa4BfF2Fe2f72f6C",
+    "debtToCover": "28082",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41154562",
+    "transactionHash": "0x3a42d8462b1aca3e08422d9b5258f99f17380881ed83dfa636aabfba9e7376e3",
+    "user": "0x1de6920d2E6a069DCf12EC3C7e30e9d4081a7843",
+    "debtToCover": "30517",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41154775",
+    "transactionHash": "0xe6f2a7aafc7ae380cfaa2044e060a91b0d8ea24c59a3d8d1a1a19acc451d5b5b",
+    "user": "0xC4aa03B7dF61EEd98A73461E26F3B8143FD4128F",
+    "debtToCover": "36079",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41155867",
+    "transactionHash": "0xa494c2a7ad7e91d096424cfeb4ba2587eb443dcf608158456da9c6519df7487a",
+    "user": "0x83e3a99Fd0a8d9a18f96A7287B4B47652EB50c23",
+    "debtToCover": "18103",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41163742",
+    "transactionHash": "0xbf265d085a23bb3bb8c7e18992ea5b211dcca57ea4508f8bf7e076b2bd9f35f9",
+    "user": "0xF0Fa199eF30fdab32B1468e3104392664f42B63d",
+    "debtToCover": "9299113098883",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41186136",
+    "transactionHash": "0x8f980420855c51a75769bea26dbc4bffe646727e6f5f002f2bae4db60dc0cfeb",
+    "user": "0x9a08624B5D57c00FDa407de2dea43450B9A0a243",
+    "debtToCover": "1164975214",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x4d0E1d61d7A44690C8781E1324a73207C1f2e344"
+  },
+  {
+    "blockNumber": "41186356",
+    "transactionHash": "0x97b9cf02d1fe3c4bd65c89d09ef451259c6b28d99d39c0ff6a6663c05c660e56",
+    "user": "0x10Ef3C1D67493D6b4104F48777b991B058CBFd56",
+    "debtToCover": "10634",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41195233",
+    "transactionHash": "0xe99ad85cfe6a21951e0c822284af8996f4d70244a66e568025bb17924dc73f88",
+    "user": "0x2986Fa3Cb0E672224AAF416668Cb7308206Bf845",
+    "debtToCover": "10790",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41195331",
+    "transactionHash": "0xb43b2f8255600b8facffe30bd7244a53459f26d4378c9a7cf8050719359906d4",
+    "user": "0x304b10eb2FbBd31fAC6826839FF4a5096f6B621f",
+    "debtToCover": "10511",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41197522",
+    "transactionHash": "0x5712a1e15f943f406f65dd12a06fbfa9b7c4fbb00390627d439eee2bea995453",
+    "user": "0x7D12D0f0fDF46b0f28cF12645ab520750AAF9d17",
+    "debtToCover": "26144",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41199929",
+    "transactionHash": "0x349235511e89f2814f9c6000a3b98d1acffa90b54a8b9167d3d3f009acfc06c2",
+    "user": "0x650B1d8DAD57Ef50a879B60Fb19Cc8C8EE003E9A",
+    "debtToCover": "130068",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+  },
+  {
+    "blockNumber": "41200694",
+    "transactionHash": "0xae0d88f37a8972455646daffdc0f8c106d54b0dabe55b029b9ed6020b9ef3d9f",
+    "user": "0xa27E62720Aeab8DeC5f0745E4C7e17b04fedeD62",
+    "debtToCover": "11",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41203454",
+    "transactionHash": "0x7a5d02e44fb02f4f38ea2330c9a2c40b4c9b02327e47213924f994b1201ce386",
+    "user": "0xB15149Df80D280fF6282fDc6E69fc98F775BED12",
+    "debtToCover": "111701397938356",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41203664",
+    "transactionHash": "0x43c24f35dc700e0520a262afa94576eb85b3225e24cd2e84b656d2c5be9de564",
+    "user": "0xB350bB048B7dEf8328Ece1a454F59070e0b05336",
+    "debtToCover": "10293",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41214527",
+    "transactionHash": "0x6184c1ff2b8aafe5f07c24ff6385667bcd760685690bafa7e94306daa89d6f2d",
+    "user": "0x74Cac6a763135B4Ca6C7492092D07702E159800d",
+    "debtToCover": "20326",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x65baF22017b365FCeAa6638D09691b8dE36c846C"
+  },
+  {
+    "blockNumber": "41220636",
+    "transactionHash": "0x4ad2371f7a8738f1ca4d607cc222ca19b1874c3f9738c94757c4fd365173d0ba",
+    "user": "0xc8c92d3526748be9F4B42D60e2A94e0CbEd64394",
+    "debtToCover": "3348513",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41223534",
+    "transactionHash": "0x6f1844e69800d4d89e974caf81fe57cfb381d61dbabd4b8bcf89883797029e8c",
+    "user": "0x4C95dbe1c496F830d45194287846a7518289Fd55",
+    "debtToCover": "121510",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41223534",
+    "transactionHash": "0x6f1844e69800d4d89e974caf81fe57cfb381d61dbabd4b8bcf89883797029e8c",
+    "user": "0xFd59358aBCC21abaE91816F1B7e675B664e0DaD6",
+    "debtToCover": "60159",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41250396",
+    "transactionHash": "0x4106165f50fd455447b2e324a3e846f72313082bc28094d35a912a4813657aed",
+    "user": "0x526dC13A2A6F25D8dDe2Ae8bccF3e16edf86e61a",
+    "debtToCover": "22451081287875",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41270404",
+    "transactionHash": "0x023617052e871efb4d562c39c2058d994fd0d2d7d98946bd169390ab9f143d8b",
+    "user": "0x234f6d416601aCFd0ad519Ed1E899b487C24470b",
+    "debtToCover": "3489",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+  },
+  {
+    "blockNumber": "41270497",
+    "transactionHash": "0x65029ca534a62819af087c2e6d99c261748426cfae041885fc4d423d0adfe506",
+    "user": "0xB4a420f03000B171DA0d4EDeD471bbBD0EA3da5e",
+    "debtToCover": "9658",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41270513",
+    "transactionHash": "0xf1272432e457b8be9ffc2e2039676d6ec470849f1afc5f402e8b4bfa3adadea4",
+    "user": "0x74D1BCf5eFC538e0e17a84866265Ce9C9B67E26c",
+    "debtToCover": "213929",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41270557",
+    "transactionHash": "0x8122a03800ad6044c546ee3a6932d169d84f8fb31c90ccd2dd1f106bc2848116",
+    "user": "0x987c7e7E9e5820e0074d9CcC5C1E27b34535978D",
+    "debtToCover": "12503433",
+    "collateralAsset": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+    "liquidator": "0xf4Cd829526070C2C0af9E6Dce2C9255130f7ec68"
+  },
+  {
+    "blockNumber": "41270558",
+    "transactionHash": "0x753b8a7679675b255e8e2776227f0ce90cca54dc4968b002c21884e94bfef762",
+    "user": "0xDaD04138C07B6b5c7Ae605331e059d5f2cA99487",
+    "debtToCover": "228467355034594570",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41270639",
+    "transactionHash": "0x142d0a2487eb93bba40bd0feb41071244b7310c3ff5b93cc7466aa1190fef32a",
+    "user": "0x7610942174948B3f72c45b1E60Bbd4a6f3225EA5",
+    "debtToCover": "8229344",
+    "collateralAsset": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "liquidator": "0xAB1c40889175EA24b83175d9e09ee335DdF5A1aB"
+  },
+  {
+    "blockNumber": "41271164",
+    "transactionHash": "0x40b4c870f1d2be0273bc8e1c6ac9a352effff6d766abc8b6ed91c2c2ba53420d",
+    "user": "0x412Dd50d904e6F9A3343114f2edA6Da2591f04df",
+    "debtToCover": "109",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+  },
+  {
+    "blockNumber": "41271167",
+    "transactionHash": "0xb93bed29784622018d886562a3cb5494f14a321b790c0b2b5bce2796abf5cfdf",
+    "user": "0xE8063e0fbE1F1776C1cA8228D5B15f03F992d5a9",
+    "debtToCover": "2642",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+  },
+  {
+    "blockNumber": "41271170",
+    "transactionHash": "0xb7392b6f1c735e09c3cd814cfdb823a555679cf4692f486845f9c0ae6201a82d",
+    "user": "0xEBE0Cd51BF76E52C49992A2f16EE5CEAD75059A1",
+    "debtToCover": "1679",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+  },
+  {
+    "blockNumber": "41271580",
+    "transactionHash": "0xd275f62ebfb51a5ded28888aacd7acee00d7d6e422f6ee5f1965a9b8f7b369f8",
+    "user": "0x3246EF49846DFD3dda6D592cDCb80d956b3CF864",
+    "debtToCover": "713865900",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0xC90155FEDA1b5032b86DAfdc53D754625dE7aA0e"
+  },
+  {
+    "blockNumber": "41272017",
+    "transactionHash": "0x01a1b6156fec2b7e1c0e1f0305cf928d9c9a10fada97f933838a1ec44c72d67b",
+    "user": "0x2AEe4A054ce01a4d1F698064B8d90ec34f9FaC48",
+    "debtToCover": "77",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0xD6E4DD0bb1401E94453971b126e963be2D552847"
+  },
+  {
+    "blockNumber": "41274378",
+    "transactionHash": "0x41faf0e74da3e4c1540f62d036b9f6b5c6a7fd82460c6881dce56825f883e66c",
+    "user": "0xDE2a5dA19B18DcFD454193e014a32d1841104ade",
+    "debtToCover": "24790017371584",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41277447",
+    "transactionHash": "0x99a49e8c784a10818e943238be905f73611e6c1f65b9055df9cd38436a7fecf3",
+    "user": "0x16E1D6A968d268373400a84a4bBc999840b52580",
+    "debtToCover": "26729024468300",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x31B3B3e4446A94455683f2232F380e7Cd3Fa3Ac6"
+  },
+  {
+    "blockNumber": "41283810",
+    "transactionHash": "0xb859e033842ac8c42aa5a70c3b26ddb13cf1d194b4bdc81c8ba90dbed1456f82",
+    "user": "0xd9A5421a6F923490AbA43f924290D28Bc5c6F72a",
+    "debtToCover": "20875",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41286331",
+    "transactionHash": "0x1c08856d12b7b39878ec780cf3f4754da51b6b57db82910e238f8bf7b9fce3ca",
+    "user": "0x11a92Be1f16AB639c8187C4Bc5f99BcC91FfE41e",
+    "debtToCover": "11276448",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41287739",
+    "transactionHash": "0x79ae3c392a18ce0ae5ca4df9ecf10d0b0b4c70eb44bfe48a0d870843a9c96567",
+    "user": "0xf60373e00792781475eC34b55760CfDc863E5278",
+    "debtToCover": "1133425614",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x55Bf1d3F8c1943608B7842CE0a3f82D0141D49AA"
+  },
+  {
+    "blockNumber": "41287778",
+    "transactionHash": "0x207ca3e22f85c6c16b1365cc952c06000fbaa19159f51490ce2fa5d0418b7355",
+    "user": "0xF300E080b2b98E110C096a3C9FDB9825F2c4BF25",
+    "debtToCover": "10024",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+  },
+  {
+    "blockNumber": "41287779",
+    "transactionHash": "0x09ddebcb89464352bee177544d6d273406184a2ca4b10644afe9d50cdfb02fca",
+    "user": "0x9546F2922AA1767ee1c2228B163C4073523A689c",
+    "debtToCover": "138",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41288314",
+    "transactionHash": "0x74235f7d4b805baed954fc53b4a759b1e2ced948fc5664d135b58e8cbf25c6fd",
+    "user": "0xC14844e90F5d3fa71d8779E647182BD5076F616e",
+    "debtToCover": "6665937886",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xc89c328609aB58E256Cd2b5aB4F4aF2EFb9fcA33"
+  },
+  {
+    "blockNumber": "41288462",
+    "transactionHash": "0xdc2dc6c417ad81f11821f854753d57a4a2428a214366b14d590951cf5517c860",
+    "user": "0x24BCbDb7298eFEd7988ADE19aa3c5A50dbd5F1c4",
+    "debtToCover": "17447107",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xaDDD8ECec572E3BA9975578e1927221eC25Dab50"
+  },
+  {
+    "blockNumber": "41288477",
+    "transactionHash": "0xa71f1fcdc1a039f765d6f00d2a80b3266b7aaa1c3d964e487d6bdc94dbd57881",
+    "user": "0x7Fe9c9f041EEA865b31D41616746Cdc4809B579D",
+    "debtToCover": "7894572338",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41289797",
+    "transactionHash": "0x2876ebb462c7e9bea7b873b95805cd53990e9b67257bc9821480b9cfca155597",
+    "user": "0x2484c0E6D8e598193e9064B350443dCC0D9A1c44",
+    "debtToCover": "15258889077",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+  },
+  {
+    "blockNumber": "41289932",
+    "transactionHash": "0x0797205d1f185bec907f533fc2219c4ee683f8f04ed657813c1f897ac00df931",
+    "user": "0xf5166B3D0Baf1eC2110808d4D560536dE666e366",
+    "debtToCover": "1455511728",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+  },
+  {
+    "blockNumber": "41290023",
+    "transactionHash": "0x70c09cec986e9e0be32ca6398584cdc7ecee0aaebe31fbbe9da925d8a4d513c4",
+    "user": "0x3b6819FDF78af3A797795ffB72245a5454885Ee6",
+    "debtToCover": "1662652135",
+    "collateralAsset": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41290743",
+    "transactionHash": "0x66cdca8a8d969faec96f8c553641bab0ddaee06de30fe0d2f86afdb431993ac3",
+    "user": "0xA923e107544958A83EA377bDaD8f8eaa5e5D279c",
+    "debtToCover": "1325481020",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+  },
+  {
+    "blockNumber": "41290744",
+    "transactionHash": "0x0ac6cfd277c786ea5a17ffde827a8424ed22b54edfe0e98c90ce1bc600e09548",
+    "user": "0xB7d130473D5043fC3c2dB9B4AEE6e6d21adBcFB8",
+    "debtToCover": "3810631",
+    "collateralAsset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41290744",
+    "transactionHash": "0x88ec7ecf272fa1990bba420ec0d1b63ccb50c3e70a65f2be59fb40a6554648e3",
+    "user": "0xf13b7074386FD7618344B429794F7d878a979453",
+    "debtToCover": "16297524",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41290760",
+    "transactionHash": "0x742d730b74fc13912922ede1f21451b230c05f0f3653b8ef0949851fa5aedfd2",
+    "user": "0xB1aC5033E4E8Ab07ea2fcbde49Bbac5e38530F9d",
+    "debtToCover": "1884005",
+    "collateralAsset": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41291666",
+    "transactionHash": "0xea899825b7e39bb0a80bea1ca409f7a9a3d99b0eeb060d13515f3a2f15e39b15",
+    "user": "0x41A74Cc22C646FC57D989eFDaDBD20c7c9Ca1442",
+    "debtToCover": "6926604205",
+    "collateralAsset": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "liquidator": "0xD12810B19B596347a3AFAC206d3cA65d08594b3f"
+  },
+  {
+    "blockNumber": "41292874",
+    "transactionHash": "0x6d8871cfb86b18a497be1d1fd008246d5b9f9bdd479959ea369961063945b16f",
+    "user": "0xdc9ed7193b2516C84cB73f7F076426165c0ab459",
+    "debtToCover": "1006",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41296418",
+    "transactionHash": "0x5b174d11668e10259e5405f2a03f673751edab41a262ba34dcdbc51a5b073e62",
+    "user": "0xE8DDC60a06A94f91DBCD72e4366B68812AB00c24",
+    "debtToCover": "1849321850",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+  },
+  {
+    "blockNumber": "41296426",
+    "transactionHash": "0xb18e348162fb4c4299a65eda5a1f674d196e28b255dff171e7b0f09db86077bc",
+    "user": "0x46e31bD6A5F5fEFb908C10393265268058072539",
+    "debtToCover": "14651276",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+  },
+  {
+    "blockNumber": "41296426",
+    "transactionHash": "0x826fe7f02c6cb8b4f9bd1443fcb7eb0eda3ca21d355c9cca465fca9fe3cc76b7",
+    "user": "0x1D11f466d51CED7F27123C11566A233347Aa39B8",
+    "debtToCover": "8706341",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  },
+  {
+    "blockNumber": "41297679",
+    "transactionHash": "0xcd477bcd4aee0e024700c933e73d33194254dfaad786ccf29f86e267072f8a42",
+    "user": "0xCcd837De7eCB814690A1AeF8C1f556A026abbC73",
+    "debtToCover": "100551590146321",
+    "collateralAsset": "0x4200000000000000000000000000000000000006",
+    "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+  }
+]

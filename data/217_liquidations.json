@@ -1,0 +1,1738 @@
+[
+  {
+    "blockNumber": "41296169",
+    "user": {
+      "id": "0xe6e40863e14ada3113696f96fae42d6b16317695"
+    },
+    "debtToCover": "9448322287",
+    "liquidator": "0x07f8d8c9ab705840be6640e9771d18f0d1bda548"
+  },
+  {
+    "blockNumber": "41295151",
+    "user": {
+      "id": "0x125824488d2f08462a05fb6791b45088b0bf476d"
+    },
+    "debtToCover": "2771625454",
+    "liquidator": "0x3f3fd1d647891d1b9136647b120b779f5995c787"
+  },
+  {
+    "blockNumber": "41294598",
+    "user": {
+      "id": "0xf6b7b24af3d8f1c8f5325433656d87061e6c838d"
+    },
+    "debtToCover": "9762370160",
+    "liquidator": "0x48308b4f8b2d6ff2152b4ff93847096d244b32f6"
+  },
+  {
+    "blockNumber": "41292094",
+    "user": {
+      "id": "0x01f389fe9c14f043bf2e946d1eab7f158291d04f"
+    },
+    "debtToCover": "3017169205",
+    "liquidator": "0x90e8b39a44d1a2bd45130722e27d1eed88da53a3"
+  },
+  {
+    "blockNumber": "41289960",
+    "user": {
+      "id": "0x6af5d3bd7657328eed98749a899f5be631fb9beb"
+    },
+    "debtToCover": "5180209673",
+    "liquidator": "0xa5fba2bd1693a6ee1ca07df33e3a606407f63b5d"
+  },
+  {
+    "blockNumber": "41287114",
+    "user": {
+      "id": "0x0bda2a0193d72ae2e62658c3e8d8e5eb52c32869"
+    },
+    "debtToCover": "3102494120",
+    "liquidator": "0x959cd04106077b6110a5e203e44be8b95ba5b2f8"
+  },
+  {
+    "blockNumber": "41286927",
+    "user": {
+      "id": "0xa44b251c15ffc5742083c362d17632c65efce9ef"
+    },
+    "debtToCover": "6411162272",
+    "liquidator": "0xc43deba0071e1a5fdeeaf0dbe57ec0c5d39c2aa0"
+  },
+  {
+    "blockNumber": "41278905",
+    "user": {
+      "id": "0x3c19a9110f477418fe2d0bdc74aa756f663e7dc8"
+    },
+    "debtToCover": "2581328156",
+    "liquidator": "0x29aa3ff5b44c1624fc4983fb2955cb0884cbe14c"
+  },
+  {
+    "blockNumber": "41278349",
+    "user": {
+      "id": "0xce44e43c80d7ce1b6baa80dcdaf5201bf181ab3f"
+    },
+    "debtToCover": "718074827",
+    "liquidator": "0xdb07b0fe7724f3787d42fb24a5e9064268561359"
+  },
+  {
+    "blockNumber": "41278007",
+    "user": {
+      "id": "0x497ed9ed5a919c81f0881cefe3e37d1f4f67f416"
+    },
+    "debtToCover": "945702115",
+    "liquidator": "0x80e7cc9cb35bc0823de7c8c5e5347e26cc5a2163"
+  },
+  {
+    "blockNumber": "41276147",
+    "user": {
+      "id": "0xa2bd1c4cacfe658ee453f6873805099131114b5e"
+    },
+    "debtToCover": "171818412",
+    "liquidator": "0xc3a9086953891ec6ea2183f64de6f102c94b7578"
+  },
+  {
+    "blockNumber": "41275424",
+    "user": {
+      "id": "0xeb92ba4b98d3b60cf18f33a9dd3752490667c0f4"
+    },
+    "debtToCover": "8005679243",
+    "liquidator": "0xcb889350ffff639a05ae242984691d0131bb4d03"
+  },
+  {
+    "blockNumber": "41270149",
+    "user": {
+      "id": "0x790d0b5f00011dc08adda8c76f478eb5f5a9939a"
+    },
+    "debtToCover": "1619603779",
+    "liquidator": "0x961b135159c4edcfdd66d018c2605d507bccdd40"
+  },
+  {
+    "blockNumber": "41268752",
+    "user": {
+      "id": "0x19ade3a577f5f9a21c7fb376fe00d53a27fc223d"
+    },
+    "debtToCover": "8126862298",
+    "liquidator": "0x348d8a4d14e45ce0c44f7256be5cccdc8775b938"
+  },
+  {
+    "blockNumber": "41268099",
+    "user": {
+      "id": "0x73b83721be287039b5b8fe8e176139d7334ae46b"
+    },
+    "debtToCover": "183462930",
+    "liquidator": "0x5d5ee2f2d9666208005ac71fc6053bc1aacf9a5c"
+  },
+  {
+    "blockNumber": "41267516",
+    "user": {
+      "id": "0xe138670f70af4e435a0b027419faa892bbd7514d"
+    },
+    "debtToCover": "2401378952",
+    "liquidator": "0xfd775bdc67a3a74fe89dddeeb5009587d6387cb0"
+  },
+  {
+    "blockNumber": "41266463",
+    "user": {
+      "id": "0x2e8c4d833a950caafa58ad2ff44a69c35f4fdb8a"
+    },
+    "debtToCover": "5390129858",
+    "liquidator": "0x19ccb1b42b56a76e81103442d8a4d3064ca65438"
+  },
+  {
+    "blockNumber": "41266123",
+    "user": {
+      "id": "0x0a5b11491706bb67e01bbd032fff5097d3876f5d"
+    },
+    "debtToCover": "3650346785",
+    "liquidator": "0xd5f86d313e9e9fbe0dd48b30826a1912a3c658c8"
+  },
+  {
+    "blockNumber": "41265603",
+    "user": {
+      "id": "0xd5e8fdb5dcfff55243f030268516e20d039d8dfc"
+    },
+    "debtToCover": "5902763213",
+    "liquidator": "0x157a8d1b22d65e4d520031ff34a3abe52ed3d6cd"
+  },
+  {
+    "blockNumber": "41264470",
+    "user": {
+      "id": "0xac9c3b4cf0efe9cdaf1b237293296fdd1f571f5f"
+    },
+    "debtToCover": "5096974529",
+    "liquidator": "0xe9a40bafd50f8c9cd1c7a85c1e7f4b4b028017ba"
+  },
+  {
+    "blockNumber": "41263475",
+    "user": {
+      "id": "0x8f243396c1ea889b13c2d2384c8ab08942f5d3bd"
+    },
+    "debtToCover": "3884755389",
+    "liquidator": "0x2cb03e78e48234fd1cb199cff3162d71927c8b40"
+  },
+  {
+    "blockNumber": "41258560",
+    "user": {
+      "id": "0xba975e3ce13a2d38a539ca22ef12266f91fdc547"
+    },
+    "debtToCover": "2410420244",
+    "liquidator": "0x00f20e423efffd71ba6622081c1e7a4d01b9fb69"
+  },
+  {
+    "blockNumber": "41256068",
+    "user": {
+      "id": "0x499f640664e86d2149f46e7b8f2bf29c3354caec"
+    },
+    "debtToCover": "2655628212",
+    "liquidator": "0x26d9b074572a72b088ec4de6038ed8395cbc049c"
+  },
+  {
+    "blockNumber": "41255572",
+    "user": {
+      "id": "0x03998fc89b2d22291240bb84ec9442bc6881a53f"
+    },
+    "debtToCover": "2911929556",
+    "liquidator": "0xaee98386df5101484e807f77f11c22da8b24858b"
+  },
+  {
+    "blockNumber": "41254578",
+    "user": {
+      "id": "0xa0de4edfb894d720851a15dd765ff7ee5e27872b"
+    },
+    "debtToCover": "1151567135",
+    "liquidator": "0x51cf6912ec9f46ee70aad1daf535c7bf776bf5a2"
+  },
+  {
+    "blockNumber": "41254375",
+    "user": {
+      "id": "0x4d2a6f229d7eaf7ee48e4276b50f178f733616d1"
+    },
+    "debtToCover": "2148024989",
+    "liquidator": "0x48fa6a4e7f998fbf8dcd6762253b4ef2fb6bc45d"
+  },
+  {
+    "blockNumber": "41251671",
+    "user": {
+      "id": "0x099c0fb7a1c8dae92b6a638ac743104408857d8d"
+    },
+    "debtToCover": "3809457081",
+    "liquidator": "0xc7c86686c3ec792e273f19cf75005a4965995cb4"
+  },
+  {
+    "blockNumber": "41250263",
+    "user": {
+      "id": "0x2f367a16f8f4c7990524ec28fa9bdd8f0a5101fd"
+    },
+    "debtToCover": "284680330",
+    "liquidator": "0x07b66d2e73813be7e9d0a774249582c755e42ba6"
+  },
+  {
+    "blockNumber": "41248089",
+    "user": {
+      "id": "0xef27ecfd8f4026e2bee912fe8de94fa250f20f34"
+    },
+    "debtToCover": "4181029896",
+    "liquidator": "0xdf03bf5470caaf3036ed3438aa0671a0a6d85f90"
+  },
+  {
+    "blockNumber": "41246506",
+    "user": {
+      "id": "0xde5e451f61a5695d2a70557153b1a9035605fe05"
+    },
+    "debtToCover": "5944910953",
+    "liquidator": "0x7fce3870640cdc3cf4f061213461b999f6e20b1f"
+  },
+  {
+    "blockNumber": "41245266",
+    "user": {
+      "id": "0xdd6352696d61e74bcc38302b897f0c16034e5b00"
+    },
+    "debtToCover": "2325052271",
+    "liquidator": "0x7b7377d6c40c370a24c5c2e508fe6301da260e76"
+  },
+  {
+    "blockNumber": "41244272",
+    "user": {
+      "id": "0x2a277cd067eaf506955358c8ab83606b780e760b"
+    },
+    "debtToCover": "8557841039",
+    "liquidator": "0x0b8a68139b71bb2041b185122a5357e7c540a426"
+  },
+  {
+    "blockNumber": "41243147",
+    "user": {
+      "id": "0x11aa2e35b379e7393ff1b5a93ba3ad298002eb4c"
+    },
+    "debtToCover": "87915104",
+    "liquidator": "0xa966d5c48c50509f2c3b451591f1b685a3d0dd3e"
+  },
+  {
+    "blockNumber": "41239046",
+    "user": {
+      "id": "0x437e85606d37f6ce354ff4092bfeeff1546fe37d"
+    },
+    "debtToCover": "9135939210",
+    "liquidator": "0xe9fc7ff2b107c49f8db89cce3881c52fe0c99189"
+  },
+  {
+    "blockNumber": "41237723",
+    "user": {
+      "id": "0xe48a0599e49118aebf016a6cd0767ac0b1afd857"
+    },
+    "debtToCover": "3619343591",
+    "liquidator": "0x37f37b2988f256d9b9f88c878c4eb94dd4724e8e"
+  },
+  {
+    "blockNumber": "41237191",
+    "user": {
+      "id": "0xc5ad8c03e73a1201314b43f753f94e42dab354e8"
+    },
+    "debtToCover": "760627318",
+    "liquidator": "0xb87f02ffb69be774505efef740d390eff49b060f"
+  },
+  {
+    "blockNumber": "41235432",
+    "user": {
+      "id": "0x2441a77fffdd298f7c27f03ee627c8dc1de7c946"
+    },
+    "debtToCover": "9206086113",
+    "liquidator": "0xdd42e868ca83b4531e159ce7c03b35e2eef8a463"
+  },
+  {
+    "blockNumber": "41233833",
+    "user": {
+      "id": "0xeefc588d6193d5e9a2638853897079b2391f27e0"
+    },
+    "debtToCover": "34947267",
+    "liquidator": "0xb21fcab38798b38f48441831dbac6f21a2fd02fb"
+  },
+  {
+    "blockNumber": "41233339",
+    "user": {
+      "id": "0xf6b6353fe72c5781039e5f8e0cdb94da8ec08722"
+    },
+    "debtToCover": "9409476512",
+    "liquidator": "0xd4513523c4f72369936e104f5ad0edb6342b72a5"
+  },
+  {
+    "blockNumber": "41232908",
+    "user": {
+      "id": "0xda8d4fac566004806756d1a9a0e214290caed38f"
+    },
+    "debtToCover": "4649679730",
+    "liquidator": "0xcb2af34a3f336d0692ba28bba39b00adb7350efc"
+  },
+  {
+    "blockNumber": "41231949",
+    "user": {
+      "id": "0x27efc426dc106a9eecb48c9bf0610fae8a53d19a"
+    },
+    "debtToCover": "7670837607",
+    "liquidator": "0x7d2b73dd9a9092e94007f14d1eda08154548e951"
+  },
+  {
+    "blockNumber": "41229844",
+    "user": {
+      "id": "0x37d07c6270e5ed337d7e3af04c551dd38e7e1c81"
+    },
+    "debtToCover": "4886597293",
+    "liquidator": "0x5782e071aaba89fe9cdf730baf423abcc00fb9b5"
+  },
+  {
+    "blockNumber": "41228770",
+    "user": {
+      "id": "0x7542d063b2c89efe398187faf00aab2ca87485a7"
+    },
+    "debtToCover": "9470802710",
+    "liquidator": "0x25d1ed6f30c0ce705497a29ee049c5d633372f63"
+  },
+  {
+    "blockNumber": "41228399",
+    "user": {
+      "id": "0xbf163a4f3066d85a47403df2dbaa60d7675cd0a2"
+    },
+    "debtToCover": "7632145000",
+    "liquidator": "0xe2849e8f58b02cca7091032e9c0bfd74e9ff97fc"
+  },
+  {
+    "blockNumber": "41227456",
+    "user": {
+      "id": "0x54020493ea7a519892d52ea470d9165ecf925031"
+    },
+    "debtToCover": "9497706689",
+    "liquidator": "0xc32e57882124788ab1b19ae64be41e0d12db5849"
+  },
+  {
+    "blockNumber": "41226708",
+    "user": {
+      "id": "0x2f6294385e250b815207d14cdd390e12b3bb3f56"
+    },
+    "debtToCover": "2768999914",
+    "liquidator": "0xfad8e02731c826ab67484b458ae29652265d0622"
+  },
+  {
+    "blockNumber": "41226099",
+    "user": {
+      "id": "0x8de4f698383df8724f121e2e9b4ffd0384c5bcbd"
+    },
+    "debtToCover": "5027986685",
+    "liquidator": "0x671b40d48ecc557982526b33c887ecf267329c95"
+  },
+  {
+    "blockNumber": "41225687",
+    "user": {
+      "id": "0x60561ef5d262ee9e27b6536ebea52c1dd6d8244d"
+    },
+    "debtToCover": "8359608994",
+    "liquidator": "0xa80fe664de15a2b9495abcc355f745b88018b8e3"
+  },
+  {
+    "blockNumber": "41224854",
+    "user": {
+      "id": "0xf0f46d6e0f2d140bb22f906d62620fa9ba8a2180"
+    },
+    "debtToCover": "4529540497",
+    "liquidator": "0x45738f0cf0581a37ee9f7ca242d6da8f12848ddd"
+  },
+  {
+    "blockNumber": "41224452",
+    "user": {
+      "id": "0x4fab92cc37124dd85e25a230d134454b84705528"
+    },
+    "debtToCover": "1042600551",
+    "liquidator": "0x4fcb9e80add6324b5a4d6e0f039b00c14a82fb06"
+  },
+  {
+    "blockNumber": "41224428",
+    "user": {
+      "id": "0x2451e7e5889dd44d08c72443bf486541e746e589"
+    },
+    "debtToCover": "6300801923",
+    "liquidator": "0xcf9749406fd26020a34a5aa00b9254e146780c85"
+  },
+  {
+    "blockNumber": "41222604",
+    "user": {
+      "id": "0x4c7a27216aa99e7627b0eb8e83c9551d198cd6c0"
+    },
+    "debtToCover": "5633281877",
+    "liquidator": "0x82215c5a68c2178f51c7326161d730fca53ea2ee"
+  },
+  {
+    "blockNumber": "41221140",
+    "user": {
+      "id": "0x155b14ed6b73167db8ba98dc9e78c76ea432439d"
+    },
+    "debtToCover": "8752258605",
+    "liquidator": "0xd08a166815c5f4e246db7e52550a5e2f75b7e8f9"
+  },
+  {
+    "blockNumber": "41219528",
+    "user": {
+      "id": "0x301703fa533ff85ff5c4dd86a85b8a97801d5028"
+    },
+    "debtToCover": "1766687047",
+    "liquidator": "0x40fce7ac2191c1430022019fb26b763c0b87c131"
+  },
+  {
+    "blockNumber": "41218063",
+    "user": {
+      "id": "0x35c6572369fc46989bc637156ac020f7aaf015a1"
+    },
+    "debtToCover": "1054943356",
+    "liquidator": "0x42dd696d0a59bb2c5a72e0b97c2eb4751d71ee07"
+  },
+  {
+    "blockNumber": "41216253",
+    "user": {
+      "id": "0x9a7cd4c73b2cdd5b4cf63fefdbdf9876b225fcb4"
+    },
+    "debtToCover": "5010872465",
+    "liquidator": "0xf21913aecf6373f03cb2d720d1b7f5a40b9c2d50"
+  },
+  {
+    "blockNumber": "41215602",
+    "user": {
+      "id": "0x90a122720ebf3c45eca64c26c783c87e35a9e1c7"
+    },
+    "debtToCover": "8414290423",
+    "liquidator": "0x3606c0be75c5c714f22b0e59eee8ecc6a659f7af"
+  },
+  {
+    "blockNumber": "41210544",
+    "user": {
+      "id": "0x0f84a1a20ca44439a719656e561ceed13c67c4a1"
+    },
+    "debtToCover": "5142385011",
+    "liquidator": "0xf37e71a66ef750ed9341907a4b969dbf5d6467ca"
+  },
+  {
+    "blockNumber": "41207910",
+    "user": {
+      "id": "0x2bf64e95822b36c967547e2f74910d62d54d12d9"
+    },
+    "debtToCover": "5867926855",
+    "liquidator": "0x5e72fc152cdf57740a0f3c63a31491080279718b"
+  },
+  {
+    "blockNumber": "41207258",
+    "user": {
+      "id": "0xfa28cee7224c6eb68048ce582418e0dc32e7a5a3"
+    },
+    "debtToCover": "820662394",
+    "liquidator": "0x62b6a525e02f785f6e776ab74dee4d99ea6aad03"
+  },
+  {
+    "blockNumber": "41205550",
+    "user": {
+      "id": "0xa2cd9e73fe175e9dfb19e9011934a5ddd47e5fe0"
+    },
+    "debtToCover": "1264176098",
+    "liquidator": "0xcaacd797cae691af7fdf5fb77f013d0cfc9f0aa0"
+  },
+  {
+    "blockNumber": "41205399",
+    "user": {
+      "id": "0xee395ee4fd469cc325459f567688c2426cbc6f7a"
+    },
+    "debtToCover": "6104880899",
+    "liquidator": "0x07ca9df37dff3e32980a08eae9420a3d173b623a"
+  },
+  {
+    "blockNumber": "41203817",
+    "user": {
+      "id": "0x522cc9d67670964bda3305f17aa177ceb1ead61a"
+    },
+    "debtToCover": "9183532424",
+    "liquidator": "0x2fcd0d8bfca0f608af67e16b6f975effee703c63"
+  },
+  {
+    "blockNumber": "41198740",
+    "user": {
+      "id": "0x5c0aeb23e001d0a5f6177e1056cd5ad1db0369e0"
+    },
+    "debtToCover": "315527785",
+    "liquidator": "0xce98f0e38e282410f43ac35936910973a7660268"
+  },
+  {
+    "blockNumber": "41197007",
+    "user": {
+      "id": "0x028956574ae1d36fbb0c23ea6dd14b50e3b738da"
+    },
+    "debtToCover": "1167122608",
+    "liquidator": "0x31b39b984dbb4457dfdd455055623088ae407ab8"
+  },
+  {
+    "blockNumber": "41194134",
+    "user": {
+      "id": "0x9c9f10708625f0813ba8f18024b560f5bb7d8a29"
+    },
+    "debtToCover": "2195984772",
+    "liquidator": "0x290a497f73ef3ba220cc47da7f64b90fe6a0e679"
+  },
+  {
+    "blockNumber": "41193078",
+    "user": {
+      "id": "0x077904cff1c75d252690b60133adfad3c45654eb"
+    },
+    "debtToCover": "1838588070",
+    "liquidator": "0x990b0535c62bf52f2926a11f0803d05ef2c166b0"
+  },
+  {
+    "blockNumber": "41190792",
+    "user": {
+      "id": "0xf25025c003d6d22b9149e2cd393832ab3bd386c2"
+    },
+    "debtToCover": "7717755059",
+    "liquidator": "0xed4b4f1f986f3f4520959a267b3987f7af27c4ea"
+  },
+  {
+    "blockNumber": "41190633",
+    "user": {
+      "id": "0x4ed81fe0b310aa30fd33b9d9fb655e47eefdf62a"
+    },
+    "debtToCover": "5710327721",
+    "liquidator": "0x7b558206ab0d2d90091d3cc98855e1171f786e2c"
+  },
+  {
+    "blockNumber": "41189511",
+    "user": {
+      "id": "0x21927dad05227d3e5a6b34b4c7b6b05e486ac2ce"
+    },
+    "debtToCover": "7513459820",
+    "liquidator": "0x4cc3060bb430fb8c1189288f324351a1fbf418f9"
+  },
+  {
+    "blockNumber": "41189509",
+    "user": {
+      "id": "0x51731af8bf0a543b0d31cafbe48880f8ddc7e819"
+    },
+    "debtToCover": "2444808130",
+    "liquidator": "0xe44929ee6551d7c1c7ec968aa9f13892a7d52466"
+  },
+  {
+    "blockNumber": "41189075",
+    "user": {
+      "id": "0x3f90153cbe3050016ed41e7cb03f314cd9a22f91"
+    },
+    "debtToCover": "2250806979",
+    "liquidator": "0xf7c9ee3f122288fe74494bcbcc89a0b9a8f8e25c"
+  },
+  {
+    "blockNumber": "41183169",
+    "user": {
+      "id": "0x848fdfd9bae50b87a9a50eff0f720ae17d633b27"
+    },
+    "debtToCover": "8948731093",
+    "liquidator": "0x26e0c718859af195d3fc5bfa2b43c799b9f364b2"
+  },
+  {
+    "blockNumber": "41180845",
+    "user": {
+      "id": "0x8eedf41ea619c76eaef5643be0f3fa50cc763dea"
+    },
+    "debtToCover": "1424428671",
+    "liquidator": "0xb2c0e5d4a2152d15f3fe473608248fb36fb1dac6"
+  },
+  {
+    "blockNumber": "41179205",
+    "user": {
+      "id": "0xc4510908645acd74dfd30819c06444e5abea10c0"
+    },
+    "debtToCover": "3462880371",
+    "liquidator": "0x5291ad876039e5a8200cd2e0fe9e331cdc8e1fd0"
+  },
+  {
+    "blockNumber": "41172754",
+    "user": {
+      "id": "0x051f03bd9d593396a966570ca4cfa46cd7abd4fb"
+    },
+    "debtToCover": "4584725130",
+    "liquidator": "0x2f1747189c3baaa6936a5aa06bd80e524c1dfac9"
+  },
+  {
+    "blockNumber": "41172329",
+    "user": {
+      "id": "0x0f334d9186c0f8394120f41ecef9aea63379c9ec"
+    },
+    "debtToCover": "6907189609",
+    "liquidator": "0x095ac6ee6fdcc2034731360efe52d8cf4a931667"
+  },
+  {
+    "blockNumber": "41170419",
+    "user": {
+      "id": "0x8b0e3e29f9bd908f72b73375a79c23ea19069cee"
+    },
+    "debtToCover": "3376101662",
+    "liquidator": "0x3bcd77262e3551917281dc77b890bcf80b7af6d5"
+  },
+  {
+    "blockNumber": "41170131",
+    "user": {
+      "id": "0x3f5c5d1b4f8892d81d08a271377fa5101a43daca"
+    },
+    "debtToCover": "7387181339",
+    "liquidator": "0xe52dc717fd8831f91b65860f05c32e9dff346928"
+  },
+  {
+    "blockNumber": "41170127",
+    "user": {
+      "id": "0xd2ccab9100a643ef50fab31f6b4b142a99761362"
+    },
+    "debtToCover": "7081310687",
+    "liquidator": "0x3057cbdcbdc31a841906584a04640b45bf878eba"
+  },
+  {
+    "blockNumber": "41166291",
+    "user": {
+      "id": "0x0d2cf58c83a1fcb3d41b79cdba5081edb78edcc4"
+    },
+    "debtToCover": "3302444031",
+    "liquidator": "0x12c38dd5e74ca7a79820dcc6eb1c770102d19e7a"
+  },
+  {
+    "blockNumber": "41165311",
+    "user": {
+      "id": "0x71987c2a747f7feab9768706ae5ee953deec8dc0"
+    },
+    "debtToCover": "2938090036",
+    "liquidator": "0xd2ed128676a9cefc07e9cb4c0210cc16782855d1"
+  },
+  {
+    "blockNumber": "41163481",
+    "user": {
+      "id": "0xd86370cfc4da7b736e7692aae275983af75a7e41"
+    },
+    "debtToCover": "4885889482",
+    "liquidator": "0x9d316c4bcd1bfdf45d6702d478c93d6761ce4d6e"
+  },
+  {
+    "blockNumber": "41163396",
+    "user": {
+      "id": "0x85797626a41d51cd86d6d90bf484c292fd89c590"
+    },
+    "debtToCover": "2775945463",
+    "liquidator": "0x7327dbbb838876d7b045e723adddc94b0d841722"
+  },
+  {
+    "blockNumber": "41161500",
+    "user": {
+      "id": "0x759e2d2d76ae4f2a12d91d26de16d15070a730ae"
+    },
+    "debtToCover": "6481100229",
+    "liquidator": "0x8ab788304052da64f05605d125225bb26480defc"
+  },
+  {
+    "blockNumber": "41160172",
+    "user": {
+      "id": "0x12324edede33c0dc0f270f597bf2da9c71e2c5bc"
+    },
+    "debtToCover": "7238397339",
+    "liquidator": "0xdf09b06b94b976904b18f84d552b42427789e5b4"
+  },
+  {
+    "blockNumber": "41159724",
+    "user": {
+      "id": "0xa704b292f326d4b8f662994e45dc9ecbc34ee15a"
+    },
+    "debtToCover": "5840720456",
+    "liquidator": "0xc986081aedb9a90988a3b4b586ec1d0c4b27c365"
+  },
+  {
+    "blockNumber": "41159658",
+    "user": {
+      "id": "0xc6f403f1818c82e88bc1513610977d4fbb6f4550"
+    },
+    "debtToCover": "5966739966",
+    "liquidator": "0xf98f016621f986416fb017522c328a4a45f08cec"
+  },
+  {
+    "blockNumber": "41159057",
+    "user": {
+      "id": "0xe9e409526689641db8b27e9fa6121fdf85674291"
+    },
+    "debtToCover": "9340154450",
+    "liquidator": "0x39dfb29c908bc15bb1ddeecdab0938c1e821c7e5"
+  },
+  {
+    "blockNumber": "41158805",
+    "user": {
+      "id": "0xb57deabfc8ca78e5ccde470233191d192b1de83f"
+    },
+    "debtToCover": "3733226805",
+    "liquidator": "0x47157c0974603dbb40c77a76afd5a6fd794cb9fb"
+  },
+  {
+    "blockNumber": "41155544",
+    "user": {
+      "id": "0x9db0ebd08bde248170aa584560e0fbfeaa2795a9"
+    },
+    "debtToCover": "8970532235",
+    "liquidator": "0xcfe553e19773ddd5b1f994008724d620f8615cea"
+  },
+  {
+    "blockNumber": "41154644",
+    "user": {
+      "id": "0x78f7b995777293ac79d6b1844ca09c9421433ce5"
+    },
+    "debtToCover": "4831238690",
+    "liquidator": "0x94735d823495bfda08a19d78e4968bd692c1b93b"
+  },
+  {
+    "blockNumber": "41153956",
+    "user": {
+      "id": "0x9cafc07c7d0f004dad61ca9a05adb6930e862393"
+    },
+    "debtToCover": "9449401282",
+    "liquidator": "0x60d34a08070029c10f78c9b43b25d93c349cd8d4"
+  },
+  {
+    "blockNumber": "41152508",
+    "user": {
+      "id": "0xc497e02fb5c75cbc01ea77339bf0a1a29ab43a87"
+    },
+    "debtToCover": "7163674969",
+    "liquidator": "0x7dd647591ef1818eaf6c2ab2fc166e12d4e2b852"
+  },
+  {
+    "blockNumber": "41150813",
+    "user": {
+      "id": "0x425e44db9da64a29ab7618931c1dbfbb87fb7a0b"
+    },
+    "debtToCover": "7073299906",
+    "liquidator": "0x6e396036673d911aabb6f486d6933251489eb58d"
+  },
+  {
+    "blockNumber": "41148482",
+    "user": {
+      "id": "0xdae939f61fa10b5d7250f43510a0e35eb9965c11"
+    },
+    "debtToCover": "4910100087",
+    "liquidator": "0xbc93c8dbcaa2c77353160f4faf71e91ac4e32b9b"
+  },
+  {
+    "blockNumber": "41147970",
+    "user": {
+      "id": "0x2d67faf26ca67aac1c48655e0e141d1cd67c06af"
+    },
+    "debtToCover": "5664747720",
+    "liquidator": "0x7d9ed8184a8adbf4f8e3a2cbcb0cf77a1279bf2a"
+  },
+  {
+    "blockNumber": "41145388",
+    "user": {
+      "id": "0x78af5e5a94af3a3965a68dbcc58a6740aa857f3d"
+    },
+    "debtToCover": "931283215",
+    "liquidator": "0xf9d0d9b23f315e6c75aee84fe72c2d71b4f22412"
+  },
+  {
+    "blockNumber": "41144363",
+    "user": {
+      "id": "0x3e941f675dfb28caa34ff2139e2e070670834c12"
+    },
+    "debtToCover": "3863524633",
+    "liquidator": "0xa5bf6821b0290a4038bad1eaf9e9c3c5ad90b7b2"
+  },
+  {
+    "blockNumber": "41144084",
+    "user": {
+      "id": "0xfa8bf67dfffae50883c6da8a088c5b42327f9e39"
+    },
+    "debtToCover": "9214953550",
+    "liquidator": "0xbd96d0acb500cf72d35ff1eb281fd7fbe23b1aa6"
+  },
+  {
+    "blockNumber": "41142251",
+    "user": {
+      "id": "0x265b562f1c993abe9c492ac54e5705a93eebd13c"
+    },
+    "debtToCover": "7426765267",
+    "liquidator": "0x5ad1fdb1a4a3ab3bbded0f7faf8569a17213d19c"
+  },
+  {
+    "blockNumber": "41141609",
+    "user": {
+      "id": "0xeb77842be50345d6e6b5d248c2d338a1ff6b5b7a"
+    },
+    "debtToCover": "4601373297",
+    "liquidator": "0x337088bd26732ddf429b6f5e026c678e2eb62aef"
+  },
+  {
+    "blockNumber": "41140464",
+    "user": {
+      "id": "0x96cf4895a7f14dc0c14be7731f72c63afbabec45"
+    },
+    "debtToCover": "8390557537",
+    "liquidator": "0x76346d5f78c050866c4c1a25b26f144803397389"
+  },
+  {
+    "blockNumber": "41140226",
+    "user": {
+      "id": "0x228a02e4783141bbc549b001aba787be4b51be0b"
+    },
+    "debtToCover": "1840340607",
+    "liquidator": "0x4763b775bc230f7ff47dc7f41828d2415368d93a"
+  },
+  {
+    "blockNumber": "41140073",
+    "user": {
+      "id": "0x7cf058a79d36a68174448c9de5832db1f495ec19"
+    },
+    "debtToCover": "2959359595",
+    "liquidator": "0xe3721d8ae9e75383855497446309c7fe034faa7b"
+  },
+  {
+    "blockNumber": "41136743",
+    "user": {
+      "id": "0x500a23d297b77fc071de21269368ae7dd8f57074"
+    },
+    "debtToCover": "1496658452",
+    "liquidator": "0xbb76d856f9dfc8a95c86e4e637f28313612f46fd"
+  },
+  {
+    "blockNumber": "41133300",
+    "user": {
+      "id": "0x8ea3e7ffc4d71358a7a2c0c39b26f44f4971d615"
+    },
+    "debtToCover": "7981771870",
+    "liquidator": "0x36f4e38cbab7eea18b275f04a12767ee40d0d9c6"
+  },
+  {
+    "blockNumber": "41131795",
+    "user": {
+      "id": "0xfcbdbcb066a73d99d35d0ceec8d5813d9e06e400"
+    },
+    "debtToCover": "5261667143",
+    "liquidator": "0x9b1e7745186e9c92830d478e600c4535187b4082"
+  },
+  {
+    "blockNumber": "41130882",
+    "user": {
+      "id": "0x09eb87637a2f8575f6f1ddd61bacd790bd531312"
+    },
+    "debtToCover": "3900719081",
+    "liquidator": "0x12d7a558e9073ea37aa90516ca465179d73bae0b"
+  },
+  {
+    "blockNumber": "41129899",
+    "user": {
+      "id": "0xe0e7937324c003d18c58c3f4e1b5cdeb2e083eec"
+    },
+    "debtToCover": "5194034135",
+    "liquidator": "0xd2fc5c743ece48953beca8e98272b9caceb64a66"
+  },
+  {
+    "blockNumber": "41128532",
+    "user": {
+      "id": "0x362bcc0566d5613c98f1d1f07860fcc397df24f2"
+    },
+    "debtToCover": "7482319375",
+    "liquidator": "0x72703b67eadcf61ca5d42cc7998d568e5e303482"
+  },
+  {
+    "blockNumber": "41128059",
+    "user": {
+      "id": "0x81cc6a2321fbeb3ecf0c46831eb745fe90f183dc"
+    },
+    "debtToCover": "2789324967",
+    "liquidator": "0x658de79e32c94e679e728bbc079186f46973a0dc"
+  },
+  {
+    "blockNumber": "41127512",
+    "user": {
+      "id": "0xfd413b449d52d17d57d617d1aa3c39a00acf19be"
+    },
+    "debtToCover": "45073437",
+    "liquidator": "0xe8c86b653cee88a5d7fe3aab28cc7141a7b600f9"
+  },
+  {
+    "blockNumber": "41124230",
+    "user": {
+      "id": "0x23883709533c264a643b960bd54dc9d849ca43cc"
+    },
+    "debtToCover": "1274962615",
+    "liquidator": "0xff4127843b5edd2a491563c686e521e9a571112c"
+  },
+  {
+    "blockNumber": "41124178",
+    "user": {
+      "id": "0x3ced08f565bbebd5aa612388e63d1c6ed51eac4a"
+    },
+    "debtToCover": "3476663511",
+    "liquidator": "0x79f211baf72366789b19d1448d4e63e0e0eaf4ae"
+  },
+  {
+    "blockNumber": "41124116",
+    "user": {
+      "id": "0xc5cbf33c2d216105e5b8bd6a05e0e2561a47c9b2"
+    },
+    "debtToCover": "7240933361",
+    "liquidator": "0x7e20ee3aac55612cf255cd9916fcf8361bb2943b"
+  },
+  {
+    "blockNumber": "41123255",
+    "user": {
+      "id": "0xb604e74a08f256ab885b0f42374ff330f37dc1ac"
+    },
+    "debtToCover": "551342290",
+    "liquidator": "0x19a6f4da0a808f950d7a77d09a80de9a46c443b8"
+  },
+  {
+    "blockNumber": "41122773",
+    "user": {
+      "id": "0x132aa1be7094a1fa69f6dd0a4d92e52fc8fa8a26"
+    },
+    "debtToCover": "6354088666",
+    "liquidator": "0xe3d48dcc70fdfacdc120014c284b0b5ef84ef720"
+  },
+  {
+    "blockNumber": "41120540",
+    "user": {
+      "id": "0xe8eda75581e2199467055f3efb738c5d4d39b048"
+    },
+    "debtToCover": "8027820634",
+    "liquidator": "0x40505669c4a0e18a917cc421375ca4ac476a4b3a"
+  },
+  {
+    "blockNumber": "41119968",
+    "user": {
+      "id": "0x491b252acf54bee2a22c1c8152020686a7653191"
+    },
+    "debtToCover": "5680705438",
+    "liquidator": "0x1ce814593fd5e8bd2715e15ef8963b829bd1818a"
+  },
+  {
+    "blockNumber": "41119605",
+    "user": {
+      "id": "0xfab8c5578ff9b0188839e60356877a3a301bb043"
+    },
+    "debtToCover": "2178166246",
+    "liquidator": "0x40f7aeae1caec0b92cf062da3f9db36e6aad15e7"
+  },
+  {
+    "blockNumber": "41119156",
+    "user": {
+      "id": "0xf525fa56918621b6077e6d51f384cc2b16958a08"
+    },
+    "debtToCover": "9213982138",
+    "liquidator": "0x9e205ce1cdf6947d29c6a20653ad6eb2fcad5ea9"
+  },
+  {
+    "blockNumber": "41116463",
+    "user": {
+      "id": "0xbfde5475a2605978c83be10a75ea5543ec22a694"
+    },
+    "debtToCover": "3788474472",
+    "liquidator": "0x7e0684d744f428f0a8517232e817912c61f43fc8"
+  },
+  {
+    "blockNumber": "41114187",
+    "user": {
+      "id": "0xd5444d316c38c1be21a1092e60c60bf2d40081a0"
+    },
+    "debtToCover": "8951182727",
+    "liquidator": "0x15a1d42d1ece5113fe3e831fe7d5e4cee870d731"
+  },
+  {
+    "blockNumber": "41113923",
+    "user": {
+      "id": "0xe7883efb348a22ada0ec95cff0e268f0a039ec66"
+    },
+    "debtToCover": "5705728056",
+    "liquidator": "0x5fa6cd47820af59425e895decb7d5f04f424aad9"
+  },
+  {
+    "blockNumber": "41112698",
+    "user": {
+      "id": "0x64f87c6f4f90466410a0e5d3a4d6c118a6626c6a"
+    },
+    "debtToCover": "7517689515",
+    "liquidator": "0xd013b872c12b3289f19b0f7c455c3fea7e81885e"
+  },
+  {
+    "blockNumber": "41111386",
+    "user": {
+      "id": "0x18756bfc9f355129f35250aec0a945b755364973"
+    },
+    "debtToCover": "7877693774",
+    "liquidator": "0x758bf58632b0b7f8855ea9914a29c23b7bd81725"
+  },
+  {
+    "blockNumber": "41108651",
+    "user": {
+      "id": "0x4c5bcb40f541c06225e474b404f1125bb1d4653b"
+    },
+    "debtToCover": "1859833796",
+    "liquidator": "0xa392d594a3eb8f07de83d17b3750841135dfbc31"
+  },
+  {
+    "blockNumber": "41108324",
+    "user": {
+      "id": "0x0066f93589925757f7597c18fba63b79c1344540"
+    },
+    "debtToCover": "5137778229",
+    "liquidator": "0x0e3089e0786c40322e712d5f59fbeb15a9f8380a"
+  },
+  {
+    "blockNumber": "41105058",
+    "user": {
+      "id": "0x3707385af87f7c3231b00dfede48247a4c71d49c"
+    },
+    "debtToCover": "7346981646",
+    "liquidator": "0x5b369f350752096a590791425754b295e6821956"
+  },
+  {
+    "blockNumber": "41104120",
+    "user": {
+      "id": "0x70d4bd32445022d3ccb29fd77a97f3df82643d94"
+    },
+    "debtToCover": "7888110974",
+    "liquidator": "0xd8db1a2c3045938e5b1c1e56b23968ceaece4b4e"
+  },
+  {
+    "blockNumber": "41103642",
+    "user": {
+      "id": "0xad5beae50df18356534e2f9ff78fc6821cd9c6c4"
+    },
+    "debtToCover": "6384219118",
+    "liquidator": "0xbe01075eb7626a5dbe22e20f38706c113fd0c976"
+  },
+  {
+    "blockNumber": "41103253",
+    "user": {
+      "id": "0x8951a85a84c9dbf38982d506f791489579432211"
+    },
+    "debtToCover": "5662427685",
+    "liquidator": "0x8ab5909399a61ffad3d4c9582edd818a62c371e9"
+  },
+  {
+    "blockNumber": "41101118",
+    "user": {
+      "id": "0xd67b9d09820c1087eebf0aec5bc973df2e13c5c5"
+    },
+    "debtToCover": "2471649219",
+    "liquidator": "0x910e6ac367ba0e9912b5c488ac617d4d6566df92"
+  },
+  {
+    "blockNumber": "41099895",
+    "user": {
+      "id": "0x5505e25497c61cd8ec71f7676bbcaf2dfcc7a2b4"
+    },
+    "debtToCover": "8843215844",
+    "liquidator": "0xeee1a85acebaa7937c5638179772499e3cb64bab"
+  },
+  {
+    "blockNumber": "41099524",
+    "user": {
+      "id": "0x807e288edaa13ac9d21ffa6d4c94b308a00e8891"
+    },
+    "debtToCover": "2248861456",
+    "liquidator": "0x984a4ceb89152f672406bf8e6e58590fa624ee6f"
+  },
+  {
+    "blockNumber": "41099125",
+    "user": {
+      "id": "0x364de04a0c7f119fafe7e76cf3ba85b01540dd7d"
+    },
+    "debtToCover": "866661035",
+    "liquidator": "0x9662524b792095c9f135b344b0b0dcbe8f145504"
+  },
+  {
+    "blockNumber": "41099074",
+    "user": {
+      "id": "0x3d3afeeaf98b3b848c8d4246ed86d35429d01b89"
+    },
+    "debtToCover": "2359755188",
+    "liquidator": "0xb952126d2a2ed35eb28620fd6ab54c15e83a372d"
+  },
+  {
+    "blockNumber": "41095809",
+    "user": {
+      "id": "0x22d625a0461ae2c611df5ba572b5f4fd186aa997"
+    },
+    "debtToCover": "4668383148",
+    "liquidator": "0x15da459b082e4d3fbc9f3e8927a7dee5a5738945"
+  },
+  {
+    "blockNumber": "41093406",
+    "user": {
+      "id": "0xb20edddfc9b239f387671f3de87a7bb8bfbfe380"
+    },
+    "debtToCover": "708753595",
+    "liquidator": "0x73f8a0276577a5b4ec0e2d7c33a52da30c7202b7"
+  },
+  {
+    "blockNumber": "41092566",
+    "user": {
+      "id": "0x6f3a86fbc2eaa21264ed46c66be7a43263e41d4c"
+    },
+    "debtToCover": "7680242417",
+    "liquidator": "0x063357aae0efc5c6eb94f870847b945fcc48306a"
+  },
+  {
+    "blockNumber": "41091934",
+    "user": {
+      "id": "0x451e5a8a063d9744426cd25444de9672915e4d19"
+    },
+    "debtToCover": "1898769992",
+    "liquidator": "0x41a1a31e64f18f7b3f80ac482c2dfd96ccb41843"
+  },
+  {
+    "blockNumber": "41091123",
+    "user": {
+      "id": "0x753bf82a9bbb4a046f866afc50e8673b15f3a0bf"
+    },
+    "debtToCover": "8625127764",
+    "liquidator": "0xffd509a63ec4d8271984b2c2abb854308fe86d22"
+  },
+  {
+    "blockNumber": "41090090",
+    "user": {
+      "id": "0x5da563206c417c76e06f81f74c174890713e00c7"
+    },
+    "debtToCover": "9538768851",
+    "liquidator": "0x2d8bc8ac9e076c8d18ef25ae1bfef258a341a970"
+  },
+  {
+    "blockNumber": "41089426",
+    "user": {
+      "id": "0x6709c9c0c0695b41d34fe2e6d754fac4f1dd6147"
+    },
+    "debtToCover": "7323896316",
+    "liquidator": "0x660be50af7e92480594d6539d5006a84fd282cc0"
+  },
+  {
+    "blockNumber": "41086757",
+    "user": {
+      "id": "0x92dd24a8646eacd99f2892479c1807c504be9735"
+    },
+    "debtToCover": "2452111668",
+    "liquidator": "0x61d6572a47458f2c7674e10c725334763954e160"
+  },
+  {
+    "blockNumber": "41085954",
+    "user": {
+      "id": "0xfe4f1aac70c312bb70aee5724f4077c03c6193be"
+    },
+    "debtToCover": "4900190986",
+    "liquidator": "0x58ef9ba03e2b542c3a572d241b8e66be70b5f219"
+  },
+  {
+    "blockNumber": "41085788",
+    "user": {
+      "id": "0x0b1bc2a44f69c80f7de0bd6af6def5f8119fbc02"
+    },
+    "debtToCover": "3795197377",
+    "liquidator": "0x144e213b233aed0c7c423a32505ef8a5d176e2aa"
+  },
+  {
+    "blockNumber": "41082656",
+    "user": {
+      "id": "0x47320aa0e477e2be03fdb20b11e2dd99f37ef581"
+    },
+    "debtToCover": "3213000045",
+    "liquidator": "0x40ce4ede0ae66bdf3a14f9e57eb2e6fe4f838cc9"
+  },
+  {
+    "blockNumber": "41081211",
+    "user": {
+      "id": "0x1697e932e3ea1b1d539c186f1fb7c6868fab1900"
+    },
+    "debtToCover": "2205637422",
+    "liquidator": "0x1f22ce2680c0f7374a021f604e9ee301ee0a6d53"
+  },
+  {
+    "blockNumber": "41081087",
+    "user": {
+      "id": "0xbbcc359648c0a311f56e97661a0c7234ca307caa"
+    },
+    "debtToCover": "3234143670",
+    "liquidator": "0x776b436aa25e791e3a9f3dc74571b64cab5c7f78"
+  },
+  {
+    "blockNumber": "41079376",
+    "user": {
+      "id": "0x2de607b2d231450e2b37baddc2b17631d6d98e98"
+    },
+    "debtToCover": "11735076",
+    "liquidator": "0x2bbd3fbaa3312cccaa296243ef4f00a50540a826"
+  },
+  {
+    "blockNumber": "41078829",
+    "user": {
+      "id": "0x87568a024e30d1db688f7749915ff90e4ffd42ce"
+    },
+    "debtToCover": "2305115563",
+    "liquidator": "0x92a8ec69ff1ff199496c6406303a15736f2dc26e"
+  },
+  {
+    "blockNumber": "41076062",
+    "user": {
+      "id": "0x7b780e24117ce82b1c630ae3a9942a4c53191a76"
+    },
+    "debtToCover": "7539732256",
+    "liquidator": "0x1be0500eac202023379396b0fffbb5b539120bf6"
+  },
+  {
+    "blockNumber": "41073278",
+    "user": {
+      "id": "0x2d6c000b556e28fe760cc2e2b734dffca1e96150"
+    },
+    "debtToCover": "5408313083",
+    "liquidator": "0xfc7c4d677e480f5f9b6f77c8e188a2282a3e37c1"
+  },
+  {
+    "blockNumber": "41072230",
+    "user": {
+      "id": "0xfbc42c53df0d79a976eba8360f5fc538bfc931f7"
+    },
+    "debtToCover": "7082523604",
+    "liquidator": "0xc2dad755e92bdf38fab95aec69194bf6a19c752e"
+  },
+  {
+    "blockNumber": "41071920",
+    "user": {
+      "id": "0x62b249416aa9052eb2cc39c7d807d563827706f4"
+    },
+    "debtToCover": "8274044312",
+    "liquidator": "0xc5c14fe44aff216590a29b5fc84a7dfc5f9cd73a"
+  },
+  {
+    "blockNumber": "41071466",
+    "user": {
+      "id": "0xaaa78a871cf14a2d873ac4c92cf0171ca9b40ef1"
+    },
+    "debtToCover": "2281836089",
+    "liquidator": "0x8a5c1d84e2175244e2baf2f3de42fe6dbd9fd2bc"
+  },
+  {
+    "blockNumber": "41071177",
+    "user": {
+      "id": "0x2d3b633f11077670600d4293cd54ef77fd1a103f"
+    },
+    "debtToCover": "2488799072",
+    "liquidator": "0xb19a2f04e3b66baae31a4c1c868c405b72e56dd5"
+  },
+  {
+    "blockNumber": "41069221",
+    "user": {
+      "id": "0xf5cf6eddc53772d3fcb46bcbf74e8a77b42b0e69"
+    },
+    "debtToCover": "8088932315",
+    "liquidator": "0x508a38b044b3f6d5a451c9f270d218b71dbd54f0"
+  },
+  {
+    "blockNumber": "41068631",
+    "user": {
+      "id": "0x38c45dccb4f67a8f944a83a1b6f5a3f29eb7c618"
+    },
+    "debtToCover": "899674358",
+    "liquidator": "0xeea8654dd685060b3ae4a260771e22d8a32a72e4"
+  },
+  {
+    "blockNumber": "41068496",
+    "user": {
+      "id": "0xe6af70841fa5b47cc9bdb04c2a891e337ca2e7d8"
+    },
+    "debtToCover": "5717589564",
+    "liquidator": "0xae66d86babb6d41509c2fab258e1aa742d9d053d"
+  },
+  {
+    "blockNumber": "41067529",
+    "user": {
+      "id": "0x7b3d05778d4be2fcc901b0c47ff8e8ac3760bfc5"
+    },
+    "debtToCover": "110489867",
+    "liquidator": "0x183675b6cded153c0ffd336943b0d2a75f600203"
+  },
+  {
+    "blockNumber": "41065670",
+    "user": {
+      "id": "0x4c794057df2640e4753bd000806c95e7ea485678"
+    },
+    "debtToCover": "9884679357",
+    "liquidator": "0x60f95b2b7222886b6de15e6bdd6da87fc66db244"
+  },
+  {
+    "blockNumber": "41065039",
+    "user": {
+      "id": "0x45b676d03654555e3ec5a18e8201f6357ed13b48"
+    },
+    "debtToCover": "4011963212",
+    "liquidator": "0x98c2610a3e144c3b9b65a6b837ea58d6c5449cb7"
+  },
+  {
+    "blockNumber": "41063445",
+    "user": {
+      "id": "0x20c08cd432e7bd8c166afd26b5dca3f71edfbfd0"
+    },
+    "debtToCover": "8842988273",
+    "liquidator": "0xe7b2119c38edd30fed89b976aea65a1c49b3e1a8"
+  },
+  {
+    "blockNumber": "41061889",
+    "user": {
+      "id": "0x4246dfcc2333c597f5f6e080475aac9a31974594"
+    },
+    "debtToCover": "8492306488",
+    "liquidator": "0xd5356d217b9c4e7cda92a0b259302e7cc38f6628"
+  },
+  {
+    "blockNumber": "41061476",
+    "user": {
+      "id": "0x00aea75fad342cdda187194a7b87a02f15fb9890"
+    },
+    "debtToCover": "892485990",
+    "liquidator": "0xcc37cc5b1a652b79a9fc4571cfebbeb524d431a4"
+  },
+  {
+    "blockNumber": "41059013",
+    "user": {
+      "id": "0x0826e4bb7472afbb70d80939567da9b50ede79c5"
+    },
+    "debtToCover": "1924113844",
+    "liquidator": "0x5ef84b4ca6b44aed3324d7c66bb53225b1df3234"
+  },
+  {
+    "blockNumber": "41058968",
+    "user": {
+      "id": "0x0a1a739a0edceb1e509c379c594a7fc7e2579bbb"
+    },
+    "debtToCover": "8506775932",
+    "liquidator": "0xf83a99e525b93f2a815bd8bc2c17ba64df726e1e"
+  },
+  {
+    "blockNumber": "41058546",
+    "user": {
+      "id": "0xd9e263bf01dcff8652f6596801c3301dab45a86f"
+    },
+    "debtToCover": "4593356751",
+    "liquidator": "0x42e965881f28a7a388a9fe9cd0f7c38f02ad0aed"
+  },
+  {
+    "blockNumber": "41056911",
+    "user": {
+      "id": "0x2a7540610f0a99fd7b76e14b34d96e0b78eddef8"
+    },
+    "debtToCover": "6059079050",
+    "liquidator": "0xff5bcb28ea00cd5d5d552a9558981717f36d6200"
+  },
+  {
+    "blockNumber": "41056695",
+    "user": {
+      "id": "0x62d2e4d87f2021a829b645732ada21c1c7391411"
+    },
+    "debtToCover": "7992517678",
+    "liquidator": "0x07dd6acd58a986e13edff9638aaae9a25273393c"
+  },
+  {
+    "blockNumber": "41056520",
+    "user": {
+      "id": "0x0150251105ad1f06f17121723473492bf6ec5129"
+    },
+    "debtToCover": "8669428149",
+    "liquidator": "0xa52380821dd9845542b35f66deff8b2a6de8866e"
+  },
+  {
+    "blockNumber": "41056211",
+    "user": {
+      "id": "0xc8832b4f381cd67262302a97836c781d12f98f53"
+    },
+    "debtToCover": "8664968835",
+    "liquidator": "0x0b804e7049cbfecebf89119ab20c41b7399e96af"
+  },
+  {
+    "blockNumber": "41055997",
+    "user": {
+      "id": "0x0194bc4e5bbde0d5c23c43fe877dde677f391d43"
+    },
+    "debtToCover": "1965657781",
+    "liquidator": "0x95b50415ae9f55c4a309a306974cfcfa2ce62b4c"
+  },
+  {
+    "blockNumber": "41055113",
+    "user": {
+      "id": "0xe25757e58aed175064bc25b2486eb33b5a34bbd4"
+    },
+    "debtToCover": "4614769099",
+    "liquidator": "0xfec14bbd71edc74658fced8cd82e127734818c68"
+  },
+  {
+    "blockNumber": "41054481",
+    "user": {
+      "id": "0x4ff1cebaaf12456a78d1ce7c77e91210258f10f6"
+    },
+    "debtToCover": "9521046156",
+    "liquidator": "0x8ca44085c081bce54d9569eabb733e833e748fb4"
+  },
+  {
+    "blockNumber": "41048892",
+    "user": {
+      "id": "0xba354444ebaf0a6db4243bfcdbacbc8786c29702"
+    },
+    "debtToCover": "215901355",
+    "liquidator": "0xaa43a2fecb54cb7e34313b7305bfe156c6e18665"
+  },
+  {
+    "blockNumber": "41047465",
+    "user": {
+      "id": "0xb4e39a8400fdc6880bab387bb4970d0b7dd3ae4c"
+    },
+    "debtToCover": "8045021656",
+    "liquidator": "0x225928f1c793f32a0807c88f38da98c0889d8ba6"
+  },
+  {
+    "blockNumber": "41047383",
+    "user": {
+      "id": "0x68f55ad973a854e0a553643f91dcd975dda69edf"
+    },
+    "debtToCover": "4089072054",
+    "liquidator": "0x38d68ac8cd9451f5e4edd25e3d7a0eab5ec08194"
+  },
+  {
+    "blockNumber": "41045772",
+    "user": {
+      "id": "0x6e5b41feff006259d023d3b7d636365178c6f88b"
+    },
+    "debtToCover": "2676514924",
+    "liquidator": "0x5afeffaeafa7b9040502ae9a8e43a312f5f9ba9d"
+  },
+  {
+    "blockNumber": "41044335",
+    "user": {
+      "id": "0x72f3d0e4fd51d2c03972b47b6835b7ed1afc34df"
+    },
+    "debtToCover": "7077158198",
+    "liquidator": "0x0f30238924b096e3081660283163bce1cb373493"
+  },
+  {
+    "blockNumber": "41043129",
+    "user": {
+      "id": "0x9de7a0fa20f04e2a103191d5cfd8480caf43cfd9"
+    },
+    "debtToCover": "7206350528",
+    "liquidator": "0x718d6d849e9d419c07e08c3fde2b9a75179fbead"
+  },
+  {
+    "blockNumber": "41042635",
+    "user": {
+      "id": "0x0eb105aa727c959211a1686cb592b6a780a39864"
+    },
+    "debtToCover": "1082828337",
+    "liquidator": "0x13bfa03e0618094075e7380773e634ceb7f15c0a"
+  },
+  {
+    "blockNumber": "41041923",
+    "user": {
+      "id": "0x0e21a65a45f8a46b5bc84ca6e418d41ce9608209"
+    },
+    "debtToCover": "9167802864",
+    "liquidator": "0x542c6d3ccea4a15287652643d196c9f5788ff036"
+  },
+  {
+    "blockNumber": "41041186",
+    "user": {
+      "id": "0x2af9ad5306f7f2289f64b34b70f1a7b37b8e1ac5"
+    },
+    "debtToCover": "3699296464",
+    "liquidator": "0x08580be071700cda8e0f6e0c0cef186767cbcf42"
+  },
+  {
+    "blockNumber": "41037834",
+    "user": {
+      "id": "0xc41ba49187bb36866b697e671a47cc83d8009319"
+    },
+    "debtToCover": "6311705333",
+    "liquidator": "0x17680b2eaf96b00a2f64b718f23f22a4df696a46"
+  },
+  {
+    "blockNumber": "41036461",
+    "user": {
+      "id": "0x530708d5d3903f875c599608e1f4c4fc3639d1d7"
+    },
+    "debtToCover": "8103377090",
+    "liquidator": "0x442c78a4f831b68c205efddd0a395d85da80903c"
+  },
+  {
+    "blockNumber": "41035789",
+    "user": {
+      "id": "0xcc69143bb9c4f81636daa156521a54303c5c1822"
+    },
+    "debtToCover": "3304342455",
+    "liquidator": "0x9c67e1c183ee61c4421fcedd272c9533bf570eeb"
+  },
+  {
+    "blockNumber": "41034231",
+    "user": {
+      "id": "0xaa95d0297bd2f0fafe6f1297734c1f445a93bd74"
+    },
+    "debtToCover": "2409269820",
+    "liquidator": "0xafafc1a347461e6e7f71e0de7403d176c897fc7d"
+  },
+  {
+    "blockNumber": "41027523",
+    "user": {
+      "id": "0x73fdd086792f8e1bf955202cd753234f0123ed6e"
+    },
+    "debtToCover": "3072504726",
+    "liquidator": "0x162b689574bbdbef57403542389375a748035fd0"
+  },
+  {
+    "blockNumber": "41026850",
+    "user": {
+      "id": "0x33b1c36d2fdf6bf5646a4266bc165f3b7c7bd80a"
+    },
+    "debtToCover": "7731142510",
+    "liquidator": "0x1c7934b3e207a8b0a22c76283126152d6d93b4cf"
+  },
+  {
+    "blockNumber": "41026579",
+    "user": {
+      "id": "0x3bdc57b68999c29348b4c01e9c909d15a7074731"
+    },
+    "debtToCover": "8259392967",
+    "liquidator": "0x14e694dd83eaf4c24caba47dd07ac43247fd13dd"
+  },
+  {
+    "blockNumber": "41024545",
+    "user": {
+      "id": "0xb8f18dbf98825461423554a7a5227eda4840357d"
+    },
+    "debtToCover": "4030141598",
+    "liquidator": "0xa327eda27651b5a349cf8f866b134d1784f84fa7"
+  },
+  {
+    "blockNumber": "41024519",
+    "user": {
+      "id": "0x600b4441373a2903ba13f70c6c8295b75309445d"
+    },
+    "debtToCover": "8558814926",
+    "liquidator": "0x2738e3c27e6ac4502b1c2d85627f4ddfcac2966c"
+  },
+  {
+    "blockNumber": "41024181",
+    "user": {
+      "id": "0x0d4b8f0f55d1d1bc48dc8f7ea98f8a27497fa4f9"
+    },
+    "debtToCover": "3130775945",
+    "liquidator": "0x520383f36b24d3d7d4e5c0a57d513120eae70910"
+  },
+  {
+    "blockNumber": "41023320",
+    "user": {
+      "id": "0x80d3d023bd8f33f61128918449de04eebb9a8841"
+    },
+    "debtToCover": "6642227146",
+    "liquidator": "0x44cd0f00059a634b9bda962bbf6775da4944773c"
+  },
+  {
+    "blockNumber": "41023122",
+    "user": {
+      "id": "0x98668eb5ba44bc1fafe849c2e420d16cc6361191"
+    },
+    "debtToCover": "4768928226",
+    "liquidator": "0xa629642151b401d7434af71680b948c87be150e2"
+  },
+  {
+    "blockNumber": "41021446",
+    "user": {
+      "id": "0xa7de69403445452df56bfe106e1c3d4b65e0b0aa"
+    },
+    "debtToCover": "1493846352",
+    "liquidator": "0xd4c9b8561887ce88b2c391c993d55a2148570b61"
+  },
+  {
+    "blockNumber": "41021200",
+    "user": {
+      "id": "0x7924ea6e6bed830b9f94dd1064e3ba6ad927ff12"
+    },
+    "debtToCover": "7574835980",
+    "liquidator": "0xdca05e75d43d4dfdb98778d7db852d7e50dfd9c8"
+  },
+  {
+    "blockNumber": "41019391",
+    "user": {
+      "id": "0x03b223984b498f6d24dfa3de3875f4bc31d5c471"
+    },
+    "debtToCover": "4401055651",
+    "liquidator": "0x0520627a802bc8015784c2e1547eb5ac155cb429"
+  },
+  {
+    "blockNumber": "41018237",
+    "user": {
+      "id": "0x6e18a663a01ff12e525e68820daaf44eeef94159"
+    },
+    "debtToCover": "9338356436",
+    "liquidator": "0x2c641816557fce24c9a16d1e6079de781ff66976"
+  },
+  {
+    "blockNumber": "41016343",
+    "user": {
+      "id": "0x49f58a348f6acbeed62de2e99b6fcb484b468636"
+    },
+    "debtToCover": "4547865610",
+    "liquidator": "0x73399152691c784a6ae07b7ff8a79e25cac5eca9"
+  },
+  {
+    "blockNumber": "41013744",
+    "user": {
+      "id": "0xce6c267217144a339d67c9dca7ab0bfdc6e8e4e5"
+    },
+    "debtToCover": "7643563105",
+    "liquidator": "0xe7d04a28ec0e0ff21c89540884ff588cf98d59c3"
+  },
+  {
+    "blockNumber": "41013373",
+    "user": {
+      "id": "0xdc50027bf0e98e642a8ce659603d0988f8bc761c"
+    },
+    "debtToCover": "4183480867",
+    "liquidator": "0xd42887c8d8e22d1df540c14f94e74b3b47715460"
+  },
+  {
+    "blockNumber": "41011164",
+    "user": {
+      "id": "0xe0dfab4cb550a210c54275ab9ccae6cf1392cd16"
+    },
+    "debtToCover": "6789387292",
+    "liquidator": "0xa30dea89716ad012b4a82b173a71af173bbc5ba5"
+  },
+  {
+    "blockNumber": "41009544",
+    "user": {
+      "id": "0xdb7372afc6194fb002710096120233bd298dd7ad"
+    },
+    "debtToCover": "239364486",
+    "liquidator": "0x879f6fa81e691b0d4a0e0dcaf962f976f4768abc"
+  },
+  {
+    "blockNumber": "41009362",
+    "user": {
+      "id": "0xe8f66827c3b3b730767e85170e718d8d0db3d179"
+    },
+    "debtToCover": "2431772746",
+    "liquidator": "0x046929445d4892a30752e9f3941d5f5b1101c010"
+  },
+  {
+    "blockNumber": "41008865",
+    "user": {
+      "id": "0xae7ebf45169f54f92ca9a62aea87f29034bb370f"
+    },
+    "debtToCover": "5712062577",
+    "liquidator": "0xd3298cd66114d4509bb613f0de145fcfb724c0f7"
+  },
+  {
+    "blockNumber": "41006929",
+    "user": {
+      "id": "0x8481f62bfefb7f5a53148e3c345d94d9aaf1ed03"
+    },
+    "debtToCover": "6217827418",
+    "liquidator": "0xcf049669d00d4553b10fc3a039ffebef5392e8b0"
+  },
+  {
+    "blockNumber": "41004457",
+    "user": {
+      "id": "0x521e83ccd7ac5b30982122edf5f534b3eb510f81"
+    },
+    "debtToCover": "6367893445",
+    "liquidator": "0x8fb04c134c96ee2ca25fc43d5498ce5a04ad3cb0"
+  },
+  {
+    "blockNumber": "41003271",
+    "user": {
+      "id": "0xd75aa0aac19d8bc115cc24c429198ba7eb63dbb3"
+    },
+    "debtToCover": "4459521700",
+    "liquidator": "0x55234c011716a45394389071966f0b82d6951310"
+  },
+  {
+    "blockNumber": "41001471",
+    "user": {
+      "id": "0x9612263191fb5f3e7e8494e5c28a06080e246469"
+    },
+    "debtToCover": "5552222127",
+    "liquidator": "0xc1607c0ff4d7dd50dfaabc1a89f50743c1ecb908"
+  },
+  {
+    "blockNumber": "40999736",
+    "user": {
+      "id": "0x461c58a929813eed431200c5cadcced86d4d116f"
+    },
+    "debtToCover": "3998789716",
+    "liquidator": "0xebea140e44e3ed25f0932d308510734e45b0963e"
+  },
+  {
+    "blockNumber": "40999678",
+    "user": {
+      "id": "0xbfde1d590bc0046ca42c68ed19ee1d703e2ec392"
+    },
+    "debtToCover": "480718276",
+    "liquidator": "0xdfef180daf33d034f742be5bfd661e1bc16ac65f"
+  },
+  {
+    "blockNumber": "40998091",
+    "user": {
+      "id": "0x22cef3dc6f24a229de823a580c5761fc778e24bb"
+    },
+    "debtToCover": "9479155473",
+    "liquidator": "0xd8cf0469c82d0a195e34067a079fa65e6ef90a02"
+  }
+]

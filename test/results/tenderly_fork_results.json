@@ -1,0 +1,72 @@
+[
+  {
+    "testNumber": 1,
+    "success": false,
+    "reason": "Request failed with status code 410",
+    "detected": true,
+    "event": {
+      "blockNumber": "41297679",
+      "transactionHash": "0xcd477bcd4aee0e024700c933e73d33194254dfaad786ccf29f86e267072f8a42",
+      "user": "0xCcd837De7eCB814690A1AeF8C1f556A026abbC73",
+      "debtToCover": "100551590146321",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    }
+  },
+  {
+    "testNumber": 2,
+    "success": false,
+    "reason": "Request failed with status code 410",
+    "detected": true,
+    "event": {
+      "blockNumber": "41296426",
+      "transactionHash": "0xb18e348162fb4c4299a65eda5a1f674d196e28b255dff171e7b0f09db86077bc",
+      "user": "0x46e31bD6A5F5fEFb908C10393265268058072539",
+      "debtToCover": "14651276",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0xef499acfca31d5775b953f7971aaEDE2Ff717c2D"
+    }
+  },
+  {
+    "testNumber": 3,
+    "success": false,
+    "reason": "Request failed with status code 410",
+    "detected": true,
+    "event": {
+      "blockNumber": "41296426",
+      "transactionHash": "0x826fe7f02c6cb8b4f9bd1443fcb7eb0eda3ca21d355c9cca465fca9fe3cc76b7",
+      "user": "0x1D11f466d51CED7F27123C11566A233347Aa39B8",
+      "debtToCover": "8706341",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    }
+  },
+  {
+    "testNumber": 4,
+    "success": false,
+    "reason": "Request failed with status code 410",
+    "detected": true,
+    "event": {
+      "blockNumber": "41296418",
+      "transactionHash": "0x5b174d11668e10259e5405f2a03f673751edab41a262ba34dcdbc51a5b073e62",
+      "user": "0xE8DDC60a06A94f91DBCD72e4366B68812AB00c24",
+      "debtToCover": "1849321850",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x7a22dF5C38e1c151b27b0965A4ce0a05A5A352c9"
+    }
+  },
+  {
+    "testNumber": 5,
+    "success": false,
+    "reason": "Request failed with status code 410",
+    "detected": true,
+    "event": {
+      "blockNumber": "41292874",
+      "transactionHash": "0x6d8871cfb86b18a497be1d1fd008246d5b9f9bdd479959ea369961063945b16f",
+      "user": "0xdc9ed7193b2516C84cB73f7F076426165c0ab459",
+      "debtToCover": "1006",
+      "collateralAsset": "0x4200000000000000000000000000000000000006",
+      "liquidator": "0x3E9F5Aca7ffB77987833578Ed063cB5dAE9D2bB9"
+    }
+  }
+]
