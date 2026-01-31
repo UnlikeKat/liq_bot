@@ -389,13 +389,21 @@ export async function startPriorityScanner() {
             .filter(p => p !== undefined)
             .sort((a, b) => Number(a!.healthFactor) - Number(b!.healthFactor)) as UserPosition[];
 
-        // 2. Take Top 24
-        const top24 = sortedTargets.slice(0, 24).map(u => u.address);
+        // 2. Filter for HIGH VALUE targets only (No Dust)
+        // Alchemy Limit: 25 req/min (~1 every 2.4s). We confirm 23 slots.
+        const MIN_VALUE_USD = 15.0; // Matches Batch Executor limit
+        const premiumTargets = sortedTargets.filter(p => {
+            const debtUSD = Number(formatUnits(p.totalDebtBase, 8));
+            return debtUSD >= MIN_VALUE_USD;
+        });
 
-        if (top24.length > 0) {
-            await batchUpdateHealthFactorsGeneric(top24, premiumClient, 'PREMIUM');
+        // 3. Take Top 23 (Leaving 2 slots for Execution/Gas checks)
+        const top23 = premiumTargets.slice(0, 23).map(u => u.address);
+
+        if (top23.length > 0) {
+            await batchUpdateHealthFactorsGeneric(top23, premiumClient, 'PREMIUM');
         }
-    }, 1000); // 1 Second
+    }, 1000); // 1 Second (User Confirmed 25 req/s limit)
 }
 
 /**
@@ -405,27 +413,34 @@ export async function startPriorityScanner() {
 export async function startBackgroundScanner() {
     console.log('🐢 Starting Background Scanner (Rest @ 10s)...');
     setInterval(async () => {
-        if (killList.size <= 24) return; // Priority scanner handles everything if <= 24
+        if (killList.size === 0) return;
 
-        // 1. Get List & Sort
+        // 1. Get ordered list exactly like Priority Scanner
         const sortedTargets = Array.from(killList)
             .map(addr => healthFactorCache.get(addr))
             .filter(p => p !== undefined)
             .sort((a, b) => Number(a!.healthFactor) - Number(b!.healthFactor)) as UserPosition[];
 
-        // 2. Skip Top 24
-        const backgroundTargets = sortedTargets.slice(24).map(u => u.address);
+        // 2. Identify priority targets to SKIP (Top 23 > $15)
+        const MIN_VALUE_USD = 15.0;
+        const premiumTargets = sortedTargets.filter(p => Number(formatUnits(p.totalDebtBase, 8)) >= MIN_VALUE_USD).slice(0, 23);
+        const premiumAddrs = new Set(premiumTargets.map(u => u.address));
+
+        // 3. Process EVERYTHING ELSE (Dust + Rank > 23)
+        const backgroundTargets = sortedTargets
+            .filter(u => !premiumAddrs.has(u.address))
+            .map(u => u.address);
 
         if (backgroundTargets.length > 0) {
-            // Use 100 batch size for background
-            // Loop through them
+            // Use 100 batch size for background (DRPC is usually looser)
             const BATCH_SIZE = 100;
             for (let i = 0; i < backgroundTargets.length; i += BATCH_SIZE) {
                 const batch = backgroundTargets.slice(i, i + BATCH_SIZE);
                 await batchUpdateHealthFactorsGeneric(batch, wssClient, 'WSS');
+                await new Promise(r => setTimeout(r, 200)); // Slight throttle
             }
         }
-    }, 10000); // 10 Seconds
+    }, 5000); // 5 Seconds (Faster background scan)
 }
 
 /**

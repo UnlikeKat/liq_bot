@@ -81,19 +81,28 @@ export const CONFIG = {
 // Public Client: Used for non-critical/heavy background tasks (Scraping, Monitoring new users)
 export const publicClient = createPublicClient({
     chain: base,
-    transport: http(CONFIG.RPC_URL_PUBLIC),
+    transport: http(CONFIG.RPC_URL_PUBLIC, {
+        retryCount: 3,
+        retryDelay: 1000 // 1s backoff
+    }),
 });
 
 // Premium Client: Used for the critical path (Health check, Execution)
 export const premiumClient = createPublicClient({
     chain: base,
-    transport: http(CONFIG.RPC_URL_PREMIUM),
+    transport: http(CONFIG.RPC_URL_PREMIUM, {
+        retryCount: 3,
+        retryDelay: 500 // Fast recovery
+    }),
 });
 
 // WSS Client: Used for background scanning (DRPC)
 export const wssClient = createPublicClient({
     chain: base,
-    transport: webSocket(CONFIG.RPC_URL_WSS),
+    transport: webSocket(CONFIG.RPC_URL_WSS, {
+        retryCount: 3,
+        retryDelay: 1000
+    }),
 });
 
 // Validation
