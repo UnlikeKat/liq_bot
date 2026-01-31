@@ -72,7 +72,7 @@ function shortenAddress(addr: string): string {
 
 export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHistoryPageProps) {
     const [searchTerm, setSearchTerm] = useState('');
-    const [dateFilter, setDateFilter] = useState('90'); // 7, 30, 90 days
+    const [dateFilter, setDateFilter] = useState('7'); // 7, 30, 90 days
     const [hideDust, setHideDust] = useState(true); // Default hide dust (< $0.05)
     const [sortBy, setSortBy] = useState<'timestamp' | 'profitUSD' | 'blockNumber'>('timestamp');
     const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc');

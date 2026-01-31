@@ -269,6 +269,7 @@ export default function App({ socketState }: { socketState?: any }) {
           {/* PRIORITY LIST (> $1) */}
           {state.killList
             .filter((user: any) => (Number(user.totalDebtBase) / 1e8) > 1.0)
+            .slice(0, 50)
             .map((user: any) => (
               <motion.div
                 // Removed layout prop to improve performance on list updates
