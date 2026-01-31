@@ -21,8 +21,7 @@ import {
   ZapOff,
   ArrowUpRight,
   ArrowDownRight,
-  ArrowUpRight,
-  ArrowDownRight,
+
   Minus,
   Menu
 } from 'lucide-react';
@@ -324,475 +323,524 @@ export default function App() {
               </motion.div>
             ))}
         </div>
-    </div>
-      </aside >
+      </aside>
 
-    {/* MOBILE OVERLAY BACKDROP */ }
-  {
-    isMobileMenuOpen && (
-      <div
-        className="fixed inset-0 bg-black/60 z-30 backdrop-blur-sm md:hidden"
-        onClick={() => setIsMobileMenuOpen(false)}
-      />
-    )
-  }
+      {/* MOBILE OVERLAY BACKDROP */}
+      {
+        isMobileMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black/60 z-30 backdrop-blur-sm md:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        )
+      }
 
-  {/* MAIN VIEW */ }
-  <main className="flex-1 flex flex-col min-w-0 gap-2 overflow-hidden">
+      {/* MAIN VIEW */}
+      <main className="flex-1 flex flex-col min-w-0 gap-2 overflow-hidden">
 
-    {/* TOP STATUS BAR */}
-    <header className="mica-container shrink-0 flex flex-col overflow-hidden relative">
-      {/* DESKTOP HEADER CONTENT (Hidden on mobile to save space, or scaled down) */}
-      <div className="h-auto py-2 md:h-14 flex flex-col md:flex-row items-start md:items-center justify-between px-4 md:px-6 border-b border-white/[0.03] gap-4 md:gap-0">
-        <div className="flex flex-wrap gap-4 md:gap-10">
-          <div className="flex items-center gap-3">
-            <Wallet className="w-5 h-5 text-emerald-400" />
-            <div className="flex flex-col">
-              <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Account</span>
-              <span className="text-base font-black tracking-tight glow-green leading-none">{state.status.wallet} ETH</span>
+        {/* TOP STATUS BAR */}
+        <header className="mica-container shrink-0 flex flex-col overflow-hidden relative">
+          {/* DESKTOP HEADER CONTENT (Hidden on mobile to save space, or scaled down) */}
+          <div className="h-auto py-2 md:h-14 flex flex-col md:flex-row items-start md:items-center justify-between px-4 md:px-6 border-b border-white/[0.03] gap-4 md:gap-0">
+            <div className="flex flex-wrap gap-4 md:gap-10">
+              <div className="flex items-center gap-3">
+                <Wallet className="w-5 h-5 text-emerald-400" />
+                <div className="flex flex-col">
+                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Account</span>
+                  <span className="text-base font-black tracking-tight glow-green leading-none">{state.status.wallet} ETH</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Gauge className="w-5 h-5 text-amber-500" />
+                <div className="flex flex-col">
+                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Price</span>
+                  <span className="text-base font-black tracking-tight text-white leading-none">{state.status.gas} GWEI</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-blue-400" />
+                <div className="flex flex-col">
+                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Session</span>
+                  <span className="text-base font-black tracking-tight text-white leading-none">{state.status.uptime}</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <ShieldAlert className="w-5 h-5 text-green-400" />
+                <div className="flex flex-col">
+                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Safe Tier</span>
+                  <span className="text-base font-black tracking-tight text-green-400 leading-none">{state.safeUsers.count.toLocaleString()} users</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <Gauge className="w-5 h-5 text-amber-500" />
-            <div className="flex flex-col">
-              <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Price</span>
-              <span className="text-base font-black tracking-tight text-white leading-none">{state.status.gas} GWEI</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <Clock className="w-5 h-5 text-blue-400" />
-            <div className="flex flex-col">
-              <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Session</span>
-              <span className="text-base font-black tracking-tight text-white leading-none">{state.status.uptime}</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <ShieldAlert className="w-5 h-5 text-green-400" />
-            <div className="flex flex-col">
-              <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Safe Tier</span>
-              <span className="text-base font-black tracking-tight text-green-400 leading-none">{state.safeUsers.count.toLocaleString()} users</span>
-            </div>
-          </div>
-        </div>
 
-        <div className="hidden md:flex items-center gap-6">
-          <div className="flex flex-col items-end gap-1">
-            <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
-              <motion.div
-                animate={{ scale: connected ? 1 : 0.9 }}
-                transition={{ duration: 0.2 }}
-                className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
-              />
-              <span className="text-[10px] font-black tracking-widest leading-none uppercase">
-                {connected ? "CORE ONLINE" : "ENGINE OFFLINE"}
-              </span>
-            </div>
-            {!connected && (
-              <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
-                Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
-              </span>
-            )}
-            {lastError && !connected && (
-              <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
-                Error: {lastError}
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
-
-      <div className="h-auto py-2 md:h-10 bg-black/30 flex flex-wrap items-center px-4 md:px-6 gap-4 md:gap-10">
-        <div className="flex items-center gap-2">
-          <Trophy className="w-3.5 h-3.5 text-yellow-500" />
-          <span className="text-[10px] font-black text-zinc-600 uppercase">Yield:</span>
-          <span className="text-[11px] font-black text-emerald-400 glow-green tracking-tight">${state.stats.totalProfitUSD.toFixed(2)} USDC</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Zap className="w-3.5 h-3.5 text-cyan-400" />
-          <span className="text-[10px] font-black text-zinc-600 uppercase">Success:</span>
-          <span className="text-[11px] font-black text-white tracking-tight">
-            {state.stats.totalAttempts > 0 ? ((state.stats.successCount / state.stats.totalAttempts) * 100).toFixed(1) : "0.0"}%
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <LineChart className="w-3.5 h-3.5 text-blue-400" />
-          <span className="text-[10px] font-black text-zinc-600 uppercase">RPC Flow:</span>
-          <div className="flex flex-col leading-none">
-            <div className="flex items-baseline gap-1">
-              <span className="text-[11px] font-black text-cyan-400 tracking-tight">{(state.stats.basicRpcCalls || 0).toLocaleString()}</span>
-              <span className="text-[8px] text-zinc-600 font-bold uppercase">DRPC</span>
-            </div>
-            <div className="flex items-baseline gap-1">
-              <span className="text-[11px] font-black text-magenta-400 tracking-tight">{(state.stats.premiumRpcCalls || 0).toLocaleString()}</span>
-              <span className="text-[8px] text-zinc-600 font-bold uppercase">ALCH</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    {/* DASHBOARD CONTENT GRID (Stacked on mobile) */}
-    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-2 p-1 md:p-2 min-h-0 overflow-y-auto md:overflow-hidden">
-
-      {/* SNIPER LOG */}
-      <div className="flex flex-col mica-container overflow-hidden min-h-[300px] md:min-h-0">
-        <div className="panel-header shrink-0 flex items-center gap-2">
-          <Flame className="w-4 h-4 text-orange-500 fill-orange-500/20" />
-          <span>Sniper Execution History</span>
-        </div>
-        <div className="flex-1 overflow-y-auto p-3 font-mono text-[11px] space-y-1 bg-black/40 custom-scrollbar">
-          <AnimatePresence initial={false}>
-            {state.sniperLogs.length === 0 && <div className="flex items-center justify-center h-full text-zinc-800 uppercase font-black tracking-widest italic opacity-20">Monitoring Targets...</div>}
-            {state.sniperLogs.map((log: any, i) => {
-              const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
-              return (
-                <motion.div
-                  layout
-                  initial={{ opacity: 0, y: -5 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  key={`sniper-${i}`}
-                  className={cn(
-                    "group flex gap-3 p-2 rounded border border-white/5 leading-relaxed transition-all",
-                    log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
-                  )}
-                >
-                  <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
-                  <span className="font-black underline shrink-0 uppercase tracking-tighter">{log.success ? "EXEC" : "REVE"}</span>
-                  <div className="font-medium flex-1 break-words">
-                    {log.message.split(txHash || '...')[0]}
-                    {txHash && (
-                      <span
-                        onClick={() => openExplorer(txHash)}
-                        className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 hover:glow-cyan-white transition-all text-[9px] tracking-tight bg-white/5 px-1.5 rounded"
-                      >
-                        tx:{txHash.slice(0, 10)}...
-                      </span>
-                    )}
-                  </div>
-                </motion.div>
-              )
-            })}
-          </AnimatePresence>
-        </div>
-      </div>
-
-      {/* MARKET FEED */}
-      <div className="flex flex-col mica-container overflow-hidden border-blue-500/5 min-h-[300px] md:min-h-0">
-        <div className="panel-header shrink-0 flex items-center gap-4 bg-white/[0.02]">
-          <div className="flex items-center gap-2">
-            <Activity className="w-4 h-4 text-blue-400" />
-            <span>Live Intelligence Stream</span>
-          </div>
-          <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
-            {['All', 'Market', 'System', 'Discovery'].map(tab => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab as any)}
-                className={cn(
-                  "text-[8px] px-2 py-0.5 rounded font-black uppercase tracking-widest transition-all",
-                  activeTab === tab ? "bg-blue-500 text-white shadow-[0_0_8px_rgba(59,130,246,0.5)]" : "text-zinc-500 hover:text-white"
+            <div className="hidden md:flex items-center gap-6">
+              <div className="flex flex-col items-end gap-1">
+                <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
+                  <motion.div
+                    animate={{ scale: connected ? 1 : 0.9 }}
+                    transition={{ duration: 0.2 }}
+                    className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
+                  />
+                  <span className="text-[10px] font-black tracking-widest leading-none uppercase">
+                    {connected ? "CORE ONLINE" : "ENGINE OFFLINE"}
+                  </span>
+                </div>
+                {!connected && (
+                  <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
+                    Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
+                  </span>
                 )}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex-1 overflow-y-auto p-1 font-mono text-[11px] bg-black/40 custom-scrollbar flex flex-col pt-2">
-          {filteredLogs.length === 0 && <div className="flex items-center justify-center p-20 text-zinc-800 uppercase font-black text-[9px] tracking-widest italic opacity-20">No matching signals...</div>}
-          <AnimatePresence initial={false}>
-            {[...filteredLogs].reverse().map((log: any, i) => {
-              const isRich = !!log.richData;
-              return (
-                <motion.div
-                  initial={{ opacity: 0, x: 5 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  key={i}
-                  onClick={() => isRich && setInspectedEvent(log)}
-                  className={cn(
-                    "flex gap-3 text-zinc-500 hover:text-white transition-all py-1.5 px-3 border-b border-white/[0.02] hover:bg-white/[0.03] group",
-                    isRich && "cursor-pointer border-l-2",
-                    log.richData?.type === 'HF_COMPARISON' ? "border-l-magenta-500/40 bg-magenta-500/[0.02]" : "border-l-blue-500/40 bg-blue-500/[0.02]"
-                  )}>
-                  <span className="text-zinc-700 font-bold shrink-0 text-[9px]">[{log.time}]</span>
-                  <span className={cn(
-                    "font-black uppercase tracking-widest text-[8px] shrink-0 w-14 text-center px-1 rounded",
-                    log.category === 'Market' ? "bg-blue-500/10 text-blue-400" :
-                      log.category === 'Discovery' ? "bg-cyan-500/10 text-cyan-400" : "bg-white/5 text-zinc-500"
-                  )}>
-                    {log.category || 'LOG'}
+                {lastError && !connected && (
+                  <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
+                    Error: {lastError}
                   </span>
-                  <span className="leading-tight tracking-tight flex-1 break-words whitespace-pre-wrap">{log.message}</span>
-                  {isRich && (
-                    <Eye className="w-3 h-3 text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  )}
-                </motion.div>
-              )
-            })}
-          </AnimatePresence>
-        </div>
-      </div>
-    </div>
-
-    {/* BOTTOM INSPECTOR FOOTER */}
-  </footer>
-      </main >
-
-    {/* DEEP INSPECTION MODAL */ }
-    <AnimatePresence>
-  {
-    inspectedEvent && (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-10"
-      >
-        {inspectedEvent.richData?.type === 'HF_COMPARISON' ? (
-          // HEALTH FACTOR COMPARISON MODAL
-          <div className="mica-container w-full max-w-6xl max-h-[90vh] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(217,70,239,0.3)] border-magenta-500/30">
-            <div className="panel-header flex items-center justify-between shrink-0 bg-magenta-500/10">
-              <div className="flex items-center gap-3">
-                <ArrowRightLeft className="w-5 h-5 text-magenta-400" />
-                <span className="text-white">POSITION IMPACT ANALYSIS</span>
-                <span className="text-[9px] font-black bg-magenta-500/20 text-magenta-400 px-2 py-0.5 rounded">
-                  {inspectedEvent.richData.affectedUsers.length} POSITIONS
-                </span>
+                )}
               </div>
-              <button onClick={() => setInspectedEvent(null)} className="p-1 hover:bg-white/10 rounded-full transition-colors">
-                <X className="w-5 h-5" />
-              </button>
             </div>
+          </div>
 
-            <div className="flex-1 overflow-y-auto p-6 space-y-4 custom-scrollbar">
-              <div className="flex flex-col gap-2 mb-4">
-                <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-1">Source Transaction</span>
-                <div
-                  onClick={() => openExplorer(inspectedEvent.richData.txHash)}
-                  className="p-3 bg-black/40 border border-white/5 rounded-lg flex items-center justify-between group cursor-pointer"
-                >
-                  <span className="font-mono text-magenta-400 group-hover:text-magenta-200 transition-colors uppercase text-sm">{inspectedEvent.richData.txHash}</span>
-                  <ExternalLink className="w-4 h-4 text-white/20 group-hover:text-magenta-400" />
+          <div className="h-auto py-2 md:h-10 bg-black/30 flex flex-wrap items-center px-4 md:px-6 gap-4 md:gap-10">
+            <div className="flex items-center gap-2">
+              <Trophy className="w-3.5 h-3.5 text-yellow-500" />
+              <span className="text-[10px] font-black text-zinc-600 uppercase">Yield:</span>
+              <span className="text-[11px] font-black text-emerald-400 glow-green tracking-tight">${state.stats.totalProfitUSD.toFixed(2)} USDC</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap className="w-3.5 h-3.5 text-cyan-400" />
+              <span className="text-[10px] font-black text-zinc-600 uppercase">Success:</span>
+              <span className="text-[11px] font-black text-white tracking-tight">
+                {state.stats.totalAttempts > 0 ? ((state.stats.successCount / state.stats.totalAttempts) * 100).toFixed(1) : "0.0"}%
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <LineChart className="w-3.5 h-3.5 text-blue-400" />
+              <span className="text-[10px] font-black text-zinc-600 uppercase">RPC Flow:</span>
+              <div className="flex flex-col leading-none">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-[11px] font-black text-cyan-400 tracking-tight">{(state.stats.basicRpcCalls || 0).toLocaleString()}</span>
+                  <span className="text-[8px] text-zinc-600 font-bold uppercase">DRPC</span>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-[11px] font-black text-magenta-400 tracking-tight">{(state.stats.premiumRpcCalls || 0).toLocaleString()}</span>
+                  <span className="text-[8px] text-zinc-600 font-bold uppercase">ALCH</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </header>
 
-              {/* Position Impact Summary */}
-              <div className="flex gap-4 mb-4 p-4 bg-black/40 border border-white/5 rounded-lg">
-                <div className="flex items-center gap-2">
-                  <ArrowDownRight className="w-4 h-4 text-red-400" />
-                  <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Deteriorated:</span>
-                  <span className="text-lg font-black text-red-400">
-                    {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) < 0).length}
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <ArrowUpRight className="w-4 h-4 text-green-400" />
-                  <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Improved:</span>
-                  <span className="text-lg font-black text-green-400">
-                    {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) > 0).length}
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Minus className="w-4 h-4 text-zinc-500" />
-                  <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Unchanged:</span>
-                  <span className="text-lg font-black text-zinc-400">
-                    {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) === 0).length}
-                  </span>
-                </div>
-              </div>
+        {/* DASHBOARD CONTENT GRID (Stacked on mobile) */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-2 p-1 md:p-2 min-h-0 overflow-y-auto md:overflow-hidden">
 
-              <div className="space-y-3">
-                {inspectedEvent.richData.affectedUsers.map((user: any, idx: number) => {
-                  const hfDelta = user.after.hf - user.before.hf;
-                  const isWorse = hfDelta < 0;
-                  const debtDelta = user.after.debt - user.before.debt;
-                  const collateralDelta = user.after.collateral - user.before.collateral;
-
+          {/* SNIPER LOG */}
+          <div className="flex flex-col mica-container overflow-hidden min-h-[300px] md:min-h-0">
+            <div className="panel-header shrink-0 flex items-center gap-2">
+              <Flame className="w-4 h-4 text-orange-500 fill-orange-500/20" />
+              <span>Sniper Execution History</span>
+            </div>
+            <div className="flex-1 overflow-y-auto p-3 font-mono text-[11px] space-y-1 bg-black/40 custom-scrollbar">
+              <AnimatePresence initial={false}>
+                {state.sniperLogs.length === 0 && <div className="flex items-center justify-center h-full text-zinc-800 uppercase font-black tracking-widest italic opacity-20">Monitoring Targets...</div>}
+                {state.sniperLogs.map((log: any, i) => {
+                  const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
                   return (
-                    <div key={idx} className="mica-container bg-white/[0.01] border-white/5 p-4 rounded-lg">
-                      <div className="flex items-center justify-between mb-4">
-                        <div
-                          onClick={() => openExplorer(user.address, 'address')}
-                          className="font-mono text-sm text-cyan-400 hover:text-cyan-200 cursor-pointer transition-colors flex items-center gap-2"
-                        >
-                          <span>{user.address.slice(0, 20)}...</span>
-                          <ExternalLink className="w-3 h-3" />
-                        </div>
-                        <div className={cn(
-                          "flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-black uppercase",
-                          isWorse ? "bg-red-500/20 text-red-400" : "bg-emerald-500/20 text-emerald-400"
-                        )}>
-                          {isWorse ? <ArrowDownRight className="w-3 h-3" /> : <ArrowUpRight className="w-3 h-3" />}
-                          {isWorse ? "DETERIORATED" : "IMPROVED"}
-                        </div>
+                    <motion.div
+                      layout
+                      initial={{ opacity: 0, y: -5 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      key={`sniper-${i}`}
+                      className={cn(
+                        "group flex gap-3 p-2 rounded border border-white/5 leading-relaxed transition-all",
+                        log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
+                      )}
+                    >
+                      <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
+                      <span className="font-black underline shrink-0 uppercase tracking-tighter">{log.success ? "EXEC" : "REVE"}</span>
+                      <div className="font-medium flex-1 break-words">
+                        {log.message.split(txHash || '...')[0]}
+                        {txHash && (
+                          <span
+                            onClick={() => openExplorer(txHash)}
+                            className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 hover:glow-cyan-white transition-all text-[9px] tracking-tight bg-white/5 px-1.5 rounded"
+                          >
+                            tx:{txHash.slice(0, 10)}...
+                          </span>
+                        )}
                       </div>
-
-                      <div className="grid grid-cols-3 gap-6">
-                        {/* Health Factor */}
-                        <div className="flex flex-col">
-                          <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Health Factor</span>
-                          <div className="flex items-center gap-3">
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
-                              <span className="text-lg font-black text-white/70">{user.before.hf.toFixed(4)}</span>
-                            </div>
-                            <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
-                              <span className={cn(
-                                "text-lg font-black",
-                                isWorse ? "text-red-400 glow-red" : "text-emerald-400 glow-green"
-                              )}>
-                                {user.after.hf.toFixed(4)}
-                              </span>
-                            </div>
-                          </div>
-                          <div className={cn(
-                            "text-[10px] font-black mt-2 flex items-center gap-1",
-                            isWorse ? "text-red-400" : "text-emerald-400"
-                          )}>
-                            {isWorse ? <Minus className="w-3 h-3" /> : "+"}{Math.abs(hfDelta).toFixed(4)}
-                          </div>
-                        </div>
-
-                        {/* Debt */}
-                        <div className="flex flex-col">
-                          <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Debt</span>
-                          <div className="flex items-center gap-3">
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
-                              <span className="text-lg font-black text-white/70">${user.before.debt.toLocaleString()}</span>
-                            </div>
-                            <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
-                              <span className="text-lg font-black text-white/90">${user.after.debt.toLocaleString()}</span>
-                            </div>
-                          </div>
-                          <div className="text-[10px] font-black text-zinc-500 mt-2">
-                            {debtDelta > 0 ? "+" : ""}{debtDelta.toFixed(2)}
-                          </div>
-                        </div>
-
-                        {/* Collateral */}
-                        <div className="flex flex-col">
-                          <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Collateral</span>
-                          <div className="flex items-center gap-3">
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
-                              <span className="text-lg font-black text-white/70">${user.before.collateral.toLocaleString()}</span>
-                            </div>
-                            <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
-                            <div className="flex flex-col flex-1">
-                              <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
-                              <span className="text-lg font-black text-white/90">${user.after.collateral.toLocaleString()}</span>
-                            </div>
-                          </div>
-                          <div className="text-[10px] font-black text-zinc-500 mt-2">
-                            {collateralDelta > 0 ? "+" : ""}{collateralDelta.toFixed(2)}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
+                    </motion.div>
+                  )
                 })}
-              </div>
+              </AnimatePresence>
             </div>
           </div>
-        ) : (
-          // ORIGINAL RESERVE UPDATE MODAL
-          <div className="mica-container w-full max-w-4xl max-h-[80vh] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.2)] border-blue-500/30">
-            <div className="panel-header flex items-center justify-between shrink-0 bg-blue-500/10">
-              <div className="flex items-center gap-3">
-                <Activity className="w-5 h-5 text-blue-400" />
-                <span className="text-white">ON-CHAIN RESERVE UPDATE INSPECTOR</span>
+
+          {/* MARKET FEED */}
+          <div className="flex flex-col mica-container overflow-hidden border-blue-500/5 min-h-[300px] md:min-h-0">
+            <div className="panel-header shrink-0 flex items-center gap-4 bg-white/[0.02]">
+              <div className="flex items-center gap-2">
+                <Activity className="w-4 h-4 text-blue-400" />
+                <span>Live Intelligence Stream</span>
               </div>
-              <button onClick={() => setInspectedEvent(null)} className="p-1 hover:bg-white/10 rounded-full transition-colors">
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
+                {['All', 'Market', 'System', 'Discovery'].map(tab => (
+                  <button
+                    key={tab}
+                    onClick={() => setActiveTab(tab as any)}
+                    className={cn(
+                      "text-[8px] px-2 py-0.5 rounded font-black uppercase tracking-widest transition-all",
+                      activeTab === tab ? "bg-blue-500 text-white shadow-[0_0_8px_rgba(59,130,246,0.5)]" : "text-zinc-500 hover:text-white"
+                    )}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <div className="flex-1 overflow-y-auto p-6 space-y-8 custom-scrollbar">
-              <div className="flex flex-col gap-2">
-                <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-1">Source Transaction</span>
-                <div
-                  onClick={() => openExplorer(inspectedEvent.richData.txHash)}
-                  className="p-3 bg-black/40 border border-white/5 rounded-lg flex items-center justify-between group cursor-pointer"
-                >
-                  <span className="font-mono text-cyan-400 group-hover:text-cyan-200 transition-colors uppercase">{inspectedEvent.richData.txHash}</span>
-                  <ExternalLink className="w-4 h-4 text-white/20 group-hover:text-cyan-400" />
+            <div className="flex-1 overflow-y-auto p-1 font-mono text-[11px] bg-black/40 custom-scrollbar flex flex-col pt-2">
+              {filteredLogs.length === 0 && <div className="flex items-center justify-center p-20 text-zinc-800 uppercase font-black text-[9px] tracking-widest italic opacity-20">No matching signals...</div>}
+              <AnimatePresence initial={false}>
+                {[...filteredLogs].reverse().map((log: any, i) => {
+                  const isRich = !!log.richData;
+                  return (
+                    <motion.div
+                      initial={{ opacity: 0, x: 5 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      key={i}
+                      onClick={() => isRich && setInspectedEvent(log)}
+                      className={cn(
+                        "flex gap-3 text-zinc-500 hover:text-white transition-all py-1.5 px-3 border-b border-white/[0.02] hover:bg-white/[0.03] group",
+                        isRich && "cursor-pointer border-l-2",
+                        log.richData?.type === 'HF_COMPARISON' ? "border-l-magenta-500/40 bg-magenta-500/[0.02]" : "border-l-blue-500/40 bg-blue-500/[0.02]"
+                      )}>
+                      <span className="text-zinc-700 font-bold shrink-0 text-[9px]">[{log.time}]</span>
+                      <span className={cn(
+                        "font-black uppercase tracking-widest text-[8px] shrink-0 w-14 text-center px-1 rounded",
+                        log.category === 'Market' ? "bg-blue-500/10 text-blue-400" :
+                          log.category === 'Discovery' ? "bg-cyan-500/10 text-cyan-400" : "bg-white/5 text-zinc-500"
+                      )}>
+                        {log.category || 'LOG'}
+                      </span>
+                      <span className="leading-tight tracking-tight flex-1 break-words whitespace-pre-wrap">{log.message}</span>
+                      {isRich && (
+                        <Eye className="w-3 h-3 text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      )}
+                    </motion.div>
+                  )
+                })}
+              </AnimatePresence>
+            </div>
+          </div>
+        </div>
+
+        <footer className="h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-5 flex gap-10 shrink-0 relative overflow-hidden">
+          {selectedUser ? (
+            <>
+              <div className="flex flex-col justify-center min-w-[350px] relative z-10">
+                <span className="text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-2 flex items-center gap-2 leading-none">
+                  <Cpu className="w-3.5 h-3.5" /> Positional Analytics
+                </span>
+                <div className="flex items-center gap-3">
+                  <div
+                    onClick={() => openExplorer(selectedUser.address, 'address')}
+                    className="cursor-pointer group"
+                  >
+                    <h2 className="text-2xl font-mono font-black tracking-tighter text-white group-hover:text-magenta-400 transition-all" style={{ textShadow: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textShadow = '0 0 10px rgba(217,70,239,0.4), 0 0 20px rgba(217,70,239,0.2)'} onMouseLeave={(e) => e.currentTarget.style.textShadow = 'none'}>
+                      {selectedUser.address.slice(0, 20)}...
+                    </h2>
+                  </div>
+
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => sendCommand('LIQUIDATE_USER', { address: selectedUser.address })}
+                    className="ml-4 px-4 py-2 rounded bg-red-600/20 hover:bg-red-600 text-red-500 hover:text-white border border-red-600/30 font-black text-[10px] uppercase tracking-widest transition-all"
+                  >
+                    Force Snipe
+                  </motion.button>
                 </div>
               </div>
-
-              <div className="grid grid-cols-2 gap-8 relative">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 border-b border-white/5 pb-2">
-                    <Activity className="w-4 h-4 text-zinc-500" />
-                    <span className="text-[10px] font-black text-white uppercase tracking-widest">Reserve Rates (Post-Update)</span>
-                  </div>
-
-                  {/* Explanation Box */}
-                  <div className="mb-4 p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-                    <p className="text-[11px] text-cyan-200 leading-relaxed">
-                      <strong className="text-cyan-400">What this means:</strong> AAVE updated interest rates for these assets. When rates change, all borrowers' health factors shift.
-                      Bot recalculates HF for <strong>ALL</strong> risky users (not just the 500 shown in UI) to detect new liquidation opportunities.
-                    </p>
-                  </div>
-
-                  <div className="space-y-2">
-                    {inspectedEvent.richData.updates.map((up: any, idx: number) => (
-                      <div key={idx} className="p-3 bg-white/[0.02] border border-white/[0.05] rounded flex flex-col gap-2">
-                        <span className="text-[11px] font-mono text-cyan-400">{up.reserve}</span>
-                        <div className="grid grid-cols-2 gap-4">
-                          <div>
-                            <span className="text-[9px] text-zinc-600 block uppercase font-bold">Stable</span>
-                            <span className="text-[12px] font-black text-white">{(Number(up.stableBorrowRate) / 1e25).toFixed(4)}%</span>
-                          </div>
-                          <div>
-                            <span className="text-[9px] text-zinc-600 block uppercase font-bold">Variable</span>
-                            <span className="text-[12px] font-black text-white">{(Number(up.variableBorrowRate) / 1e25).toFixed(4)}%</span>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+              <div className="h-full w-px bg-white/5" />
+              <div className="flex-1 grid grid-cols-3 gap-12 items-center relative z-10">
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Debt Pool</span>
+                  <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalDebtBase) / 1e8).toLocaleString()}</span>
                 </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Collateral</span>
+                  <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalCollateralBase) / 1e8).toLocaleString()}</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-magenta-500 font-black uppercase tracking-widest mb-1 leading-none font-bold">Health Factor</span>
+                  <span className={cn("text-3xl font-black tracking-tighter leading-none", (Number(selectedUser.healthFactor) / 1e18) < 1.1 ? "text-red-500 glow-red" : "text-cyan-400 glow-cyan")}>
+                    {(Number(selectedUser.healthFactor) / 1e18).toFixed(6)}
+                  </span>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-center justify-center w-full h-full text-zinc-800 gap-3 select-none">
+              <RefreshCw className="w-6 h-6 border-zinc-800 opacity-20 animate-spin-slow" />
+              <span className="font-black uppercase tracking-[0.5em] text-sm italic opacity-30">Hydrated & Monitoring Market</span>
+            </div>
+          )}
+        </footer>
+      </main>
 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 border-b border-white/5 pb-2 text-magenta-500">
-                    <Target className="w-4 h-4" />
-                    <span className="text-[10px] font-black uppercase tracking-widest">System Impact</span>
-                  </div>
-                  <div className="mica-container bg-magenta-500/[0.02] border-magenta-500/20 p-8 rounded-lg flex flex-col items-center justify-center gap-6">
-                    <div className="relative">
-                      <motion.div
-                        animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                        transition={{ repeat: Infinity, duration: 2 }}
-                        className="absolute inset-0 bg-magenta-500 rounded-full blur-xl"
-                      />
-                      <ArrowRightLeft className="w-12 h-12 text-magenta-500 relative z-10" />
-                    </div>
-                    <div className="text-center">
-                      <span className="text-[12px] font-black text-white uppercase tracking-widest block mb-1">Global Recalculation</span>
-                      <span className="text-[10px] text-zinc-500 leading-relaxed max-w-[200px] block">
-                        Triggering health factor updates for {state.killList.length} targets across all debt positions.
+      {/* DEEP INSPECTION MODAL */}
+      <AnimatePresence>
+        {
+          inspectedEvent && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-10"
+            >
+              {inspectedEvent.richData?.type === 'HF_COMPARISON' ? (
+                // HEALTH FACTOR COMPARISON MODAL
+                <div className="mica-container w-full max-w-6xl max-h-[90vh] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(217,70,239,0.3)] border-magenta-500/30">
+                  <div className="panel-header flex items-center justify-between shrink-0 bg-magenta-500/10">
+                    <div className="flex items-center gap-3">
+                      <ArrowRightLeft className="w-5 h-5 text-magenta-400" />
+                      <span className="text-white">POSITION IMPACT ANALYSIS</span>
+                      <span className="text-[9px] font-black bg-magenta-500/20 text-magenta-400 px-2 py-0.5 rounded">
+                        {inspectedEvent.richData.affectedUsers.length} POSITIONS
                       </span>
                     </div>
+                    <button onClick={() => setInspectedEvent(null)} className="p-1 hover:bg-white/10 rounded-full transition-colors">
+                      <X className="w-5 h-5" />
+                    </button>
                   </div>
 
-                  <div className="p-4 bg-emerald-500/5 border border-emerald-500/10 rounded-lg flex items-center justify-between">
-                    <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest">Network Latency</span>
-                    <span className="text-xl font-black text-white">2.4ms</span>
+                  <div className="flex-1 overflow-y-auto p-6 space-y-4 custom-scrollbar">
+                    <div className="flex flex-col gap-2 mb-4">
+                      <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-1">Source Transaction</span>
+                      <div
+                        onClick={() => openExplorer(inspectedEvent.richData.txHash)}
+                        className="p-3 bg-black/40 border border-white/5 rounded-lg flex items-center justify-between group cursor-pointer"
+                      >
+                        <span className="font-mono text-magenta-400 group-hover:text-magenta-200 transition-colors uppercase text-sm">{inspectedEvent.richData.txHash}</span>
+                        <ExternalLink className="w-4 h-4 text-white/20 group-hover:text-magenta-400" />
+                      </div>
+                    </div>
+
+                    {/* Position Impact Summary */}
+                    <div className="flex gap-4 mb-4 p-4 bg-black/40 border border-white/5 rounded-lg">
+                      <div className="flex items-center gap-2">
+                        <ArrowDownRight className="w-4 h-4 text-red-400" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Deteriorated:</span>
+                        <span className="text-lg font-black text-red-400">
+                          {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) < 0).length}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <ArrowUpRight className="w-4 h-4 text-green-400" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Improved:</span>
+                        <span className="text-lg font-black text-green-400">
+                          {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) > 0).length}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Minus className="w-4 h-4 text-zinc-500" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Unchanged:</span>
+                        <span className="text-lg font-black text-zinc-400">
+                          {inspectedEvent.richData.affectedUsers.filter((u: any) => (u.after.hf - u.before.hf) === 0).length}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3">
+                      {inspectedEvent.richData.affectedUsers.map((user: any, idx: number) => {
+                        const hfDelta = user.after.hf - user.before.hf;
+                        const isWorse = hfDelta < 0;
+                        const debtDelta = user.after.debt - user.before.debt;
+                        const collateralDelta = user.after.collateral - user.before.collateral;
+
+                        return (
+                          <div key={idx} className="mica-container bg-white/[0.01] border-white/5 p-4 rounded-lg">
+                            <div className="flex items-center justify-between mb-4">
+                              <div
+                                onClick={() => openExplorer(user.address, 'address')}
+                                className="font-mono text-sm text-cyan-400 hover:text-cyan-200 cursor-pointer transition-colors flex items-center gap-2"
+                              >
+                                <span>{user.address.slice(0, 20)}...</span>
+                                <ExternalLink className="w-3 h-3" />
+                              </div>
+                              <div className={cn(
+                                "flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-black uppercase",
+                                isWorse ? "bg-red-500/20 text-red-400" : "bg-emerald-500/20 text-emerald-400"
+                              )}>
+                                {isWorse ? <ArrowDownRight className="w-3 h-3" /> : <ArrowUpRight className="w-3 h-3" />}
+                                {isWorse ? "DETERIORATED" : "IMPROVED"}
+                              </div>
+                            </div>
+
+                            <div className="grid grid-cols-3 gap-6">
+                              {/* Health Factor */}
+                              <div className="flex flex-col">
+                                <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Health Factor</span>
+                                <div className="flex items-center gap-3">
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
+                                    <span className="text-lg font-black text-white/70">{user.before.hf.toFixed(4)}</span>
+                                  </div>
+                                  <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
+                                    <span className={cn(
+                                      "text-lg font-black",
+                                      isWorse ? "text-red-400 glow-red" : "text-emerald-400 glow-green"
+                                    )}>
+                                      {user.after.hf.toFixed(4)}
+                                    </span>
+                                  </div>
+                                </div>
+                                <div className={cn(
+                                  "text-[10px] font-black mt-2 flex items-center gap-1",
+                                  isWorse ? "text-red-400" : "text-emerald-400"
+                                )}>
+                                  {isWorse ? <Minus className="w-3 h-3" /> : "+"}{Math.abs(hfDelta).toFixed(4)}
+                                </div>
+                              </div>
+
+                              {/* Debt */}
+                              <div className="flex flex-col">
+                                <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Debt</span>
+                                <div className="flex items-center gap-3">
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
+                                    <span className="text-lg font-black text-white/70">${user.before.debt.toLocaleString()}</span>
+                                  </div>
+                                  <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
+                                    <span className="text-lg font-black text-white/90">${user.after.debt.toLocaleString()}</span>
+                                  </div>
+                                </div>
+                                <div className="text-[10px] font-black text-zinc-500 mt-2">
+                                  {debtDelta > 0 ? "+" : ""}{debtDelta.toFixed(2)}
+                                </div>
+                              </div>
+
+                              {/* Collateral */}
+                              <div className="flex flex-col">
+                                <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest mb-2">Collateral</span>
+                                <div className="flex items-center gap-3">
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">BEFORE</span>
+                                    <span className="text-lg font-black text-white/70">${user.before.collateral.toLocaleString()}</span>
+                                  </div>
+                                  <ArrowRightLeft className="w-4 h-4 text-zinc-700" />
+                                  <div className="flex flex-col flex-1">
+                                    <span className="text-[8px] text-zinc-600 mb-1">AFTER</span>
+                                    <span className="text-lg font-black text-white/90">${user.after.collateral.toLocaleString()}</span>
+                                  </div>
+                                </div>
+                                <div className="text-[10px] font-black text-zinc-500 mt-2">
+                                  {collateralDelta > 0 ? "+" : ""}{collateralDelta.toFixed(2)}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </motion.div>
-    )
-  }
+              ) : (
+                // ORIGINAL RESERVE UPDATE MODAL
+                <div className="mica-container w-full max-w-4xl max-h-[80vh] flex flex-col overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.2)] border-blue-500/30">
+                  <div className="panel-header flex items-center justify-between shrink-0 bg-blue-500/10">
+                    <div className="flex items-center gap-3">
+                      <Activity className="w-5 h-5 text-blue-400" />
+                      <span className="text-white">ON-CHAIN RESERVE UPDATE INSPECTOR</span>
+                    </div>
+                    <button onClick={() => setInspectedEvent(null)} className="p-1 hover:bg-white/10 rounded-full transition-colors">
+                      <X className="w-5 h-5" />
+                    </button>
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto p-6 space-y-8 custom-scrollbar">
+                    <div className="flex flex-col gap-2">
+                      <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest mb-1">Source Transaction</span>
+                      <div
+                        onClick={() => openExplorer(inspectedEvent.richData.txHash)}
+                        className="p-3 bg-black/40 border border-white/5 rounded-lg flex items-center justify-between group cursor-pointer"
+                      >
+                        <span className="font-mono text-cyan-400 group-hover:text-cyan-200 transition-colors uppercase">{inspectedEvent.richData.txHash}</span>
+                        <ExternalLink className="w-4 h-4 text-white/20 group-hover:text-cyan-400" />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-8 relative">
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-2 border-b border-white/5 pb-2">
+                          <Activity className="w-4 h-4 text-zinc-500" />
+                          <span className="text-[10px] font-black text-white uppercase tracking-widest">Reserve Rates (Post-Update)</span>
+                        </div>
+
+                        {/* Explanation Box */}
+                        <div className="mb-4 p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
+                          <p className="text-[11px] text-cyan-200 leading-relaxed">
+                            <strong className="text-cyan-400">What this means:</strong> AAVE updated interest rates for these assets. When rates change, all borrowers' health factors shift.
+                            Bot recalculates HF for <strong>ALL</strong> risky users (not just the 500 shown in UI) to detect new liquidation opportunities.
+                          </p>
+                        </div>
+
+                        <div className="space-y-2">
+                          {inspectedEvent.richData.updates.map((up: any, idx: number) => (
+                            <div key={idx} className="p-3 bg-white/[0.02] border border-white/[0.05] rounded flex flex-col gap-2">
+                              <span className="text-[11px] font-mono text-cyan-400">{up.reserve}</span>
+                              <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                  <span className="text-[9px] text-zinc-600 block uppercase font-bold">Stable</span>
+                                  <span className="text-[12px] font-black text-white">{(Number(up.stableBorrowRate) / 1e25).toFixed(4)}%</span>
+                                </div>
+                                <div>
+                                  <span className="text-[9px] text-zinc-600 block uppercase font-bold">Variable</span>
+                                  <span className="text-[12px] font-black text-white">{(Number(up.variableBorrowRate) / 1e25).toFixed(4)}%</span>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-2 border-b border-white/5 pb-2 text-magenta-500">
+                          <Target className="w-4 h-4" />
+                          <span className="text-[10px] font-black uppercase tracking-widest">System Impact</span>
+                        </div>
+                        <div className="mica-container bg-magenta-500/[0.02] border-magenta-500/20 p-8 rounded-lg flex flex-col items-center justify-center gap-6">
+                          <div className="relative">
+                            <motion.div
+                              animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
+                              transition={{ repeat: Infinity, duration: 2 }}
+                              className="absolute inset-0 bg-magenta-500 rounded-full blur-xl"
+                            />
+                            <ArrowRightLeft className="w-12 h-12 text-magenta-500 relative z-10" />
+                          </div>
+                          <div className="text-center">
+                            <span className="text-[12px] font-black text-white uppercase tracking-widest block mb-1">Global Recalculation</span>
+                            <span className="text-[10px] text-zinc-500 leading-relaxed max-w-[200px] block">
+                              Triggering health factor updates for {state.killList.length} targets across all debt positions.
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="p-4 bg-emerald-500/5 border border-emerald-500/10 rounded-lg flex items-center justify-between">
+                          <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest">Network Latency</span>
+                          <span className="text-xl font-black text-white">2.4ms</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </motion.div>
+          )
+        }
       </AnimatePresence >
 
     </div >
