@@ -3,6 +3,7 @@ import {
   Activity,
   Target,
   Zap,
+  ShieldAlert,
   Wallet,
   Gauge,
   Clock,
@@ -362,14 +363,14 @@ export default function App() {
               </div>
               <div className="flex items-center md:hidden">
                 <div className="flex flex-col items-end w-full">
-                  <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-black/40 border border-white/5">
+                  <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/40 border border-white/5">
                     <motion.div
                       animate={{ scale: connected ? 1 : 0.9 }}
                       transition={{ duration: 0.2 }}
                       className={cn("w-1.5 h-1.5 rounded-full", connected ? "bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]" : "bg-red-600")}
                     />
-                    <span className="text-[8px] font-black tracking-widest leading-none uppercase">
-                      {connected ? "LIVE" : "OFFLINE"}
+                    <span className="text-[7px] font-black tracking-widest leading-none uppercase">
+                      {connected ? "LIVE" : "OFF"}
                     </span>
                   </div>
                 </div>
@@ -390,12 +391,12 @@ export default function App() {
               </div>
             </div>
 
-            <div className="absolute top-2.5 right-2 md:static flex items-center gap-2 md:gap-6">
+            <div className="absolute top-2.5 right-2 md:static flex items-center gap-1.5 md:gap-6">
               <button
                 onClick={() => setShowFullHeader(!showFullHeader)}
                 className="md:hidden p-1.5 rounded bg-white/5 border border-white/10"
               >
-                {showFullHeader ? <X className="w-4 h-4 text-zinc-400" /> : <BarChart3 className="w-4 h-4 text-cyan-400" />}
+                {showFullHeader ? <X className="w-3.5 h-3.5 text-zinc-400" /> : <BarChart3 className="w-3.5 h-3.5 text-cyan-400" />}
               </button>
               <div className="hidden md:flex flex-col items-end gap-1">
                 <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
@@ -453,8 +454,66 @@ export default function App() {
         {/* DASHBOARD CONTENT GRID (Switches to single view on mobile) */}
         <div className={cn(
           "flex-1 p-0.5 md:p-1 min-h-0",
-          mobileView !== 'radar' ? "grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10" : "hidden md:grid md:grid-cols-2"
+          (mobileView === 'radar') && "hidden md:grid md:grid-cols-2",
+          (mobileView !== 'radar' && mobileView !== 'status') && "grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10"
         )}>
+
+          {/* STATS VIEW (Mobile Only) */}
+          <div className={cn(
+            "flex-1 flex flex-col md:hidden mica-container p-4 gap-6 overflow-y-auto",
+            mobileView !== 'status' && "hidden"
+          )}>
+            <div className="panel-header border-none p-0 mb-2">
+              <BarChart3 className="w-4 h-4 text-cyan-400" />
+              <span>Session Analytics</span>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <Gauge className="w-5 h-5 text-amber-500" />
+                  <span className="text-zinc-400 font-bold uppercase text-[10px] tracking-widest">Base Gas Price</span>
+                </div>
+                <span className="text-xl font-black text-white">{state.status.gas} GWEI</span>
+              </div>
+              <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-blue-400" />
+                  <span className="text-zinc-400 font-bold uppercase text-[10px] tracking-widest">Bot Uptime</span>
+                </div>
+                <span className="text-xl font-black text-white">{state.status.uptime}</span>
+              </div>
+              <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <ShieldAlert className="w-5 h-5 text-emerald-400" />
+                  <span className="text-zinc-400 font-bold uppercase text-[10px] tracking-widest">Protected Users</span>
+                </div>
+                <span className="text-xl font-black text-white">{state.safeUsers.count.toLocaleString()}</span>
+              </div>
+            </div>
+
+            <div className="mica-container bg-black/40 p-4 rounded-xl border-cyan-500/20">
+              <div className="flex items-center gap-2 mb-4 text-cyan-400 font-black text-[10px] uppercase tracking-[0.2em]">
+                <Activity className="w-4 h-4" /> RPC Intelligence Flow
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between items-end">
+                  <div className="flex flex-col">
+                    <span className="text-[8px] text-zinc-600 font-black uppercase">Background Logic</span>
+                    <span className="text-2xl font-black text-white">{state.stats.basicRpcCalls.toLocaleString()}</span>
+                  </div>
+                  <span className="text-[10px] text-zinc-500 font-bold">DRPC (WSS)</span>
+                </div>
+                <div className="flex justify-between items-end">
+                  <div className="flex flex-col">
+                    <span className="text-[8px] text-magenta-500 font-black uppercase">Priority Scanner</span>
+                    <span className="text-2xl font-black text-white">{state.stats.premiumRpcCalls.toLocaleString()}</span>
+                  </div>
+                  <span className="text-[10px] text-zinc-500 font-bold">Alchemy Premium</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* SNIPER LOG (Hidden on mobile if not active) */}
           <div className={cn(
@@ -466,9 +525,9 @@ export default function App() {
               <span>Sniper Execution History</span>
             </div>
 
-            <div className="flex-1 flex flex-col min-h-0 bg-black/40">
+            <div className="flex-1 flex flex-col md:flex-row min-h-0 bg-black/40">
               {/* Top Half: Batch History */}
-              <div className="flex-1 flex flex-col min-h-0 border-b border-white/5">
+              <div className="flex-1 flex flex-col min-h-0 border-b md:border-b-0 md:border-r border-white/5">
                 <div className="px-3 py-1 bg-white/5 flex items-center justify-between">
                   <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest">Batch Operations</span>
                   <span className="text-[8px] font-bold text-zinc-600 italic">Total: {batchLogs.length}</span>
@@ -624,7 +683,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row items-stretch md:items-center w-full gap-4 md:gap-10">
               <div className="flex flex-col justify-center min-w-0 md:min-w-[350px] relative z-10">
                 <span className="text-[8px] md:text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-1 md:mb-2 flex items-center gap-2 leading-none">
-                  <Cpu className="w-3 md:w-3.5 h-3 md:h-3.5" /> Positional Analytics
+                  <Cpu className="w-3 md:w-3.5 h-3 md:h-3.5" /> Position Stats
                 </span>
                 <div className="flex items-center justify-between md:justify-start gap-3">
                   <div
