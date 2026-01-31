@@ -91,8 +91,8 @@ export function useBotSocket() {
                     setState((prev: any) => {
                         if (type === 'INIT') return { ...prev, ...data };
                         if (type === 'KILL_LIST') return { ...prev, killList: data };
-                        if (type === 'SNIPER') return { ...prev, sniperLogs: [data, ...prev.sniperLogs].slice(0, 100) };
-                        if (type === 'EVENT') return { ...prev, eventLogs: [data, ...prev.eventLogs].slice(0, 200) };
+                        if (type === 'SNIPER') return { ...prev, sniperLogs: [data, ...prev.sniperLogs].slice(0, 500) };
+                        if (type === 'EVENT') return { ...prev, eventLogs: [data, ...prev.eventLogs].slice(0, 2000) };
                         if (type === 'STATS') return { ...prev, stats: data };
                         if (type === 'SAFE_USERS') return { ...prev, safeUsers: data };
                         if (type === 'LIQUIDATION_HISTORY') return { ...prev, liquidationHistory: data };

@@ -24,7 +24,8 @@ import {
 
   Minus,
   Menu,
-  ChevronDown
+  ChevronDown,
+  Radio
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
@@ -471,46 +472,118 @@ export default function App({ socketState }: { socketState?: any }) {
         {/* DASHBOARD CONTENT GRID (Stacked on mobile) */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-2 p-1 md:p-2 min-h-0 overflow-y-auto md:overflow-hidden">
 
-          {/* SNIPER LOG */}
-          <div className="flex flex-col mica-container overflow-hidden min-h-[300px] md:min-h-0">
-            <div className="panel-header shrink-0 flex items-center gap-2">
-              <Flame className="w-4 h-4 text-orange-500 fill-orange-500/20" />
-              <span>Sniper Execution History</span>
-            </div>
-            <div className="flex-1 overflow-y-auto p-3 font-mono text-[11px] space-y-1 bg-black/40 custom-scrollbar">
-              <AnimatePresence initial={false}>
-                {state.sniperLogs.length === 0 && <div className="flex items-center justify-center h-full text-zinc-800 uppercase font-black tracking-widest italic opacity-20">Monitoring Targets...</div>}
-                {state.sniperLogs.map((log: any, i) => {
-                  const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
-                  return (
-                    <motion.div
-                      layout
-                      initial={{ opacity: 0, y: -5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      key={`sniper-${i}`}
-                      className={cn(
-                        "group flex gap-3 p-2 rounded border border-white/5 leading-relaxed transition-all",
-                        log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
-                      )}
-                    >
-                      <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
-                      <span className="font-black underline shrink-0 uppercase tracking-tighter">{log.success ? "EXEC" : "REVE"}</span>
-                      <div className="font-medium flex-1 break-words">
-                        {log.message.split(txHash || '...')[0]}
-                        {txHash && (
-                          <span
-                            onClick={() => openExplorer(txHash)}
-                            className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 hover:glow-cyan-white transition-all text-[9px] tracking-tight bg-white/5 px-1.5 rounded"
-                          >
-                            tx:{txHash.slice(0, 10)}...
-                          </span>
+          {/* RIGHT COLUMN: SNIPER & MARKET LOGS */}
+          <div className="flex flex-col gap-2 min-h-[500px] md:min-h-0 h-full overflow-hidden">
+
+            {/* TOP: BATCH SNIPER LOG */}
+            <div className="flex-1 flex flex-col mica-container overflow-hidden min-h-0 bg-black/40 border border-white/5 rounded-lg relative">
+              <div className="shrink-0 flex items-center justify-between px-3 py-2 border-b border-white/5 bg-black/40">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-3.5 h-3.5 text-orange-500" />
+                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Batch Sniper Execution</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+                  <span className="text-[9px] font-mono text-orange-500">LIVE</span>
+                </div>
+              </div>
+              <div className="flex-1 overflow-y-auto p-2 font-mono text-[10px] space-y-1 custom-scrollbar">
+                <AnimatePresence initial={false}>
+                  {state.sniperLogs.length === 0 && (
+                    <div className="flex items-center justify-center h-full text-zinc-700 uppercase font-black tracking-widest italic text-[9px]">
+                      Waiting for Opportunities...
+                    </div>
+                  )}
+                  {state.sniperLogs.map((log: any, i: number) => {
+                    const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
+                    return (
+                      <motion.div
+                        layout
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        key={`sniper-${i}`}
+                        className={cn(
+                          "flex gap-2 p-1.5 rounded border border-white/5 leading-relaxed bg-black/40",
+                          log.success ? "text-emerald-400 border-emerald-500/20" : "text-red-400 border-red-500/20"
                         )}
-                      </div>
-                    </motion.div>
-                  )
-                })}
-              </AnimatePresence>
+                      >
+                        <span className="text-zinc-600 font-bold shrink-0">[{log.time}]</span>
+                        <div className="flex-1 break-all">
+                          {log.message.split(txHash || '...')[0]}
+                          {txHash && (
+                            <a href={`https://basescan.org/tx/${txHash}`} target="_blank" rel="noreferrer" className="text-blue-400 hover:underline hover:text-blue-300 transition-colors ml-1 inline-flex items-center gap-0.5">
+                              Tx <ExternalLink className="w-2 h-2" />
+                            </a>
+                          )}
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </AnimatePresence>
+              </div>
             </div>
+
+            {/* BOTTOM: MARKET MONITOR (Every detected liquidation) */}
+            <div className="flex-1 flex flex-col mica-container overflow-hidden min-h-0 bg-black/40 border border-white/5 rounded-lg relative">
+              <div className="shrink-0 flex items-center justify-between px-3 py-2 border-b border-white/5 bg-black/40">
+                <div className="flex items-center gap-2">
+                  <Radio className="w-3.5 h-3.5 text-blue-400" />
+                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Market Monitor Log</span>
+                </div>
+                <span className="text-[9px] font-black text-zinc-600 uppercase">
+                  {state.liquidationHistory.length} Events
+                </span>
+              </div>
+
+              {/* Table Header */}
+              <div className="grid grid-cols-12 gap-2 px-3 py-1.5 bg-white/[0.02] border-b border-white/5 text-[9px] uppercase font-black text-zinc-500 tracking-widest">
+                <div className="col-span-2">Time</div>
+                <div className="col-span-2">Size</div>
+                <div className="col-span-2">User</div>
+                <div className="col-span-2">Tx</div>
+                <div className="col-span-4 text-right">Outcome</div>
+              </div>
+
+              <div className="flex-1 overflow-y-auto custom-scrollbar">
+                {state.liquidationHistory.slice(0, 100).map((liq: any, i: number) => (
+                  <motion.div
+                    key={`liq-${i}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="grid grid-cols-12 gap-2 px-3 py-2 border-b border-white/5 hover:bg-white/5 transition-colors text-[10px] font-mono items-center"
+                  >
+                    <div className="col-span-2 text-zinc-400">
+                      {new Date(liq.timestamp * 1000).toLocaleTimeString([], { hour12: false })}
+                    </div>
+                    <div className="col-span-2 text-white font-bold">
+                      ${liq.profitUSD.toFixed(0)}
+                    </div>
+                    <div className="col-span-2 text-zinc-500 truncate cursor-pointer hover:text-white" title={liq.user}>
+                      {liq.user.slice(0, 4)}...
+                    </div>
+                    <div className="col-span-2 text-blue-500 hover:text-blue-400">
+                      <a href={`https://basescan.org/tx/${liq.txHash}`} target="_blank" rel="noreferrer" className="flex items-center gap-1">
+                        Tx <ExternalLink className="w-2 h-2" />
+                      </a>
+                    </div>
+                    <div className="col-span-4 text-right flex justify-end gap-1">
+                      <span className={cn(
+                        "px-1.5 py-0.5 rounded text-[8px] font-black uppercase",
+                        liq.profitUSD > 0 ? "bg-emerald-500/20 text-emerald-400" : "bg-red-500/20 text-red-400"
+                      )}>
+                        {liq.profitUSD > 0 ? "SUCCESS" : "FAILED"}
+                      </span>
+                    </div>
+                  </motion.div>
+                ))}
+                {state.liquidationHistory.length === 0 && (
+                  <div className="p-4 text-center text-zinc-700 italic text-[10px] uppercase font-black tracking-widest">
+                    No Market Events Recorded
+                  </div>
+                )}
+              </div>
+            </div>
+
           </div>
 
           {/* MARKET FEED */}
