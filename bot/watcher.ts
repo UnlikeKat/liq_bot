@@ -316,8 +316,9 @@ export async function startWatcher() {
 
             const top24 = sortedTargets.slice(0, 24).map(u => u.address);
 
-            for (const userAddress of top24) {
-                await updateHealthFactorCache(userAddress);
+            if (top24.length > 0) {
+                // Batch Update (1 Call) instead of Loop (24 Calls)
+                await batchUpdateHealthFactorsGeneric(top24, premiumClient, 'PREMIUM');
             }
         },
     });
