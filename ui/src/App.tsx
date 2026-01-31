@@ -575,7 +575,7 @@ export default function App({ socketState }: { socketState?: any }) {
         <footer className="h-auto md:h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-4 md:p-5 flex flex-col md:flex-row gap-4 md:gap-10 shrink-0 relative overflow-hidden pb-32 md:pb-5">
           {selectedUser ? (
             <>
-              <div className="flex flex-col justify-center w-full md:min-w-[350px] relative z-10">
+              <div className="flex flex-col justify-center w-full md:w-auto md:min-w-[300px] relative z-10">
                 <span className="text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-2 flex items-center gap-2 leading-none">
                   <Cpu className="w-3.5 h-3.5" /> Positional Analytics
                 </span>
@@ -600,7 +600,7 @@ export default function App({ socketState }: { socketState?: any }) {
                 </div>
               </div>
               <div className="h-px w-full md:h-full md:w-px bg-white/5" />
-              <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 items-center relative z-10">
+              <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 items-center relative z-10">
                 <div className="flex flex-col">
                   <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Debt Pool</span>
                   <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalDebtBase) / 1e8).toLocaleString()}</span>
