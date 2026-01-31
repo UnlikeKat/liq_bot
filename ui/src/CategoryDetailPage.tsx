@@ -44,7 +44,7 @@ export function CategoryDetailPage({ history }: Props) {
     }
 
     return (
-        <div className="p-6 max-w-[1600px] mx-auto min-h-screen bg-black text-white">
+        <div className="p-4 md:p-6 max-w-[1600px] mx-auto min-h-screen bg-black text-white pb-32 md:pb-6">
             {/* Header */}
             <div className="flex items-center gap-4 mb-8">
                 <button
@@ -54,10 +54,10 @@ export function CategoryDetailPage({ history }: Props) {
                     <ArrowLeft className="w-5 h-5 text-zinc-400" />
                 </button>
                 <div>
-                    <div className="text-xs font-mono text-zinc-500 uppercase font-bold tracking-widest mb-1">
+                    <div className="text-[10px] md:text-sm font-mono text-zinc-500 uppercase font-bold tracking-widest mb-1">
                         Category Analysis ({timeRange === 'all' ? 'ALL TIME' : timeRange.toUpperCase()})
                     </div>
-                    <h1 className="text-3xl font-black font-mono">
+                    <h1 className="text-xl md:text-3xl font-black font-mono">
                         Range: <span className="text-purple-400">{bucket.rangeLabel}</span>
                     </h1>
                 </div>
@@ -73,8 +73,8 @@ export function CategoryDetailPage({ history }: Props) {
                 </div>
             </div>
 
-            {/* Table */}
-            <div className="bg-zinc-900/30 border border-white/5 rounded-xl overflow-hidden">
+            {/* Desktop Table */}
+            <div className="hidden md:block bg-zinc-900/30 border border-white/5 rounded-xl overflow-hidden">
                 <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                         <thead>
@@ -155,6 +155,70 @@ export function CategoryDetailPage({ history }: Props) {
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+            {/* Mobile Cards (Visible on Mobile) */}
+            <div className="md:hidden space-y-4">
+                {bucket.liquidations.map((liq, i) => {
+                    const gasCostEth = (BigInt(liq.gasUsed) * BigInt(liq.gasPrice)); // Wei
+                    const gasEth = Number(gasCostEth) / 1e18; // ETH
+                    const isTopBlock = liq.positionInBlock !== undefined && liq.positionInBlock < 3;
+
+                    return (
+                        <div key={i} className="bg-zinc-900/50 border border-white/10 rounded-xl p-4 space-y-4">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <div className="text-green-400 font-bold text-xl">${liq.profitUSD.toFixed(2)}</div>
+                                    <div className="text-xs text-zinc-500 mt-0.5">Profit</div>
+                                </div>
+                                <div className="text-right">
+                                    <a
+                                        href={`https://basescan.org/tx/${liq.txHash}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 bg-blue-500/10 px-2 py-1 rounded"
+                                    >
+                                        View Tx <ExternalLink className="w-3 h-3" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <div className="text-[10px] text-zinc-500 uppercase font-black mb-1">Block & Time</div>
+                                    <div className="font-mono text-zinc-300">#{liq.blockNumber}</div>
+                                    <div className="text-xs text-zinc-600">{new Date(liq.timestamp * 1000).toLocaleTimeString()}</div>
+                                </div>
+                                <div>
+                                    <div className="text-[10px] text-zinc-500 uppercase font-black mb-1">Gas Paid</div>
+                                    <div className="flex items-center gap-1 text-red-300 font-mono">
+                                        <Flame className="w-3 h-3" /> {gasEth.toFixed(5)}
+                                    </div>
+                                    <div className="text-xs text-zinc-600">{(Number(liq.gasPrice) / 1e9).toFixed(1)} Gwei</div>
+                                </div>
+                                <div>
+                                    <div className="text-[10px] text-zinc-500 uppercase font-black mb-1">Latency</div>
+                                    <div className={`font-mono ${liq.latencyBlocks && liq.latencyBlocks < 5 ? 'text-green-400' : 'text-yellow-500'}`}>
+                                        {liq.latencyBlocks} blks
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-[10px] text-zinc-500 uppercase font-black mb-1">Tx Pos</div>
+                                    {liq.positionInBlock !== undefined ? (
+                                        <div className="flex items-center gap-1">
+                                            <span className={`font-mono ${isTopBlock ? 'text-purple-400' : 'text-zinc-400'}`}>
+                                                {liq.positionInBlock}
+                                            </span>
+                                            {isTopBlock && <span className="text-[9px] bg-purple-500/20 text-purple-300 px-1 rounded font-black">TOP</span>}
+                                        </div>
+                                    ) : (
+                                        <span className="text-zinc-600">--</span>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );

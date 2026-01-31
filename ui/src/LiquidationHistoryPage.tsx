@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Search, Download, ExternalLink, Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
+import type { LiquidationRecord } from '../../bot/storage/liquidation_history';
 
 // Token helpers
 function getTokenSymbol(address: string): string {
@@ -70,12 +71,18 @@ function shortenAddress(addr: string): string {
     return `${addr.slice(0, 6)}...${addr.slice(-4)}`;
 }
 
+interface LiquidationHistoryPageProps {
+    history: LiquidationRecord[];
+    progress?: Record<string, number>;
+}
+
 export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHistoryPageProps) {
     const [searchTerm, setSearchTerm] = useState('');
     const [dateFilter, setDateFilter] = useState('7'); // 7, 30, 90 days
     const [hideDust, setHideDust] = useState(true); // Default hide dust (< $0.05)
     const [sortBy, setSortBy] = useState<'timestamp' | 'profitUSD' | 'blockNumber'>('timestamp');
     const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc');
+    const [viewLimit, setViewLimit] = useState(50); // Pagination Limit
 
     // Filter by date range
     const filteredByDate = history.filter(liq => {
@@ -186,7 +193,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                 </div>
 
                 {/* Filters */}
-                <div className="flex flex-col md:flex-row gap-4 mb-6 overflow-x-auto pb-2">
+                <div className="flex flex-col md:flex-row gap-4 mb-6">
                     <div className="flex-1 relative shrink-0">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                         <input
@@ -198,10 +205,10 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         />
                     </div>
 
-                    <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar shrink-0">
+                    <div className="flex flex-wrap gap-2 shrink-0">
                         <button
                             onClick={() => setHideDust(!hideDust)}
-                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors whitespace-nowrap ${hideDust
+                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors whitespace-nowrap grow md:grow-0 ${hideDust
                                 ? 'bg-amber-500/20 text-amber-500 border border-amber-500/50'
                                 : 'bg-white/5 text-zinc-400 border border-white/10 hover:bg-white/10'
                                 }`}
@@ -212,7 +219,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         <select
                             value={dateFilter}
                             onChange={(e) => setDateFilter(e.target.value)}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
                             style={{ colorScheme: 'dark' }}
                         >
                             <option value="7" className="bg-zinc-900 text-white">7 Days</option>
@@ -223,7 +230,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value as any)}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
                             style={{ colorScheme: 'dark' }}
                         >
                             <option value="timestamp" className="bg-zinc-900 text-white">Time</option>
@@ -233,7 +240,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
 
                         <button
                             onClick={() => setSortDir(prev => prev === 'asc' ? 'desc' : 'asc')}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm hover:bg-white/10"
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm hover:bg-white/10 grow-0"
                         >
                             {sortDir === 'desc' ? '↓' : '↑'}
                         </button>
@@ -243,7 +250,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
 
             {/* Liquidation List */}
             <div className="max-w-7xl mx-auto h-[calc(100vh-28rem)] overflow-y-auto space-y-2 pr-2 pb-20 md:pb-0">
-                {sorted.slice(0, 50).map((liq, idx) => (
+                {sorted.slice(0, viewLimit).map((liq, idx) => (
                     <motion.div
                         key={liq.txHash}
                         initial={{ opacity: 0, y: 20 }}
@@ -345,9 +352,11 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         </div>
                     </motion.div>
                 ))}
-                {sorted.length > 50 && (
-                    <div className="text-center py-4 text-xs text-zinc-600 uppercase font-black tracking-widest">
-                        Showing top 50 of {sorted.length} (Filter to see more)
+                {sorted.length > viewLimit && (
+                    <div className="py-4 text-center">
+                        <button onClick={() => setViewLimit(prev => prev + 50)} className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-sm font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">
+                            Load More ({sorted.length - viewLimit} remaining)
+                        </button>
                     </div>
                 )}
 
