@@ -23,7 +23,8 @@ import {
   ArrowDownRight,
 
   Minus,
-  Menu
+  Menu,
+  ChevronDown
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
@@ -196,6 +197,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<'All' | 'Market' | 'System' | 'Discovery'>('All');
   const [inspectedEvent, setInspectedEvent] = useState<any>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDustOpen, setIsDustOpen] = useState(false);
 
   const openExplorer = (id: string, type: 'tx' | 'address' = 'tx') => {
     const url = `https://basescan.org/${type}/${id}`;
@@ -224,12 +226,12 @@ export default function App() {
 
       {/* SIDEBAR: TARGET RADAR (Responsive: Drawer on Mobile, Fixed on Desktop) */}
       <aside className={cn(
-        "flex flex-col mica-container shrink-0 transition-all duration-300 z-40",
+        "flex flex-col mica-container shrink-0 transition-all duration-300 z-[60]",
         // Mobile Styles: Absolute, full height, slide-in
         "fixed inset-y-0 left-0 w-[85%] max-w-[320px] bg-[#0a0a0c]/95 backdrop-blur-xl border-r border-white/10 p-2 md:relative md:w-80 md:bg-transparent md:border-none md:translate-x-0",
         isMobileMenuOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full md:translate-x-0"
       )}>
-        <div className="panel-header shrink-0 flex items-center gap-2 justify-between md:justify-start">
+        <div className="panel-header shrink-0 flex items-center gap-2 justify-between md:justify-start pt-14 pb-4 px-4 md:p-0 bg-gradient-to-b from-[#0a0a0c] to-transparent md:bg-none z-10">
           <div className="flex items-center gap-2">
             <Target className="w-4 h-4 text-cyan-400" />
             <span>Target Radar</span>
@@ -237,8 +239,8 @@ export default function App() {
               {state.killList.filter((u: any) => (Number(u.totalDebtBase) / 1e8) > 1.0).length}
             </span>
           </div>
-          <button onClick={() => setIsMobileMenuOpen(false)} className="md:hidden p-1">
-            <X className="w-5 h-5 text-zinc-500" />
+          <button onClick={() => setIsMobileMenuOpen(false)} className="md:hidden p-3 bg-white/10 rounded-full active:bg-white/20 transition-colors pointer-events-auto">
+            <X className="w-5 h-5 text-white" />
           </button>
         </div>
 
@@ -261,22 +263,15 @@ export default function App() {
           </div>
         )}
 
-        <div className="flex-1 overflow-y-auto p-2 space-y-2 custom-scrollbar">
-          {state.killList.length === 0 && (
-            <div className="flex flex-col items-center justify-center py-20 gap-3">
-              <Activity className="w-8 h-8 text-zinc-800 animate-pulse" />
-              <div className="text-center text-zinc-700 uppercase font-black text-[10px] tracking-widest italic px-4">
-                Monitoring Market Signal...
-              </div>
-            </div>
-          )}
+        <div className="flex-1 overflow-y-auto custom-scrollbar p-2 space-y-2 pb-20 md:pb-2">
+          {/* PRIORITY LIST (> $1) */}
           {state.killList
-            .filter((user: any) => (Number(user.totalDebtBase) / 1e8) > 1.0) // 🧹 HIDE DUST: Only show > $1 Debt
+            .filter((user: any) => (Number(user.totalDebtBase) / 1e8) > 1.0)
             .map((user: any) => (
               <motion.div
                 layout
                 key={user.address}
-                onClick={() => setSelectedUser(user)}
+                onClick={() => { setSelectedUser(user); setIsMobileMenuOpen(false); }}
                 className={cn(
                   "p-3 rounded-lg border border-white/5 transition-all cursor-pointer relative overflow-hidden",
                   selectedUser?.address === user.address ? "bg-cyan-500/15 border-cyan-500/40" : "hover:bg-white/5 hover:border-white/10",
@@ -322,6 +317,47 @@ export default function App() {
                 </div>
               </motion.div>
             ))}
+
+          {/* DUST SEPARATOR */}
+          <div
+            onClick={() => setIsDustOpen(!isDustOpen)}
+            className="flex items-center gap-2 py-2 cursor-pointer opacity-50 hover:opacity-100 transition-opacity mt-4"
+          >
+            <div className="h-px bg-white/10 flex-1" />
+            <span className="text-[9px] font-black uppercase text-zinc-500 flex items-center gap-1">
+              Low Value ({state.killList.filter((u: any) => (Number(u.totalDebtBase) / 1e8) <= 1.0).length})
+              <ChevronDown className={cn("w-3 h-3 transition-transform", isDustOpen ? "rotate-180" : "")} />
+            </span>
+            <div className="h-px bg-white/10 flex-1" />
+          </div>
+
+          {/* DUST LIST (< $1) */}
+          <AnimatePresence>
+            {isDustOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="overflow-hidden space-y-1"
+              >
+                {state.killList
+                  .filter((user: any) => (Number(user.totalDebtBase) / 1e8) <= 1.0)
+                  .map((user: any) => (
+                    <div
+                      key={user.address}
+                      onClick={() => { setSelectedUser(user); setIsMobileMenuOpen(false); }}
+                      className={cn(
+                        "flex justify-between items-center p-2 rounded border border-white/5 bg-white/[0.02] cursor-pointer",
+                        selectedUser?.address === user.address && "border-cyan-500/20 bg-cyan-500/5"
+                      )}
+                    >
+                      <span className="text-[10px] font-mono text-zinc-600">{user.address.slice(0, 6)}...</span>
+                      <span className="text-[10px] font-mono text-zinc-600">${(Number(user.totalDebtBase) / 1e8).toFixed(4)}</span>
+                    </div>
+                  ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </aside>
 
@@ -341,7 +377,7 @@ export default function App() {
         {/* TOP STATUS BAR */}
         <header className="mica-container shrink-0 flex flex-col overflow-hidden relative">
           {/* DESKTOP HEADER CONTENT (Hidden on mobile to save space, or scaled down) */}
-          <div className="h-auto py-2 md:h-14 flex flex-col md:flex-row items-start md:items-center justify-between px-4 md:px-6 border-b border-white/[0.03] gap-4 md:gap-0">
+          <div className="hidden md:flex h-14 items-center justify-between px-6 border-b border-white/[0.03]">
             <div className="flex flex-wrap gap-4 md:gap-10">
               <div className="flex items-center gap-3">
                 <Wallet className="w-5 h-5 text-emerald-400" />
@@ -481,7 +517,7 @@ export default function App() {
                 <Activity className="w-4 h-4 text-blue-400" />
                 <span>Live Intelligence Stream</span>
               </div>
-              <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
+              <div className="hidden md:flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
                 {['All', 'Market', 'System', 'Discovery'].map(tab => (
                   <button
                     key={tab}
@@ -585,6 +621,22 @@ export default function App() {
             </div>
           )}
         </footer>
+
+        {/* MOBILE BOTTOM NAV BAR */}
+        <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-[#0a0a0c] border-t border-white/10 z-50 flex items-center justify-around px-4 pb-safe">
+          <button onClick={() => setIsMobileMenuOpen(true)} className="flex flex-col items-center gap-1 p-2 text-zinc-500 hover:text-cyan-400">
+            <Target className="w-5 h-5" />
+            <span className="text-[9px] font-black uppercase tracking-widest">Targets</span>
+          </button>
+          <button className="flex flex-col items-center gap-1 p-2 text-cyan-400">
+            <Activity className="w-5 h-5" />
+            <span className="text-[9px] font-black uppercase tracking-widest">Dash</span>
+          </button>
+          <button className="flex flex-col items-center gap-1 p-2 text-zinc-500 hover:text-white">
+            <Clock className="w-5 h-5" />
+            <span className="text-[9px] font-black uppercase tracking-widest">History</span>
+          </button>
+        </div>
       </main>
 
       {/* DEEP INSPECTION MODAL */}
