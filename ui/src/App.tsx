@@ -222,11 +222,11 @@ export default function App() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row h-screen w-screen overflow-hidden text-white font-sans bg-[#0a0a0c] p-1 md:p-2 gap-1 md:gap-2">
+    <div className="flex flex-col md:flex-row h-[100dvh] w-full overflow-x-hidden text-white font-sans bg-[#0a0a0c] p-1.5 md:p-4 gap-4 md:gap-8 lg:gap-10">
 
       {/* SIDEBAR: TARGET RADAR (Hidden on mobile unless active) */}
       <aside className={cn(
-        "w-full md:w-80 flex flex-col mica-container shrink-0",
+        "w-full md:w-80 lg:w-[400px] flex flex-col mica-container shrink-0",
         mobileView !== 'radar' && "hidden md:flex"
       )}>
         <div className="panel-header shrink-0 flex flex-col gap-2">
@@ -238,7 +238,7 @@ export default function App() {
             </span>
           </div>
 
-          <div className="flex bg-black/40 rounded p-0.5 border border-white/5">
+          <div className="flex bg-black/40 rounded-lg p-1 border border-white/5 gap-2">
             <button
               onClick={() => setActiveRadarTab('High Value')}
               className={cn(
@@ -294,8 +294,8 @@ export default function App() {
               key={user.address}
               onClick={() => setSelectedUser(user)}
               className={cn(
-                "p-3 rounded-lg border border-white/5 transition-all cursor-pointer relative overflow-hidden",
-                selectedUser?.address === user.address ? "bg-cyan-500/15 border-cyan-500/40" : "hover:bg-white/5 hover:border-white/10",
+                "p-5 rounded-2xl border border-white/5 transition-all cursor-pointer relative overflow-hidden mb-4 md:mb-6",
+                selectedUser?.address === user.address ? "bg-cyan-500/15 border-cyan-500/40 shadow-[0_0_20px_rgba(6,182,212,0.15)]" : "hover:bg-white/5 hover:border-white/10",
                 (Number(user.healthFactor) / 1e18) < 1.01 && "border-red-500/50 bg-red-500/10 critical-pulse"
               )}
             >
@@ -343,7 +343,7 @@ export default function App() {
 
       {/* MAIN VIEW */}
       <main className={cn(
-        "flex-1 flex flex-col min-w-0 gap-1 md:gap-2 overflow-hidden",
+        "flex-1 flex flex-col min-w-0 gap-4 md:gap-8 lg:gap-10 overflow-hidden",
         (mobileView === 'radar') && "hidden md:flex"
       )}>
 
@@ -472,8 +472,8 @@ export default function App() {
 
         {/* DASHBOARD CONTENT GRID (Switches to single view on mobile) */}
         <div className={cn(
-          "flex-1 p-1 md:p-2 min-h-0",
-          mobileView !== 'radar' ? "grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2" : "hidden md:grid md:grid-cols-2"
+          "flex-1 p-0.5 md:p-1 min-h-0",
+          mobileView !== 'radar' ? "grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-10" : "hidden md:grid md:grid-cols-2"
         )}>
 
           {/* SNIPER LOG (Hidden on mobile if not active) */}
@@ -583,13 +583,13 @@ export default function App() {
                 <Activity className="w-4 h-4 text-blue-400" />
                 <span>Live Intelligence Stream</span>
               </div>
-              <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05] overflow-x-auto custom-scrollbar no-scrollbar">
+              <div className="flex items-center gap-3 px-3 bg-black/40 rounded-lg py-1.5 border border-white/[0.05] overflow-x-auto custom-scrollbar no-scrollbar whitespace-nowrap">
                 {['All', 'Market', 'System', 'Discovery'].map(tab => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab as any)}
                     className={cn(
-                      "text-[8px] px-2 py-0.5 rounded font-black uppercase tracking-widest transition-all",
+                      "text-[9px] px-3 py-1 rounded font-black uppercase tracking-widest transition-all",
                       activeTab === tab ? "bg-blue-500 text-white shadow-[0_0_8px_rgba(59,130,246,0.5)]" : "text-zinc-500 hover:text-white"
                     )}
                   >
