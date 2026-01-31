@@ -29,7 +29,9 @@ export function useBotSocket() {
                 ws.current = null;
             }
 
-            const socket = new WebSocket('ws://localhost:3001');
+            // Dynamic hostname for remote access
+            const host = window.location.hostname;
+            const socket = new WebSocket(`ws://${host}:3001`);
             ws.current = socket;
 
             socket.onopen = () => {
