@@ -52,10 +52,7 @@ function formatTokenAmount(rawAmount: string, address: string): string {
     return amount.toFixed(6);
 }
 
-interface LiquidationHistoryPageProps {
-    history: any[];
-    progress?: Record<string, number>;
-}
+
 
 function openExplorer(hash: string, type: 'tx' | 'address' = 'tx') {
     const baseUrl = 'https://basescan.org';
@@ -173,27 +170,27 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                 </div>
 
                 {/* Stats Bar */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-                        <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Total Liquidations</div>
-                        <div className="text-2xl font-black text-white">{sorted.length.toLocaleString()}</div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-4 md:mb-6">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-3 md:p-4">
+                        <div className="text-[10px] md:text-xs text-zinc-500 uppercase font-bold mb-0.5 md:mb-1">Total Liqs</div>
+                        <div className="text-lg md:text-2xl font-black text-white">{sorted.length.toLocaleString()}</div>
                     </div>
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-                        <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Total Profit</div>
-                        <div className="text-2xl font-black text-green-400">${totalProfit.toFixed(2)}</div>
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-3 md:p-4">
+                        <div className="text-[10px] md:text-xs text-zinc-500 uppercase font-bold mb-0.5 md:mb-1">Total Profit</div>
+                        <div className="text-lg md:text-2xl font-black text-green-400">${totalProfit.toFixed(2)}</div>
                     </div>
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-                        <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Avg Profit</div>
-                        <div className="text-2xl font-black text-cyan-400">${(totalProfit / sorted.length || 0).toFixed(2)}</div>
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-3 md:p-4">
+                        <div className="text-[10px] md:text-xs text-zinc-500 uppercase font-bold mb-0.5 md:mb-1">Avg Profit</div>
+                        <div className="text-lg md:text-2xl font-black text-cyan-400">${(totalProfit / sorted.length || 0).toFixed(2)}</div>
                     </div>
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-                        <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Date Range</div>
-                        <div className="text-2xl font-black text-magenta-400">{dateFilter} Days</div>
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-3 md:p-4">
+                        <div className="text-[10px] md:text-xs text-zinc-500 uppercase font-bold mb-0.5 md:mb-1">Timeframe</div>
+                        <div className="text-lg md:text-2xl font-black text-magenta-400">{dateFilter} Days</div>
                     </div>
                 </div>
 
                 {/* Filters */}
-                <div className="flex flex-col md:flex-row gap-4 mb-6">
+                <div className="flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:mb-6">
                     <div className="flex-1 relative shrink-0">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                         <input
@@ -208,7 +205,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                     <div className="flex flex-wrap gap-2 shrink-0">
                         <button
                             onClick={() => setHideDust(!hideDust)}
-                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors whitespace-nowrap grow md:grow-0 ${hideDust
+                            className={`px-3 py-2 rounded-lg text-xs md:text-sm font-bold transition-colors whitespace-nowrap grow md:grow-0 ${hideDust
                                 ? 'bg-amber-500/20 text-amber-500 border border-amber-500/50'
                                 : 'bg-white/5 text-zinc-400 border border-white/10 hover:bg-white/10'
                                 }`}
@@ -219,7 +216,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         <select
                             value={dateFilter}
                             onChange={(e) => setDateFilter(e.target.value)}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
+                            className="bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-xs md:text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
                             style={{ colorScheme: 'dark' }}
                         >
                             <option value="7" className="bg-zinc-900 text-white">7 Days</option>
@@ -230,7 +227,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value as any)}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
+                            className="bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-xs md:text-sm text-white focus:outline-none focus:border-cyan-500/50 grow md:grow-0"
                             style={{ colorScheme: 'dark' }}
                         >
                             <option value="timestamp" className="bg-zinc-900 text-white">Time</option>
@@ -240,7 +237,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
 
                         <button
                             onClick={() => setSortDir(prev => prev === 'asc' ? 'desc' : 'asc')}
-                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm hover:bg-white/10 grow-0"
+                            className="bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-xs md:text-sm hover:bg-white/10 grow-0"
                         >
                             {sortDir === 'desc' ? '↓' : '↑'}
                         </button>
@@ -249,7 +246,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
             </div>
 
             {/* Liquidation List */}
-            <div className="max-w-7xl mx-auto h-[calc(100vh-28rem)] overflow-y-auto space-y-2 pr-2 pb-20 md:pb-0">
+            <div className="max-w-7xl mx-auto space-y-2 pb-24 md:pb-0">
                 {sorted.slice(0, viewLimit).map((liq, idx) => (
                     <motion.div
                         key={liq.txHash}
