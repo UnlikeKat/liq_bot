@@ -13,15 +13,12 @@ import {
   Flame,
   LineChart,
   Trophy,
-  AlertOctagon,
   Eye,
   ArrowRightLeft,
   X,
   RefreshCw,
-  ZapOff,
   ArrowUpRight,
   ArrowDownRight,
-
   Minus,
   Menu,
   ChevronDown,
@@ -46,7 +43,7 @@ function useBotSocket() {
     status: { wallet: '0.00', gas: '0', uptime: '0h 0m 0s', network: 'BASE MAINNET', heartbeat: 0 },
     stats: { totalAttempts: 0, successCount: 0, failedCount: 0, totalProfitUSD: 0, basicRpcCalls: 0, premiumRpcCalls: 0, lastPulse: Date.now() },
     progress: {} as Record<string, number>,
-    safeUsers: { count: 0, lastUpdate: 0, removed: 0, promoted: 0 }
+    safeUsers: { count: 0, lastUpdate: 0, promoted: 0, removed: 0 }
   });
   const [connected, setConnected] = useState(false);
   const [connectUrl, setConnectUrl] = useState('');
@@ -191,6 +188,8 @@ function RelativeTime({ timestamp }: { timestamp: number }) {
   const diff = Math.floor((now - timestamp) / 1000);
   return <span>{diff}s ago</span>;
 }
+
+export const MY_BOT_ADDRESS = "0x4a05cbc4aa8d6554647c49720ef567867c8a508f".toLowerCase();
 
 export default function App({ socketState }: { socketState?: any }) {
   // Use props if provided (from main.tsx), otherwise fallback to internal hook (for standalone usage)
@@ -475,7 +474,7 @@ export default function App({ socketState }: { socketState?: any }) {
           {/* RIGHT COLUMN: SNIPER & MARKET LOGS */}
           <div className="flex flex-col gap-2 min-h-[500px] md:min-h-0 h-full overflow-hidden">
 
-            {/* TOP: BATCH SNIPER LOG */}
+            {/* TOP: BATCH SNIPER LOG (Only Batch messages) */}
             <div className="flex-1 flex flex-col mica-container overflow-hidden min-h-0 bg-black/40 border border-white/5 rounded-lg relative">
               <div className="shrink-0 flex items-center justify-between px-3 py-2 border-b border-white/5 bg-black/40">
                 <div className="flex items-center gap-2">
@@ -489,12 +488,12 @@ export default function App({ socketState }: { socketState?: any }) {
               </div>
               <div className="flex-1 overflow-y-auto p-2 font-mono text-[10px] space-y-1 custom-scrollbar">
                 <AnimatePresence initial={false}>
-                  {state.sniperLogs.length === 0 && (
+                  {state.sniperLogs.filter((l: any) => l.message.toLowerCase().includes('batch')).length === 0 && (
                     <div className="flex items-center justify-center h-full text-zinc-700 uppercase font-black tracking-widest italic text-[9px]">
-                      Waiting for Opportunities...
+                      Waiting for Batch Ops...
                     </div>
                   )}
-                  {state.sniperLogs.map((log: any, i: number) => {
+                  {state.sniperLogs.filter((l: any) => l.message.toLowerCase().includes('batch')).map((log: any, i: number) => {
                     const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
                     return (
                       <motion.div
@@ -523,15 +522,15 @@ export default function App({ socketState }: { socketState?: any }) {
               </div>
             </div>
 
-            {/* BOTTOM: MARKET MONITOR (Every detected liquidation) */}
+            {/* BOTTOM: MARKET MONITOR (Only MY Standard Liquidations) */}
             <div className="flex-1 flex flex-col mica-container overflow-hidden min-h-0 bg-black/40 border border-white/5 rounded-lg relative">
               <div className="shrink-0 flex items-center justify-between px-3 py-2 border-b border-white/5 bg-black/40">
                 <div className="flex items-center gap-2">
                   <Radio className="w-3.5 h-3.5 text-blue-400" />
-                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Market Monitor Log</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">My Standard Executions</span>
                 </div>
                 <span className="text-[9px] font-black text-zinc-600 uppercase">
-                  {state.liquidationHistory.length} Events
+                  {state.liquidationHistory.filter((l: any) => l.liquidator?.toLowerCase() === MY_BOT_ADDRESS).length} Events
                 </span>
               </div>
 
@@ -545,40 +544,43 @@ export default function App({ socketState }: { socketState?: any }) {
               </div>
 
               <div className="flex-1 overflow-y-auto custom-scrollbar">
-                {state.liquidationHistory.slice(0, 100).map((liq: any, i: number) => (
-                  <motion.div
-                    key={`liq-${i}`}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="grid grid-cols-12 gap-2 px-3 py-2 border-b border-white/5 hover:bg-white/5 transition-colors text-[10px] font-mono items-center"
-                  >
-                    <div className="col-span-2 text-zinc-400">
-                      {new Date(liq.timestamp * 1000).toLocaleTimeString([], { hour12: false })}
-                    </div>
-                    <div className="col-span-2 text-white font-bold">
-                      ${liq.profitUSD.toFixed(0)}
-                    </div>
-                    <div className="col-span-2 text-zinc-500 truncate cursor-pointer hover:text-white" title={liq.user}>
-                      {liq.user.slice(0, 4)}...
-                    </div>
-                    <div className="col-span-2 text-blue-500 hover:text-blue-400">
-                      <a href={`https://basescan.org/tx/${liq.txHash}`} target="_blank" rel="noreferrer" className="flex items-center gap-1">
-                        Tx <ExternalLink className="w-2 h-2" />
-                      </a>
-                    </div>
-                    <div className="col-span-4 text-right flex justify-end gap-1">
-                      <span className={cn(
-                        "px-1.5 py-0.5 rounded text-[8px] font-black uppercase",
-                        liq.profitUSD > 0 ? "bg-emerald-500/20 text-emerald-400" : "bg-red-500/20 text-red-400"
-                      )}>
-                        {liq.profitUSD > 0 ? "SUCCESS" : "FAILED"}
-                      </span>
-                    </div>
-                  </motion.div>
-                ))}
-                {state.liquidationHistory.length === 0 && (
+                {state.liquidationHistory
+                  .filter((l: any) => l.liquidator?.toLowerCase() === MY_BOT_ADDRESS) // Only MY liquidations
+                  .slice(0, 100)
+                  .map((liq: any, i: number) => (
+                    <motion.div
+                      key={`liq-${i}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      className="grid grid-cols-12 gap-2 px-3 py-2 border-b border-white/5 hover:bg-white/5 transition-colors text-[10px] font-mono items-center"
+                    >
+                      <div className="col-span-2 text-zinc-400">
+                        {new Date(liq.timestamp * 1000).toLocaleTimeString([], { hour12: false })}
+                      </div>
+                      <div className="col-span-2 text-white font-bold">
+                        ${liq.profitUSD.toFixed(0)}
+                      </div>
+                      <div className="col-span-2 text-zinc-500 truncate cursor-pointer hover:text-white" title={liq.user}>
+                        {liq.user.slice(0, 4)}...
+                      </div>
+                      <div className="col-span-2 text-blue-500 hover:text-blue-400">
+                        <a href={`https://basescan.org/tx/${liq.txHash}`} target="_blank" rel="noreferrer" className="flex items-center gap-1">
+                          Tx <ExternalLink className="w-2 h-2" />
+                        </a>
+                      </div>
+                      <div className="col-span-4 text-right flex justify-end gap-1">
+                        <span className={cn(
+                          "px-1.5 py-0.5 rounded text-[8px] font-black uppercase",
+                          liq.profitUSD > 0 ? "bg-emerald-500/20 text-emerald-400" : "bg-red-500/20 text-red-400"
+                        )}>
+                          {liq.profitUSD > 0 ? "SUCCESS" : "FAILED"}
+                        </span>
+                      </div>
+                    </motion.div>
+                  ))}
+                {state.liquidationHistory.filter((l: any) => l.liquidator?.toLowerCase() === MY_BOT_ADDRESS).length === 0 && (
                   <div className="p-4 text-center text-zinc-700 italic text-[10px] uppercase font-black tracking-widest">
-                    No Market Events Recorded
+                    No Standard Liquidations Yet
                   </div>
                 )}
               </div>
