@@ -3,7 +3,6 @@ import {
   Activity,
   Target,
   Zap,
-  ShieldAlert,
   Wallet,
   Gauge,
   Clock,
@@ -11,7 +10,6 @@ import {
   Cpu,
   ExternalLink,
   Flame,
-  LineChart,
   Trophy,
   Eye,
   ArrowRightLeft,
@@ -226,7 +224,8 @@ export default function App() {
 
       {/* SIDEBAR: TARGET RADAR (Hidden on mobile unless active) */}
       <aside className={cn(
-        "w-full md:w-80 lg:w-[400px] flex flex-col mica-container shrink-0",
+        "w-full md:w-80 lg:w-[400px] flex flex-col mica-container shrink-0 overflow-hidden",
+        "h-[calc(100dvh-5rem)] md:h-auto", // Account for bottom nav + padding on mobile
         mobileView !== 'radar' && "hidden md:flex"
       )}>
         <div className="panel-header shrink-0 flex flex-col gap-2">
@@ -343,7 +342,7 @@ export default function App() {
 
       {/* MAIN VIEW */}
       <main className={cn(
-        "flex-1 flex flex-col min-w-0 gap-4 md:gap-8 lg:gap-10 overflow-hidden",
+        "flex-1 flex flex-col min-w-0 gap-4 md:gap-8 lg:gap-10 overflow-hidden h-[calc(100dvh-5rem)] md:h-auto",
         (mobileView === 'radar') && "hidden md:flex"
       )}>
 
@@ -351,122 +350,103 @@ export default function App() {
         <header className="mica-container shrink-0 flex flex-col overflow-hidden relative">
           <div className={cn(
             "flex flex-col md:flex-row md:h-14 items-stretch md:items-center justify-between px-3 md:px-6 border-b border-white/[0.03]",
-            !showFullHeader && "h-12 md:h-14 overflow-hidden"
+            !showFullHeader && "h-14 md:h-14 overflow-hidden"
           )}>
-            <div className="flex flex-wrap md:flex-nowrap gap-4 md:gap-10 py-2 md:py-0">
+            <div className="grid grid-cols-2 md:flex md:flex-nowrap gap-4 md:gap-10 py-3 md:py-0">
               <div className="flex items-center gap-2 md:gap-3">
                 <Wallet className="w-4 h-4 md:w-5 md:h-5 text-emerald-400" />
                 <div className="flex flex-col">
-                  <span className="text-[7px] md:text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-0.5 md:mb-1">Gas Account</span>
-                  <span className="text-sm md:text-base font-black tracking-tight glow-green leading-none">{state.status.wallet} ETH</span>
+                  <span className="text-[7px] md:text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-0.5 md:mb-1 whitespace-nowrap">Gas Account</span>
+                  <span className="text-sm md:text-base font-black tracking-tight glow-green leading-none truncate">{state.status.wallet} ETH</span>
                 </div>
               </div>
-              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
+              <div className="flex items-center md:hidden">
+                <div className="flex flex-col items-end w-full">
+                  <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-black/40 border border-white/5">
+                    <motion.div
+                      animate={{ scale: connected ? 1 : 0.9 }}
+                      transition={{ duration: 0.2 }}
+                      className={cn("w-1.5 h-1.5 rounded-full", connected ? "bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]" : "bg-red-600")}
+                    />
+                    <span className="text-[8px] font-black tracking-widest leading-none uppercase">
+                      {connected ? "LIVE" : "OFFLINE"}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className={cn("hidden md:flex items-center gap-3")}>
                 <Gauge className="w-5 h-5 text-amber-500" />
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Price</span>
                   <span className="text-base font-black tracking-tight text-white leading-none">{state.status.gas} GWEI</span>
                 </div>
               </div>
-              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
+              <div className={cn("hidden md:flex items-center gap-3")}>
                 <Clock className="w-5 h-5 text-blue-400" />
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Session</span>
                   <span className="text-base font-black tracking-tight text-white leading-none">{state.status.uptime}</span>
                 </div>
               </div>
-              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
-                <ShieldAlert className="w-5 h-5 text-green-400" />
-                <div className="flex flex-col">
-                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Safe Tier</span>
-                  <span className="text-base font-black tracking-tight text-green-400 leading-none">{state.safeUsers.count.toLocaleString()} users</span>
-                </div>
-              </div>
             </div>
 
-            <div className="absolute top-2 right-2 md:static flex items-center gap-2 md:gap-6">
+            <div className="absolute top-2.5 right-2 md:static flex items-center gap-2 md:gap-6">
               <button
                 onClick={() => setShowFullHeader(!showFullHeader)}
-                className="md:hidden p-1 rounded bg-white/5 border border-white/10"
+                className="md:hidden p-1.5 rounded bg-white/5 border border-white/10"
               >
-                {showFullHeader ? <X className="w-3 h-3 text-zinc-400" /> : <BarChart3 className="w-3 h-3 text-cyan-400" />}
+                {showFullHeader ? <X className="w-4 h-4 text-zinc-400" /> : <BarChart3 className="w-4 h-4 text-cyan-400" />}
               </button>
-              <div className="flex flex-col items-end gap-1">
-                <div className="flex items-center gap-1.5 md:gap-2.5 px-2 md:px-3 py-1 md:py-1.5 rounded bg-black/40 border border-white/5 group">
+              <div className="hidden md:flex flex-col items-end gap-1">
+                <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
                   <motion.div
                     animate={{ scale: connected ? 1 : 0.9 }}
                     transition={{ duration: 0.2 }}
-                    className={cn("w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
+                    className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600")}
                   />
-                  <span className="text-[8px] md:text-[10px] font-black tracking-widest leading-none uppercase">
+                  <span className="text-[10px] font-black tracking-widest leading-none uppercase">
                     {connected ? "CORE ONLINE" : "OFFLINE"}
                   </span>
                 </div>
-                {showFullHeader && !connected && (
-                  <div className="flex flex-col items-end mt-2 md:hidden">
-                    <span className="text-[8px] text-zinc-600 font-bold uppercase">
-                      Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
-                    </span>
-                    {lastError && (
-                      <span className="text-[8px] text-red-500 font-black uppercase animate-pulse">
-                        Error: {lastError}
-                      </span>
-                    )}
-                  </div>
-                )}
               </div>
             </div>
           </div>
 
           <div className={cn(
-            "h-auto py-2 bg-black/30 flex flex-wrap md:flex-nowrap items-center px-6 gap-6 md:gap-10",
+            "h-auto py-3 bg-black/30 flex flex-wrap items-center px-4 md:px-6 gap-4 md:gap-10",
             !showFullHeader && "hidden md:flex"
           )}>
+            <div className="flex items-center gap-2 min-w-0">
+              <Trophy className="w-3.5 h-3.5 text-yellow-500 shrink-0" />
+              <span className="text-[9px] md:text-[10px] font-black text-zinc-600 uppercase">Yield:</span>
+              <span className="text-[11px] font-black text-emerald-400 glow-green tracking-tight truncate">${state.stats.totalProfitUSD.toFixed(1)}</span>
+            </div>
+            <div className="flex items-center gap-2 min-w-0">
+              <Zap className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+              <span className="text-[9px] md:text-[10px] font-black text-zinc-600 uppercase">Win:</span>
+              <span className="text-[11px] font-black text-white tracking-tight truncate">
+                {state.stats.totalAttempts > 0 ? ((state.stats.successCount / state.stats.totalAttempts) * 100).toFixed(0) : "0"}%
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <RefreshCw className="w-3.5 h-3.5 text-zinc-500" />
+              <span className="text-[9px] md:text-[10px] font-black text-zinc-600 uppercase">Pulse:</span>
+              <span className="text-[11px] font-black text-white px-2 py-0.5 bg-white/5 rounded whitespace-nowrap">
+                <RelativeTime timestamp={lastPulseTime} />
+              </span>
+            </div>
             {!connected && (
-              <div className="hidden md:flex flex-col">
-                <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
-                  Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
+              <div className="flex flex-col w-full md:w-auto border-t md:border-t-0 border-white/5 pt-2 md:pt-0">
+                <span className="text-[8px] text-zinc-600 font-bold uppercase truncate">
+                  Target: {connectUrl} {retryCount > 0 && `#${retryCount}`}
                 </span>
                 {lastError && (
-                  <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
+                  <span className="text-[8px] text-red-500 font-black uppercase animate-pulse truncate">
                     Error: {lastError}
                   </span>
                 )}
               </div>
             )}
-            <div className="flex items-center gap-2">
-              <Trophy className="w-3.5 h-3.5 text-yellow-500" />
-              <span className="text-[10px] font-black text-zinc-600 uppercase">Yield:</span>
-              <span className="text-[11px] font-black text-emerald-400 glow-green tracking-tight">${state.stats.totalProfitUSD.toFixed(2)} USDC</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Zap className="w-3.5 h-3.5 text-cyan-400" />
-              <span className="text-[10px] font-black text-zinc-600 uppercase">Success:</span>
-              <span className="text-[11px] font-black text-white tracking-tight">
-                {state.stats.totalAttempts > 0 ? ((state.stats.successCount / state.stats.totalAttempts) * 100).toFixed(1) : "0.0"}%
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <LineChart className="w-3.5 h-3.5 text-blue-400" />
-              <span className="text-[10px] font-black text-zinc-600 uppercase">RPC Flow:</span>
-              <div className="flex flex-col leading-none">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[11px] font-black text-cyan-400 tracking-tight">{(state.stats.basicRpcCalls || 0).toLocaleString()}</span>
-                  <span className="text-[8px] text-zinc-600 font-bold uppercase">DRPC</span>
-                </div>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-[11px] font-black text-magenta-400 tracking-tight">{(state.stats.premiumRpcCalls || 0).toLocaleString()}</span>
-                  <span className="text-[8px] text-zinc-600 font-bold uppercase">ALCH</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <RefreshCw className="w-3.5 h-3.5 text-zinc-500" />
-              <span className="text-[10px] font-black text-zinc-600 uppercase">Pulse:</span>
-              <span className="text-[11px] font-black text-white px-2 py-0.5 bg-white/5 rounded whitespace-nowrap">
-                <RelativeTime timestamp={lastPulseTime} />
-              </span>
-            </div>
           </div>
         </header>
 
@@ -694,7 +674,7 @@ export default function App() {
       </main>
 
       {/* MOBILE BOTTOM NAVIGATION */}
-      <nav className="md:hidden flex mica-container border-t border-white/10 h-16 shrink-0 mt-auto overflow-hidden">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 mica-container border-t border-white/10 h-16 shrink-0 z-50 flex overflow-hidden safe-area-bottom">
         {navItems.map((item) => (
           <button
             key={item.id}
