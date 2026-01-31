@@ -45,6 +45,9 @@ function useBotSocket() {
     safeUsers: { count: 0, lastUpdate: 0, removed: 0, promoted: 0 }
   });
   const [connected, setConnected] = useState(false);
+  const [connectUrl, setConnectUrl] = useState('');
+  const [lastError, setLastError] = useState<string | null>(null);
+  const [retryCount, setRetryCount] = useState(0);
   const [lastPulseTime, setLastPulseTime] = useState(Date.now());
   const ws = useRef<WebSocket | null>(null);
   const lastHeartbeat = useRef<number>(Date.now());
@@ -56,19 +59,39 @@ function useBotSocket() {
 
     const connect = () => {
       if (ws.current) ws.current.close();
-      const socket = new WebSocket('ws://localhost:3001');
+
+      const host = window.location.hostname;
+      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const url = `${protocol}//${host}:3001`;
+
+      console.log(`🔌 Attempting WebSocket connection to: ${url}`);
+      setConnectUrl(url);
+
+      const socket = new WebSocket(url);
       ws.current = socket;
 
       socket.onopen = () => {
+        console.log(`✅ WebSocket Connected to ${url}`);
         setConnected(true);
+        setLastError(null);
+        setRetryCount(0);
         lastHeartbeat.current = Date.now();
       };
 
-      socket.onclose = () => {
+      socket.onclose = (event) => {
         if (isCleaningUp) return; // Don't reconnect during cleanup
         setConnected(false);
+        console.warn(`🔌 WebSocket Closed: Code ${event.code}, Reason: ${event.reason || 'None'}`);
         if (timeoutId) clearTimeout(timeoutId);
-        timeoutId = setTimeout(connect, 3000);
+        timeoutId = setTimeout(() => {
+          setRetryCount(prev => prev + 1);
+          connect();
+        }, 3000);
+      };
+
+      socket.onerror = (error) => {
+        console.error('❌ WebSocket error occurred:', error);
+        setLastError('Connection failed. Verify Port 3001 is open on VPS Firewall.');
       };
 
       socket.onmessage = (event) => {
@@ -151,7 +174,7 @@ function useBotSocket() {
     }
   };
 
-  return { state, connected, lastPulseTime, sendCommand };
+  return { state, connected, connectUrl, lastError, retryCount, lastPulseTime, sendCommand };
 }
 
 // Simple component for relative time refresh
@@ -166,7 +189,7 @@ function RelativeTime({ timestamp }: { timestamp: number }) {
 }
 
 export default function App() {
-  const { state, connected, lastPulseTime, sendCommand } = useBotSocket();
+  const { state, connected, connectUrl, lastError, retryCount, lastPulseTime, sendCommand } = useBotSocket();
   const [selectedUser, setSelectedUser] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'All' | 'Market' | 'System' | 'Discovery'>('All');
   const [inspectedEvent, setInspectedEvent] = useState<any>(null);
@@ -312,15 +335,27 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
-                <motion.div
-                  animate={{ scale: connected ? 1 : 0.9 }}
-                  transition={{ duration: 0.2 }}
-                  className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
-                />
-                <span className="text-[10px] font-black tracking-widest leading-none uppercase">
-                  {connected ? "CORE ONLINE" : "ENGINE OFFLINE"}
-                </span>
+              <div className="flex flex-col items-end gap-1">
+                <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
+                  <motion.div
+                    animate={{ scale: connected ? 1 : 0.9 }}
+                    transition={{ duration: 0.2 }}
+                    className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
+                  />
+                  <span className="text-[10px] font-black tracking-widest leading-none uppercase">
+                    {connected ? "CORE ONLINE" : "ENGINE OFFLINE"}
+                  </span>
+                </div>
+                {!connected && (
+                  <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
+                    Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
+                  </span>
+                )}
+                {lastError && !connected && (
+                  <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
+                    Error: {lastError}
+                  </span>
+                )}
               </div>
             </div>
           </div>

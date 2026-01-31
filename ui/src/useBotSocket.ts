@@ -12,6 +12,9 @@ export function useBotSocket() {
         safeUsers: { count: 0, lastUpdate: 0, removed: 0, promoted: 0 }
     });
     const [connected, setConnected] = useState(false);
+    const [connectUrl, setConnectUrl] = useState('');
+    const [lastError, setLastError] = useState<string | null>(null);
+    const [retryCount, setRetryCount] = useState(0);
     const [lastPulseTime, setLastPulseTime] = useState(Date.now());
     const ws = useRef<WebSocket | null>(null);
     const lastHeartbeat = useRef<number>(Date.now());
@@ -31,7 +34,13 @@ export function useBotSocket() {
 
             // Dynamic hostname for remote access
             const host = window.location.hostname;
-            const socket = new WebSocket(`ws://${host}:3001`);
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const url = `${protocol}//${host}:3001`;
+
+            console.log(`🔌 Attempting WebSocket connection to: ${url}`);
+            setConnectUrl(url);
+
+            const socket = new WebSocket(url);
             ws.current = socket;
 
             socket.onopen = () => {
@@ -39,19 +48,27 @@ export function useBotSocket() {
                     socket.close();
                     return;
                 }
+                console.log(`✅ WebSocket Connected to ${url}`);
                 setConnected(true);
+                setLastError(null);
+                setRetryCount(0);
                 lastHeartbeat.current = Date.now();
             };
 
-            socket.onclose = () => {
+            socket.onclose = (event) => {
                 if (isCleaningUp) return;
                 setConnected(false);
+                console.warn(`🔌 WebSocket Closed: Code ${event.code}, Reason: ${event.reason || 'None'}`);
                 if (timeoutId) clearTimeout(timeoutId);
-                timeoutId = setTimeout(connect, 3000);
+                timeoutId = setTimeout(() => {
+                    setRetryCount(prev => prev + 1);
+                    connect();
+                }, 3000);
             };
 
-            socket.onerror = () => {
-                console.error('WebSocket error occurred');
+            socket.onerror = (error) => {
+                console.error('❌ WebSocket error occurred:', error);
+                setLastError('Connection failed. Check if port 3001 is open on the server firewall.');
             };
 
             socket.onmessage = (event) => {
@@ -126,5 +143,5 @@ export function useBotSocket() {
         };
     }, []);
 
-    return { state, connected, lastPulseTime };
+    return { state, connected, lastPulseTime, connectUrl, lastError, retryCount };
 }

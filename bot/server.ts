@@ -70,25 +70,33 @@ export class BridgeServer {
             });
         } catch (e) { console.error(e); }
 
-        this.wss?.on('connection', (ws: WebSocket) => {
+        this.wss?.on('connection', (ws: WebSocket, req) => {
+            const ip = req.socket.remoteAddress;
+            console.log(`🔌 New WebSocket Client Connected from: ${ip}`);
             this.clients.add(ws);
 
             // Send initial state with BigInt serialization fix
             ws.send(this.safeStringify({ type: 'INIT', data: this.currentState }));
 
             ws.on('close', () => {
+                console.log(`🔌 WebSocket Client Disconnected: ${ip}`);
                 this.clients.delete(ws);
+            });
+
+            ws.on('error', (err) => {
+                console.error(`❌ Client WebSocket Error (${ip}):`, err);
             });
 
             ws.on('message', (message: Buffer) => {
                 try {
                     const cmd = JSON.parse(message.toString());
+                    console.log(`📥 Received command from ${ip}: ${cmd?.action}`);
                     this.handleCommand(cmd);
                 } catch (e) { }
             });
         });
 
-        console.log(`📡 Bridge: WebSocket server live on port ${port}`);
+        console.log(`📡 Bridge: WebSocket server live on port ${port} (host: 0.0.0.0)`);
 
         // Keep-Alive Heartbeat (Prevents UI from timing out when idle)
         setInterval(() => {
