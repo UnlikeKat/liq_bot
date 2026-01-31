@@ -29,7 +29,10 @@ async function main() {
         loadSeedData();
 
         // 2. Start Bot Modules
-        console.log('🚀 Starting bot modules...\n');
+        console.log('\n==================================================');
+        console.log('🚀 LIQUIDATION BOT STARTING... (v2.1 BATCHING FIX)');
+        console.log('==================================================\n');
+
         bridge.start(); // Start WebSocket Server
         await startWatcher();
         startPriorityScanner();    // Premium RPC: 1s refresh for TOP 25
