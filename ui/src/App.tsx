@@ -191,8 +191,10 @@ function RelativeTime({ timestamp }: { timestamp: number }) {
   return <span>{diff}s ago</span>;
 }
 
-export default function App() {
-  const { state, connected, connectUrl, lastError, retryCount, lastPulseTime, sendCommand } = useBotSocket();
+export default function App({ socketState }: { socketState?: any }) {
+  // Use props if provided (from main.tsx), otherwise fallback to internal hook (for standalone usage)
+  const internalSocket = useBotSocket();
+  const { state, connected, connectUrl, lastError, retryCount, lastPulseTime, sendCommand } = socketState || internalSocket;
   const [selectedUser, setSelectedUser] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'All' | 'Market' | 'System' | 'Discovery'>('All');
   const [inspectedEvent, setInspectedEvent] = useState<any>(null);

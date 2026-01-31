@@ -240,8 +240,8 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
             </div>
 
             {/* Liquidation List */}
-            <div className="max-w-7xl mx-auto h-[calc(100vh-28rem)] overflow-y-auto space-y-2 pr-2">
-                {sorted.map((liq, idx) => (
+            <div className="max-w-7xl mx-auto h-[calc(100vh-28rem)] overflow-y-auto space-y-2 pr-2 pb-20 md:pb-0">
+                {sorted.slice(0, 50).map((liq, idx) => (
                     <motion.div
                         key={liq.txHash}
                         initial={{ opacity: 0, y: 20 }}
@@ -249,7 +249,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         transition={{ delay: Math.min(idx * 0.02, 0.5) }}
                         className="bg-white/5 border border-white/10 hover:border-cyan-500/50 rounded-lg p-4 transition-colors"
                     >
-                        <div className="grid grid-cols-12 gap-2 items-center">
+                        <div className="flex flex-col md:grid md:grid-cols-12 gap-2 items-start md:items-center">
                             {/* Timestamp & Block (2) */}
                             <div className="col-span-2">
                                 <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Time & Block</div>
@@ -343,6 +343,11 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         </div>
                     </motion.div>
                 ))}
+                {sorted.length > 50 && (
+                    <div className="text-center py-4 text-xs text-zinc-600 uppercase font-black tracking-widest">
+                        Showing top 50 of {sorted.length} (Filter to see more)
+                    </div>
+                )}
 
                 {sorted.length === 0 && (() => {
                     const fetchProgress = progress['INITIAL_LIQUIDATION_FETCH'] || progress['FILLING_LIQUIDATION_GAPS'] || 0;

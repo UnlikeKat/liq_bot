@@ -143,5 +143,11 @@ export function useBotSocket() {
         };
     }, []);
 
-    return { state, connected, lastPulseTime, connectUrl, lastError, retryCount };
+    const sendCommand = (action: string, data: any) => {
+        if (ws.current?.readyState === WebSocket.OPEN) {
+            ws.current.send(JSON.stringify({ action, data }));
+        }
+    };
+
+    return { state, connected, lastPulseTime, connectUrl, lastError, retryCount, sendCommand };
 }
