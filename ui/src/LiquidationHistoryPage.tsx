@@ -166,7 +166,7 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                 </div>
 
                 {/* Stats Bar */}
-                <div className="grid grid-cols-4 gap-4 mb-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                     <div className="bg-white/5 border border-white/10 rounded-lg p-4">
                         <div className="text-xs text-zinc-500 uppercase font-bold mb-1">Total Liquidations</div>
                         <div className="text-2xl font-black text-white">{sorted.length.toLocaleString()}</div>
@@ -186,56 +186,58 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                 </div>
 
                 {/* Filters */}
-                <div className="flex gap-4 mb-6">
-                    <div className="flex-1 relative">
+                <div className="flex flex-col md:flex-row gap-4 mb-6 overflow-x-auto pb-2">
+                    <div className="flex-1 relative shrink-0">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                         <input
                             type="text"
-                            placeholder="Search by tx hash, user, or liquidator..."
+                            placeholder="Search..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="w-full bg-white/5 border border-white/10 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-cyan-500/50"
                         />
                     </div>
 
-                    <button
-                        onClick={() => setHideDust(!hideDust)}
-                        className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${hideDust
-                            ? 'bg-amber-500/20 text-amber-500 border border-amber-500/50'
-                            : 'bg-white/5 text-zinc-400 border border-white/10 hover:bg-white/10'
-                            }`}
-                    >
-                        {hideDust ? 'Dust Hidden' : 'Show Dust'}
-                    </button>
+                    <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar shrink-0">
+                        <button
+                            onClick={() => setHideDust(!hideDust)}
+                            className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors whitespace-nowrap ${hideDust
+                                ? 'bg-amber-500/20 text-amber-500 border border-amber-500/50'
+                                : 'bg-white/5 text-zinc-400 border border-white/10 hover:bg-white/10'
+                                }`}
+                        >
+                            {hideDust ? 'Dust Hidden' : 'Show Dust'}
+                        </button>
 
-                    <select
-                        value={dateFilter}
-                        onChange={(e) => setDateFilter(e.target.value)}
-                        className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
-                        style={{ colorScheme: 'dark' }}
-                    >
-                        <option value="7" className="bg-zinc-900 text-white">Last 7 Days</option>
-                        <option value="30" className="bg-zinc-900 text-white">Last 30 Days</option>
-                        <option value="90" className="bg-zinc-900 text-white">Last 90 Days</option>
-                    </select>
+                        <select
+                            value={dateFilter}
+                            onChange={(e) => setDateFilter(e.target.value)}
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
+                            style={{ colorScheme: 'dark' }}
+                        >
+                            <option value="7" className="bg-zinc-900 text-white">7 Days</option>
+                            <option value="30" className="bg-zinc-900 text-white">30 Days</option>
+                            <option value="90" className="bg-zinc-900 text-white">90 Days</option>
+                        </select>
 
-                    <select
-                        value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value as any)}
-                        className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
-                        style={{ colorScheme: 'dark' }}
-                    >
-                        <option value="timestamp" className="bg-zinc-900 text-white">Sort by Time</option>
-                        <option value="profitUSD" className="bg-zinc-900 text-white">Sort by Profit</option>
-                        <option value="blockNumber" className="bg-zinc-900 text-white">Sort by Block</option>
-                    </select>
+                        <select
+                            value={sortBy}
+                            onChange={(e) => setSortBy(e.target.value as any)}
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-cyan-500/50"
+                            style={{ colorScheme: 'dark' }}
+                        >
+                            <option value="timestamp" className="bg-zinc-900 text-white">Time</option>
+                            <option value="profitUSD" className="bg-zinc-900 text-white">Profit</option>
+                            <option value="blockNumber" className="bg-zinc-900 text-white">Block</option>
+                        </select>
 
-                    <button
-                        onClick={() => setSortDir(prev => prev === 'asc' ? 'desc' : 'asc')}
-                        className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm hover:bg-white/10"
-                    >
-                        {sortDir === 'desc' ? '↓' : '↑'}
-                    </button>
+                        <button
+                            onClick={() => setSortDir(prev => prev === 'asc' ? 'desc' : 'asc')}
+                            className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm hover:bg-white/10"
+                        >
+                            {sortDir === 'desc' ? '↓' : '↑'}
+                        </button>
+                    </div>
                 </div>
             </div>
 

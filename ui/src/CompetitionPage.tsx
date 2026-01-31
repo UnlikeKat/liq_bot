@@ -32,7 +32,7 @@ export function CompetitionPage({ history }: Props) {
     };
 
     return (
-        <div className="p-6 max-w-[1600px] mx-auto">
+        <div className="p-6 max-w-[1600px] mx-auto pb-32 md:pb-6">
             <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
                     <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
@@ -50,8 +50,8 @@ export function CompetitionPage({ history }: Props) {
                             key={range}
                             onClick={() => handleRangeChange(range)}
                             className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${timeRange === range
-                                    ? 'bg-purple-500/20 text-purple-300 shadow-sm'
-                                    : 'text-zinc-500 hover:text-white hover:bg-white/5'
+                                ? 'bg-purple-500/20 text-purple-300 shadow-sm'
+                                : 'text-zinc-500 hover:text-white hover:bg-white/5'
                                 }`}
                         >
                             {range === 'all' ? 'All Time' : range.toUpperCase()}
