@@ -133,7 +133,7 @@ export async function runDiscovery() {
             // Clear progress after short delay (v10)
             setTimeout(() => {
                 bridge.broadcast('PROGRESS', { job: 'Discovery Scan', percent: -1 });
-            }, 2000);
+            }, 3000); // 3s delay to let user see 100%
 
             const users = Array.from(activeUsers);
             await batchUpdateHealthFactorsBasic(users, false);

@@ -148,11 +148,11 @@ export class BridgeServer {
     public broadcast(type: string, data: any) {
         // Update local cache
         if (type === 'KILL_LIST') this.currentState.killList = data;
-        if (type === 'SNIPER') this.currentState.sniperLogs.push(data);
-        if (type === 'EVENT') this.currentState.eventLogs.push(data);
+        if (type === 'SNIPER') this.currentState.sniperLogs = [...this.currentState.sniperLogs, data].slice(-1000);
+        if (type === 'EVENT') this.currentState.eventLogs = [...this.currentState.eventLogs, data].slice(-2000);
         if (type === 'LIQUIDATION_HISTORY') this.currentState.liquidationHistory = data;
         if (type === 'NEW_LIQUIDATION') {
-            this.currentState.liquidationHistory = [data, ...this.currentState.liquidationHistory];
+            this.currentState.liquidationHistory = [data, ...this.currentState.liquidationHistory].slice(0, 2000);
         }
         if (type === 'STATUS') this.currentState.status = data;
         if (type === 'STATS') this.currentState.stats = data;

@@ -339,10 +339,25 @@ export async function startWatcher() {
                     const gasPrice = tx.gasPrice?.toString() || '0';
                     const totalGasCost = (receipt.gasUsed * (tx.gasPrice || 0n)).toString();
 
-                    const liquidatedCollateralNum = Number(formatUnits(args.liquidatedCollateralAmount, 8));
-                    const debtToCoverNum = Number(formatUnits(args.debtToCover, 8));
+                    const collateralDecimals = CONFIG.TOKEN_DECIMALS[args.collateralAsset as string] || 18;
+                    const debtDecimals = CONFIG.TOKEN_DECIMALS[args.debtAsset as string] || (['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA'].includes(args.debtAsset) ? 6 : 18);
+
+                    const liquidatedCollateralNum = Number(formatUnits(args.liquidatedCollateralAmount, collateralDecimals));
+                    const debtToCoverNum = Number(formatUnits(args.debtToCover, debtDecimals));
                     const gasCostETH = Number(formatUnits(BigInt(totalGasCost), 18));
-                    const profitUSD = liquidatedCollateralNum - debtToCoverNum - gasCostETH;
+
+                    // Simple Profit Estimate: Collateral Value - Debt Value - Gas Cost
+                    // Note: This assumes 1:1 price for simplicity in logs, but precise calculation would need Oracle prices.
+                    // However, avoiding $60B errors comes from using correct decimals.
+                    const profitUSD = (liquidatedCollateralNum * CONFIG.PRICES.WETH) - (debtToCoverNum * 1) - (gasCostETH * CONFIG.PRICES.WETH);
+                    // ^ This is a rough heuristic. Ideally fetch oracle price for collateral if not WETH.
+                    // For now, primary fix is Decimals. Assuming WETH collateral roughly.
+                    // Better: Just report "Profit in ETH terms" or keep USD but fixed decimals.
+
+                    // Revised: Use Oracle price if possible, or just raw difference if stable-stable. 
+                    // Let's stick to the user's issue: The numbers were massive because of 8 vs 18 decimals.
+                    // Using correct decimals will fix the magnitude.
+                    const estimatedProfitUSD = (liquidatedCollateralNum * (args.collateralAsset === CONFIG.TOKENS.USDC ? 1 : 3000)) - (debtToCoverNum * (args.debtAsset === CONFIG.TOKENS.USDC ? 1 : 3000)) - (gasCostETH * 3000);
 
                     const record = {
                         txHash: log.transactionHash,
@@ -358,8 +373,8 @@ export async function startWatcher() {
                         gasUsed,
                         gasPrice,
                         totalGasCost,
-                        estimatedProfit: profitUSD.toString(),
-                        profitUSD
+                        estimatedProfit: estimatedProfitUSD.toString(),
+                        profitUSD: estimatedProfitUSD
                     };
 
                     await appendRecords([record]);
@@ -437,7 +452,24 @@ export async function startBackgroundScanner() {
             const BATCH_SIZE = 100;
             for (let i = 0; i < backgroundTargets.length; i += BATCH_SIZE) {
                 const batch = backgroundTargets.slice(i, i + BATCH_SIZE);
-                await batchUpdateHealthFactorsGeneric(batch, wssClient, 'WSS');
+
+                // Add Timeout to prevent hanging
+                const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('WSS Timeout')), 5000));
+
+                try {
+                    await Promise.race([
+                        batchUpdateHealthFactorsGeneric(batch, wssClient, 'WSS'),
+                        timeoutPromise
+                    ]);
+                } catch (e: any) {
+                    if (e.message === 'WSS Timeout') {
+                        console.warn('⚠️ Background Scanner Timeout - Skipping batch');
+                        // Force socket reconnect logic if possible or just skip
+                    } else {
+                        console.error('Background batch error:', e);
+                    }
+                }
+
                 await new Promise(r => setTimeout(r, 200)); // Slight throttle
             }
         }

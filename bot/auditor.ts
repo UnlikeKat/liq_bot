@@ -35,6 +35,16 @@ export function persistLists(safe: string[]) {
     const risky = Array.from(killList);
     fs.writeFileSync(SAFE_USERS_FILE, JSON.stringify(safe, null, 2));
     fs.writeFileSync(KILL_LIST_FILE, JSON.stringify(risky, null, 2));
+    fs.writeFileSync(SAFE_USERS_FILE, JSON.stringify(safe, null, 2));
+    fs.writeFileSync(KILL_LIST_FILE, JSON.stringify(risky, null, 2));
+
+    // Broadcast update to UI
+    bridge.broadcast('SAFE_USERS', {
+        count: safe.length,
+        lastUpdate: Date.now(),
+        removed: 0,
+        promoted: 0
+    });
 }
 
 /**
@@ -42,7 +52,6 @@ export function persistLists(safe: string[]) {
  */
 export async function runAudit() {
     dashboard.logEvent('🔍 Auditor: Scanning safe list (Public RPC)...');
-
     let safeUsers = getSafeUsers();
     if (safeUsers.length === 0) {
         return;
