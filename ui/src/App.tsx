@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   Activity,
   Target,
@@ -13,15 +13,14 @@ import {
   Flame,
   LineChart,
   Trophy,
-  AlertOctagon,
   Eye,
   ArrowRightLeft,
   X,
   RefreshCw,
-  ZapOff,
   ArrowUpRight,
   ArrowDownRight,
-  Minus
+  Minus,
+  BarChart3
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
@@ -36,7 +35,7 @@ function cn(...inputs: ClassValue[]) {
 function useBotSocket() {
   const [state, setState] = useState({
     killList: [] as any[],
-    sniperLogs: [],
+    sniperLogs: [] as any[],
     eventLogs: [] as any[],
     liquidationHistory: [] as any[],
     status: { wallet: '0.00', gas: '0', uptime: '0h 0m 0s', network: 'BASE MAINNET', heartbeat: 0 },
@@ -192,6 +191,9 @@ export default function App() {
   const { state, connected, connectUrl, lastError, retryCount, lastPulseTime, sendCommand } = useBotSocket();
   const [selectedUser, setSelectedUser] = useState<any>(null);
   const [activeTab, setActiveTab] = useState<'All' | 'Market' | 'System' | 'Discovery'>('All');
+  const [activeRadarTab, setActiveRadarTab] = useState<'High Value' | 'Dust Bin'>('High Value');
+  const [mobileView, setMobileView] = useState<'radar' | 'execution' | 'feed' | 'status'>('radar');
+  const [showFullHeader, setShowFullHeader] = useState(false);
   const [inspectedEvent, setInspectedEvent] = useState<any>(null);
 
   const openExplorer = (id: string, type: 'tx' | 'address' = 'tx') => {
@@ -203,17 +205,59 @@ export default function App() {
     activeTab === 'All' || log.category === activeTab
   );
 
-  return (
-    <div className="flex h-screen w-screen overflow-hidden text-white font-sans bg-[#0a0a0c] p-2 gap-2">
+  const DUST_THRESHOLD = 15.0;
+  const highValueTargets = state.killList.filter(u => (Number(u.totalDebtBase) / 1e8) >= DUST_THRESHOLD);
+  const dustTargets = state.killList.filter(u => (Number(u.totalDebtBase) / 1e8) < DUST_THRESHOLD);
 
-      {/* SIDEBAR: TARGET RADAR */}
-      <aside className="w-80 flex flex-col mica-container shrink-0">
-        <div className="panel-header shrink-0 flex items-center gap-2">
-          <Target className="w-4 h-4 text-cyan-400" />
-          <span>Target Radar</span>
-          <span className="ml-auto text-[10px] bg-cyan-500/20 text-cyan-400 px-1.5 py-0.5 rounded font-black">
-            {state.killList.length}
-          </span>
+  const currentRadarTargets = activeRadarTab === 'High Value' ? highValueTargets : dustTargets;
+
+  const batchLogs = (state.sniperLogs as any[]).filter(log => log.message.includes('BATCH'));
+  const individualLogs = (state.sniperLogs as any[]).filter(log => !log.message.includes('BATCH'));
+
+  const navItems = [
+    { id: 'radar', label: 'Radar', icon: Target },
+    { id: 'execution', label: 'Snipes', icon: Flame },
+    { id: 'feed', label: 'Feed', icon: Activity },
+    { id: 'status', label: 'Stats', icon: BarChart3 }
+  ];
+
+  return (
+    <div className="flex flex-col md:flex-row h-screen w-screen overflow-hidden text-white font-sans bg-[#0a0a0c] p-1 md:p-2 gap-1 md:gap-2">
+
+      {/* SIDEBAR: TARGET RADAR (Hidden on mobile unless active) */}
+      <aside className={cn(
+        "w-full md:w-80 flex flex-col mica-container shrink-0",
+        mobileView !== 'radar' && "hidden md:flex"
+      )}>
+        <div className="panel-header shrink-0 flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <Target className="w-4 h-4 text-cyan-400" />
+            <span>Target Radar</span>
+            <span className="ml-auto text-[10px] bg-cyan-500/20 text-cyan-400 px-1.5 py-0.5 rounded font-black">
+              {currentRadarTargets.length}
+            </span>
+          </div>
+
+          <div className="flex bg-black/40 rounded p-0.5 border border-white/5">
+            <button
+              onClick={() => setActiveRadarTab('High Value')}
+              className={cn(
+                "flex-1 text-[8px] py-1 rounded font-black uppercase tracking-widest transition-all",
+                activeRadarTab === 'High Value' ? "bg-cyan-500 text-white shadow-[0_0_8px_rgba(6,182,212,0.4)]" : "text-zinc-500 hover:text-zinc-300"
+              )}
+            >
+              High Value ({highValueTargets.length})
+            </button>
+            <button
+              onClick={() => setActiveRadarTab('Dust Bin')}
+              className={cn(
+                "flex-1 text-[8px] py-1 rounded font-black uppercase tracking-widest transition-all",
+                activeRadarTab === 'Dust Bin' ? "bg-zinc-700 text-white" : "text-zinc-500 hover:text-zinc-300"
+              )}
+            >
+              Dust Bin ({dustTargets.length})
+            </button>
+          </div>
         </div>
 
         {/* PROGRESS OVERLAY (Discovery only) - Auto-hide at 100% */}
@@ -236,15 +280,15 @@ export default function App() {
         )}
 
         <div className="flex-1 overflow-y-auto p-2 space-y-2 custom-scrollbar">
-          {state.killList.length === 0 && (
+          {currentRadarTargets.length === 0 && (
             <div className="flex flex-col items-center justify-center py-20 gap-3">
               <Activity className="w-8 h-8 text-zinc-800 animate-pulse" />
               <div className="text-center text-zinc-700 uppercase font-black text-[10px] tracking-widest italic px-4">
-                Monitoring Market Signal...
+                {activeRadarTab === 'High Value' ? "Scanning for Alpha..." : "Background Noise Clear"}
               </div>
             </div>
           )}
-          {state.killList.map((user: any) => (
+          {currentRadarTargets.map((user: any) => (
             <motion.div
               layout
               key={user.address}
@@ -288,7 +332,7 @@ export default function App() {
                 <div className="text-right">
                   <span className="text-[9px] text-zinc-500 block uppercase font-black leading-none mb-1 text-zinc-600">Debt</span>
                   <span className="text-sm font-bold text-white/90">
-                    ${(Number(user.totalDebtBase) / 1e8).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+                    ${(Number(user.totalDebtBase) / 1e8).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}
                   </span>
                 </div>
               </div>
@@ -298,34 +342,40 @@ export default function App() {
       </aside>
 
       {/* MAIN VIEW */}
-      <main className="flex-1 flex flex-col min-w-0 gap-2 overflow-hidden">
+      <main className={cn(
+        "flex-1 flex flex-col min-w-0 gap-1 md:gap-2 overflow-hidden",
+        (mobileView === 'radar') && "hidden md:flex"
+      )}>
 
-        {/* TOP STATUS BAR */}
+        {/* TOP STATUS BAR (Condensed on mobile) */}
         <header className="mica-container shrink-0 flex flex-col overflow-hidden relative">
-          <div className="h-14 flex items-center justify-between px-6 border-b border-white/[0.03]">
-            <div className="flex gap-10">
-              <div className="flex items-center gap-3">
-                <Wallet className="w-5 h-5 text-emerald-400" />
+          <div className={cn(
+            "flex flex-col md:flex-row md:h-14 items-stretch md:items-center justify-between px-3 md:px-6 border-b border-white/[0.03]",
+            !showFullHeader && "h-12 md:h-14 overflow-hidden"
+          )}>
+            <div className="flex flex-wrap md:flex-nowrap gap-4 md:gap-10 py-2 md:py-0">
+              <div className="flex items-center gap-2 md:gap-3">
+                <Wallet className="w-4 h-4 md:w-5 md:h-5 text-emerald-400" />
                 <div className="flex flex-col">
-                  <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Account</span>
-                  <span className="text-base font-black tracking-tight glow-green leading-none">{state.status.wallet} ETH</span>
+                  <span className="text-[7px] md:text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-0.5 md:mb-1">Gas Account</span>
+                  <span className="text-sm md:text-base font-black tracking-tight glow-green leading-none">{state.status.wallet} ETH</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
                 <Gauge className="w-5 h-5 text-amber-500" />
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Gas Price</span>
                   <span className="text-base font-black tracking-tight text-white leading-none">{state.status.gas} GWEI</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
                 <Clock className="w-5 h-5 text-blue-400" />
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Session</span>
                   <span className="text-base font-black tracking-tight text-white leading-none">{state.status.uptime}</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className={cn("flex items-center gap-3", !showFullHeader && "hidden md:flex")}>
                 <ShieldAlert className="w-5 h-5 text-green-400" />
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-600 uppercase font-black tracking-widest leading-none mb-1">Safe Tier</span>
@@ -334,33 +384,56 @@ export default function App() {
               </div>
             </div>
 
-            <div className="flex items-center gap-6">
+            <div className="absolute top-2 right-2 md:static flex items-center gap-2 md:gap-6">
+              <button
+                onClick={() => setShowFullHeader(!showFullHeader)}
+                className="md:hidden p-1 rounded bg-white/5 border border-white/10"
+              >
+                {showFullHeader ? <X className="w-3 h-3 text-zinc-400" /> : <BarChart3 className="w-3 h-3 text-cyan-400" />}
+              </button>
               <div className="flex flex-col items-end gap-1">
-                <div className="flex items-center gap-2.5 px-3 py-1.5 rounded bg-black/40 border border-white/5 group">
+                <div className="flex items-center gap-1.5 md:gap-2.5 px-2 md:px-3 py-1 md:py-1.5 rounded bg-black/40 border border-white/5 group">
                   <motion.div
                     animate={{ scale: connected ? 1 : 0.9 }}
                     transition={{ duration: 0.2 }}
-                    className={cn("w-2 h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
+                    className={cn("w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-colors duration-300", connected ? "bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]" : "bg-red-600 shadow-[0_0_10px_rgba(220,38,38,1)]")}
                   />
-                  <span className="text-[10px] font-black tracking-widest leading-none uppercase">
-                    {connected ? "CORE ONLINE" : "ENGINE OFFLINE"}
+                  <span className="text-[8px] md:text-[10px] font-black tracking-widest leading-none uppercase">
+                    {connected ? "CORE ONLINE" : "OFFLINE"}
                   </span>
                 </div>
-                {!connected && (
-                  <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
-                    Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
-                  </span>
-                )}
-                {lastError && !connected && (
-                  <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
-                    Error: {lastError}
-                  </span>
+                {showFullHeader && !connected && (
+                  <div className="flex flex-col items-end mt-2 md:hidden">
+                    <span className="text-[8px] text-zinc-600 font-bold uppercase">
+                      Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
+                    </span>
+                    {lastError && (
+                      <span className="text-[8px] text-red-500 font-black uppercase animate-pulse">
+                        Error: {lastError}
+                      </span>
+                    )}
+                  </div>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="h-10 bg-black/30 flex items-center px-6 gap-10">
+          <div className={cn(
+            "h-auto py-2 bg-black/30 flex flex-wrap md:flex-nowrap items-center px-6 gap-6 md:gap-10",
+            !showFullHeader && "hidden md:flex"
+          )}>
+            {!connected && (
+              <div className="hidden md:flex flex-col">
+                <span className="text-[8px] text-zinc-600 font-bold uppercase tracking-tight">
+                  Target: {connectUrl} {retryCount > 0 && `(Retry #${retryCount})`}
+                </span>
+                {lastError && (
+                  <span className="text-[8px] text-red-500 font-black uppercase tracking-tight animate-pulse">
+                    Error: {lastError}
+                  </span>
+                )}
+              </div>
+            )}
             <div className="flex items-center gap-2">
               <Trophy className="w-3.5 h-3.5 text-yellow-500" />
               <span className="text-[10px] font-black text-zinc-600 uppercase">Yield:</span>
@@ -387,62 +460,130 @@ export default function App() {
                 </div>
               </div>
             </div>
+            <div className="flex items-center gap-2">
+              <RefreshCw className="w-3.5 h-3.5 text-zinc-500" />
+              <span className="text-[10px] font-black text-zinc-600 uppercase">Pulse:</span>
+              <span className="text-[11px] font-black text-white px-2 py-0.5 bg-white/5 rounded whitespace-nowrap">
+                <RelativeTime timestamp={lastPulseTime} />
+              </span>
+            </div>
           </div>
         </header>
 
-        {/* DASHBOARD CONTENT GRID */}
-        <div className="flex-1 grid grid-cols-2 gap-2 p-2 min-h-0">
+        {/* DASHBOARD CONTENT GRID (Switches to single view on mobile) */}
+        <div className={cn(
+          "flex-1 p-1 md:p-2 min-h-0",
+          mobileView !== 'radar' ? "grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2" : "hidden md:grid md:grid-cols-2"
+        )}>
 
-          {/* SNIPER LOG */}
-          <div className="flex flex-col mica-container overflow-hidden">
+          {/* SNIPER LOG (Hidden on mobile if not active) */}
+          <div className={cn(
+            "flex flex-col mica-container overflow-hidden",
+            mobileView !== 'execution' && "hidden md:flex"
+          )}>
             <div className="panel-header shrink-0 flex items-center gap-2">
               <Flame className="w-4 h-4 text-orange-500 fill-orange-500/20" />
               <span>Sniper Execution History</span>
             </div>
-            <div className="flex-1 overflow-y-auto p-3 font-mono text-[11px] space-y-1 bg-black/40 custom-scrollbar">
-              <AnimatePresence initial={false}>
-                {state.sniperLogs.length === 0 && <div className="flex items-center justify-center h-full text-zinc-800 uppercase font-black tracking-widest italic opacity-20">Monitoring Targets...</div>}
-                {state.sniperLogs.map((log: any, i) => {
-                  const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
-                  return (
-                    <motion.div
-                      layout
-                      initial={{ opacity: 0, y: -5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      key={`sniper-${i}`}
-                      className={cn(
-                        "group flex gap-3 p-2 rounded border border-white/5 leading-relaxed transition-all",
-                        log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
-                      )}
-                    >
-                      <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
-                      <span className="font-black underline shrink-0 uppercase tracking-tighter">{log.success ? "EXEC" : "REVE"}</span>
-                      <div className="font-medium flex-1 break-words">
-                        {log.message.split(txHash || '...')[0]}
-                        {txHash && (
-                          <span
-                            onClick={() => openExplorer(txHash)}
-                            className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 hover:glow-cyan-white transition-all text-[9px] tracking-tight bg-white/5 px-1.5 rounded"
-                          >
-                            tx:{txHash.slice(0, 10)}...
-                          </span>
-                        )}
-                      </div>
-                    </motion.div>
-                  )
-                })}
-              </AnimatePresence>
+
+            <div className="flex-1 flex flex-col min-h-0 bg-black/40">
+              {/* Top Half: Batch History */}
+              <div className="flex-1 flex flex-col min-h-0 border-b border-white/5">
+                <div className="px-3 py-1 bg-white/5 flex items-center justify-between">
+                  <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest">Batch Operations</span>
+                  <span className="text-[8px] font-bold text-zinc-600 italic">Total: {batchLogs.length}</span>
+                </div>
+                <div className="flex-1 overflow-y-auto p-3 font-mono text-[10px] space-y-1 custom-scrollbar">
+                  <AnimatePresence initial={false}>
+                    {batchLogs.length === 0 && <div className="py-4 text-center text-zinc-800 uppercase font-black text-[9px] tracking-widest italic opacity-20">No Batches Yet...</div>}
+                    {batchLogs.map((log: any, i) => {
+                      const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
+                      return (
+                        <motion.div
+                          layout
+                          initial={{ opacity: 0, y: -5 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          key={`batch-${i}`}
+                          className={cn(
+                            "group flex gap-2 p-1.5 rounded border border-white/5 leading-tight transition-all",
+                            log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
+                          )}
+                        >
+                          <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
+                          <span className="font-black underline shrink-0 uppercase tracking-tighter text-[9px]">{log.success ? "EXEC" : "REVE"}</span>
+                          <div className="font-medium flex-1 break-words">
+                            {log.message.split(txHash || '...')[0]}
+                            {txHash && (
+                              <span
+                                onClick={() => openExplorer(txHash)}
+                                className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 transition-all text-[8px] bg-white/5 px-1 rounded"
+                              >
+                                {txHash.slice(0, 8)}...
+                              </span>
+                            )}
+                          </div>
+                        </motion.div>
+                      )
+                    })}
+                  </AnimatePresence>
+                </div>
+              </div>
+
+              {/* Bottom Half: Individual Liquidations */}
+              <div className="flex-1 flex flex-col min-h-0">
+                <div className="px-3 py-1 bg-white/5 flex items-center justify-between">
+                  <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest">Individual Snipes</span>
+                  <span className="text-[8px] font-bold text-zinc-600 italic">Total: {individualLogs.length}</span>
+                </div>
+                <div className="flex-1 overflow-y-auto p-3 font-mono text-[10px] space-y-1 custom-scrollbar">
+                  <AnimatePresence initial={false}>
+                    {individualLogs.length === 0 && <div className="py-4 text-center text-zinc-800 uppercase font-black text-[9px] tracking-widest italic opacity-20">Monitoring Single Targets...</div>}
+                    {individualLogs.map((log: any, i) => {
+                      const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
+                      return (
+                        <motion.div
+                          layout
+                          initial={{ opacity: 0, y: -5 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          key={`single-${i}`}
+                          className={cn(
+                            "group flex gap-2 p-1.5 rounded border border-white/5 leading-tight transition-all",
+                            log.success ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/10" : "bg-red-500/5 text-red-300 border-red-500/10"
+                          )}
+                        >
+                          <span className="text-zinc-600 font-black shrink-0">[{log.time}]</span>
+                          <span className="font-black underline shrink-0 uppercase tracking-tighter text-[9px]">{log.success ? "EXEC" : "REVE"}</span>
+                          <div className="font-medium flex-1 break-words">
+                            {log.message.split(txHash || '...')[0]}
+                            {txHash && (
+                              <span
+                                onClick={() => openExplorer(txHash)}
+                                className="ml-2 font-mono text-cyan-400 underline cursor-pointer hover:text-cyan-100 transition-all text-[8px] bg-white/5 px-1 rounded"
+                              >
+                                {txHash.slice(0, 8)}...
+                              </span>
+                            )}
+                          </div>
+                        </motion.div>
+                      )
+                    })}
+                  </AnimatePresence>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* MARKET FEED */}
-          <div className="flex flex-col mica-container overflow-hidden border-blue-500/5">
-            <div className="panel-header shrink-0 flex items-center gap-4 bg-white/[0.02]">
+          {/* MARKET FEED (Hidden on mobile if not active) */}
+          <div className={cn(
+            "flex flex-col mica-container overflow-hidden border-blue-500/5",
+            mobileView !== 'feed' && "hidden md:flex"
+          )}>
+            <div className="panel-header shrink-0 flex flex-col md:flex-row md:items-center gap-2 md:gap-4 bg-white/[0.02]">
               <div className="flex items-center gap-2">
                 <Activity className="w-4 h-4 text-blue-400" />
                 <span>Live Intelligence Stream</span>
               </div>
-              <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
+              <div className="flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05] overflow-x-auto custom-scrollbar no-scrollbar">
                 {['All', 'Market', 'System', 'Discovery'].map(tab => (
                   <button
                     key={tab}
@@ -494,21 +635,24 @@ export default function App() {
           </div>
         </div>
 
-        {/* BOTTOM INSPECTOR FOOTER */}
-        <footer className="h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-5 flex gap-10 shrink-0 relative overflow-hidden">
+        {/* BOTTOM INSPECTOR FOOTER (Hidden on mobile if not active view or condensed) */}
+        <footer className={cn(
+          "h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-3 md:p-5 flex gap-4 md:gap-10 shrink-0 relative overflow-hidden",
+          mobileView !== 'status' && "hidden md:flex"
+        )}>
           {selectedUser ? (
-            <>
-              <div className="flex flex-col justify-center min-w-[350px] relative z-10">
-                <span className="text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-2 flex items-center gap-2 leading-none">
-                  <Cpu className="w-3.5 h-3.5" /> Positional Analytics
+            <div className="flex flex-col md:flex-row items-stretch md:items-center w-full gap-4 md:gap-10">
+              <div className="flex flex-col justify-center min-w-0 md:min-w-[350px] relative z-10">
+                <span className="text-[8px] md:text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-1 md:mb-2 flex items-center gap-2 leading-none">
+                  <Cpu className="w-3 md:w-3.5 h-3 md:h-3.5" /> Positional Analytics
                 </span>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-between md:justify-start gap-3">
                   <div
                     onClick={() => openExplorer(selectedUser.address, 'address')}
-                    className="cursor-pointer group"
+                    className="cursor-pointer group min-w-0"
                   >
-                    <h2 className="text-2xl font-mono font-black tracking-tighter text-white group-hover:text-magenta-400 transition-all" style={{ textShadow: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textShadow = '0 0 10px rgba(217,70,239,0.4), 0 0 20px rgba(217,70,239,0.2)'} onMouseLeave={(e) => e.currentTarget.style.textShadow = 'none'}>
-                      {selectedUser.address.slice(0, 20)}...
+                    <h2 className="text-sm md:text-2xl font-mono font-black tracking-tighter text-white group-hover:text-magenta-400 transition-all truncate" style={{ textShadow: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textShadow = '0 0 10px rgba(217,70,239,0.4), 0 0 20px rgba(217,70,239,0.2)'} onMouseLeave={(e) => e.currentTarget.style.textShadow = 'none'}>
+                      {selectedUser.address.slice(0, 10)}...{selectedUser.address.slice(-6)}
                     </h2>
                   </div>
 
@@ -516,38 +660,55 @@ export default function App() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => sendCommand('LIQUIDATE_USER', { address: selectedUser.address })}
-                    className="ml-4 px-4 py-2 rounded bg-red-600/20 hover:bg-red-600 text-red-500 hover:text-white border border-red-600/30 font-black text-[10px] uppercase tracking-widest transition-all"
+                    className="px-3 md:px-4 py-1.5 md:py-2 rounded bg-red-600/20 hover:bg-red-600 text-red-500 hover:text-white border border-red-600/30 font-black text-[8px] md:text-[10px] uppercase tracking-widest transition-all"
                   >
-                    Force Snipe
+                    Snipe
                   </motion.button>
                 </div>
               </div>
-              <div className="h-full w-px bg-white/5" />
-              <div className="flex-1 grid grid-cols-3 gap-12 items-center relative z-10">
+              <div className="hidden md:block h-full w-px bg-white/5" />
+              <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 items-center relative z-10">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Debt Pool</span>
-                  <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalDebtBase) / 1e8).toLocaleString()}</span>
+                  <span className="text-[8px] md:text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-0.5 md:mb-1 leading-none">Debt Pool</span>
+                  <span className="text-lg md:text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalDebtBase) / 1e8).toLocaleString()}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Collateral</span>
-                  <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalCollateralBase) / 1e8).toLocaleString()}</span>
+                  <span className="text-[8px] md:text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-0.5 md:mb-1 leading-none">Collateral</span>
+                  <span className="text-lg md:text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalCollateralBase) / 1e8).toLocaleString()}</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-magenta-500 font-black uppercase tracking-widest mb-1 leading-none font-bold">Health Factor</span>
-                  <span className={cn("text-3xl font-black tracking-tighter leading-none", (Number(selectedUser.healthFactor) / 1e18) < 1.1 ? "text-red-500 glow-red" : "text-cyan-400 glow-cyan")}>
+                <div className="flex flex-col col-span-2 md:col-span-1">
+                  <span className="text-[8px] md:text-[10px] text-magenta-500 font-black uppercase tracking-widest mb-0.5 md:mb-1 leading-none font-bold">Health Factor</span>
+                  <span className={cn("text-lg md:text-3xl font-black tracking-tighter leading-none", (Number(selectedUser.healthFactor) / 1e18) < 1.1 ? "text-red-500 glow-red" : "text-cyan-400 glow-cyan")}>
                     {(Number(selectedUser.healthFactor) / 1e18).toFixed(6)}
                   </span>
                 </div>
               </div>
-            </>
+            </div>
           ) : (
             <div className="flex items-center justify-center w-full h-full text-zinc-800 gap-3 select-none">
-              <RefreshCw className="w-6 h-6 border-zinc-800 opacity-20 animate-spin-slow" />
-              <span className="font-black uppercase tracking-[0.5em] text-sm italic opacity-30">Hydrated & Monitoring Market</span>
+              <RefreshCw className="w-5 md:w-6 h-5 md:h-6 border-zinc-800 opacity-20 animate-spin-slow" />
+              <span className="font-black uppercase tracking-[0.3em] text-xs md:text-sm italic opacity-30">Monitoring Market</span>
             </div>
           )}
         </footer>
       </main>
+
+      {/* MOBILE BOTTOM NAVIGATION */}
+      <nav className="md:hidden flex mica-container border-t border-white/10 h-16 shrink-0 mt-auto overflow-hidden">
+        {navItems.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => setMobileView(item.id as any)}
+            className={cn(
+              "flex-1 flex flex-col items-center justify-center gap-1 transition-all",
+              mobileView === item.id ? "text-cyan-400 bg-white/5" : "text-zinc-500"
+            )}
+          >
+            <item.icon className={cn("w-5 h-5", mobileView === item.id ? "text-cyan-400" : "text-zinc-600")} />
+            <span className="text-[9px] font-black uppercase tracking-widest">{item.label}</span>
+          </button>
+        ))}
+      </nav>
 
       {/* DEEP INSPECTION MODAL */}
       <AnimatePresence>
