@@ -27,7 +27,8 @@ export async function loadSeedData() {
     const { batchUpdateHealthFactorsBasic } = await import('./watcher.js');
 
     // Batch process with categorization using Basic RPC
-    const BATCH_SIZE = 500; // Process in larger batches with progress reporting
+    // Reduced to 50 to avoid 429 errors on Public RPCs
+    const BATCH_SIZE = 50;
     let totalProcessed = 0;
     const allCritical: string[] = [];
     const allSafe: string[] = [];
@@ -43,7 +44,12 @@ export async function loadSeedData() {
         const percent = Math.min(100, Math.floor((totalProcessed / allUsers.length) * 100));
         bridge.broadcast('PROGRESS', { job: 'Initial Load', percent });
 
-        dashboard.logEvent(`⏳ Seed: Processed ${totalProcessed.toLocaleString()}/${allUsers.length.toLocaleString()} (${percent}%)`, 'Discovery');
+        if (totalProcessed % 500 === 0) {
+            dashboard.logEvent(`⏳ Seed: Processed ${totalProcessed.toLocaleString()}/${allUsers.length.toLocaleString()} (${percent}%)`, 'Discovery');
+        }
+
+        // Rate limit protection for Public RPC
+        await new Promise(r => setTimeout(r, 200));
     }
 
     // Hide progress bar
