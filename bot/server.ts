@@ -27,7 +27,7 @@ interface BotState {
 }
 
 export class BridgeServer {
-    private wss: WebSocketServer;
+    private wss?: WebSocketServer;
     private clients: Set<WebSocket> = new Set();
     public currentState: BotState = {
         killList: [],
@@ -89,6 +89,11 @@ export class BridgeServer {
         });
 
         console.log(`📡 Bridge: WebSocket server live on port ${port}`);
+
+        // Keep-Alive Heartbeat (Prevents UI from timing out when idle)
+        setInterval(() => {
+            this.broadcast('HEARTBEAT', { time: Date.now() });
+        }, 5000);
     }
 
     private safeStringify(obj: any): string {
