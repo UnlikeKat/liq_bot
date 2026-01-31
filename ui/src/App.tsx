@@ -269,7 +269,7 @@ export default function App() {
             .filter((user: any) => (Number(user.totalDebtBase) / 1e8) > 1.0)
             .map((user: any) => (
               <motion.div
-                layout
+                // Removed layout prop to improve performance on list updates
                 key={user.address}
                 onClick={() => { setSelectedUser(user); setIsMobileMenuOpen(false); }}
                 className={cn(
@@ -569,20 +569,20 @@ export default function App() {
           </div>
         </div>
 
-        <footer className="h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-5 flex gap-10 shrink-0 relative overflow-hidden">
+        <footer className="h-auto md:h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-4 md:p-5 flex flex-col md:flex-row gap-4 md:gap-10 shrink-0 relative overflow-hidden pb-20 md:pb-5">
           {selectedUser ? (
             <>
-              <div className="flex flex-col justify-center min-w-[350px] relative z-10">
+              <div className="flex flex-col justify-center w-full md:min-w-[350px] relative z-10">
                 <span className="text-[10px] font-black text-magenta-500 uppercase tracking-[0.3em] mb-2 flex items-center gap-2 leading-none">
                   <Cpu className="w-3.5 h-3.5" /> Positional Analytics
                 </span>
                 <div className="flex items-center gap-3">
                   <div
                     onClick={() => openExplorer(selectedUser.address, 'address')}
-                    className="cursor-pointer group"
+                    className="cursor-pointer group flex-1 md:flex-none"
                   >
-                    <h2 className="text-2xl font-mono font-black tracking-tighter text-white group-hover:text-magenta-400 transition-all" style={{ textShadow: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textShadow = '0 0 10px rgba(217,70,239,0.4), 0 0 20px rgba(217,70,239,0.2)'} onMouseLeave={(e) => e.currentTarget.style.textShadow = 'none'}>
-                      {selectedUser.address.slice(0, 20)}...
+                    <h2 className="text-xl md:text-2xl font-mono font-black tracking-tighter text-white group-hover:text-magenta-400 transition-all truncate" style={{ textShadow: 'none' }} onMouseEnter={(e) => e.currentTarget.style.textShadow = '0 0 10px rgba(217,70,239,0.4), 0 0 20px rgba(217,70,239,0.2)'} onMouseLeave={(e) => e.currentTarget.style.textShadow = 'none'}>
+                      {selectedUser.address.slice(0, 10)}...{selectedUser.address.slice(-6)}
                     </h2>
                   </div>
 
@@ -590,14 +590,14 @@ export default function App() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => sendCommand('LIQUIDATE_USER', { address: selectedUser.address })}
-                    className="ml-4 px-4 py-2 rounded bg-red-600/20 hover:bg-red-600 text-red-500 hover:text-white border border-red-600/30 font-black text-[10px] uppercase tracking-widest transition-all"
+                    className="ml-auto md:ml-4 px-4 py-2 rounded bg-red-600/20 hover:bg-red-600 text-red-500 hover:text-white border border-red-600/30 font-black text-[10px] uppercase tracking-widest transition-all"
                   >
                     Force Snipe
                   </motion.button>
                 </div>
               </div>
-              <div className="h-full w-px bg-white/5" />
-              <div className="flex-1 grid grid-cols-3 gap-12 items-center relative z-10">
+              <div className="h-px w-full md:h-full md:w-px bg-white/5" />
+              <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 items-center relative z-10">
                 <div className="flex flex-col">
                   <span className="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-1 leading-none">Debt Pool</span>
                   <span className="text-3xl font-black tracking-tighter text-white/90 leading-none">${(Number(selectedUser.totalDebtBase) / 1e8).toLocaleString()}</span>
