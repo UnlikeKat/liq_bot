@@ -517,7 +517,7 @@ export default function App() {
                 <Activity className="w-4 h-4 text-blue-400" />
                 <span>Live Intelligence Stream</span>
               </div>
-              <div className="hidden md:flex items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
+              <div className="flex flex-1 overflow-x-auto no-scrollbar items-center gap-1.5 px-2 bg-black/40 rounded py-0.5 border border-white/[0.05]">
                 {['All', 'Market', 'System', 'Discovery'].map(tab => (
                   <button
                     key={tab}
@@ -569,7 +569,7 @@ export default function App() {
           </div>
         </div>
 
-        <footer className="h-auto md:h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-4 md:p-5 flex flex-col md:flex-row gap-4 md:gap-10 shrink-0 relative overflow-hidden pb-20 md:pb-5">
+        <footer className="h-auto md:h-32 mica-container bg-gradient-to-r from-magenta-500/10 via-transparent to-transparent border-magenta-500/20 p-4 md:p-5 flex flex-col md:flex-row gap-4 md:gap-10 shrink-0 relative overflow-hidden pb-32 md:pb-5">
           {selectedUser ? (
             <>
               <div className="flex flex-col justify-center w-full md:min-w-[350px] relative z-10">
@@ -631,10 +631,6 @@ export default function App() {
           <button className="flex flex-col items-center gap-1 p-2 text-cyan-400">
             <Activity className="w-5 h-5" />
             <span className="text-[9px] font-black uppercase tracking-widest">Dash</span>
-          </button>
-          <button className="flex flex-col items-center gap-1 p-2 text-zinc-500 hover:text-white">
-            <Clock className="w-5 h-5" />
-            <span className="text-[9px] font-black uppercase tracking-widest">History</span>
           </button>
         </div>
       </main>
