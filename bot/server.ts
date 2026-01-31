@@ -57,7 +57,7 @@ export class BridgeServer {
         if (this.wss) return; // Already started
 
         try {
-            this.wss = new WebSocketServer({ port });
+            this.wss = new WebSocketServer({ port, host: '0.0.0.0' });
 
             this.wss.on('error', (err: any) => {
                 if (err.code === 'EADDRINUSE') {
