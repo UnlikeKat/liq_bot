@@ -1,4 +1,4 @@
-import { createPublicClient, http, parseAbiItem, formatUnits, PublicClient } from 'viem';
+import { createPublicClient, http, parseAbiItem, formatUnits, PublicClient, getAddress } from 'viem';
 import { base } from 'viem/chains';
 import { CONFIG, publicClient, premiumClient, wssClient } from './config.js';
 import { UserPosition } from './interfaces.js';
@@ -193,7 +193,7 @@ export async function batchUpdateHealthFactorsBasic(addresses: string[], categor
 /**
  * Updates health factors using specific client and records appropriate metrics
  */
-async function batchUpdateHealthFactorsGeneric(addresses: string[], client: PublicClient, metric: 'PREMIUM' | 'WSS') {
+async function batchUpdateHealthFactorsGeneric(addresses: string[], client: any, metric: 'PREMIUM' | 'WSS') {
     if (addresses.length === 0) return;
 
     const MIN_DEBT_USD = 0.000001;
@@ -214,7 +214,7 @@ async function batchUpdateHealthFactorsGeneric(addresses: string[], client: Publ
             allowFailure: true
         });
 
-        results.forEach((res, index) => {
+        results.forEach((res: any, index: number) => {
             if (res.status === 'success' && res.result) {
                 const [totalCollateralBase, totalDebtBase, availableBorrowsBase, , , healthFactor] = res.result;
                 const addr = addresses[index];
@@ -338,9 +338,17 @@ export async function startWatcher() {
                     const gasUsed = receipt.gasUsed.toString();
                     const gasPrice = tx.gasPrice?.toString() || '0';
                     const totalGasCost = (receipt.gasUsed * (tx.gasPrice || 0n)).toString();
+                    if (!args.collateralAsset || !args.debtAsset) {
+                        console.warn('⚠️ Log missing asset data', args);
+                        continue;
+                    }
 
-                    const collateralDecimals = CONFIG.TOKEN_DECIMALS[args.collateralAsset as string] || 18;
-                    const debtDecimals = CONFIG.TOKEN_DECIMALS[args.debtAsset as string] || (['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA'].includes(args.debtAsset) ? 6 : 18);
+                    // Normalize addresses to Checksum format for Map lookup
+                    const collateralAddr = getAddress(String(args.collateralAsset));
+                    const debtAddr = getAddress(String(args.debtAsset));
+
+                    const collateralDecimals = CONFIG.TOKEN_DECIMALS[collateralAddr] || 18;
+                    const debtDecimals = CONFIG.TOKEN_DECIMALS[debtAddr] || (['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA'].includes(debtAddr) ? 6 : 18);
 
                     const liquidatedCollateralNum = Number(formatUnits(args.liquidatedCollateralAmount, collateralDecimals));
                     const debtToCoverNum = Number(formatUnits(args.debtToCover, debtDecimals));

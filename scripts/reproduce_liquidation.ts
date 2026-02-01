@@ -15,9 +15,10 @@ const DEBT_ASSET = '0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42'; // EURC
 const DEBT_TO_COVER_AMT = 16233.93;
 const DEBT_DECIMALS = 6;
 // Our Contract (NEW)
-const FLASH_LIQUIDATOR = '0x4a05cbc4aa8d6554647c49720ef567867c8a508f';
+const FLASH_LIQUIDATOR = process.env.FLASH_LIQUIDATOR_ADDRESS || '0x4a05cbc4aa8d6554647c49720ef567867c8a508f';
 const RPC_URL = process.env.BASE_RPC_URL || 'https://mainnet.base.org';
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
+if (!PRIVATE_KEY) throw new Error("❌ PRIVATE_KEY not found in .env");
 
 const BALANCER_VAULT = '0xBA12222222228d8Ba445958a75a0704d566BF2C8';
 
@@ -99,7 +100,7 @@ async function main() {
                 TARGET_USER as `0x${string}`,
                 debtToCover,
                 FLASH_SOURCE,
-                FLASH_POOL
+                FLASH_POOL as `0x${string}`
             ],
             account: account,
             blockNumber: FORK_BLOCK_NUMBER // Simulate AT this block
