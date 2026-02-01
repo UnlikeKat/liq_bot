@@ -596,7 +596,8 @@ export async function checkAndExecute(position: UserPosition, force: boolean = f
     const debtUSD = Number(formatUnits(position.totalDebtBase, 8));
 
     // Decide whether to batch or execute single
-    if (debtUSD < 15.0) {
+    // FORCE bypasses batch queue
+    if (!force && debtUSD < 15.0) {
         await addToBatchQueue(target);
     } else {
         await executeLiquidation(target);
