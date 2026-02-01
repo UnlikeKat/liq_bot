@@ -215,10 +215,10 @@ export async function findBestLiquidationPair(user: string, debug: boolean = fal
 
         if (!maxCollateral.address || !maxDebt.address) {
             if (debug) {
-                dashboard.logSniper(false, `❌ FAILURE DETAILS for ${user.slice(0, 8)}`);
-                dashboard.logSniper(false, `   Tokens Scanned: ${tokens.length}`);
-                dashboard.logSniper(false, `   Max Col: $${maxCollateral.valueUSD.toFixed(2)} (${maxCollateral.address})`);
-                dashboard.logSniper(false, `   Max Debt: $${maxDebt.valueUSD.toFixed(2)} (${maxDebt.address})`);
+                dashboard.logSniper(false, `❌ FORCE FAILURE DETAILS for ${user.slice(0, 8)}`);
+                dashboard.logSniper(false, `   FORCE Tokens Scanned: ${tokens.length}`);
+                dashboard.logSniper(false, `   FORCE Max Col: $${maxCollateral.valueUSD.toFixed(2)} (${maxCollateral.address})`);
+                dashboard.logSniper(false, `   FORCE Max Debt: $${maxDebt.valueUSD.toFixed(2)} (${maxDebt.address})`);
             }
             return null;
         }
