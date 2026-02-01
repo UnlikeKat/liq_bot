@@ -9798,7 +9798,7 @@
     "gasUsed": "654927",
     "gasPrice": "147221994",
     "totalGasCost": "96419658864438",
-    "profitUSD": 0.5044031210379529,
+    "profitUSD": 0.13816639479310056,
     "breakdown": {
       "collateralUSD": 10.592465541796992,
       "debtUSD": 10.088062420759039,
@@ -9813,7 +9813,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2655,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.13816639479310056",
+    "_fixed": true
   },
   {
     "txHash": "0xe6e4334ec39454b02e1bf18efa60e84cc13abdee11d4f3f012e6b7fe319cedc9",
@@ -9895,7 +9897,7 @@
     "gasUsed": "759978",
     "gasPrice": "254254065",
     "totalGasCost": "193227495810570",
-    "profitUSD": 204.4151364768204,
+    "profitUSD": 183.3663386927877,
     "breakdown": {
       "collateralUSD": 4292.717866013229,
       "debtUSD": 4088.302729536408,
@@ -9910,7 +9912,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 167,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "183.3663386927877",
+    "_fixed": true
   },
   {
     "txHash": "0x4b1c11c4572f78ba1dbe8d55484a310e2d869fc1699b58a0f520e1c1ead0ea3d",
@@ -9926,7 +9930,7 @@
     "gasUsed": "531051",
     "gasPrice": "3506863772",
     "totalGasCost": "1862323512984372",
-    "profitUSD": 33.53371628552736,
+    "profitUSD": 24.100839550337653,
     "breakdown": {
       "collateralUSD": 704.2080419960732,
       "debtUSD": 670.6743257105459,
@@ -9941,7 +9945,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 183,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "24.100839550337653",
+    "_fixed": true
   },
   {
     "txHash": "0x6c9ce04fe8b0458e70b1539fad6f277c2a3f7f38d1642e0469e2deb858a33285",
@@ -9957,7 +9963,7 @@
     "gasUsed": "461672",
     "gasPrice": "2081102149",
     "totalGasCost": "960786591333128",
-    "profitUSD": 23.230904692903835,
+    "profitUSD": 17.772045847863403,
     "breakdown": {
       "collateralUSD": 487.84899855098064,
       "debtUSD": 464.6180938580768,
@@ -9972,7 +9978,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 184,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "17.772045847863403",
+    "_fixed": true
   },
   {
     "txHash": "0x47139b9594a267cbfc7ad332bc857a365bbbfe3d0714de472563883d73bcad88",
@@ -10054,7 +10062,7 @@
     "gasUsed": "699318",
     "gasPrice": "228638013",
     "totalGasCost": "159890677975134",
-    "profitUSD": 150.0491715783446,
+    "profitUSD": 134.5402442644102,
     "breakdown": {
       "collateralUSD": 3151.0326031452328,
       "debtUSD": 3000.983431566888,
@@ -10069,7 +10077,9 @@
     "latencyBlocks": 4,
     "positionInBlock": 364,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "134.5402442644102",
+    "_fixed": true
   },
   {
     "txHash": "0xff2b1cf8ce95bf0add32684a5f68e4934ae1c01cd4cbaf58c317195eb422d47c",
@@ -10217,7 +10227,7 @@
     "gasUsed": "705187",
     "gasPrice": "11945020",
     "totalGasCost": "8423472818740",
-    "profitUSD": 0.047155974575072035,
+    "profitUSD": 0.014667671545811223,
     "breakdown": {
       "collateralUSD": 0.9902754660765121,
       "debtUSD": 0.94311949150144,
@@ -10232,7 +10242,9 @@
     "latencyBlocks": 25098,
     "positionInBlock": 319,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.014667671545811223",
+    "_fixed": true
   },
   {
     "txHash": "0x31dad3192b7f3c6a96956ee8a6947dada6d1cac05a1124f5776922b15d6ffc4b",
@@ -10281,7 +10293,7 @@
     "gasUsed": "451530",
     "gasPrice": "8578364",
     "totalGasCost": "3873388696920",
-    "profitUSD": 0.014532231072853619,
+    "profitUSD": 0.003068302722055582,
     "breakdown": {
       "collateralUSD": 0.33747069935849394,
       "debtUSD": 0.3229384682856403,
@@ -10296,7 +10308,9 @@
     "latencyBlocks": 5056,
     "positionInBlock": 29,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.003068302722055582",
+    "_fixed": true
   },
   {
     "txHash": "0x82d27046b4e5a30607a1ebc3200e7e0efcf0aaa413ffe94ad4b363be02e75ae5",
@@ -10312,7 +10326,7 @@
     "gasUsed": "805968",
     "gasPrice": "8712971",
     "totalGasCost": "7022375810928",
-    "profitUSD": 1.8275896415510715,
+    "profitUSD": 1.6221835895530945,
     "breakdown": {
       "collateralUSD": 38.37938247257251,
       "debtUSD": 36.55179283102144,
@@ -10327,7 +10341,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 450,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1.6221835895530945",
+    "_fixed": true
   },
   {
     "txHash": "0xa6384aab142e8f600b3c2265c62929645b418436a78577bbf891b3fb5bf2953d",
@@ -10343,7 +10359,7 @@
     "gasUsed": "862689",
     "gasPrice": "11908409",
     "totalGasCost": "10273253451801",
-    "profitUSD": 1130.2514997059407,
+    "profitUSD": 1017.3251562683554,
     "breakdown": {
       "collateralUSD": 23735.281493824736,
       "debtUSD": 22605.029994118795,
@@ -10358,7 +10374,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1411,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1017.3251562683554",
+    "_fixed": true
   },
   {
     "txHash": "0xa2303aecb39c1c64e18e77ada31712f8b22d5c09c10ff26ad969e38e8b89e0ed",
@@ -10374,7 +10392,7 @@
     "gasUsed": "401234",
     "gasPrice": "10477564",
     "totalGasCost": "4203954913976",
-    "profitUSD": 0.01897736931200189,
+    "profitUSD": 0.0067603202143159125,
     "breakdown": {
       "collateralUSD": 0.4406966873565161,
       "debtUSD": 0.42171931804451424,
@@ -10389,7 +10407,9 @@
     "latencyBlocks": 108,
     "positionInBlock": 201,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0067603202143159125",
+    "_fixed": true
   },
   {
     "txHash": "0xf5f32794199c5bed15afa24c4fe65f907986f798e0c9b5a2ff6651a023f0143c",
@@ -10405,7 +10425,7 @@
     "gasUsed": "909781",
     "gasPrice": "208453407",
     "totalGasCost": "189646949073867",
-    "profitUSD": 7.527828299094921,
+    "profitUSD": 6.160678370592353,
     "breakdown": {
       "collateralUSD": 158.08439428099314,
       "debtUSD": 150.55656598189822,
@@ -10420,7 +10440,9 @@
     "latencyBlocks": 27,
     "positionInBlock": 350,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "6.160678370592353",
+    "_fixed": true
   },
   {
     "txHash": "0x2617a9af44977cb451f1cc6cb3f9c7278bd8cefea04c66a206939f2103b2888d",
@@ -10436,7 +10458,7 @@
     "gasUsed": "999993",
     "gasPrice": "104017809",
     "totalGasCost": "104017080875337",
-    "profitUSD": 2.5042470081553603,
+    "profitUSD": 3.0437233772222134,
     "breakdown": {
       "collateralUSD": 52.58918717126256,
       "debtUSD": 50.0849401631072,
@@ -10451,7 +10473,9 @@
     "latencyBlocks": 7,
     "positionInBlock": 352,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "3.0437233772222134",
+    "_fixed": true
   },
   {
     "txHash": "0x52177eccfaaa62658ebc391462219cac5ecf0e6a7e22c7616bae136c90a95f9d",
@@ -10467,7 +10491,7 @@
     "gasUsed": "735871",
     "gasPrice": "11028763",
     "totalGasCost": "8115746857573",
-    "profitUSD": 0.1459447754199683,
+    "profitUSD": 0.10503847862889718,
     "breakdown": {
       "collateralUSD": 3.064840283819328,
       "debtUSD": 2.9188955083993595,
@@ -10482,7 +10506,9 @@
     "latencyBlocks": 46,
     "positionInBlock": 393,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.10503847862889718",
+    "_fixed": true
   },
   {
     "txHash": "0x4cf1afd07907d9d854e0e9c1fa031f22f4daf0fa6c801535d25511f55ba131f0",
@@ -10498,7 +10524,7 @@
     "gasUsed": "608682",
     "gasPrice": "14074034",
     "totalGasCost": "8566611163188",
-    "profitUSD": 76.12436347415883,
+    "profitUSD": 68.4931153062314,
     "breakdown": {
       "collateralUSD": 1598.6116329573326,
       "debtUSD": 1522.4872694831738,
@@ -10513,7 +10539,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 616,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "68.4931153062314",
+    "_fixed": true
   },
   {
     "txHash": "0xc4ece42b21eb8617322ece09f5e673bf41696815830d0c983e1b8def95e19ec7",
@@ -10529,7 +10557,7 @@
     "gasUsed": "1088312",
     "gasPrice": "23556786",
     "totalGasCost": "25637132885232",
-    "profitUSD": 50.17260429015289,
+    "profitUSD": 45.07826858509243,
     "breakdown": {
       "collateralUSD": 1053.6246900932101,
       "debtUSD": 1003.4520858030572,
@@ -10544,7 +10572,9 @@
     "latencyBlocks": 199,
     "positionInBlock": 627,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "45.07826858509243",
+    "_fixed": true
   },
   {
     "txHash": "0x5b23fcca9aed02f920d987b96f8c2f6c3c7beadae47c1d5eed5276c729f34bfa",
@@ -10560,7 +10590,7 @@
     "gasUsed": "840666",
     "gasPrice": "213596501",
     "totalGasCost": "179563316109666",
-    "profitUSD": 7.662188933962881,
+    "profitUSD": 6.315927087659609,
     "breakdown": {
       "collateralUSD": 160.90596761322047,
       "debtUSD": 153.2437786792576,
@@ -10575,7 +10605,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 239,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "6.315927087659609",
+    "_fixed": true
   },
   {
     "txHash": "0x4c3386440bae68859b066f7b8391fd10fa63b10a55454e245a034bee7965b80c",
@@ -10624,7 +10656,7 @@
     "gasUsed": "931679",
     "gasPrice": "28499236",
     "totalGasCost": "26552139697244",
-    "profitUSD": 1.9736535324270719,
+    "profitUSD": 1.6908017649830684,
     "breakdown": {
       "collateralUSD": 41.44672418096851,
       "debtUSD": 39.47307064854144,
@@ -10639,7 +10671,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 766,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1.6908017649830684",
+    "_fixed": true
   },
   {
     "txHash": "0x845fbadd13ec6b99212efaaf638b135b32618437302d8d38298b32c8c880993e",
@@ -10655,7 +10689,7 @@
     "gasUsed": "654934",
     "gasPrice": "15554683",
     "totalGasCost": "10187290755922",
-    "profitUSD": 0.20163067628163223,
+    "profitUSD": 0.14860395086230058,
     "breakdown": {
       "collateralUSD": 4.234244201914271,
       "debtUSD": 4.032613525632639,
@@ -10670,7 +10704,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1045,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.14860395086230058",
+    "_fixed": true
   },
   {
     "txHash": "0x19a58e03414247bd6afc07a144446e420e28779114fb09555755c590f1ae591a",
@@ -10752,7 +10788,7 @@
     "gasUsed": "783291",
     "gasPrice": "111874774",
     "totalGasCost": "87630503601234",
-    "profitUSD": 7.365441977224052,
+    "profitUSD": 3.33603061547763,
     "breakdown": {
       "collateralUSD": 78.6954413075712,
       "debtUSD": 71.32999933034715,
@@ -10767,7 +10803,9 @@
     "latencyBlocks": 187,
     "positionInBlock": 141,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "3.33603061547763",
+    "_fixed": true
   },
   {
     "txHash": "0xdcddfa7333f03cbfa1ed535b2a48ab3abdeba4d502c0b87491793353a8fa45d6",
@@ -10783,7 +10821,7 @@
     "gasUsed": "1514616",
     "gasPrice": "40724915",
     "totalGasCost": "61682607857640",
-    "profitUSD": 1183.3797901850448,
+    "profitUSD": 1064.9815984421655,
     "breakdown": {
       "collateralUSD": 24850.97559388593,
       "debtUSD": 23667.595803700886,
@@ -10798,7 +10836,9 @@
     "latencyBlocks": 3,
     "positionInBlock": 160,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "1064.9815984421655",
+    "_fixed": true
   },
   {
     "txHash": "0xdcddfa7333f03cbfa1ed535b2a48ab3abdeba4d502c0b87491793353a8fa45d6",
@@ -10847,7 +10887,7 @@
     "gasUsed": "1514616",
     "gasPrice": "40724915",
     "totalGasCost": "61682607857640",
-    "profitUSD": 52.644118390984886,
+    "profitUSD": 47.18724082408625,
     "breakdown": {
       "collateralUSD": 1105.5264862106815,
       "debtUSD": 1052.8823678196966,
@@ -10862,7 +10902,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 160,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "47.18724082408625",
+    "_fixed": true
   },
   {
     "txHash": "0xbf794e2d4f798a02b148de388066299970d41ce483bcce9a5a927565dabec4f0",
@@ -10878,7 +10920,7 @@
     "gasUsed": "843820",
     "gasPrice": "169420590",
     "totalGasCost": "142960482253800",
-    "profitUSD": 6.042928726026503,
+    "profitUSD": 4.978998293882695,
     "breakdown": {
       "collateralUSD": 126.90150324655642,
       "debtUSD": 120.85857452052991,
@@ -10893,7 +10935,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 673,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "4.978998293882695",
+    "_fixed": true
   },
   {
     "txHash": "0x7cd1e12f557acc6b24337203dca23aff7b4680d46b356a15a854a3e3b97719b1",
@@ -10942,7 +10986,7 @@
     "gasUsed": "765046",
     "gasPrice": "25994015",
     "totalGasCost": "19886617199690",
-    "profitUSD": 0.10655590527076475,
+    "profitUSD": 0.06690558283888587,
     "breakdown": {
       "collateralUSD": 2.8519215029550704,
       "debtUSD": 2.7453655976843057,
@@ -10957,7 +11001,9 @@
     "latencyBlocks": 3,
     "positionInBlock": 932,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.06690558283888587",
+    "_fixed": true
   },
   {
     "txHash": "0x3cc464b7fd4d04dc67f452b5be739f1585f7cd9e5193a869769a2cff614a7deb",
@@ -10973,7 +11019,7 @@
     "gasUsed": "672910",
     "gasPrice": "41389419",
     "totalGasCost": "27851353939290",
-    "profitUSD": 0.5093428384997445,
+    "profitUSD": 0.36878447170744544,
     "breakdown": {
       "collateralUSD": 10.696199608494625,
       "debtUSD": 10.18685676999488,
@@ -10988,7 +11034,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 870,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.36878447170744544",
+    "_fixed": true
   },
   {
     "txHash": "0x98ab33e2a2ba9452b8970b08efd8cd57dd7522c704d94de1e9828b33323457cb",
@@ -11037,7 +11085,7 @@
     "gasUsed": "993872",
     "gasPrice": "58164906",
     "totalGasCost": "57808471456032",
-    "profitUSD": 4.518348860404743,
+    "profitUSD": 7.947936852456852,
     "breakdown": {
       "collateralUSD": 94.88532606849947,
       "debtUSD": 90.36697720809472,
@@ -11052,7 +11100,9 @@
     "latencyBlocks": 99,
     "positionInBlock": 1377,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "7.947936852456852",
+    "_fixed": true
   },
   {
     "txHash": "0x4f8a7cd8e811242571635795b7f01934233dcb2819a5516bfc3b173a829f019f",
@@ -11068,7 +11118,7 @@
     "gasUsed": "809414",
     "gasPrice": "73648222",
     "totalGasCost": "59611901961908",
-    "profitUSD": 133.38192219863322,
+    "profitUSD": 119.86737534244044,
     "breakdown": {
       "collateralUSD": 2801.0203661712985,
       "debtUSD": 2667.6384439726653,
@@ -11083,7 +11133,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 2462,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "119.86737534244044",
+    "_fixed": true
   },
   {
     "txHash": "0xa819cde126ccbe7d519a12040f70e6c326474a8acee560707010bb8dff86457b",
@@ -11099,7 +11151,7 @@
     "gasUsed": "790163",
     "gasPrice": "776377630",
     "totalGasCost": "613464877253690",
-    "profitUSD": 1135.4748363670078,
+    "profitUSD": 1020.0993238443589,
     "breakdown": {
       "collateralUSD": 23844.971563707153,
       "debtUSD": 22709.496727340145,
@@ -11114,7 +11166,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 1163,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1020.0993238443589",
+    "_fixed": true
   },
   {
     "txHash": "0xd2b7acbf8295af5b7b34381cadabec4a94b81ff54de49979efc8fa6eac78f84f",
@@ -11163,7 +11217,7 @@
     "gasUsed": "774301",
     "gasPrice": "776377630",
     "totalGasCost": "601149975286630",
-    "profitUSD": 847.1228454702614,
+    "profitUSD": 760.5881683283967,
     "breakdown": {
       "collateralUSD": 17789.579754875493,
       "debtUSD": 16942.45690940523,
@@ -11178,7 +11232,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 1165,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "760.5881683283967",
+    "_fixed": true
   },
   {
     "txHash": "0x4fbe4e529c9bf83013605d1527624f8ea873b3cd9ca4597b75a37364265065e8",
@@ -11194,7 +11250,7 @@
     "gasUsed": "1681672",
     "gasPrice": "201375108",
     "totalGasCost": "338646880620576",
-    "profitUSD": 5780.495795435141,
+    "profitUSD": 4964.826388395773,
     "breakdown": {
       "collateralUSD": 121390.41170413798,
       "debtUSD": 115609.91590870284,
@@ -11209,7 +11265,9 @@
     "latencyBlocks": 3,
     "positionInBlock": 1182,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "4964.826388395773",
+    "_fixed": true
   },
   {
     "txHash": "0x285bb5e20ef8bfe10d8784044f3af4a408d58dccb8c530f98470f6980fa4d850",
@@ -11291,7 +11349,7 @@
     "gasUsed": "3580227",
     "gasPrice": "201375108",
     "totalGasCost": "720968598789516",
-    "profitUSD": 129.33812976492982,
+    "profitUSD": 114.1149908617086,
     "breakdown": {
       "collateralUSD": 2716.100725063521,
       "debtUSD": 2586.7625952985914,
@@ -11306,7 +11364,9 @@
     "latencyBlocks": 86,
     "positionInBlock": 1184,
     "isBatch": true,
-    "batchSize": 7
+    "batchSize": 7,
+    "estimatedProfit": "114.1149908617086",
+    "_fixed": true
   },
   {
     "txHash": "0x285bb5e20ef8bfe10d8784044f3af4a408d58dccb8c530f98470f6980fa4d850",
@@ -11388,7 +11448,7 @@
     "gasUsed": "3580227",
     "gasPrice": "201375108",
     "totalGasCost": "720968598789516",
-    "profitUSD": 147.70036489186214,
+    "profitUSD": 197.11661411371787,
     "breakdown": {
       "collateralUSD": 3101.7076627291,
       "debtUSD": 2954.0072978372377,
@@ -11403,7 +11463,9 @@
     "latencyBlocks": 109,
     "positionInBlock": 1184,
     "isBatch": true,
-    "batchSize": 7
+    "batchSize": 7,
+    "estimatedProfit": "197.11661411371787",
+    "_fixed": true
   },
   {
     "txHash": "0x285bb5e20ef8bfe10d8784044f3af4a408d58dccb8c530f98470f6980fa4d850",
@@ -11518,7 +11580,7 @@
     "gasUsed": "764407",
     "gasPrice": "220600745",
     "totalGasCost": "168628753683215",
-    "profitUSD": 7.891781951051655,
+    "profitUSD": 6.5645336495732955,
     "breakdown": {
       "collateralUSD": 165.72742097208462,
       "debtUSD": 157.83563902103296,
@@ -11533,7 +11595,9 @@
     "latencyBlocks": 111,
     "positionInBlock": 1531,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "6.5645336495732955",
+    "_fixed": true
   },
   {
     "txHash": "0x603f78c39f647e4b6253f7e82aae8d153a6c4b856b07b33e74fc156ecc9cc361",
@@ -11549,7 +11613,7 @@
     "gasUsed": "765075",
     "gasPrice": "776377630",
     "totalGasCost": "593987115272250",
-    "profitUSD": 63.19274614591882,
+    "profitUSD": 54.982283839430636,
     "breakdown": {
       "collateralUSD": 1327.0476690642945,
       "debtUSD": 1263.8549229183757,
@@ -11564,7 +11628,9 @@
     "latencyBlocks": 57,
     "positionInBlock": 1534,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "54.982283839430636",
+    "_fixed": true
   },
   {
     "txHash": "0xa7dd6956d36e348e82aa01663d9e2b9197e8608e455724bfe4a114b0235ab071",
@@ -11580,7 +11646,7 @@
     "gasUsed": "1018798",
     "gasPrice": "278466312",
     "totalGasCost": "283700921732976",
-    "profitUSD": 49.99469573435954,
+    "profitUSD": 44.094271868843606,
     "breakdown": {
       "collateralUSD": 1049.8886104215505,
       "debtUSD": 999.893914687191,
@@ -11595,7 +11661,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 37,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "44.094271868843606",
+    "_fixed": true
   },
   {
     "txHash": "0x210cacd059c0628e0239307880b9c8275a04b472033ee2324b78d6b9f54a394f",
@@ -11776,7 +11844,7 @@
     "gasUsed": "724518",
     "gasPrice": "344290392",
     "totalGasCost": "249444586231056",
-    "profitUSD": 155.02402055185485,
+    "profitUSD": 138.7503306256549,
     "breakdown": {
       "collateralUSD": 3255.5044315889495,
       "debtUSD": 3100.4804110370947,
@@ -11791,7 +11859,9 @@
     "latencyBlocks": 15,
     "positionInBlock": 178,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "138.7503306256549",
+    "_fixed": true
   },
   {
     "txHash": "0x5f26f6a5ab053e94d9b67b34aee2e73e887860ab0fc4902777260e7c7d596e3a",
@@ -11906,7 +11976,7 @@
     "gasUsed": "585685",
     "gasPrice": "344290392",
     "totalGasCost": "201645718238520",
-    "profitUSD": 2655.919344009446,
+    "profitUSD": 2389.999900785751,
     "breakdown": {
       "collateralUSD": 55774.30622419834,
       "debtUSD": 53118.3868801889,
@@ -11921,7 +11991,9 @@
     "latencyBlocks": 58,
     "positionInBlock": 186,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "2389.999900785751",
+    "_fixed": true
   },
   {
     "txHash": "0xe1122f577b9abae747a7aa43884438dda2e9d6aafa73a05b105de4a31c0b38ea",
@@ -11937,7 +12009,7 @@
     "gasUsed": "774278",
     "gasPrice": "782147022",
     "totalGasCost": "605599231900116",
-    "profitUSD": 124.96847878153403,
+    "profitUSD": 110.56970151011171,
     "breakdown": {
       "collateralUSD": 2624.338054412216,
       "debtUSD": 2499.369575630682,
@@ -11952,7 +12024,9 @@
     "latencyBlocks": 87,
     "positionInBlock": 200,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "110.56970151011171",
+    "_fixed": true
   },
   {
     "txHash": "0x89c3d3f162bb9042f68ef76e8b737a9a25adf60625aa83a3057e0429aa4328d4",
@@ -12001,7 +12075,7 @@
     "gasUsed": "585705",
     "gasPrice": "344290392",
     "totalGasCost": "201652604046360",
-    "profitUSD": 223.32710422904984,
+    "profitUSD": 200.382342558168,
     "breakdown": {
       "collateralUSD": 4689.869188810042,
       "debtUSD": 4466.542084580992,
@@ -12016,7 +12090,9 @@
     "latencyBlocks": 102,
     "positionInBlock": 228,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "200.382342558168",
+    "_fixed": true
   },
   {
     "txHash": "0xdd5a27a7253c01b04b0e7d10de5ad3891fc8ef92b2890c36abecf945d8e031e6",
@@ -12098,7 +12174,7 @@
     "gasUsed": "878047",
     "gasPrice": "344290392",
     "totalGasCost": "302303145824424",
-    "profitUSD": 37.74217605022068,
+    "profitUSD": 102.25074960912093,
     "breakdown": {
       "collateralUSD": 1566.5427766416271,
       "debtUSD": 1528.8006005914065,
@@ -12113,7 +12189,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 257,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "102.25074960912093",
+    "_fixed": true
   },
   {
     "txHash": "0x5a5fbf151632a504026c0b0ff67fcc1650d1fc64dcb14a064f4efce93f1940cd",
@@ -12261,7 +12339,7 @@
     "gasUsed": "766704",
     "gasPrice": "782147022",
     "totalGasCost": "599675250355488",
-    "profitUSD": 84.2243938823085,
+    "profitUSD": 73.91400727846843,
     "breakdown": {
       "collateralUSD": 1768.7122715284793,
       "debtUSD": 1684.4878776461708,
@@ -12276,7 +12354,9 @@
     "latencyBlocks": 1563,
     "positionInBlock": 465,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "73.91400727846843",
+    "_fixed": true
   },
   {
     "txHash": "0x28e75ffb44a2d7a1c7ea0b9969af90e5476d7dc4d7e96626473bb8495ff3a0d6",
@@ -12325,7 +12405,7 @@
     "gasUsed": "766696",
     "gasPrice": "782147022",
     "totalGasCost": "599668993179312",
-    "profitUSD": 84.2245225449958,
+    "profitUSD": 73.9141428920838,
     "breakdown": {
       "collateralUSD": 1768.7149734449124,
       "debtUSD": 1684.4904508999166,
@@ -12340,7 +12420,9 @@
     "latencyBlocks": 6,
     "positionInBlock": 469,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "73.9141428920838",
+    "_fixed": true
   },
   {
     "txHash": "0xcc283d19a768d88d6c594f88a548f9047de881dccd2916f02603e0ba7caf3161",
@@ -12422,7 +12504,7 @@
     "gasUsed": "766747",
     "gasPrice": "1115104492",
     "totalGasCost": "855003023927524",
-    "profitUSD": 83.97683692483588,
+    "profitUSD": 72.88313870370715,
     "breakdown": {
       "collateralUSD": 1763.5135754215507,
       "debtUSD": 1679.5367384967149,
@@ -12437,7 +12519,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 663,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "72.88313870370715",
+    "_fixed": true
   },
   {
     "txHash": "0x432eccfd72c503fd22793a83be4a7ecb14d154b7ec695ddf940414627ef9f717",
@@ -12486,7 +12570,7 @@
     "gasUsed": "655144",
     "gasPrice": "329559492",
     "totalGasCost": "215908923826848",
-    "profitUSD": 84.22435594331114,
+    "profitUSD": 75.12848226016148,
     "breakdown": {
       "collateralUSD": 1768.7114748095312,
       "debtUSD": 1684.48711886622,
@@ -12501,7 +12585,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 973,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "75.12848226016148",
+    "_fixed": true
   },
   {
     "txHash": "0xc9cc13a0f55d3be27146fa53757a3ea0869fbddbddc5af009e95855c4b964c3d",
@@ -12550,7 +12636,7 @@
     "gasUsed": "749308",
     "gasPrice": "492839238",
     "totalGasCost": "369288383747304",
-    "profitUSD": 93.01080653680788,
+    "profitUSD": 82.55191396374417,
     "breakdown": {
       "collateralUSD": 1953.2269372729659,
       "debtUSD": 1860.216130736158,
@@ -12565,7 +12651,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 614,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "82.55191396374417",
+    "_fixed": true
   },
   {
     "txHash": "0x0a8362b43c7ed852889df9014d20ea698ffc27c6b6e48295db29a531290d2166",
@@ -12581,7 +12669,7 @@
     "gasUsed": "777305",
     "gasPrice": "492839238",
     "totalGasCost": "383086403893590",
-    "profitUSD": 94.4613662685706,
+    "profitUSD": 83.81392065022962,
     "breakdown": {
       "collateralUSD": 1983.6886916399772,
       "debtUSD": 1889.2273253714066,
@@ -12596,7 +12684,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 615,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "83.81392065022962",
+    "_fixed": true
   },
   {
     "txHash": "0x8482ca23bcec87f47da24e896de573d45ab3dcda639dc010a4be0715751a964a",
@@ -12678,7 +12768,7 @@
     "gasUsed": "711457",
     "gasPrice": "492839238",
     "totalGasCost": "350633925749766",
-    "profitUSD": 84.22429361138757,
+    "profitUSD": 74.70206059330452,
     "breakdown": {
       "collateralUSD": 1768.710165839138,
       "debtUSD": 1684.4858722277504,
@@ -12693,7 +12783,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 618,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "74.70206059330452",
+    "_fixed": true
   },
   {
     "txHash": "0x9e586d2980a1527d3c228008e1fc7db66e95a7944d8837203d737f4ef3250fdc",
@@ -12808,7 +12900,7 @@
     "gasUsed": "714361",
     "gasPrice": "492839238",
     "totalGasCost": "352065130896918",
-    "profitUSD": 83.97687081500749,
+    "profitUSD": 74.47482178827876,
     "breakdown": {
       "collateralUSD": 1763.5142871151563,
       "debtUSD": 1679.5374163001488,
@@ -12823,7 +12915,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 622,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "74.47482178827876",
+    "_fixed": true
   },
   {
     "txHash": "0xc8a16dc16d55b18f109f573e07148c75a74afac3f227099213c9b32a4acbf714",
@@ -12839,7 +12933,7 @@
     "gasUsed": "680844",
     "gasPrice": "426336603",
     "totalGasCost": "290268718132932",
-    "profitUSD": 1.8783561690510737,
+    "profitUSD": 0.7721239333079302,
     "breakdown": {
       "collateralUSD": 39.44547955007251,
       "debtUSD": 37.56712338102144,
@@ -12854,7 +12948,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 769,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.7721239333079302",
+    "_fixed": true
   },
   {
     "txHash": "0x6080a6984bac3f2140a2d183bae0642307e4998b78bc4a504e522819bd2f6e72",
@@ -12903,7 +12999,7 @@
     "gasUsed": "586723",
     "gasPrice": "492839238",
     "totalGasCost": "289160116237074",
-    "profitUSD": 4.808450479752096,
+    "profitUSD": 3.4130599258705696,
     "breakdown": {
       "collateralUSD": 100.97746007479401,
       "debtUSD": 96.16900959504191,
@@ -12918,7 +13014,9 @@
     "latencyBlocks": 14,
     "positionInBlock": 1011,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "3.4130599258705696",
+    "_fixed": true
   },
   {
     "txHash": "0xafe4e1cd8ab0069579fe2a9ba2c99d271c375bee97ceaf73b7c7cdbf84550f8f",
@@ -13066,7 +13164,7 @@
     "gasUsed": "1599053",
     "gasPrice": "468326565",
     "totalGasCost": "748878998742945",
-    "profitUSD": 257.9785626647954,
+    "profitUSD": 345.946032071528,
     "breakdown": {
       "collateralUSD": 5417.549815960699,
       "debtUSD": 5159.571253295903,
@@ -13081,7 +13179,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 733,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "345.946032071528",
+    "_fixed": true
   },
   {
     "txHash": "0x073b3237e62953a587ab7d5e1a6232aaf0472ca9336c934e9d4c5051671c61b6",
@@ -13097,7 +13197,7 @@
     "gasUsed": "1599053",
     "gasPrice": "468326565",
     "totalGasCost": "748878998742945",
-    "profitUSD": 270.6855530857547,
+    "profitUSD": 363.1023826106485,
     "breakdown": {
       "collateralUSD": 5684.396614800839,
       "debtUSD": 5413.711061715085,
@@ -13112,7 +13212,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 733,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "363.1023826106485",
+    "_fixed": true
   },
   {
     "txHash": "0x80107a1476ca28685e4a9264fa9a42c0cbedd2e7ce087417638df5e222b3dadb",
@@ -13161,7 +13263,7 @@
     "gasUsed": "1138270",
     "gasPrice": "518072025",
     "totalGasCost": "589705843896750",
-    "profitUSD": 51.40025369744944,
+    "profitUSD": 42.29482013921001,
     "breakdown": {
       "collateralUSD": 1079.4053276464388,
       "debtUSD": 1028.0050739489893,
@@ -13176,7 +13278,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 144,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "42.29482013921001",
+    "_fixed": true
   },
   {
     "txHash": "0xf99c0ae3bbe2bed9bc2a524cc3f8dcd42160bbaa3e95472b495457f7e64b5bea",
@@ -13192,7 +13296,7 @@
     "gasUsed": "987624",
     "gasPrice": "518072025",
     "totalGasCost": "511660365618600",
-    "profitUSD": 170.34486984379419,
+    "profitUSD": 217.8937155646221,
     "breakdown": {
       "collateralUSD": 3577.2422667196756,
       "debtUSD": 3406.8973968758814,
@@ -13207,7 +13311,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 151,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "217.8937155646221",
+    "_fixed": true
   },
   {
     "txHash": "0x726dc332a2520a005e93ba5c63c1357038cf9d4bcc4f5637758e5de0c2b6cb4d",
@@ -13223,7 +13329,7 @@
     "gasUsed": "657992",
     "gasPrice": "503341125",
     "totalGasCost": "331194433521000",
-    "profitUSD": 8.84730329596502,
+    "profitUSD": 6.917795101127567,
     "breakdown": {
       "collateralUSD": 185.79336921526547,
       "debtUSD": 176.94606591930045,
@@ -13238,7 +13344,9 @@
     "latencyBlocks": 7,
     "positionInBlock": 494,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "6.917795101127567",
+    "_fixed": true
   },
   {
     "txHash": "0xdd2593a571bd7cfcb067e35b47251ae559b8f2b14b5bc2439b573a76245e224d",
@@ -13287,7 +13395,7 @@
     "gasUsed": "2327214",
     "gasPrice": "598870073",
     "totalGasCost": "1393698818066622",
-    "profitUSD": 9.638931306735685,
+    "profitUSD": 55.108884852056114,
     "breakdown": {
       "collateralUSD": 1331.1588111524457,
       "debtUSD": 1321.51987984571,
@@ -13302,7 +13410,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 267,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "55.108884852056114",
+    "_fixed": true
   },
   {
     "txHash": "0x77a632df4a9cb776baaf7ffbf80e9a4e61c3ddcc70ede144d7716161ee4247f1",
@@ -13318,7 +13428,7 @@
     "gasUsed": "2327214",
     "gasPrice": "598870073",
     "totalGasCost": "1393698818066622",
-    "profitUSD": 18.48148592958205,
+    "profitUSD": 109.67104007020691,
     "breakdown": {
       "collateralUSD": 2552.3361517434814,
       "debtUSD": 2533.8546658138994,
@@ -13333,7 +13443,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 267,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "109.67104007020691",
+    "_fixed": true
   },
   {
     "txHash": "0x77a632df4a9cb776baaf7ffbf80e9a4e61c3ddcc70ede144d7716161ee4247f1",
@@ -13415,7 +13527,7 @@
     "gasUsed": "764456",
     "gasPrice": "607353779",
     "totalGasCost": "464295240479224",
-    "profitUSD": 3.1081285107396184,
+    "profitUSD": 17.723519164474304,
     "breakdown": {
       "collateralUSD": 429.23976959706727,
       "debtUSD": 426.13164108632765,
@@ -13430,7 +13542,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 474,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "17.723519164474304",
+    "_fixed": true
   },
   {
     "txHash": "0xd82b0b36dd340bde5d212c890d9f1db56d77960d4c4efee4d3973459c411325a",
@@ -13479,7 +13593,7 @@
     "gasUsed": "738728",
     "gasPrice": "874708759",
     "totalGasCost": "646171852118552",
-    "profitUSD": 3.1617556891425806,
+    "profitUSD": 17.484499469849567,
     "breakdown": {
       "collateralUSD": 436.64580754636364,
       "debtUSD": 433.48405185722106,
@@ -13494,7 +13608,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 497,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "17.484499469849567",
+    "_fixed": true
   },
   {
     "txHash": "0x909be6973ad3c4eaf0905c4460e3c713e76dc0499ca2cb456486bfc0657910ea",
@@ -13576,7 +13692,7 @@
     "gasUsed": "692427",
     "gasPrice": "1025599962",
     "totalGasCost": "710153104887774",
-    "profitUSD": 1.4941702369455925,
+    "profitUSD": 6.994330542222771,
     "breakdown": {
       "collateralUSD": 206.34838168023518,
       "debtUSD": 204.85421144328959,
@@ -13591,7 +13707,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 592,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "6.994330542222771",
+    "_fixed": true
   },
   {
     "txHash": "0xdafc3fe50ee76e2913d4513dab85699d82c9fdf0c7dde2a55ac1ba0d8d50efb7",
@@ -13640,7 +13758,7 @@
     "gasUsed": "948301",
     "gasPrice": "758151308",
     "totalGasCost": "718955643527708",
-    "profitUSD": 5.394418539097089,
+    "profitUSD": 2.3813475142844647,
     "breakdown": {
       "collateralUSD": 113.28278932103882,
       "debtUSD": 107.88837078194173,
@@ -13655,7 +13773,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 601,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "2.3813475142844647",
+    "_fixed": true
   },
   {
     "txHash": "0x6d75fad0b3f9fcccaf431a579940bd47eb12b7884c73551aa1846ff31ba84312",
@@ -13801,7 +13921,7 @@
     "gasUsed": "894861",
     "gasPrice": "500831557",
     "totalGasCost": "448174627928577",
-    "profitUSD": 11.667921655138429,
+    "profitUSD": 14.342880123023658,
     "breakdown": {
       "collateralUSD": 245.02635475790706,
       "debtUSD": 233.35843310276863,
@@ -13816,7 +13936,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 2589,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "14.342880123023658",
+    "_fixed": true
   },
   {
     "txHash": "0xdb2037354f954411a3f7871624c2370aca69b04895d916465ebfc387d174ac78",
@@ -13832,7 +13954,7 @@
     "gasUsed": "1163525",
     "gasPrice": "57562639",
     "totalGasCost": "66975569542475",
-    "profitUSD": 24.132678519633373,
+    "profitUSD": 111.16425516810773,
     "breakdown": {
       "collateralUSD": 2498.780327609828,
       "debtUSD": 2474.6476490901946,
@@ -13847,7 +13969,9 @@
     "latencyBlocks": 125,
     "positionInBlock": 2215,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "111.16425516810773",
+    "_fixed": true
   },
   {
     "txHash": "0xdb2037354f954411a3f7871624c2370aca69b04895d916465ebfc387d174ac78",
@@ -13863,7 +13987,7 @@
     "gasUsed": "1163525",
     "gasPrice": "57562639",
     "totalGasCost": "66975569542475",
-    "profitUSD": 42.34398574693478,
+    "profitUSD": 195.21042267937923,
     "breakdown": {
       "collateralUSD": 4384.441556744348,
       "debtUSD": 4342.097570997414,
@@ -13878,7 +14002,9 @@
     "latencyBlocks": 2,
     "positionInBlock": 2215,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "195.21042267937923",
+    "_fixed": true
   },
   {
     "txHash": "0x1c43a9f80450f7df29c880415946072a31a8c75cf0ce134a33a1425464f80610",
@@ -14059,7 +14185,7 @@
     "gasUsed": "2824266",
     "gasPrice": "163442349",
     "totalGasCost": "461604669240834",
-    "profitUSD": 263.50223651660417,
+    "profitUSD": 676.5147376143775,
     "breakdown": {
       "collateralUSD": 15327.026938924118,
       "debtUSD": 15063.524702407514,
@@ -14074,7 +14200,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1856,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "676.5147376143775",
+    "_fixed": true
   },
   {
     "txHash": "0xe4c1b614672642a80a0109a29714e833fa05d27f56c0f47758553a25dd36262f",
@@ -14090,7 +14218,7 @@
     "gasUsed": "2824266",
     "gasPrice": "163442349",
     "totalGasCost": "461604669240834",
-    "profitUSD": 439.4301022283653,
+    "profitUSD": 591.8743106661148,
     "breakdown": {
       "collateralUSD": 9228.032146795676,
       "debtUSD": 8788.602044567311,
@@ -14105,7 +14233,9 @@
     "latencyBlocks": 25601,
     "positionInBlock": 1856,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "591.8743106661148",
+    "_fixed": true
   },
   {
     "txHash": "0xe4c1b614672642a80a0109a29714e833fa05d27f56c0f47758553a25dd36262f",
@@ -14154,7 +14284,7 @@
     "gasUsed": "2824266",
     "gasPrice": "163442349",
     "totalGasCost": "461604669240834",
-    "profitUSD": 35.727868794520646,
+    "profitUSD": 90.48979901419052,
     "breakdown": {
       "collateralUSD": 2078.168347726594,
       "debtUSD": 2042.4404789320736,
@@ -14169,7 +14299,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 1856,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "90.48979901419052",
+    "_fixed": true
   },
   {
     "txHash": "0x0c23cf835ab96dbdb6241699b12581b89e3f9a9c3835d7403857e7346d15f10a",
@@ -14251,7 +14383,7 @@
     "gasUsed": "760532",
     "gasPrice": "362616814",
     "totalGasCost": "275781690785048",
-    "profitUSD": 4.398072632241622,
+    "profitUSD": 10.459981133639184,
     "breakdown": {
       "collateralUSD": 255.8208939887504,
       "debtUSD": 251.4228213565088,
@@ -14266,7 +14398,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2097,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "10.459981133639184",
+    "_fixed": true
   },
   {
     "txHash": "0xcb949f5638a7956ed2efa2d907049193d2da579973796a33260e27fbd29022b0",
@@ -14315,7 +14449,7 @@
     "gasUsed": "4724879",
     "gasPrice": "272263621",
     "totalGasCost": "1286412665326859",
-    "profitUSD": 22.335678592306976,
+    "profitUSD": 53.475279700933285,
     "breakdown": {
       "collateralUSD": 1299.1902915475594,
       "debtUSD": 1276.8546129552524,
@@ -14330,7 +14464,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 2113,
     "isBatch": true,
-    "batchSize": 7
+    "batchSize": 7,
+    "estimatedProfit": "53.475279700933285",
+    "_fixed": true
   },
   {
     "txHash": "0xcb949f5638a7956ed2efa2d907049193d2da579973796a33260e27fbd29022b0",
@@ -14412,7 +14548,7 @@
     "gasUsed": "4724879",
     "gasPrice": "272263621",
     "totalGasCost": "1286412665326859",
-    "profitUSD": 27.250801304385732,
+    "profitUSD": 19.419975633680497,
     "breakdown": {
       "collateralUSD": 572.2668273921007,
       "debtUSD": 545.016026087715,
@@ -14427,7 +14563,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2113,
     "isBatch": true,
-    "batchSize": 7
+    "batchSize": 7,
+    "estimatedProfit": "19.419975633680497",
+    "_fixed": true
   },
   {
     "txHash": "0xcb949f5638a7956ed2efa2d907049193d2da579973796a33260e27fbd29022b0",
@@ -14509,7 +14647,7 @@
     "gasUsed": "620039",
     "gasPrice": "163442349",
     "totalGasCost": "101340630631611",
-    "profitUSD": 17.773127565459504,
+    "profitUSD": 45.4128785065062,
     "breakdown": {
       "collateralUSD": 1033.8022499766114,
       "debtUSD": 1016.0291224111519,
@@ -14524,7 +14662,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2241,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "45.4128785065062",
+    "_fixed": true
   },
   {
     "txHash": "0x5fa32dd15589da4a0d4388d7f0865273bbd554f2e0edffd067493fc956f65465",
@@ -14837,7 +14977,7 @@
     "gasUsed": "713218",
     "gasPrice": "1210895271",
     "totalGasCost": "863632303392078",
-    "profitUSD": 13.632139579379782,
+    "profitUSD": 26.375205633197854,
     "breakdown": {
       "collateralUSD": 658.9881976907769,
       "debtUSD": 645.3560581113971,
@@ -14852,7 +14992,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1492,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "26.375205633197854",
+    "_fixed": true
   },
   {
     "txHash": "0xc9ecf0499831244aae004a0bcfb5d2237f372b13fdf11194a19f9caa08304b97",
@@ -14901,7 +15043,7 @@
     "gasUsed": "2403068",
     "gasPrice": "529086272",
     "totalGasCost": "1271430289482496",
-    "profitUSD": 21.150977340265968,
+    "profitUSD": 41.13437717641494,
     "breakdown": {
       "collateralUSD": 1022.4546451932899,
       "debtUSD": 1001.303667853024,
@@ -14916,7 +15058,9 @@
     "latencyBlocks": 50,
     "positionInBlock": 1502,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "41.13437717641494",
+    "_fixed": true
   },
   {
     "txHash": "0x5b0d1713d411fa48a55d9aae67063c7908d09a6da999d0e70e1c3bfff205da49",
@@ -14932,7 +15076,7 @@
     "gasUsed": "2403068",
     "gasPrice": "529086272",
     "totalGasCost": "1271430289482496",
-    "profitUSD": 3.6504792277581544,
+    "profitUSD": 1.5471417656759954,
     "breakdown": {
       "collateralUSD": 105.0685095853735,
       "debtUSD": 101.41803035761535,
@@ -14947,7 +15091,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1502,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "1.5471417656759954",
+    "_fixed": true
   },
   {
     "txHash": "0x5b0d1713d411fa48a55d9aae67063c7908d09a6da999d0e70e1c3bfff205da49",
@@ -14996,7 +15142,7 @@
     "gasUsed": "658452",
     "gasPrice": "280741660",
     "totalGasCost": "184854907510320",
-    "profitUSD": 0.4276752390713128,
+    "profitUSD": 0.33980118638389945,
     "breakdown": {
       "collateralUSD": 20.674152678049232,
       "debtUSD": 20.24647743897792,
@@ -15011,7 +15157,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 720,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.33980118638389945",
+    "_fixed": true
   },
   {
     "txHash": "0xb6192968c318a64306a7756f297a0dbbf5109adebe7845071399ccfdc931c286",
@@ -15093,7 +15241,7 @@
     "gasUsed": "1527169",
     "gasPrice": "439617454",
     "totalGasCost": "671370147607726",
-    "profitUSD": 527.0101573497523,
+    "profitUSD": 786.4688896500102,
     "breakdown": {
       "collateralUSD": 18047.53615336251,
       "debtUSD": 17520.52599601276,
@@ -15108,7 +15256,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 759,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "786.4688896500102",
+    "_fixed": true
   },
   {
     "txHash": "0x77c7dde5e0550fa2533cb49b28bd63244c535828bbeb91787ea51c3917107932",
@@ -15124,7 +15274,7 @@
     "gasUsed": "2622935",
     "gasPrice": "439617454",
     "totalGasCost": "1153088006707490",
-    "profitUSD": 337.74346683154545,
+    "profitUSD": 501.807105743715,
     "breakdown": {
       "collateralUSD": 11566.07200676604,
       "debtUSD": 11228.328539934495,
@@ -15139,7 +15289,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 760,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "501.807105743715",
+    "_fixed": true
   },
   {
     "txHash": "0x77c7dde5e0550fa2533cb49b28bd63244c535828bbeb91787ea51c3917107932",
@@ -15155,7 +15307,7 @@
     "gasUsed": "2622935",
     "gasPrice": "439617454",
     "totalGasCost": "1153088006707490",
-    "profitUSD": 70.97857540526229,
+    "profitUSD": 102.66662442535876,
     "breakdown": {
       "collateralUSD": 2430.6711889245566,
       "debtUSD": 2359.6926135192944,
@@ -15170,7 +15322,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 760,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "102.66662442535876",
+    "_fixed": true
   },
   {
     "txHash": "0x77c7dde5e0550fa2533cb49b28bd63244c535828bbeb91787ea51c3917107932",
@@ -15219,7 +15373,7 @@
     "gasUsed": "2622935",
     "gasPrice": "439617454",
     "totalGasCost": "1153088006707490",
-    "profitUSD": 429.33472540526054,
+    "profitUSD": 638.8482989689833,
     "breakdown": {
       "collateralUSD": 14702.627398323879,
       "debtUSD": 14273.292672918618,
@@ -15234,7 +15388,9 @@
     "latencyBlocks": 294,
     "positionInBlock": 760,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "638.8482989689833",
+    "_fixed": true
   },
   {
     "txHash": "0x77c7dde5e0550fa2533cb49b28bd63244c535828bbeb91787ea51c3917107932",
@@ -15250,7 +15406,7 @@
     "gasUsed": "2622935",
     "gasPrice": "439617454",
     "totalGasCost": "1153088006707490",
-    "profitUSD": 65.24396083117608,
+    "profitUSD": 94.08634682946463,
     "breakdown": {
       "collateralUSD": 2234.2885150651227,
       "debtUSD": 2169.0445542339467,
@@ -15265,7 +15421,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 760,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "94.08634682946463",
+    "_fixed": true
   },
   {
     "txHash": "0x7f4d8369a749fcadb8357fdab997eb522430049288433f9d2e194b1984549a21",
@@ -15281,7 +15439,7 @@
     "gasUsed": "929435",
     "gasPrice": "4214813983",
     "totalGasCost": "3917395634289605",
-    "profitUSD": 163.90338387668044,
+    "profitUSD": 128.80227717125743,
     "breakdown": {
       "collateralUSD": 3441.9710614102837,
       "debtUSD": 3278.0676775336033,
@@ -15296,7 +15454,9 @@
     "latencyBlocks": 2,
     "positionInBlock": 810,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "128.80227717125743",
+    "_fixed": true
   },
   {
     "txHash": "0x2a52b14ee52783d561aaf5068f9653090a3d79a4e71071317c60636f52c5b988",
@@ -15345,7 +15505,7 @@
     "gasUsed": "913363",
     "gasPrice": "434161672",
     "totalGasCost": "396547207222936",
-    "profitUSD": 37.33044354166145,
+    "profitUSD": 54.63965094616515,
     "breakdown": {
       "collateralUSD": 1278.3862323019173,
       "debtUSD": 1241.0557887602558,
@@ -15360,7 +15520,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 901,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "54.63965094616515",
+    "_fixed": true
   },
   {
     "txHash": "0x84ed98f2bfa72a7360dc00b7a078343751c579f4e06677a57ee6413ecec108e5",
@@ -15506,7 +15668,7 @@
     "gasUsed": "773178",
     "gasPrice": "465188621",
     "totalGasCost": "359673607607538",
-    "profitUSD": 0.3156274945272788,
+    "profitUSD": -0.629877695187995,
     "breakdown": {
       "collateralUSD": 10.808707458547119,
       "debtUSD": 10.49307996401984,
@@ -15521,7 +15683,9 @@
     "latencyBlocks": 2,
     "positionInBlock": 647,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.629877695187995",
+    "_fixed": true
   },
   {
     "txHash": "0x255b36ad3d6ef363f23f90eb9cee3fd1c26781d3adc119e808fd28d2944af1cb",
@@ -15570,7 +15734,7 @@
     "gasUsed": "393984",
     "gasPrice": "7754940",
     "totalGasCost": "3055322280960",
-    "profitUSD": 0.013353327480575994,
+    "profitUSD": 0.002138711193761621,
     "breakdown": {
       "collateralUSD": 0.280419877092096,
       "debtUSD": 0.26706654961152,
@@ -15583,7 +15747,9 @@
     },
     "positionInBlock": 83,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.002138711193761621",
+    "_fixed": true
   },
   {
     "txHash": "0x3508621a60ede7b2f82fb500b83ed937476f81c239eae3910e779821539fcc78",
@@ -15632,7 +15798,7 @@
     "gasUsed": "398808",
     "gasPrice": "7092046",
     "totalGasCost": "2828364681168",
-    "profitUSD": 0.01084618953836794,
+    "profitUSD": 0.002469496367583148,
     "breakdown": {
       "collateralUSD": 0.25187262372429625,
       "debtUSD": 0.2410264341859283,
@@ -15647,7 +15813,9 @@
     "latencyBlocks": 15625,
     "positionInBlock": 43,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.002469496367583148",
+    "_fixed": true
   },
   {
     "txHash": "0x4ae51d5a3e0ab159089b3477a5c46f2e693b45e579f242e5b6e20971911e5dac",
@@ -15894,7 +16062,7 @@
     "gasUsed": "855550",
     "gasPrice": "5808108",
     "totalGasCost": "4969126799400",
-    "profitUSD": 0.012389175227493998,
+    "profitUSD": 0.005934626661204357,
     "breakdown": {
       "collateralUSD": 0.26017267977737396,
       "debtUSD": 0.24778350454987996,
@@ -15909,7 +16077,9 @@
     "latencyBlocks": 13319,
     "positionInBlock": 200,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.005934626661204357",
+    "_fixed": true
   },
   {
     "txHash": "0xdc2e75b291a432c38f1b82d18a855e0c229e789a0a9141033e9c48454a25da88",
@@ -15925,7 +16095,7 @@
     "gasUsed": "329756",
     "gasPrice": "5730167",
     "totalGasCost": "1889556949252",
-    "profitUSD": 0.006843539116217101,
+    "profitUSD": 0.001232898497990468,
     "breakdown": {
       "collateralUSD": 0.1589221861432423,
       "debtUSD": 0.1520786470270252,
@@ -15938,7 +16108,9 @@
     },
     "positionInBlock": 267,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.001232898497990468",
+    "_fixed": true
   },
   {
     "txHash": "0xbec342297af3a56457951a6b1889550abd6130f0b5f616ee9eb02defd1a85d46",
@@ -15954,7 +16126,7 @@
     "gasUsed": "733927",
     "gasPrice": "6338046",
     "totalGasCost": "4651663086642",
-    "profitUSD": 0.02008522951991837,
+    "profitUSD": 0.005062605923605603,
     "breakdown": {
       "collateralUSD": 0.46760439281919997,
       "debtUSD": 0.4475191632992816,
@@ -15969,7 +16141,9 @@
     "latencyBlocks": 49,
     "positionInBlock": 51,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.005062605923605603",
+    "_fixed": true
   },
   {
     "txHash": "0x3614d775880a702999f1927aac851b7169498eb69008e439c859ea55ecd3cd70",
@@ -15985,7 +16159,7 @@
     "gasUsed": "649933",
     "gasPrice": "5260834",
     "totalGasCost": "3419189624122",
-    "profitUSD": 0.017893210895872036,
+    "profitUSD": 0.005051511312000876,
     "breakdown": {
       "collateralUSD": 0.37575742881331203,
       "debtUSD": 0.35786421791744,
@@ -16000,7 +16174,9 @@
     "latencyBlocks": 8985,
     "positionInBlock": 107,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.005051511312000876",
+    "_fixed": true
   },
   {
     "txHash": "0x6f1eae0e1fa007e8f41b6e90e641c0b5d8a0924292aca343b5bdf16e12716288",
@@ -16109,7 +16285,7 @@
     "gasUsed": "617502",
     "gasPrice": "5114045",
     "totalGasCost": "3157933015590",
-    "profitUSD": 0.01531280922288003,
+    "profitUSD": 0.003549151691067476,
     "breakdown": {
       "collateralUSD": 0.32156899368048,
       "debtUSD": 0.30625618445759994,
@@ -16124,7 +16300,9 @@
     "latencyBlocks": 34955,
     "positionInBlock": 137,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.003549151691067476",
+    "_fixed": true
   },
   {
     "txHash": "0xddd6306621c017dfcf64017e3345030e4d522d395695bf636afd14340349f99b",
@@ -16237,7 +16415,7 @@
     "gasUsed": "521735",
     "gasPrice": "4218783",
     "totalGasCost": "2201086748505",
-    "profitUSD": 0.014854242209184021,
+    "profitUSD": 0.00600497562921493,
     "breakdown": {
       "collateralUSD": 0.311939086392864,
       "debtUSD": 0.29708484418368,
@@ -16252,7 +16430,9 @@
     "latencyBlocks": 19858,
     "positionInBlock": 47,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.00600497562921493",
+    "_fixed": true
   },
   {
     "txHash": "0xc94b6b906233db7389da4c6dda1b437dba7d53683c8788656fba332123ec76cf",
@@ -16363,7 +16543,7 @@
     "gasUsed": "686181",
     "gasPrice": "3599325",
     "totalGasCost": "2469788427825",
-    "profitUSD": 0.013210318953632005,
+    "profitUSD": 0.0036543395116534344,
     "breakdown": {
       "collateralUSD": 0.277416698026272,
       "debtUSD": 0.26420637907264,
@@ -16378,7 +16558,9 @@
     "latencyBlocks": 20008,
     "positionInBlock": 72,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0036543395116534344",
+    "_fixed": true
   },
   {
     "txHash": "0x99dfa197e5426c9ba19a28664157c5158b548928977e6f17e4e3fd70dc56d5b6",
@@ -16458,7 +16640,7 @@
     "gasUsed": "375002",
     "gasPrice": "3505021",
     "totalGasCost": "1314389885042",
-    "profitUSD": 0.006452028885312017,
+    "profitUSD": 0.0014242333656204103,
     "breakdown": {
       "collateralUSD": 0.13549260659155202,
       "debtUSD": 0.12904057770624,
@@ -16473,7 +16655,9 @@
     "latencyBlocks": 50000,
     "positionInBlock": 213,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0014242333656204103",
+    "_fixed": true
   },
   {
     "txHash": "0xab7eee45a03f49262901820a8219c8a6d0949081f1c968d1853e02d28bd84a07",
@@ -26933,7 +27117,7 @@
     "gasUsed": "730269",
     "gasPrice": "121340426",
     "totalGasCost": "88611151554594",
-    "profitUSD": 257.532093562535,
+    "profitUSD": 343.8889651204615,
     "breakdown": {
       "collateralUSD": 5355.875429204245,
       "debtUSD": 5098.34333564171,
@@ -26948,7 +27132,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1027,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "343.8889651204615",
+    "_fixed": true
   },
   {
     "txHash": "0x4b37cf3150f72140d549a5fa6212ec4951a194ea3c6b0b40e8e4d012bedd29ea",
@@ -27261,7 +27447,7 @@
     "gasUsed": "773516",
     "gasPrice": "97191244",
     "totalGasCost": "75178982293904",
-    "profitUSD": 1001.2039510148388,
+    "profitUSD": 1184.319933857466,
     "breakdown": {
       "collateralUSD": 18549.189319697547,
       "debtUSD": 17547.98536868271,
@@ -27276,7 +27462,9 @@
     "latencyBlocks": 103,
     "positionInBlock": 1444,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1184.319933857466",
+    "_fixed": true
   },
   {
     "txHash": "0x683b96d1356885ac2bdab48560d5b90a665dc569bdf589e1923c2f7454de1528",
@@ -27717,7 +27905,7 @@
     "gasUsed": "540135",
     "gasPrice": "1329248",
     "totalGasCost": "717973368480",
-    "profitUSD": 0.002005295154836148,
+    "profitUSD": 0.0006468943582964197,
     "breakdown": {
       "collateralUSD": 0.06518497279067614,
       "debtUSD": 0.06317967763584,
@@ -27730,7 +27918,9 @@
     },
     "positionInBlock": 352,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0006468943582964197",
+    "_fixed": true
   },
   {
     "txHash": "0x188c01aa28500a64206d7517cea609e231b5484b6ea7514b7f5253d1fcb2ceca",
@@ -28596,7 +28786,7 @@
     "gasUsed": "654673",
     "gasPrice": "12956181",
     "totalGasCost": "8482061883813",
-    "profitUSD": 0.5182147588535067,
+    "profitUSD": 0.6886324662152502,
     "breakdown": {
       "collateralUSD": 17.031032451110757,
       "debtUSD": 16.51281769225725,
@@ -28611,7 +28801,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 216,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.6886324662152502",
+    "_fixed": true
   },
   {
     "txHash": "0xe6385d755bd6a0a9a147c4f3e06abc1cefd351fea1c82463dfd0201fb33595c5",
@@ -28825,7 +29017,7 @@
     "gasUsed": "944747",
     "gasPrice": "16433312",
     "totalGasCost": "15525322212064",
-    "profitUSD": 381.74072774104843,
+    "profitUSD": 387.48685249089453,
     "breakdown": {
       "collateralUSD": 6122.630695239226,
       "debtUSD": 5740.889967498178,
@@ -28840,7 +29032,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 3576,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "387.48685249089453",
+    "_fixed": true
   },
   {
     "txHash": "0xd1504668e1034086d3f5a980dfee089fbdc785390f4cdfaf58d72312858dbf6d",
@@ -29747,7 +29941,7 @@
     "gasUsed": "441305",
     "gasPrice": "6040980",
     "totalGasCost": "2665914678900",
-    "profitUSD": 0.016122956637734054,
+    "profitUSD": 0.007757483936036885,
     "breakdown": {
       "collateralUSD": 0.37441088192076727,
       "debtUSD": 0.3582879252830332,
@@ -29762,7 +29956,9 @@
     "latencyBlocks": 1759,
     "positionInBlock": 191,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.007757483936036885",
+    "_fixed": true
   },
   {
     "txHash": "0x1c75acb617a927eecde6bb93451d45b1b6ce765db038bdead70f21a753920875",
@@ -30174,7 +30370,7 @@
     "gasUsed": "770817",
     "gasPrice": "8251784",
     "totalGasCost": "6360615387528",
-    "profitUSD": 0.12126742636502286,
+    "profitUSD": 0.08460826237901037,
     "breakdown": {
       "collateralUSD": 2.5037430593797727,
       "debtUSD": 2.38247563301475,
@@ -30189,7 +30385,9 @@
     "latencyBlocks": 113,
     "positionInBlock": 350,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.08460826237901037",
+    "_fixed": true
   },
   {
     "txHash": "0x253f3108057c6d86832300de83f36021a7b8e3632395af2bca588665704c544e",
@@ -30370,7 +30568,7 @@
     "gasUsed": "675371",
     "gasPrice": "2013186692",
     "totalGasCost": "1359647909362732",
-    "profitUSD": 21.712951680374715,
+    "profitUSD": 15.928168304651551,
     "breakdown": {
       "collateralUSD": 315.6005420806902,
       "debtUSD": 293.8875904003155,
@@ -30385,7 +30583,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 1,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "15.928168304651551",
+    "_fixed": true
   },
   {
     "txHash": "0x928fb9faa676ed51018abaff872bd1e9aa11c349044145e1dd4459f84489b1f6",
@@ -30729,7 +30929,7 @@
     "gasUsed": "391631",
     "gasPrice": "3058459",
     "totalGasCost": "1197787356629",
-    "profitUSD": 0.007865087016701688,
+    "profitUSD": 0.0010243425319072927,
     "breakdown": {
       "collateralUSD": 0.1085448894634217,
       "debtUSD": 0.10067980244672001,
@@ -30744,7 +30944,9 @@
     "latencyBlocks": 7404,
     "positionInBlock": 393,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0010243425319072927",
+    "_fixed": true
   },
   {
     "txHash": "0x644d0190e6267c8d413bec823ed58436fb2a182530c2e171583f8531c57abdb4",
@@ -30987,7 +31189,7 @@
     "gasUsed": "1439746",
     "gasPrice": "386281468",
     "totalGasCost": "556147198427128",
-    "profitUSD": 1707.9175346715929,
+    "profitUSD": 1109.6947513486086,
     "breakdown": {
       "collateralUSD": 18169.829928945866,
       "debtUSD": 16461.912394274274,
@@ -31002,7 +31204,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 1533,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1109.6947513486086",
+    "_fixed": true
   },
   {
     "txHash": "0x93b037a18880f80e2581979db26ef2694f8d471626101d587b55419201debe64",
@@ -32658,7 +32862,7 @@
     "gasUsed": "4271174",
     "gasPrice": "67611062",
     "totalGasCost": "288778610126788",
-    "profitUSD": 25.546169772847946,
+    "profitUSD": 7.835691342977542,
     "breakdown": {
       "collateralUSD": 217.53362662743868,
       "debtUSD": 191.98745685459073,
@@ -32673,7 +32877,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2466,
     "isBatch": true,
-    "batchSize": 6
+    "batchSize": 6,
+    "estimatedProfit": "7.835691342977542",
+    "_fixed": true
   },
   {
     "txHash": "0x2dc819e6f7fc8fc6dd7a22404fac6e6848000e1bce9607067d92d5ce5f5e3d82",
@@ -32821,7 +33027,7 @@
     "gasUsed": "748810",
     "gasPrice": "76088370",
     "totalGasCost": "56975732339700",
-    "profitUSD": 1.126971680526914,
+    "profitUSD": 0.22267235213920622,
     "breakdown": {
       "collateralUSD": 9.602165519810967,
       "debtUSD": 8.475193839284053,
@@ -32836,7 +33042,9 @@
     "latencyBlocks": 16,
     "positionInBlock": 2436,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.22267235213920622",
+    "_fixed": true
   },
   {
     "txHash": "0x6c0a0b598b42dfb01f109544406edcdb367a0134a82952d6a92014108b3653fb",
@@ -33380,7 +33588,7 @@
     "gasUsed": "1101466",
     "gasPrice": "10647432",
     "totalGasCost": "11727784335312",
-    "profitUSD": 3119.2499849359374,
+    "profitUSD": 1475.296957705714,
     "breakdown": {
       "collateralUSD": 37302.59452632966,
       "debtUSD": 34183.34454139372,
@@ -33395,7 +33603,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1852,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1475.296957705714",
+    "_fixed": true
   },
   {
     "txHash": "0x29355d6a87f717b24f173a067cf03e2e2c8baf3576566ab82970beb8796bff47",
@@ -35259,7 +35469,7 @@
     "gasUsed": "702382",
     "gasPrice": "832491684",
     "totalGasCost": "584727173991288",
-    "profitUSD": 9.60329040911001,
+    "profitUSD": 1.1718815160368412,
     "breakdown": {
       "collateralUSD": 71.11412501623384,
       "debtUSD": 61.51083460712383,
@@ -35274,7 +35484,9 @@
     "latencyBlocks": 4,
     "positionInBlock": 421,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1.1718815160368412",
+    "_fixed": true
   },
   {
     "txHash": "0x78015cc42eec3e50d7d1fdd71f8d0288cdba38656df6640706387d5917024db8",
@@ -36742,7 +36954,7 @@
     "gasUsed": "1375111",
     "gasPrice": "745554408",
     "totalGasCost": "1025220067539288",
-    "profitUSD": 5178.027568618549,
+    "profitUSD": 2638.128230541911,
     "breakdown": {
       "collateralUSD": 44299.50805873971,
       "debtUSD": 39121.48049012116,
@@ -36757,7 +36969,9 @@
     "latencyBlocks": 63,
     "positionInBlock": 451,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "2638.128230541911",
+    "_fixed": true
   },
   {
     "txHash": "0x8a3acca2d23a4411160051b87fa5bb9c76a158eb8a108f595eda73ef50cdfcd0",
@@ -37827,7 +38041,7 @@
     "gasUsed": "656051",
     "gasPrice": "5277299674",
     "totalGasCost": "3462177728427374",
-    "profitUSD": 159.8423751450464,
+    "profitUSD": 62.39249842936036,
     "breakdown": {
       "collateralUSD": 1222.0777835448332,
       "debtUSD": 1062.2354083997868,
@@ -37842,7 +38056,9 @@
     "latencyBlocks": 4,
     "positionInBlock": 995,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "62.39249842936036",
+    "_fixed": true
   },
   {
     "txHash": "0x8067cc64fa6438e016ec57f9ea8d3df722bb2d6931450910f07fd70768c83d6b",
@@ -38419,7 +38635,7 @@
     "gasUsed": "654789",
     "gasPrice": "2150896150",
     "totalGasCost": "1408383139162350",
-    "profitUSD": 35.0076338458683,
+    "profitUSD": 5.3001085400445955,
     "breakdown": {
       "collateralUSD": 236.96077661090507,
       "debtUSD": 201.95314276503677,
@@ -38434,7 +38650,9 @@
     "latencyBlocks": 12,
     "positionInBlock": 443,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "5.3001085400445955",
+    "_fixed": true
   },
   {
     "txHash": "0x84f1c06ebbc5b6a2ac2c6376cde05ba80bf210d08724f029b0b52c6ad9e1e145",
@@ -38648,7 +38866,7 @@
     "gasUsed": "654791",
     "gasPrice": "2172390468",
     "totalGasCost": "1422461726932188",
-    "profitUSD": 19.522186013834357,
+    "profitUSD": 1.2419407032972694,
     "breakdown": {
       "collateralUSD": 132.1423886957934,
       "debtUSD": 112.62020268195903,
@@ -38663,7 +38881,9 @@
     "latencyBlocks": 50,
     "positionInBlock": 687,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1.2419407032972694",
+    "_fixed": true
   },
   {
     "txHash": "0xc06756a4d016808a7a0570f7219f8fdf9b0fe9fb7f8cdedf7744a75a4301c9a8",
@@ -39207,7 +39427,7 @@
     "gasUsed": "649643",
     "gasPrice": "37690927432",
     "totalGasCost": "24485647169706776",
-    "profitUSD": 255.90005427261553,
+    "profitUSD": 15.616882777577302,
     "breakdown": {
       "collateralUSD": 1455.5293358888798,
       "debtUSD": 1199.6292816162643,
@@ -39222,7 +39442,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 574,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "15.616882777577302",
+    "_fixed": true
   },
   {
     "txHash": "0x8d765d4f44f3df1d4c84189bb92c08972d1402d8c1bbb5e253ab7a4ddc60f22b",
@@ -39865,7 +40087,7 @@
     "gasUsed": "653849",
     "gasPrice": "35874708",
     "totalGasCost": "23456641951092",
-    "profitUSD": 0.36306974442462847,
+    "profitUSD": 0.03667486745585043,
     "breakdown": {
       "collateralUSD": 2.5927291341091085,
       "debtUSD": 2.22965938968448,
@@ -39880,7 +40102,9 @@
     "latencyBlocks": 946,
     "positionInBlock": 133,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.03667486745585043",
+    "_fixed": true
   },
   {
     "txHash": "0x0c5181042dd8ba2578fe09c724a831f7fa34c288df0b79d346044f9e1bd96dc7",
@@ -40160,7 +40384,7 @@
     "gasUsed": "744425",
     "gasPrice": "82070943",
     "totalGasCost": "61095661742775",
-    "profitUSD": 44.8146813489476,
+    "profitUSD": 11.407782554424047,
     "breakdown": {
       "collateralUSD": 301.9500190524202,
       "debtUSD": 257.1353377034726,
@@ -40175,7 +40399,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 1059,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "11.407782554424047",
+    "_fixed": true
   },
   {
     "txHash": "0x7f74dd23eca54788c81a6d153acdf66c33eae2a5c0342562234de65c364a1846",
@@ -40884,7 +41110,7 @@
     "gasUsed": "703024",
     "gasPrice": "850641621",
     "totalGasCost": "598021474961904",
-    "profitUSD": 49.87661124669091,
+    "profitUSD": 10.780930265743772,
     "breakdown": {
       "collateralUSD": 324.9375694471191,
       "debtUSD": 275.06095820042816,
@@ -40899,7 +41125,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2059,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "10.780930265743772",
+    "_fixed": true
   },
   {
     "txHash": "0x2610e2618461312b048026032b81ffc76cf8d79dabee8ae040de35b3f2152537",
@@ -41443,7 +41671,7 @@
     "gasUsed": "686944",
     "gasPrice": "485321643",
     "totalGasCost": "333388790728992",
-    "profitUSD": 2.044839325186789,
+    "profitUSD": -0.38838928530468064,
     "breakdown": {
       "collateralUSD": 13.16445859025431,
       "debtUSD": 11.11961926506752,
@@ -41458,7 +41686,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 1718,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.38838928530468064",
+    "_fixed": true
   },
   {
     "txHash": "0xaac43af306270acae3a835c8f9709908ce614af1df3212fafac1e5a4ae112d03",
@@ -41738,7 +41968,7 @@
     "gasUsed": "781473",
     "gasPrice": "577751063",
     "totalGasCost": "451496856455799",
-    "profitUSD": 106.66254429502249,
+    "profitUSD": 41.91022252405199,
     "breakdown": {
       "collateralUSD": 745.3484497778826,
       "debtUSD": 638.6859054828601,
@@ -41753,7 +41983,9 @@
     "latencyBlocks": 48438,
     "positionInBlock": 1255,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "41.91022252405199",
+    "_fixed": true
   },
   {
     "txHash": "0x3c58b5525b451e0499886ed7f538a7bc4ec8ba5ca9f3b93f3b7106b19df8e7d1",
@@ -42033,7 +42265,7 @@
     "gasUsed": "886267",
     "gasPrice": "12476253",
     "totalGasCost": "11057291317551",
-    "profitUSD": 111.41064405883981,
+    "profitUSD": 34.80791741818324,
     "breakdown": {
       "collateralUSD": 918.5905855820222,
       "debtUSD": 807.1799415231824,
@@ -42048,7 +42280,9 @@
     "latencyBlocks": 44069,
     "positionInBlock": 385,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "34.80791741818324",
+    "_fixed": true
   },
   {
     "txHash": "0x5f3afe5dc990f99a71c5fadad38f95190c85a0fe580973320a3a3c3fe8018cae",
@@ -42196,7 +42430,7 @@
     "gasUsed": "666416",
     "gasPrice": "12882097",
     "totalGasCost": "8584835554352",
-    "profitUSD": 0.6573407089507319,
+    "profitUSD": 0.13565634775509797,
     "breakdown": {
       "collateralUSD": 4.179070392980812,
       "debtUSD": 3.52172968403008,
@@ -42211,7 +42445,9 @@
     "latencyBlocks": 46875,
     "positionInBlock": 1983,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.13565634775509797",
+    "_fixed": true
   },
   {
     "txHash": "0xfdba949491838ff7181c395baca29d27854b3cbc55d9729687d1bd4b494490c9",
@@ -43116,7 +43352,7 @@
     "gasUsed": "1021127",
     "gasPrice": "239541736",
     "totalGasCost": "244602534256472",
-    "profitUSD": 572.0048393086086,
+    "profitUSD": 168.7500642048246,
     "breakdown": {
       "collateralUSD": 3081.3676568583815,
       "debtUSD": 2509.362817549773,
@@ -43131,7 +43367,9 @@
     "latencyBlocks": 49999,
     "positionInBlock": 472,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "168.7500642048246",
+    "_fixed": true
   },
   {
     "txHash": "0x185a8dc14f966f9df812d3506db8524903e293246e007c46a4d1765274a97284",
@@ -43378,7 +43616,7 @@
     "gasUsed": "702491",
     "gasPrice": "861635473",
     "totalGasCost": "605291165063243",
-    "profitUSD": 25.96372461365246,
+    "profitUSD": 4.3468515657983815,
     "breakdown": {
       "collateralUSD": 158.02943102023292,
       "debtUSD": 132.06570640658046,
@@ -43393,7 +43631,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 1059,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "4.3468515657983815",
+    "_fixed": true
   },
   {
     "txHash": "0xe177bcc1fe7cb03eb61b6cf2e85acc9d73afae8cead0e699ae8805e6d306b317",
@@ -44003,7 +44243,7 @@
     "gasUsed": "4469749",
     "gasPrice": "356712928",
     "totalGasCost": "1594417253215072",
-    "profitUSD": 1257.5900310530305,
+    "profitUSD": 471.1802452974212,
     "breakdown": {
       "collateralUSD": 8299.610874291255,
       "debtUSD": 7042.020843238224,
@@ -44018,7 +44258,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 525,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "471.1802452974212",
+    "_fixed": true
   },
   {
     "txHash": "0xdbfc00a3b8cdde1641d28979ee8de4e1cf5577d552af5c2aff203de1898a6663",
@@ -44331,7 +44573,7 @@
     "gasUsed": "973303",
     "gasPrice": "405523540",
     "totalGasCost": "394697278052620",
-    "profitUSD": 927.0537759496128,
+    "profitUSD": 206.03421147019006,
     "breakdown": {
       "collateralUSD": 5528.272899640053,
       "debtUSD": 4601.21912369044,
@@ -44346,7 +44588,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 1594,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "206.03421147019006",
+    "_fixed": true
   },
   {
     "txHash": "0xedd147dc8485b91a08d9bf1d18b22aef9b766ece735f2f55a468027598458dca",
@@ -45117,7 +45361,7 @@
     "gasUsed": "696474",
     "gasPrice": "1673805",
     "totalGasCost": "1165761663570",
-    "profitUSD": 65.52356952586968,
+    "profitUSD": 39.42127701762725,
     "breakdown": {
       "collateralUSD": 941.5328102737026,
       "debtUSD": 876.0092407478329,
@@ -45132,7 +45376,9 @@
     "latencyBlocks": 31250,
     "positionInBlock": 553,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "39.42127701762725",
+    "_fixed": true
   },
   {
     "txHash": "0xb615c6d3c83603e0551075ac1a1c3bf7823b0525464b5e423fc7c2e4892ff108",
@@ -45247,7 +45493,7 @@
     "gasUsed": "809923",
     "gasPrice": "28968636",
     "totalGasCost": "23462364575028",
-    "profitUSD": 2.577464902732629,
+    "profitUSD": 10.470311254942251,
     "breakdown": {
       "collateralUSD": 244.70888242617792,
       "debtUSD": 242.1314175234453,
@@ -45262,7 +45508,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 501,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "10.470311254942251",
+    "_fixed": true
   },
   {
     "txHash": "0x40e856719a139c62a3d26968d140b54babdf7e947d25fa2ed94c1a4ef29541d2",
@@ -46133,7 +46381,7 @@
     "gasUsed": "687025",
     "gasPrice": "1014361",
     "totalGasCost": "696891366025",
-    "profitUSD": 0.00525920211297215,
+    "profitUSD": 0.0036317811789162067,
     "breakdown": {
       "collateralUSD": 0.13382946960882858,
       "debtUSD": 0.12857026749585643,
@@ -46146,7 +46394,9 @@
     },
     "positionInBlock": 313,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0036317811789162067",
+    "_fixed": true
   },
   {
     "txHash": "0xec266a6bb07417d792e115a3f55b435aecbff0981ec4de51e64549e9f9f32b4d",
@@ -46777,7 +47027,7 @@
     "gasUsed": "701173",
     "gasPrice": "2420637",
     "totalGasCost": "1697285307201",
-    "profitUSD": 0.038739735816251175,
+    "profitUSD": 0.01118364214902598,
     "breakdown": {
       "collateralUSD": 0.39458154024185116,
       "debtUSD": 0.3558418044256,
@@ -46792,7 +47042,9 @@
     "latencyBlocks": 1802,
     "positionInBlock": 230,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.01118364214902598",
+    "_fixed": true
   },
   {
     "txHash": "0x48c204f8f290a4969f0ec7424672beb88e2a053407122a5fb350ca5ebf3f8064",
@@ -47794,7 +48046,7 @@
     "gasUsed": "550407",
     "gasPrice": "21136768",
     "totalGasCost": "11633825064576",
-    "profitUSD": 433.1211930509853,
+    "profitUSD": 264.97510612487065,
     "breakdown": {
       "collateralUSD": 6321.240315493831,
       "debtUSD": 5888.119122442846,
@@ -47809,7 +48061,9 @@
     "latencyBlocks": 99,
     "positionInBlock": 1759,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "264.97510612487065",
+    "_fixed": true
   },
   {
     "txHash": "0x1eb6299b6fca79a3d6a00683f1937e37dfa4275d3c9b191fb4ba6a1c137dc4ff",
@@ -49132,7 +49386,7 @@
     "gasUsed": "1357621",
     "gasPrice": "1604893",
     "totalGasCost": "2178836439553",
-    "profitUSD": 0.004568750804311256,
+    "profitUSD": -0.005723510843611334,
     "breakdown": {
       "collateralUSD": 0.03515780409343999,
       "debtUSD": 0.030589053289128736,
@@ -49145,7 +49399,9 @@
     },
     "positionInBlock": 148,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.005723510843611334",
+    "_fixed": true
   },
   {
     "txHash": "0x0a9cb4530083ed61fedb758651b3b9b48d84fd7ee7fdae85736512f9593b7147",
@@ -49223,7 +49479,7 @@
     "gasUsed": "1367675",
     "gasPrice": "1493813",
     "totalGasCost": "2043050694775",
-    "profitUSD": 0.001536334974956824,
+    "profitUSD": -0.0049605924686487324,
     "breakdown": {
       "collateralUSD": 0.03855970911142038,
       "debtUSD": 0.037023374136463554,
@@ -49236,7 +49492,9 @@
     },
     "positionInBlock": 258,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.0049605924686487324",
+    "_fixed": true
   },
   {
     "txHash": "0x1092612475d1fee23848a4b93d3bb6ee61ba3e923245a9c6584f8df8c45c5745",
@@ -49880,7 +50138,7 @@
     "gasUsed": "1367486",
     "gasPrice": "1799957",
     "totalGasCost": "2461415998102",
-    "profitUSD": 0.0015359838200758105,
+    "profitUSD": -0.006330023607417006,
     "breakdown": {
       "collateralUSD": 0.03845982152892899,
       "debtUSD": 0.03692383770885318,
@@ -49893,7 +50151,9 @@
     },
     "positionInBlock": 539,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.006330023607417006",
+    "_fixed": true
   },
   {
     "txHash": "0x3e0f05f83818b253d5bde78bac748f419469fb7ac16a1ceb638dd1b3a2668715",
@@ -49940,7 +50200,7 @@
     "gasUsed": "1490502",
     "gasPrice": "1497359",
     "totalGasCost": "2231816584218",
-    "profitUSD": 0.004899998968179824,
+    "profitUSD": -0.005676857354495998,
     "breakdown": {
       "collateralUSD": 0.03966249771392,
       "debtUSD": 0.034762498745740174,
@@ -49955,7 +50215,9 @@
     "latencyBlocks": 49999,
     "positionInBlock": 108,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.005676857354495998",
+    "_fixed": true
   },
   {
     "txHash": "0xd307f4bdfd1e58b48a489816683a3f3e7a1945ce717c4c1ed62e4a889963cba6",
@@ -51088,7 +51350,7 @@
     "gasUsed": "1483610",
     "gasPrice": "3233438",
     "totalGasCost": "4797160951180",
-    "profitUSD": -0.0003351333244814292,
+    "profitUSD": -0.01276100924154711,
     "breakdown": {
       "collateralUSD": 0.03771355678676857,
       "debtUSD": 0.03804869011125,
@@ -51101,7 +51363,9 @@
     },
     "positionInBlock": 208,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.01276100924154711",
+    "_fixed": true
   },
   {
     "txHash": "0xc65a156f4a66ee7da284d3dd633b83c01ca1e5e9cd643f99079a387fc111dec2",
@@ -51648,7 +51912,7 @@
     "gasUsed": "15782592",
     "gasPrice": "1697741",
     "totalGasCost": "26794753524672",
-    "profitUSD": 0.0030083959229349304,
+    "profitUSD": -0.08412181534806762,
     "breakdown": {
       "collateralUSD": 0.03282448076672,
       "debtUSD": 0.029816084843785073,
@@ -51661,7 +51925,9 @@
     },
     "positionInBlock": 21,
     "isBatch": true,
-    "batchSize": 33
+    "batchSize": 33,
+    "estimatedProfit": "-0.08412181534806762",
+    "_fixed": true
   },
   {
     "txHash": "0x8701e9140b8087f82875ec910e4c242f4b0fedc5555b68452cae06f2a81f7ef2",
@@ -52559,7 +52825,7 @@
     "gasUsed": "3631155",
     "gasPrice": "6267337",
     "totalGasCost": "22757672084235",
-    "profitUSD": 0.0010205250042276681,
+    "profitUSD": -0.06824329228192395,
     "breakdown": {
       "collateralUSD": 0.03992024392710767,
       "debtUSD": 0.03889971892288,
@@ -52572,7 +52838,9 @@
     },
     "positionInBlock": 271,
     "isBatch": true,
-    "batchSize": 6
+    "batchSize": 6,
+    "estimatedProfit": "-0.06824329228192395",
+    "_fixed": true
   },
   {
     "txHash": "0xdaa00b226357db8789736aadc6ac274a9a9f19bd356cb1247e6c302e4d82b892",
@@ -52976,7 +53244,7 @@
     "gasUsed": "691015",
     "gasPrice": "1363544",
     "totalGasCost": "942229357160",
-    "profitUSD": 175.08654025594797,
+    "profitUSD": 191.80544709570128,
     "breakdown": {
       "collateralUSD": 3016.2066608349423,
       "debtUSD": 2841.1201205789944,
@@ -52991,7 +53259,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 514,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "191.80544709570128",
+    "_fixed": true
   },
   {
     "txHash": "0x32a2b845def1ca1ae000af3dea23f3a547e6609dd5328b477180dafaff92a74b",
@@ -53861,7 +54131,7 @@
     "gasUsed": "626316",
     "gasPrice": "1269673",
     "totalGasCost": "795216514668",
-    "profitUSD": 0.0033758338467704957,
+    "profitUSD": -0.00030761271802979325,
     "breakdown": {
       "collateralUSD": 0.04842315819969428,
       "debtUSD": 0.04504732435292379,
@@ -53874,7 +54144,9 @@
     },
     "positionInBlock": 798,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.00030761271802979325",
+    "_fixed": true
   },
   {
     "txHash": "0x6c6cc55b30d81986d777335bad69b6dd8f6c49e785e06b5d9f5d906fd8e33259",
@@ -54641,7 +54913,7 @@
     "gasUsed": "461090",
     "gasPrice": "3568190",
     "totalGasCost": "1645256727100",
-    "profitUSD": 0.012728698387090731,
+    "profitUSD": 0.007172090469490957,
     "breakdown": {
       "collateralUSD": 0.2955886625446387,
       "debtUSD": 0.282859964157548,
@@ -54656,7 +54928,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 137,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.007172090469490957",
+    "_fixed": true
   },
   {
     "txHash": "0x32c6ae5bcbbd1da0b204e77b51fec89a12c5bdf1240293cf03ecc4598fe6b7d2",
@@ -54804,7 +55078,7 @@
     "gasUsed": "552699",
     "gasPrice": "3236262",
     "totalGasCost": "1788678771138",
-    "profitUSD": 1.057957188101117,
+    "profitUSD": 1.0527281483513002,
     "breakdown": {
       "collateralUSD": 24.568109148158715,
       "debtUSD": 23.5101519600576,
@@ -54819,7 +55093,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 191,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "1.0527281483513002",
+    "_fixed": true
   },
   {
     "txHash": "0x90f863492962d37b31f5217e0727cf0ec9a6f3235db6d2a804a7cebd804fcf3f",
@@ -56300,7 +56576,7 @@
     "gasUsed": "1326102",
     "gasPrice": "11190669",
     "totalGasCost": "14839968542238",
-    "profitUSD": 0.09227396198349158,
+    "profitUSD": -0.0022413898296841164,
     "breakdown": {
       "collateralUSD": 1.0408251564601598,
       "debtUSD": 0.9485511944766682,
@@ -56315,7 +56591,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 615,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.0022413898296841164",
+    "_fixed": true
   },
   {
     "txHash": "0xb2292ebdb8ac480f32f140dc7f7f2eaa259e6a9b585739409899059b76c27226",
@@ -56331,7 +56609,7 @@
     "gasUsed": "784715",
     "gasPrice": "15808344",
     "totalGasCost": "12405044661960",
-    "profitUSD": 0.1964728628248933,
+    "profitUSD": 0.0499319024360179,
     "breakdown": {
       "collateralUSD": 2.07888911367936,
       "debtUSD": 1.8824162508544666,
@@ -56346,7 +56624,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 217,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0499319024360179",
+    "_fixed": true
   },
   {
     "txHash": "0x08a031a10c0939626c7cddbc5079c9cc3e4727328179283ef73cc781a9325380",
@@ -58804,7 +59084,7 @@
     "gasUsed": "449418",
     "gasPrice": "2431611",
     "totalGasCost": "1092809752398",
-    "profitUSD": 0.0035999559980799956,
+    "profitUSD": -0.000021189497675987677,
     "breakdown": {
       "collateralUSD": 0.08360075544,
       "debtUSD": 0.08000079944192,
@@ -58817,7 +59097,9 @@
     },
     "positionInBlock": 49,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.000021189497675987677",
+    "_fixed": true
   },
   {
     "txHash": "0x7ef24a50bb82a9d447c89194d96c3f8942372b1f1793771807a739bdbf1cc0b9",
@@ -60734,7 +61016,7 @@
     "gasUsed": "2971775",
     "gasPrice": "2977232",
     "totalGasCost": "8847663626800",
-    "profitUSD": 0.00044871315735066364,
+    "profitUSD": -0.028772770951815997,
     "breakdown": {
       "collateralUSD": 0.010585492340755481,
       "debtUSD": 0.010136779183404818,
@@ -60747,7 +61029,9 @@
     },
     "positionInBlock": 47,
     "isBatch": true,
-    "batchSize": 8
+    "batchSize": 8,
+    "estimatedProfit": "-0.028772770951815997",
+    "_fixed": true
   },
   {
     "txHash": "0x847b63bb2b03fa4e01b49f14042c09f94af9b50a112545930fd617078e0b97ea",
@@ -61969,7 +62253,7 @@
     "gasUsed": "440496",
     "gasPrice": "10327748",
     "totalGasCost": "4549331683008",
-    "profitUSD": 4.570937409511046,
+    "profitUSD": 4.557416035833092,
     "breakdown": {
       "collateralUSD": 106.14732784205887,
       "debtUSD": 101.57639043254783,
@@ -61984,7 +62268,9 @@
     "latencyBlocks": 25,
     "positionInBlock": 120,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "4.557416035833092",
+    "_fixed": true
   },
   {
     "txHash": "0xc3acf24cd476862e240776614f559706aac4729ccca05fe04a8a0d5befa081bd",
@@ -62580,7 +62866,7 @@
     "gasUsed": "3161446",
     "gasPrice": "5753533",
     "totalGasCost": "18189483888718",
-    "profitUSD": 0.0019345490322448533,
+    "profitUSD": -0.052949610782392534,
     "breakdown": {
       "collateralUSD": 0.04149882911822606,
       "debtUSD": 0.03956428008598121,
@@ -62593,7 +62879,9 @@
     },
     "positionInBlock": 149,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "-0.052949610782392534",
+    "_fixed": true
   },
   {
     "txHash": "0x1c90eea2d7c4869a441ab3415f68367be55ffad5f52e26919de6197f49aa2066",
@@ -62981,7 +63269,7 @@
     "gasUsed": "3823331",
     "gasPrice": "5801823",
     "totalGasCost": "22182289732413",
-    "profitUSD": 0.0014849434439726944,
+    "profitUSD": -0.06546875332069917,
     "breakdown": {
       "collateralUSD": 0.015653055677608916,
       "debtUSD": 0.014168112233636222,
@@ -62994,7 +63282,9 @@
     },
     "positionInBlock": 107,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "-0.06546875332069917",
+    "_fixed": true
   },
   {
     "txHash": "0x7aeeccc01df0b03dd7b235dd54df239c0e4d6a8ac477b2924d3d6ba2cd86dbed",
@@ -63334,7 +63624,7 @@
     "gasUsed": "720377",
     "gasPrice": "10727959",
     "totalGasCost": "7728174920543",
-    "profitUSD": 240.0911296598424,
+    "profitUSD": 169.6065772159152,
     "breakdown": {
       "collateralUSD": 4009.484362250872,
       "debtUSD": 3769.3932325910296,
@@ -63349,7 +63639,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1151,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "169.6065772159152",
+    "_fixed": true
   },
   {
     "txHash": "0x5ba9e6606d863d8516c062d008b672dec295915c187038a94db210e4908ce0bb",
@@ -63658,7 +63950,7 @@
     "gasUsed": "548941",
     "gasPrice": "9781032",
     "totalGasCost": "5369209487112",
-    "profitUSD": 0.007802482244014697,
+    "profitUSD": -0.010747426691838882,
     "breakdown": {
       "collateralUSD": 0.1213245603784147,
       "debtUSD": 0.1135220781344,
@@ -63671,7 +63963,9 @@
     },
     "positionInBlock": 129,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.010747426691838882",
+    "_fixed": true
   },
   {
     "txHash": "0xd7a36e17fc5e361c444ac8adadeb6d872411563b9d1c611d3e752b77248e63fb",
@@ -64751,7 +65045,7 @@
     "gasUsed": "2691531",
     "gasPrice": "3776177",
     "totalGasCost": "10163697456987",
-    "profitUSD": 0.0004764033577704871,
+    "profitUSD": -0.02935877161215689,
     "breakdown": {
       "collateralUSD": 0.01845164894656,
       "debtUSD": 0.017975245588789514,
@@ -64764,7 +65058,9 @@
     },
     "positionInBlock": 155,
     "isBatch": true,
-    "batchSize": 4
+    "batchSize": 4,
+    "estimatedProfit": "-0.02935877161215689",
+    "_fixed": true
   },
   {
     "txHash": "0x2b7d3a291041b9fbbea43f74a0cabef2e1ebf0512c893abafd641a18a374b5b1",
@@ -65402,7 +65698,7 @@
     "gasUsed": "3185608",
     "gasPrice": "3713184",
     "totalGasCost": "11828748655872",
-    "profitUSD": 0.0008078873072442979,
+    "profitUSD": -0.03464018143593662,
     "breakdown": {
       "collateralUSD": 0.014533906705644296,
       "debtUSD": 0.013726019398399998,
@@ -65415,7 +65711,9 @@
     },
     "positionInBlock": 78,
     "isBatch": true,
-    "batchSize": 5
+    "batchSize": 5,
+    "estimatedProfit": "-0.03464018143593662",
+    "_fixed": true
   },
   {
     "txHash": "0x0f0622941fd150448456583d4b51553be674ea33e07ea857755c76a14e0eda87",
@@ -66123,7 +66421,7 @@
     "gasUsed": "2165701",
     "gasPrice": "3511039",
     "totalGasCost": "7603860673339",
-    "profitUSD": 0.00030641500863731914,
+    "profitUSD": -0.022359017720159476,
     "breakdown": {
       "collateralUSD": 0.007194351023172325,
       "debtUSD": 0.006887936014535006,
@@ -66136,7 +66434,9 @@
     },
     "positionInBlock": 46,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.022359017720159476",
+    "_fixed": true
   },
   {
     "txHash": "0xe49383aa4f188aa6678b103d9cadd679b708fc43d70dd6905ddaa1c37d9e1d95",
@@ -66183,7 +66483,7 @@
     "gasUsed": "1293517",
     "gasPrice": "5737049",
     "totalGasCost": "7420970411333",
-    "profitUSD": 0.0012179357981204897,
+    "profitUSD": -0.021200867846432752,
     "breakdown": {
       "collateralUSD": 0.02297762539940049,
       "debtUSD": 0.02175968960128,
@@ -66196,7 +66496,9 @@
     },
     "positionInBlock": 202,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.021200867846432752",
+    "_fixed": true
   },
   {
     "txHash": "0x54a24fc795425f2684b972526d3a81355f0680f8d2a4906f42c7a7cf7f3fb1c5",
@@ -66212,7 +66514,7 @@
     "gasUsed": "1293517",
     "gasPrice": "5737049",
     "totalGasCost": "7420970411333",
-    "profitUSD": 0.0010126896110632735,
+    "profitUSD": -0.021365886619395317,
     "breakdown": {
       "collateralUSD": 0.01910544263890327,
       "debtUSD": 0.018092753027839997,
@@ -66225,7 +66527,9 @@
     },
     "positionInBlock": 202,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.021365886619395317",
+    "_fixed": true
   },
   {
     "txHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
@@ -66241,7 +66545,7 @@
     "gasUsed": "1587226",
     "gasPrice": "7161787",
     "totalGasCost": "11367374532862",
-    "profitUSD": 0.0019010317434407474,
+    "profitUSD": -0.03245263554531741,
     "breakdown": {
       "collateralUSD": 0.03136486793314075,
       "debtUSD": 0.029463836189700002,
@@ -66254,7 +66558,9 @@
     },
     "positionInBlock": 148,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.03245263554531741",
+    "_fixed": true
   },
   {
     "txHash": "0x4b3d2da02fc2507c0a3f8abf1d4dd73afb84c27d3d1d64e65fa28194f17646ac",
@@ -66270,7 +66576,7 @@
     "gasUsed": "1587226",
     "gasPrice": "7161787",
     "totalGasCost": "11367374532862",
-    "profitUSD": 0.0008641053379273376,
+    "profitUSD": -0.03317756865731519,
     "breakdown": {
       "collateralUSD": 0.014256758151427337,
       "debtUSD": 0.0133926528135,
@@ -66283,7 +66589,9 @@
     },
     "positionInBlock": 148,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.03317756865731519",
+    "_fixed": true
   },
   {
     "txHash": "0x861073a9abdc8a67635aa0f42892104a46995a3b3ac874e19af5f83a4aadd4d3",
@@ -66330,7 +66638,7 @@
     "gasUsed": "1568773",
     "gasPrice": "6653208",
     "totalGasCost": "10437373073784",
-    "profitUSD": 0.0007838225194886396,
+    "profitUSD": -0.03035865700967417,
     "breakdown": {
       "collateralUSD": 0.01258240088364864,
       "debtUSD": 0.01179857836416,
@@ -66343,7 +66651,9 @@
     },
     "positionInBlock": 189,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.03035865700967417",
+    "_fixed": true
   },
   {
     "txHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
@@ -66359,7 +66669,7 @@
     "gasUsed": "1921367",
     "gasPrice": "5762526",
     "totalGasCost": "11071927293042",
-    "profitUSD": 0.0031294472919069297,
+    "profitUSD": -0.03064839580859717,
     "breakdown": {
       "collateralUSD": 0.04894216141798693,
       "debtUSD": 0.04581271412608,
@@ -66372,7 +66682,9 @@
     },
     "positionInBlock": 139,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "-0.03064839580859717",
+    "_fixed": true
   },
   {
     "txHash": "0xf789f779d7e5d52cbdea3be785a8405b23d6873dae9111342e5d5d2fb6060bc5",
@@ -66419,7 +66731,7 @@
     "gasUsed": "1921367",
     "gasPrice": "5762526",
     "totalGasCost": "11071927293042",
-    "profitUSD": 0.0004057993620713782,
+    "profitUSD": -0.03188834225349674,
     "breakdown": {
       "collateralUSD": 0.01908546513728,
       "debtUSD": 0.01867966577520862,
@@ -66432,7 +66744,9 @@
     },
     "positionInBlock": 139,
     "isBatch": true,
-    "batchSize": 3
+    "batchSize": 3,
+    "estimatedProfit": "-0.03188834225349674",
+    "_fixed": true
   },
   {
     "txHash": "0x2378b59e7624f80790386b162edc110ccc9b16551a810388b42a981e846fa305",
@@ -66448,7 +66762,7 @@
     "gasUsed": "551950",
     "gasPrice": "9781032",
     "totalGasCost": "5398640612400",
-    "profitUSD": 0.05972567930944006,
+    "profitUSD": 0.043727636125474825,
     "breakdown": {
       "collateralUSD": 1.38695077861824,
       "debtUSD": 1.3272250993088,
@@ -66463,7 +66777,9 @@
     "latencyBlocks": 113,
     "positionInBlock": 109,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.043727636125474825",
+    "_fixed": true
   },
   {
     "txHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
@@ -66479,7 +66795,7 @@
     "gasUsed": "1343057",
     "gasPrice": "5068942",
     "totalGasCost": "6807878035694",
-    "profitUSD": 0.000699824255869716,
+    "profitUSD": -0.0185369956245008,
     "breakdown": {
       "collateralUSD": 0.035631666671359995,
       "debtUSD": 0.03493184241549028,
@@ -66492,7 +66808,9 @@
     },
     "positionInBlock": 55,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.0185369956245008",
+    "_fixed": true
   },
   {
     "txHash": "0xfd6ebe4229df7f75258c26681bc64babe2f103d767fe1230291c40b41717e8bb",
@@ -66539,7 +66857,7 @@
     "gasUsed": "399588",
     "gasPrice": "5326102",
     "totalGasCost": "2128246445976",
-    "profitUSD": 0.0005028541702399997,
+    "profitUSD": -0.005781030458124701,
     "breakdown": {
       "collateralUSD": 0.01167861315456,
       "debtUSD": 0.01117575898432,
@@ -66552,7 +66870,9 @@
     },
     "positionInBlock": 134,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.005781030458124701",
+    "_fixed": true
   },
   {
     "txHash": "0x96223269c444d97ae0fd7d8ad3a480490dc6b4a23015746194b38bda8ae1fa2a",
@@ -66568,7 +66888,7 @@
     "gasUsed": "577999",
     "gasPrice": "30558820",
     "totalGasCost": "17662967401180",
-    "profitUSD": 0.08945618959709001,
+    "profitUSD": -0.0006668211784856617,
     "breakdown": {
       "collateralUSD": 1.222776824480404,
       "debtUSD": 1.133320634883314,
@@ -66583,7 +66903,9 @@
     "latencyBlocks": 7,
     "positionInBlock": 1783,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.0006668211784856617",
+    "_fixed": true
   },
   {
     "txHash": "0x6e81d4228ee15962cf37527a97a1fe8589d6945015a155e9904d8fdfc4b00d18",
@@ -66599,7 +66921,7 @@
     "gasUsed": "539269",
     "gasPrice": "33744415",
     "totalGasCost": "18197316932635",
-    "profitUSD": 0.0012120903147521973,
+    "profitUSD": -0.05253861730460911,
     "breakdown": {
       "collateralUSD": 0.016559639462912196,
       "debtUSD": 0.015347549148159998,
@@ -66612,7 +66934,9 @@
     },
     "positionInBlock": 13,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.05253861730460911",
+    "_fixed": true
   },
   {
     "txHash": "0x8b6b606dfc4f9b65beb65e1d3e9950460f9eaef38a6bc497644010b68f00fb2e",
@@ -66628,7 +66952,7 @@
     "gasUsed": "579638",
     "gasPrice": "65715026",
     "totalGasCost": "38090926240588",
-    "profitUSD": 716.3164678495614,
+    "profitUSD": 371.25262186586997,
     "breakdown": {
       "collateralUSD": 8968.501487541585,
       "debtUSD": 8252.185019692024,
@@ -66643,7 +66967,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 1162,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "371.25262186586997",
+    "_fixed": true
   },
   {
     "txHash": "0x60d99e9d00ced5ce7c2222881cd4b3a90e534d71f5019d1b8ea5eabfd6677a4d",
@@ -66723,7 +67049,7 @@
     "gasUsed": "883264",
     "gasPrice": "9805630",
     "totalGasCost": "8660959976320",
-    "profitUSD": 0.00015439392197280633,
+    "profitUSD": -0.024966807420829525,
     "breakdown": {
       "collateralUSD": 0.0105169500416,
       "debtUSD": 0.010362556119627194,
@@ -66736,7 +67062,9 @@
     },
     "positionInBlock": 67,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.024966807420829525",
+    "_fixed": true
   },
   {
     "txHash": "0xcc52c80d5cfda286612a6bdd3f577a208e19591f99581c040bc7b5bcd3a037a7",
@@ -66785,7 +67113,7 @@
     "gasUsed": "892028",
     "gasPrice": "18944813",
     "totalGasCost": "16899303650764",
-    "profitUSD": 2455.0423528725332,
+    "profitUSD": 2024.0262321770138,
     "breakdown": {
       "collateralUSD": 32440.143459272964,
       "debtUSD": 29985.10110640043,
@@ -66800,7 +67128,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 198,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "2024.0262321770138",
+    "_fixed": true
   },
   {
     "txHash": "0xa37912f4102dfd9372519bc7cccc23f89287cdeffaf0dc430f0abd16d99bcfc3",
@@ -66882,7 +67212,7 @@
     "gasUsed": "1069170",
     "gasPrice": "81153280",
     "totalGasCost": "86766652377600",
-    "profitUSD": 1297.1034410081938,
+    "profitUSD": 632.799080173298,
     "breakdown": {
       "collateralUSD": 13019.741250238807,
       "debtUSD": 11722.637809230613,
@@ -66897,7 +67227,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 838,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "632.799080173298",
+    "_fixed": true
   },
   {
     "txHash": "0xab16dcec46d0294aff90b029f4b85eab1cb249aaacd33c56ec7231b2e2128ee9",
@@ -66946,7 +67278,7 @@
     "gasUsed": "755430",
     "gasPrice": "792640785",
     "totalGasCost": "598784628212550",
-    "profitUSD": 30.691550539800573,
+    "profitUSD": 11.98293115612399,
     "breakdown": {
       "collateralUSD": 335.11696392847637,
       "debtUSD": 304.4254133886758,
@@ -66961,7 +67293,9 @@
     "latencyBlocks": 38,
     "positionInBlock": 1262,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "11.98293115612399",
+    "_fixed": true
   },
   {
     "txHash": "0x00766faca4435053214f70951bb155ea3efe8dcb55615e4d2d0dd78e84f29ebd",
@@ -66977,7 +67311,7 @@
     "gasUsed": "592056",
     "gasPrice": "18887185",
     "totalGasCost": "11182271202360",
-    "profitUSD": 0.16956015477289377,
+    "profitUSD": 0.07650004501031615,
     "breakdown": {
       "collateralUSD": 2.6492213644348936,
       "debtUSD": 2.479661209662,
@@ -66992,7 +67326,9 @@
     "latencyBlocks": 39,
     "positionInBlock": 104,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.07650004501031615",
+    "_fixed": true
   },
   {
     "txHash": "0x63432c563220c8589e338c6fac7f5431dfd58a678eb65749ad3e5d63a52c1916",
@@ -67202,7 +67538,7 @@
     "gasUsed": "525537",
     "gasPrice": "25048422",
     "totalGasCost": "13163872552614",
-    "profitUSD": 0.000017733720332682582,
+    "profitUSD": -0.039359082475002916,
     "breakdown": {
       "collateralUSD": 0.00033864065601268257,
       "debtUSD": 0.00032090693568,
@@ -67215,7 +67551,9 @@
     },
     "positionInBlock": 127,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.039359082475002916",
+    "_fixed": true
   },
   {
     "txHash": "0x0986bec5bc55ec9382e2b38cb4cbe6e53dead09af0b294ac0e9ae9359023ea8d",
@@ -67231,7 +67569,7 @@
     "gasUsed": "1235104",
     "gasPrice": "7262515",
     "totalGasCost": "8969961326560",
-    "profitUSD": 0.0020913729156231374,
+    "profitUSD": -0.025085682740276245,
     "breakdown": {
       "collateralUSD": 0.030165231382183137,
       "debtUSD": 0.02807385846656,
@@ -67244,7 +67582,9 @@
     },
     "positionInBlock": 49,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.025085682740276245",
+    "_fixed": true
   },
   {
     "txHash": "0x3a42d8462b1aca3e08422d9b5258f99f17380881ed83dfa636aabfba9e7376e3",
@@ -67322,7 +67662,7 @@
     "gasUsed": "1006312",
     "gasPrice": "5073289",
     "totalGasCost": "5105311600168",
-    "profitUSD": 0.00044922979200999816,
+    "profitUSD": -0.014071616438502079,
     "breakdown": {
       "collateralUSD": 0.02221555739776,
       "debtUSD": 0.02176632760575,
@@ -67335,7 +67675,9 @@
     },
     "positionInBlock": 218,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.014071616438502079",
+    "_fixed": true
   },
   {
     "txHash": "0xbf265d085a23bb3bb8c7e18992ea5b211dcca57ea4508f8bf7e076b2bd9f35f9",
@@ -67382,7 +67724,7 @@
     "gasUsed": "665384",
     "gasPrice": "4685621",
     "totalGasCost": "3117737243464",
-    "profitUSD": 96.82076249541205,
+    "profitUSD": 52.401781977641136,
     "breakdown": {
       "collateralUSD": 1261.4582268813692,
       "debtUSD": 1164.6374643859572,
@@ -67397,7 +67739,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 224,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "52.401781977641136",
+    "_fixed": true
   },
   {
     "txHash": "0x97b9cf02d1fe3c4bd65c89d09ef451259c6b28d99d39c0ff6a6663c05c660e56",
@@ -67413,7 +67757,7 @@
     "gasUsed": "885599",
     "gasPrice": "4575778",
     "totalGasCost": "4052304421022",
-    "profitUSD": 0.0008821262032760405,
+    "profitUSD": -0.011331276229659716,
     "breakdown": {
       "collateralUSD": 0.011513043193996039,
       "debtUSD": 0.010630916990719998,
@@ -67428,7 +67772,9 @@
     "latencyBlocks": 15625,
     "positionInBlock": 186,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.011331276229659716",
+    "_fixed": true
   },
   {
     "txHash": "0xe99ad85cfe6a21951e0c822284af8996f4d70244a66e568025bb17924dc73f88",
@@ -67475,7 +67821,7 @@
     "gasUsed": "400019",
     "gasPrice": "10326554",
     "totalGasCost": "4130817804526",
-    "profitUSD": 0.0004728628678400022,
+    "profitUSD": -0.011559528789095512,
     "breakdown": {
       "collateralUSD": 0.01098081551872,
       "debtUSD": 0.010507952650879998,
@@ -67488,7 +67834,9 @@
     },
     "positionInBlock": 52,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.011559528789095512",
+    "_fixed": true
   },
   {
     "txHash": "0x5712a1e15f943f406f65dd12a06fbfa9b7c4fbb00390627d439eee2bea995453",
@@ -67504,7 +67852,7 @@
     "gasUsed": "400019",
     "gasPrice": "10506665",
     "totalGasCost": "4202865626635",
-    "profitUSD": 0.00117565905408,
+    "profitUSD": -0.011248257017246925,
     "breakdown": {
       "collateralUSD": 0.0273120793856,
       "debtUSD": 0.02613642033152,
@@ -67517,7 +67865,9 @@
     },
     "positionInBlock": 263,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.011248257017246925",
+    "_fixed": true
   },
   {
     "txHash": "0x349235511e89f2814f9c6000a3b98d1acffa90b54a8b9167d3d3f009acfc06c2",
@@ -67597,7 +67947,7 @@
     "gasUsed": "956646",
     "gasPrice": "7421014",
     "totalGasCost": "7099283359044",
-    "profitUSD": 0.018492480548683132,
+    "profitUSD": -0.002790943875713617,
     "breakdown": {
       "collateralUSD": 0.4319097032229528,
       "debtUSD": 0.41341722267426967,
@@ -67612,7 +67962,9 @@
     "latencyBlocks": 274,
     "positionInBlock": 25,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.002790943875713617",
+    "_fixed": true
   },
   {
     "txHash": "0x43c24f35dc700e0520a262afa94576eb85b3225e24cd2e84b656d2c5be9de564",
@@ -67628,7 +67980,7 @@
     "gasUsed": "1057938",
     "gasPrice": "6317523",
     "totalGasCost": "6683547647574",
-    "profitUSD": 0.00046286576704000076,
+    "profitUSD": -0.019298226630789096,
     "breakdown": {
       "collateralUSD": 0.01075288162048,
       "debtUSD": 0.010290015853439999,
@@ -67643,7 +67995,9 @@
     "latencyBlocks": 252,
     "positionInBlock": 29,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.019298226630789096",
+    "_fixed": true
   },
   {
     "txHash": "0x6184c1ff2b8aafe5f07c24ff6385667bcd760685690bafa7e94306daa89d6f2d",
@@ -67725,7 +68079,7 @@
     "gasUsed": "2366581",
     "gasPrice": "2405694",
     "totalGasCost": "5693269712214",
-    "profitUSD": 0.0042596014746600075,
+    "profitUSD": -0.010361674544823615,
     "breakdown": {
       "collateralUSD": 0.15035839545216,
       "debtUSD": 0.1460987939775,
@@ -67738,7 +68092,9 @@
     },
     "positionInBlock": 52,
     "isBatch": true,
-    "batchSize": 2
+    "batchSize": 2,
+    "estimatedProfit": "-0.010361674544823615",
+    "_fixed": true
   },
   {
     "txHash": "0x6f1844e69800d4d89e974caf81fe57cfb381d61dbabd4b8bcf89883797029e8c",
@@ -67878,7 +68234,7 @@
     "gasUsed": "530437",
     "gasPrice": "32649827",
     "totalGasCost": "17318676284399",
-    "profitUSD": 0.016651697619139594,
+    "profitUSD": -0.041085882079977765,
     "breakdown": {
       "collateralUSD": 0.2305186753234596,
       "debtUSD": 0.21386697770432,
@@ -67893,7 +68249,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 5,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.041085882079977765",
+    "_fixed": true
   },
   {
     "txHash": "0x8122a03800ad6044c546ee3a6932d169d84f8fb31c90ccd2dd1f106bc2848116",
@@ -67909,7 +68267,7 @@
     "gasUsed": "616870",
     "gasPrice": "11008383",
     "totalGasCost": "6790741221210",
-    "profitUSD": 1.287091794495824,
+    "profitUSD": 0.8238899843305989,
     "breakdown": {
       "collateralUSD": 13.786899799200462,
       "debtUSD": 12.499808004704638,
@@ -67924,7 +68282,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 78,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.8238899843305989",
+    "_fixed": true
   },
   {
     "txHash": "0x753b8a7679675b255e8e2776227f0ce90cca54dc4968b002c21884e94bfef762",
@@ -67940,7 +68300,7 @@
     "gasUsed": "578075",
     "gasPrice": "44106893",
     "totalGasCost": "25497092170975",
-    "profitUSD": 0.018158975360018037,
+    "profitUSD": -0.06426302873400923,
     "breakdown": {
       "collateralUSD": 0.2466263303946126,
       "debtUSD": 0.22846735503459456,
@@ -67955,7 +68315,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 136,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.06426302873400923",
+    "_fixed": true
   },
   {
     "txHash": "0x142d0a2487eb93bba40bd0feb41071244b7310c3ff5b93cc7466aa1190fef32a",
@@ -68035,7 +68397,7 @@
     "gasUsed": "625806",
     "gasPrice": "3414597",
     "totalGasCost": "2136875290182",
-    "profitUSD": 0.00021045099995525927,
+    "profitUSD": -0.0061274826113581204,
     "breakdown": {
       "collateralUSD": 0.002851685031315259,
       "debtUSD": 0.0026412340313599998,
@@ -68048,7 +68410,9 @@
     },
     "positionInBlock": 53,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.0061274826113581204",
+    "_fixed": true
   },
   {
     "txHash": "0xb7392b6f1c735e09c3cd814cfdb823a555679cf4692f486845f9c0ae6201a82d",
@@ -68095,7 +68459,7 @@
     "gasUsed": "688955",
     "gasPrice": "4191815",
     "totalGasCost": "2887971903325",
-    "profitUSD": 1.305230302996385e-7,
+    "profitUSD": -0.008454723685290856,
     "breakdown": {
       "collateralUSD": 0.000002548403520215051,
       "debtUSD": 0.0000024178804899154127,
@@ -68108,7 +68472,9 @@
     },
     "positionInBlock": 110,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.008454723685290856",
+    "_fixed": true
   },
   {
     "txHash": "0x01a1b6156fec2b7e1c0e1f0305cf928d9c9a10fada97f933838a1ec44c72d67b",
@@ -68186,7 +68552,7 @@
     "gasUsed": "1010252",
     "gasPrice": "5950707",
     "totalGasCost": "6011713648164",
-    "profitUSD": 0.004438285803115297,
+    "profitUSD": -0.013316397996833991,
     "breakdown": {
       "collateralUSD": 0.1033648817493488,
       "debtUSD": 0.0989265959462335,
@@ -68199,7 +68565,9 @@
     },
     "positionInBlock": 27,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.013316397996833991",
+    "_fixed": true
   },
   {
     "txHash": "0xb859e033842ac8c42aa5a70c3b26ddb13cf1d194b4bdc81c8ba90dbed1456f82",
@@ -68378,7 +68746,7 @@
     "gasUsed": "468850",
     "gasPrice": "16941486",
     "totalGasCost": "7943015711100",
-    "profitUSD": 734.8846264196709,
+    "profitUSD": 299.85999061522443,
     "breakdown": {
       "collateralUSD": 7398.889923707761,
       "debtUSD": 6664.00529728809,
@@ -68393,7 +68761,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2009,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "299.85999061522443",
+    "_fixed": true
   },
   {
     "txHash": "0xdc2dc6c417ad81f11821f854753d57a4a2428a214366b14d590951cf5517c860",
@@ -68442,7 +68812,7 @@
     "gasUsed": "565393",
     "gasPrice": "242533725",
     "totalGasCost": "137126870378925",
-    "profitUSD": 899.3718692894008,
+    "profitUSD": 354.76701567231083,
     "breakdown": {
       "collateralUSD": 8791.655412877168,
       "debtUSD": 7892.283543587767,
@@ -68457,7 +68827,9 @@
     "latencyBlocks": 1,
     "positionInBlock": 61,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "354.76701567231083",
+    "_fixed": true
   },
   {
     "txHash": "0x2876ebb462c7e9bea7b873b95805cd53990e9b67257bc9821480b9cfca155597",
@@ -68539,7 +68911,7 @@
     "gasUsed": "678940",
     "gasPrice": "562246944",
     "totalGasCost": "381731940159360",
-    "profitUSD": 172.3617334048556,
+    "profitUSD": 111.12027694026469,
     "breakdown": {
       "collateralUSD": 1834.5318322978765,
       "debtUSD": 1662.1700988930208,
@@ -68554,7 +68926,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 258,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "111.12027694026469",
+    "_fixed": true
   },
   {
     "txHash": "0x66cdca8a8d969faec96f8c553641bab0ddaee06de30fe0d2f86afdb431993ac3",
@@ -68603,7 +68977,7 @@
     "gasUsed": "615473",
     "gasPrice": "520368807",
     "totalGasCost": "320272950750711",
-    "profitUSD": 0.17142828509823982,
+    "profitUSD": -0.7260135005466878,
     "breakdown": {
       "collateralUSD": 3.9809545069587196,
       "debtUSD": 3.8095262218604797,
@@ -68618,7 +68992,9 @@
     "latencyBlocks": 10,
     "positionInBlock": 24,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.7260135005466878",
+    "_fixed": true
   },
   {
     "txHash": "0x88ec7ecf272fa1990bba420ec0d1b63ccb50c3e70a65f2be59fb40a6554648e3",
@@ -68700,7 +69076,7 @@
     "gasUsed": "1026886",
     "gasPrice": "24354442",
     "totalGasCost": "25009235527612",
-    "profitUSD": 1077.392232714441,
+    "profitUSD": 467.3440777463573,
     "breakdown": {
       "collateralUSD": 8001.988276623327,
       "debtUSD": 6924.596043908886,
@@ -68715,7 +69091,9 @@
     "latencyBlocks": 808,
     "positionInBlock": 664,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "467.3440777463573",
+    "_fixed": true
   },
   {
     "txHash": "0x6d8871cfb86b18a497be1d1fd008246d5b9f9bdd479959ea369961063945b16f",
@@ -68764,7 +69142,7 @@
     "gasUsed": "798164",
     "gasPrice": "37208604",
     "totalGasCost": "29698568203056",
-    "profitUSD": 246.71885135125467,
+    "profitUSD": 83.11312919710915,
     "breakdown": {
       "collateralUSD": 2095.5045459605026,
       "debtUSD": 1848.785694609248,
@@ -68779,7 +69157,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 2095,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "83.11312919710915",
+    "_fixed": true
   },
   {
     "txHash": "0xb18e348162fb4c4299a65eda5a1f674d196e28b255dff171e7b0f09db86077bc",
@@ -68795,7 +69175,7 @@
     "gasUsed": "532127",
     "gasPrice": "222309251",
     "totalGasCost": "118296754806877",
-    "profitUSD": 1.9546332541034985,
+    "profitUSD": 0.3297295955876669,
     "breakdown": {
       "collateralUSD": 16.601661556165578,
       "debtUSD": 14.647028302062079,
@@ -68810,7 +69190,9 @@
     "latencyBlocks": 8,
     "positionInBlock": 75,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.3297295955876669",
+    "_fixed": true
   },
   {
     "txHash": "0x826fe7f02c6cb8b4f9bd1443fcb7eb0eda3ca21d355c9cca465fca9fe3cc76b7",
@@ -68826,7 +69208,7 @@
     "gasUsed": "580152",
     "gasPrice": "48193683",
     "totalGasCost": "27959661579816",
-    "profitUSD": 1.1615168289891376,
+    "profitUSD": 0.31382191842207735,
     "breakdown": {
       "collateralUSD": 9.865333686606418,
       "debtUSD": 8.70381685761728,
@@ -68841,7 +69223,9 @@
     "latencyBlocks": 13,
     "positionInBlock": 259,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.31382191842207735",
+    "_fixed": true
   },
   {
     "txHash": "0xcd477bcd4aee0e024700c933e73d33194254dfaad786ccf29f86e267072f8a42",
@@ -68857,7 +69241,7 @@
     "gasUsed": "709118",
     "gasPrice": "5848558",
     "totalGasCost": "4147317751844",
-    "profitUSD": 0.01669633306452084,
+    "profitUSD": 0.00391229160121556,
     "breakdown": {
       "collateralUSD": 0.3888470840937457,
       "debtUSD": 0.37215075102922485,
@@ -68872,7 +69256,9 @@
     "latencyBlocks": 9548,
     "positionInBlock": 81,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.00391229160121556",
+    "_fixed": true
   },
   {
     "txHash": "0xb78654d42cdabdb260f3e69f0be76b7251df9b089aa4fedf91b6c15c17264823",
@@ -68921,7 +69307,7 @@
     "gasUsed": "825453",
     "gasPrice": "3953000",
     "totalGasCost": "3263015709000",
-    "profitUSD": 0.03589147899778833,
+    "profitUSD": 0.0076946525885955765,
     "breakdown": {
       "collateralUSD": 0.4159842505440283,
       "debtUSD": 0.38009277154624,
@@ -68936,7 +69322,9 @@
     "latencyBlocks": 26354,
     "positionInBlock": 53,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.0076946525885955765",
+    "_fixed": true
   },
   {
     "txHash": "0x028766beef434d7ca5262db4b3151f7a7845fb87ff076e812ec395921f375359",
@@ -68952,7 +69340,7 @@
     "gasUsed": "878736",
     "gasPrice": "15132349",
     "totalGasCost": "13297339830864",
-    "profitUSD": 0.931897036341093,
+    "profitUSD": 0.41216695347069127,
     "breakdown": {
       "collateralUSD": 10.944290401434852,
       "debtUSD": 10.012393365093759,
@@ -68967,7 +69355,9 @@
     "latencyBlocks": 0,
     "positionInBlock": 159,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.41216695347069127",
+    "_fixed": true
   },
   {
     "txHash": "0x79ef0cfaf6dd12c974d45104fc9203d7e12b16942064d346f7ea1f81adb49be2",
@@ -68983,7 +69373,7 @@
     "gasUsed": "813401",
     "gasPrice": "4958905",
     "totalGasCost": "4033578285905",
-    "profitUSD": 0.050130751345709657,
+    "profitUSD": 0.054150608266050414,
     "breakdown": {
       "collateralUSD": 1.5288186363609597,
       "debtUSD": 1.47868788501525,
@@ -68998,7 +69388,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 64,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.054150608266050414",
+    "_fixed": true
   },
   {
     "txHash": "0x3353a6e3c37e176ff96a9cb9dab6608389f2ad8c7c01a38741790aad04937a27",
@@ -69014,7 +69406,7 @@
     "gasUsed": "784802",
     "gasPrice": "4728055",
     "totalGasCost": "3710587020110",
-    "profitUSD": 0.04998963834065995,
+    "profitUSD": 0.05490047790532351,
     "breakdown": {
       "collateralUSD": 1.52448489316416,
       "debtUSD": 1.4744952548235,
@@ -69029,7 +69421,9 @@
     "latencyBlocks": 102,
     "positionInBlock": 68,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.05490047790532351",
+    "_fixed": true
   },
   {
     "txHash": "0xfda36dc8629a1c05b0fd1e71df9ff4c81d6c486da412f64160ec626d58406809",
@@ -69109,7 +69503,7 @@
     "gasUsed": "619018",
     "gasPrice": "448854952",
     "totalGasCost": "277849294677136",
-    "profitUSD": 11.639099442654242,
+    "profitUSD": 9.443961654522344,
     "breakdown": {
       "collateralUSD": 163.6573245374491,
       "debtUSD": 152.01822509479487,
@@ -69124,7 +69518,9 @@
     "latencyBlocks": 100,
     "positionInBlock": 147,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "9.443961654522344",
+    "_fixed": true
   },
   {
     "txHash": "0x60c9d0b4e46f28e294a702009b327124ce8fef3d87b63aac9db1ea13e897ae68",
@@ -69173,7 +69569,7 @@
     "gasUsed": "551984",
     "gasPrice": "6952023",
     "totalGasCost": "3837405463632",
-    "profitUSD": 0.0451778982252804,
+    "profitUSD": 0.03401635293679072,
     "breakdown": {
       "collateralUSD": 1.0491337469350401,
       "debtUSD": 1.0039558487097597,
@@ -69188,7 +69584,9 @@
     "latencyBlocks": 2,
     "positionInBlock": 4,
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "0.03401635293679072",
+    "_fixed": true
   },
   {
     "txHash": "0x97c1bf32b4b16d5ece02c8b130f827d29515c53605a37fd3a91ca18cab21b455",
@@ -69330,7 +69728,7 @@
     "gasUsed": "822930",
     "gasPrice": "22796796",
     "totalGasCost": "18760167332280",
-    "profitUSD": 0.0054164478511599945,
+    "profitUSD": -0.05069196565084616,
     "breakdown": {
       "collateralUSD": 0.13539806436812,
       "debtUSD": 0.12998161651696,
@@ -69342,7 +69740,9 @@
       "ethPrice": 3012.40243223
     },
     "isBatch": false,
-    "batchSize": 1
+    "batchSize": 1,
+    "estimatedProfit": "-0.05069196565084616",
+    "_fixed": true
   },
   {
     "txHash": "0x06acb89ffd2552afafbb4c5437c7f00ff2107ed0a3dc7453725e4a61075b4435",
@@ -69386,7 +69786,7 @@
     "gasUsed": "599294",
     "gasPrice": "7788177",
     "totalGasCost": "4667407747038",
-    "profitUSD": 0.04111388923876036,
+    "profitUSD": 0.03115088633641288,
     "breakdown": {
       "collateralUSD": 1.0409436084514403,
       "debtUSD": 0.9998297192126799,
@@ -69396,7 +69796,9 @@
       "collateralPrice": 2954.54594924,
       "debtPrice": 0.99960181,
       "ethPrice": 2954.54594924
-    }
+    },
+    "estimatedProfit": "0.03115088633641288",
+    "_fixed": true
   },
   {
     "txHash": "0x6f6562e5be8ea92e1965d031e579df591daab2a210e6e1fc867d6726217fb9f9",
@@ -69524,7 +69926,7 @@
     "gasUsed": "866888",
     "gasPrice": "32497493",
     "totalGasCost": "28171686711784",
-    "profitUSD": 0.284057168312156,
+    "profitUSD": 0.8022935306010359,
     "breakdown": {
       "collateralUSD": 19.916244713526638,
       "debtUSD": 19.63218754521448,
@@ -69534,7 +69936,9 @@
       "collateralPrice": 2796.56,
       "debtPrice": 0.99960181,
       "ethPrice": 2796.56
-    }
+    },
+    "estimatedProfit": "0.8022935306010359",
+    "_fixed": true
   },
   {
     "txHash": "0xa45bb0873526938a9fb22ff12c436529d9440b8818ddb296ad86268b9a58bb2d",
@@ -70054,7 +70458,7 @@
     "gasUsed": "886294",
     "gasPrice": "43666480",
     "totalGasCost": "38701339225120",
-    "profitUSD": 277.6435939417288,
+    "profitUSD": 214.1963606129103,
     "breakdown": {
       "collateralUSD": 5039.940089712054,
       "debtUSD": 4762.296495770325,
@@ -70064,7 +70468,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "214.1963606129103",
+    "_fixed": true
   },
   {
     "txHash": "0x6dd2792dd8d8050f519837dafd32b94d95a2e76b0606c7498c2df1597a338e5f",
@@ -70080,7 +70486,7 @@
     "gasUsed": "679016",
     "gasPrice": "43666480",
     "totalGasCost": "29650238583680",
-    "profitUSD": 46.94741520845287,
+    "profitUSD": 36.155099675240784,
     "breakdown": {
       "collateralUSD": 852.2154487998008,
       "debtUSD": 805.268033591348,
@@ -70090,7 +70496,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "36.155099675240784",
+    "_fixed": true
   },
   {
     "txHash": "0x68c4b3c4f57dde56951ea437cb6c51cfac59ccb9dc2df453e0221dcad3701e1a",
@@ -70134,7 +70542,7 @@
     "gasUsed": "639298",
     "gasPrice": "43666480",
     "totalGasCost": "27915893331040",
-    "profitUSD": 60.62939330536324,
+    "profitUSD": 46.720532436445524,
     "breakdown": {
       "collateralUSD": 1100.5782831018682,
       "debtUSD": 1039.948889796505,
@@ -70144,7 +70552,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "46.720532436445524",
+    "_fixed": true
   },
   {
     "txHash": "0x32b407658a9169706190bda77485b5ea978ccb2dbeae33ebb4751a6cdd8d930f",
@@ -70160,7 +70570,7 @@
     "gasUsed": "1972805",
     "gasPrice": "47666481",
     "totalGasCost": "94036672049205",
-    "profitUSD": 65.06719269872042,
+    "profitUSD": 49.96313702130512,
     "breakdown": {
       "collateralUSD": 1181.1356723617662,
       "debtUSD": 1116.0684796630458,
@@ -70170,7 +70580,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "49.96313702130512",
+    "_fixed": true
   },
   {
     "txHash": "0x32b407658a9169706190bda77485b5ea978ccb2dbeae33ebb4751a6cdd8d930f",
@@ -70326,7 +70738,7 @@
     "gasUsed": "688421",
     "gasPrice": "87335254",
     "totalGasCost": "60123422893934",
-    "profitUSD": 40.0589733770106,
+    "profitUSD": 30.12707127195839,
     "breakdown": {
       "collateralUSD": 713.2385402265965,
       "debtUSD": 673.1795668495859,
@@ -70336,7 +70748,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "30.12707127195839",
+    "_fixed": true
   },
   {
     "txHash": "0x0d561e8fb4cf916317b68eb10bca2288c9a03b69fb9f2e3b771d89d8f51089e0",
@@ -70352,7 +70766,7 @@
     "gasUsed": "682938",
     "gasPrice": "91977749",
     "totalGasCost": "62815099946562",
-    "profitUSD": 50.97994625119884,
+    "profitUSD": 37.10595753986439,
     "breakdown": {
       "collateralUSD": 879.4036568106176,
       "debtUSD": 828.4237105594187,
@@ -70362,7 +70776,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "37.10595753986439",
+    "_fixed": true
   },
   {
     "txHash": "0x4f398cb057a09e933db855ba725745274b5d8a6640035260f36c82b7df5e12ef",
@@ -70378,7 +70794,7 @@
     "gasUsed": "652197",
     "gasPrice": "14599126",
     "totalGasCost": "9521506179822",
-    "profitUSD": 0.03486546505543231,
+    "profitUSD": 0.0016450896132243487,
     "breakdown": {
       "collateralUSD": 0.6575924026401823,
       "debtUSD": 0.62272693758475,
@@ -70388,7 +70804,9 @@
       "collateralPrice": 2799.47208229,
       "debtPrice": 0.99960181,
       "ethPrice": 2799.47208229
-    }
+    },
+    "estimatedProfit": "0.0016450896132243487",
+    "_fixed": true
   },
   {
     "txHash": "0x30b6e9a0594a2b163c8ad468ddd521912895f3bcba58bb5e9529e505836c6a62",
@@ -70572,7 +70990,7 @@
     "gasUsed": "991869",
     "gasPrice": "99718629",
     "totalGasCost": "98907816827601",
-    "profitUSD": 1501.0614632572251,
+    "profitUSD": 1363.8516740353255,
     "breakdown": {
       "collateralUSD": 31814.801371720183,
       "debtUSD": 30313.739908462958,
@@ -70582,7 +71000,9 @@
       "collateralPrice": 2707.31332,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "1363.8516740353255",
+    "_fixed": true
   },
   {
     "txHash": "0x022b932b1ffc51a75c62334e3ba4e25d0a8c8ad1cde0ab4d6548c254b91776fb",
@@ -70654,7 +71074,7 @@
     "gasUsed": "676182",
     "gasPrice": "99718629",
     "totalGasCost": "67427941994478",
-    "profitUSD": 240.3162931701945,
+    "profitUSD": 218.21026199503407,
     "breakdown": {
       "collateralUSD": 5093.472399862446,
       "debtUSD": 4853.156106692251,
@@ -70664,7 +71084,9 @@
       "collateralPrice": 2707.31332,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "218.21026199503407",
+    "_fixed": true
   },
   {
     "txHash": "0x9ceb95deee946adb077956574b89cc3bb62779bf9f6796e8e8392878415356af",
@@ -70680,7 +71102,7 @@
     "gasUsed": "641725",
     "gasPrice": "236089168",
     "totalGasCost": "151504321334800",
-    "profitUSD": 7.216435495312112,
+    "profitUSD": 6.1496695517761815,
     "breakdown": {
       "collateralUSD": 152.95140639810197,
       "debtUSD": 145.73497090278985,
@@ -70690,7 +71112,9 @@
       "collateralPrice": 2707.31332,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "6.1496695517761815",
+    "_fixed": true
   },
   {
     "txHash": "0xefa814e2dfbc972aa9ed5e687e7b0165e72f6ec0d15c4fa77196b17314523e79",
@@ -70734,7 +71158,7 @@
     "gasUsed": "763374",
     "gasPrice": "119362961",
     "totalGasCost": "91118580990414",
-    "profitUSD": 4.667516984945635,
+    "profitUSD": 4.18206270697247,
     "breakdown": {
       "collateralUSD": 70.26700263144056,
       "debtUSD": 65.59948564649493,
@@ -70744,7 +71168,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "4.18206270697247",
+    "_fixed": true
   },
   {
     "txHash": "0x1acee13f1c7690845b3f242f8c6ce996ee099f15bd1e9e0ca272cd698850143d",
@@ -70788,7 +71214,7 @@
     "gasUsed": "536796",
     "gasPrice": "57381719267",
     "totalGasCost": "30802277375648532",
-    "profitUSD": 97.09436432679422,
+    "profitUSD": 5.203892403964872,
     "breakdown": {
       "collateralUSD": 2057.9023517580295,
       "debtUSD": 1960.8079874312352,
@@ -70798,7 +71224,9 @@
       "collateralPrice": 2707.31332,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "5.203892403964872",
+    "_fixed": true
   },
   {
     "txHash": "0x0ca2b82e3ff0415993e315be83874f68401169f49d1a84b1f6413a2f0b5ce04c",
@@ -70814,7 +71242,7 @@
     "gasUsed": "786767",
     "gasPrice": "50208902340",
     "totalGasCost": "39502707467334780",
-    "profitUSD": 130.75657468135023,
+    "profitUSD": 15.903285633669299,
     "breakdown": {
       "collateralUSD": 1943.929227200836,
       "debtUSD": 1813.1726525194858,
@@ -70824,7 +71252,9 @@
       "collateralPrice": 2942.93579082,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "15.903285633669299",
+    "_fixed": true
   },
   {
     "txHash": "0x4e4e989ed2a6c2ccfeb79cb7a0ccfb4303a842972335dcf11e652c1540c3d73d",
@@ -70840,7 +71270,7 @@
     "gasUsed": "775908",
     "gasPrice": "47530645448",
     "totalGasCost": "36879408048266784",
-    "profitUSD": 150.36530121772876,
+    "profitUSD": 41.32872695685117,
     "breakdown": {
       "collateralUSD": 2235.44785257845,
       "debtUSD": 2085.082551360721,
@@ -70850,7 +71280,9 @@
       "collateralPrice": 3036.66340269,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "41.32872695685117",
+    "_fixed": true
   },
   {
     "txHash": "0x586f38901f503629703831420e5ba899515c9561a9bd85abac90542e0ff836cc",
@@ -70866,7 +71298,7 @@
     "gasUsed": "656103",
     "gasPrice": "18552003522",
     "totalGasCost": "12172025166794766",
-    "profitUSD": 57.73419254471207,
+    "profitUSD": 21.9561767482191,
     "breakdown": {
       "collateralUSD": 869.1098663203711,
       "debtUSD": 811.375673775659,
@@ -70876,7 +71308,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "21.9561767482191",
+    "_fixed": true
   },
   {
     "txHash": "0xe2967a42d77a53276468d0afc183b245d5ba8fcf59608972ffd79a593bcb44d1",
@@ -70892,7 +71326,7 @@
     "gasUsed": "579260",
     "gasPrice": "144993397",
     "totalGasCost": "83988875146220",
-    "profitUSD": 1.4244665760554618,
+    "profitUSD": 1.0681057769321898,
     "breakdown": {
       "collateralUSD": 30.19138275625217,
       "debtUSD": 28.76691618019671,
@@ -70902,7 +71336,9 @@
       "collateralPrice": 2707.31332,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "1.0681057769321898",
+    "_fixed": true
   },
   {
     "txHash": "0x0e9d701c8896eec65210309d4f977b2915eb2c6f87dbb2a57431f5dcc0195a93",
@@ -70918,7 +71354,7 @@
     "gasUsed": "989221",
     "gasPrice": "196137132",
     "totalGasCost": "194022969854172",
-    "profitUSD": 1533.092485767589,
+    "profitUSD": 1308.824311369426,
     "breakdown": {
       "collateralUSD": 20872.493324345447,
       "debtUSD": 19339.400838577858,
@@ -70928,7 +71364,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 1.19129484,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "1308.824311369426",
+    "_fixed": true
   },
   {
     "txHash": "0x78e12951c3f6e44fc5ce493a6db373fca41921cdb4d7b1f4f150d2cc8d8def22",
@@ -70944,7 +71382,7 @@
     "gasUsed": "759880",
     "gasPrice": "843106056",
     "totalGasCost": "640659429833280",
-    "profitUSD": 85.63530730459206,
+    "profitUSD": 74.30355337335469,
     "breakdown": {
       "collateralUSD": 1212.024041684933,
       "debtUSD": 1126.388734380341,
@@ -70954,7 +71392,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "74.30355337335469",
+    "_fixed": true
   },
   {
     "txHash": "0x8a3e8b130ace9c5dbcd9d4d2414881db2e82bc5ef7a32865a5b7a058e113978f",
@@ -70970,7 +71410,7 @@
     "gasUsed": "615295",
     "gasPrice": "256120041",
     "totalGasCost": "157589380627095",
-    "profitUSD": 1.0674484423047517,
+    "profitUSD": 0.5228991949473544,
     "breakdown": {
       "collateralUSD": 15.110226789416162,
       "debtUSD": 14.04277834711141,
@@ -70980,7 +71420,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "0.5228991949473544",
+    "_fixed": true
   },
   {
     "txHash": "0xf353e2474996e87435a1995bcdad9dc46d7d42fc41edf9386b24ce2d09fddf89",
@@ -70996,7 +71438,7 @@
     "gasUsed": "739449",
     "gasPrice": "41377258",
     "totalGasCost": "30596372050842",
-    "profitUSD": 117.92471685984833,
+    "profitUSD": 101.70499148047415,
     "breakdown": {
       "collateralUSD": 1625.897140227333,
       "debtUSD": 1507.9724233674847,
@@ -71006,7 +71448,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "101.70499148047415",
+    "_fixed": true
   },
   {
     "txHash": "0x59e86adeee4223437bfb1a7f243438a0ba330c5ef8397bc36c24bf5f75af2c79",
@@ -71022,7 +71466,7 @@
     "gasUsed": "907280",
     "gasPrice": "126081536",
     "totalGasCost": "114391255982080",
-    "profitUSD": 163.10539511469506,
+    "profitUSD": 136.67178437338706,
     "breakdown": {
       "collateralUSD": 2192.4762796446507,
       "debtUSD": 2029.3708845299557,
@@ -71032,7 +71476,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "136.67178437338706",
+    "_fixed": true
   },
   {
     "txHash": "0xbe6595be1ec83b664c333103f6ca6105e25a5d18df78b6a8426b9af230a643c5",
@@ -71048,7 +71494,7 @@
     "gasUsed": "1102448",
     "gasPrice": "124081679",
     "totalGasCost": "136793598850192",
-    "profitUSD": 139.33263382309838,
+    "profitUSD": 116.64537193513178,
     "breakdown": {
       "collateralUSD": 1872.935839309334,
       "debtUSD": 1733.6032054862355,
@@ -71058,7 +71504,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "116.64537193513178",
+    "_fixed": true
   },
   {
     "txHash": "0x0263da0a57acb35cda6b59524463e03dd62e9a0713efcb0a8ae9d57c995b060d",
@@ -71074,7 +71522,7 @@
     "gasUsed": "841220",
     "gasPrice": "124081679",
     "totalGasCost": "104379990008380",
-    "profitUSD": 163.04957530396769,
+    "profitUSD": 136.6520545354673,
     "breakdown": {
       "collateralUSD": 2191.7308176274014,
       "debtUSD": 2028.6812423234337,
@@ -71084,7 +71532,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2707.31332
-    }
+    },
+    "estimatedProfit": "136.6520545354673",
+    "_fixed": true
   },
   {
     "txHash": "0xd05d845d06361b91914cec308c69c66236eb0d20095d52d2a5d0cacf3f7c323b",
@@ -71100,7 +71550,7 @@
     "gasUsed": "1161097",
     "gasPrice": "108133338",
     "totalGasCost": "125553294351786",
-    "profitUSD": 62.91926400327577,
+    "profitUSD": 52.500976291693675,
     "breakdown": {
       "collateralUSD": 845.7666429287838,
       "debtUSD": 782.847378925508,
@@ -71110,7 +71560,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "52.500976291693675",
+    "_fixed": true
   },
   {
     "txHash": "0x5fa69ed38d0c9250d4518fa2103be5af9bf9dc6ffd9e38a7d977d3e631c56c82",
@@ -71126,7 +71578,7 @@
     "gasUsed": "560858",
     "gasPrice": "254391761",
     "totalGasCost": "142677654290938",
-    "profitUSD": 2.013318561066704,
+    "profitUSD": 1.303019911021819,
     "breakdown": {
       "collateralUSD": 27.070567662852852,
       "debtUSD": 25.057249101786148,
@@ -71136,7 +71588,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "1.303019911021819",
+    "_fixed": true
   },
   {
     "txHash": "0x879dadf01114098442afea1629e31b695f37b54e878f60728e6412517f831a6e",
@@ -71152,7 +71606,7 @@
     "gasUsed": "857467",
     "gasPrice": "839871323",
     "totalGasCost": "720161943718841",
-    "profitUSD": 9.405877231224451,
+    "profitUSD": 5.950589417728414,
     "breakdown": {
       "collateralUSD": 126.44024270471984,
       "debtUSD": 117.03436547349538,
@@ -71162,7 +71616,9 @@
       "collateralPrice": 82371.49361871,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "5.950589417728414",
+    "_fixed": true
   },
   {
     "txHash": "0xec2dc80698025fdb80e0f083cb29c2acde36f0d8eb9deeaa5ea9b158b3cd36e4",
@@ -71178,7 +71634,7 @@
     "gasUsed": "688973",
     "gasPrice": "562988294",
     "totalGasCost": "387883733882062",
-    "profitUSD": 0.14307170664486346,
+    "profitUSD": -0.8923932126414666,
     "breakdown": {
       "collateralUSD": 3.6372220964803037,
       "debtUSD": 3.4941503898354402,
@@ -71188,7 +71644,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "-0.8923932126414666",
+    "_fixed": true
   },
   {
     "txHash": "0xcfda274eb624209b6726da275de67265043e0343b32b4272f3cb9309fcd9c3b2",
@@ -71204,7 +71662,7 @@
     "gasUsed": "703453",
     "gasPrice": "1211374579",
     "totalGasCost": "852145081721287",
-    "profitUSD": 0.15136734284183007,
+    "profitUSD": -2.1474237637511013,
     "breakdown": {
       "collateralUSD": 3.51508162943863,
       "debtUSD": 3.3637142865968,
@@ -71214,7 +71672,9 @@
       "collateralPrice": 0.99972487,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "-2.1474237637511013",
+    "_fixed": true
   },
   {
     "txHash": "0x82346c8285b7b151c0e69e9ab1615a0ba326396ee31d408ffb7e549817139367",
@@ -71230,7 +71690,7 @@
     "gasUsed": "598292",
     "gasPrice": "17095077",
     "totalGasCost": "10227847808484",
-    "profitUSD": 0.03421711557136109,
+    "profitUSD": 0.016186368745642908,
     "breakdown": {
       "collateralUSD": 1.012505884908821,
       "debtUSD": 0.97828876933746,
@@ -71240,7 +71700,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "0.016186368745642908",
+    "_fixed": true
   },
   {
     "txHash": "0x193b59945437dc5cf76d80ddfe9120baaec4f2258843f633914c7fc6a7e90852",
@@ -71256,7 +71718,7 @@
     "gasUsed": "599171",
     "gasPrice": "13940985",
     "totalGasCost": "8353033923435",
-    "profitUSD": 0.026677692926125873,
+    "profitUSD": 0.013267082730238217,
     "breakdown": {
       "collateralUSD": 0.8275162975634558,
       "debtUSD": 0.8008386046373299,
@@ -71266,7 +71728,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "0.013267082730238217",
+    "_fixed": true
   },
   {
     "txHash": "0x7040514d8d06aa91c0894409d1adf142e83daca18781436ea820ba13466562d8",
@@ -71282,7 +71746,7 @@
     "gasUsed": "616077",
     "gasPrice": "109035063",
     "totalGasCost": "67173994507851",
-    "profitUSD": 0.000009357555917183068,
+    "profitUSD": -0.1841581749020456,
     "breakdown": {
       "collateralUSD": 0.00016195542894,
       "debtUSD": 0.00015259787302281694,
@@ -71292,7 +71756,9 @@
       "collateralPrice": 0.99972487,
       "debtPrice": 3303.99113176,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "-0.1841581749020456",
+    "_fixed": true
   },
   {
     "txHash": "0xaa4dcb0a9db39f899858af6d3983c7fd158936faa850c649faeec6880440b8f3",
@@ -71308,7 +71774,7 @@
     "gasUsed": "429928",
     "gasPrice": "109035063",
     "totalGasCost": "46877226565464",
-    "profitUSD": 0.0002759628881183508,
+    "profitUSD": -0.1282384219448066,
     "breakdown": {
       "collateralUSD": 0.006408471513005627,
       "debtUSD": 0.0061325086248872765,
@@ -71318,7 +71784,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 2695.54467,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "-0.1282384219448066",
+    "_fixed": true
   },
   {
     "txHash": "0x516a6b8a61837ccd60e1ebd6f030b9e794fc5bf514a8cdb5198cd1e7618a1c4e",
@@ -71334,7 +71802,7 @@
     "gasUsed": "792109",
     "gasPrice": "578909915",
     "totalGasCost": "458559753860735",
-    "profitUSD": 1.3553311940173245,
+    "profitUSD": 0.48500683421126056,
     "breakdown": {
       "collateralUSD": 39.861541064907414,
       "debtUSD": 38.50620987089009,
@@ -71344,7 +71812,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "0.48500683421126056",
+    "_fixed": true
   },
   {
     "txHash": "0x2d6051193442f6416ab212d813c9091412037196805fc07950064a6bc0dfe2a0",
@@ -71360,7 +71830,7 @@
     "gasUsed": "397575",
     "gasPrice": "36716512",
     "totalGasCost": "14597567258400",
-    "profitUSD": 0.00006908222878643342,
+    "profitUSD": -0.0394433494247548,
     "breakdown": {
       "collateralUSD": 0.0017766123067464335,
       "debtUSD": 0.00170753007796,
@@ -71370,7 +71840,9 @@
       "collateralPrice": 2695.54467,
       "debtPrice": 0.99972487,
       "ethPrice": 2695.54467
-    }
+    },
+    "estimatedProfit": "-0.0394433494247548",
+    "_fixed": true
   },
   {
     "txHash": "0x9c07d5916b6420ca7e62e47ba8964d1fd8dcfdf094452ad8b2fec3ff44a356ae",
@@ -71386,7 +71858,7 @@
     "gasUsed": "705400",
     "gasPrice": "45902373",
     "totalGasCost": "32379533914200",
-    "profitUSD": 74.78175960518229,
+    "profitUSD": 54.69711150704434,
     "breakdown": {
       "collateralUSD": 1292.2126926519302,
       "debtUSD": 1217.430933046748,
@@ -71396,7 +71868,9 @@
       "collateralPrice": 2737.91469702,
       "debtPrice": 0.99972487,
       "ethPrice": 2737.91469702
-    }
+    },
+    "estimatedProfit": "54.69711150704434",
+    "_fixed": true
   },
   {
     "txHash": "0x4b8924675a9d4ae3e064f6e833c124691fedd302397fc85a42fdfa526c603dbb",
@@ -71412,7 +71886,7 @@
     "gasUsed": "720356",
     "gasPrice": "28438338",
     "totalGasCost": "20485727408328",
-    "profitUSD": 0.21097591660991188,
+    "profitUSD": 0.2651444843102663,
     "breakdown": {
       "collateralUSD": 7.4273241493099125,
       "debtUSD": 7.216348232700001,
@@ -71422,7 +71896,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 83901.27,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "0.2651444843102663",
+    "_fixed": true
   },
   {
     "txHash": "0x09aea32b18dd1844f70a69acfc84b99347c969017be7f6d1e5ea60719c334d86",
@@ -71438,7 +71914,7 @@
     "gasUsed": "970025",
     "gasPrice": "160479909",
     "totalGasCost": "155669523727725",
-    "profitUSD": 361.0826260107606,
+    "profitUSD": 309.1669882192085,
     "breakdown": {
       "collateralUSD": 7240.3480099748185,
       "debtUSD": 6879.265383964058,
@@ -71448,7 +71924,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "309.1669882192085",
+    "_fixed": true
   },
   {
     "txHash": "0x3a48ee38aeee343d6da3e55ac5d371604d7a97fc1fe9a272e7d18ee12ea39e7e",
@@ -71464,7 +71942,7 @@
     "gasUsed": "1218740",
     "gasPrice": "160479909",
     "totalGasCost": "195583284294660",
-    "profitUSD": 73.15054918231385,
+    "profitUSD": 65.16271738445337,
     "breakdown": {
       "collateralUSD": 1046.2752649838599,
       "debtUSD": 973.124715801546,
@@ -71474,7 +71952,9 @@
       "collateralPrice": 2928.79256004,
       "debtPrice": 1.187703,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "65.16271738445337",
+    "_fixed": true
   },
   {
     "txHash": "0x4da37554c1494856ecc026e2cd0618698920b5ff6f0c545df740f9c4c164ef59",
@@ -71490,7 +71970,7 @@
     "gasUsed": "682381",
     "gasPrice": "236529420",
     "totalGasCost": "161403182149020",
-    "profitUSD": 86.48619921555382,
+    "profitUSD": 67.21534181541485,
     "breakdown": {
       "collateralUSD": 1589.6294750908353,
       "debtUSD": 1503.1432758752815,
@@ -71500,7 +71980,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "67.21534181541485",
+    "_fixed": true
   },
   {
     "txHash": "0xfce777547833638b6dcb3e570c7d1bcd28ec37a0299c98775bf12a7f7a215dfe",
@@ -71516,7 +71998,7 @@
     "gasUsed": "881083",
     "gasPrice": "236529420",
     "totalGasCost": "208402050961860",
-    "profitUSD": 57.613206594481426,
+    "profitUSD": 44.507249678502596,
     "breakdown": {
       "collateralUSD": 1058.939486158097,
       "debtUSD": 1001.3262795636156,
@@ -71526,7 +72008,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "44.507249678502596",
+    "_fixed": true
   },
   {
     "txHash": "0xca7b9dd34aa0a40e8258a3ba25a0cdd300b3b989bd37567d6cb5cf46fb955498",
@@ -71542,7 +72026,7 @@
     "gasUsed": "1056927",
     "gasPrice": "97419972",
     "totalGasCost": "102965798746044",
-    "profitUSD": 2659.0590763801447,
+    "profitUSD": 2154.382816592572,
     "breakdown": {
       "collateralUSD": 42557.990264762135,
       "debtUSD": 39898.93118838199,
@@ -71552,7 +72036,9 @@
       "collateralPrice": 3302.22826015,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "2154.382816592572",
+    "_fixed": true
   },
   {
     "txHash": "0x6a9d698030fdc79563d03f8919c2e6ac86cabf2d68fac7e1daa5d67551b6fb3b",
@@ -71568,7 +72054,7 @@
     "gasUsed": "729891",
     "gasPrice": "105138684",
     "totalGasCost": "76739779203444",
-    "profitUSD": 65.06396926502975,
+    "profitUSD": 47.8168884670189,
     "breakdown": {
       "collateralUSD": 1132.130106372095,
       "debtUSD": 1067.0661371070653,
@@ -71578,7 +72064,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "47.8168884670189",
+    "_fixed": true
   },
   {
     "txHash": "0x3f8e253cc9316aac2943dcd910e955f382d2a74cdaf39527790ced571786331f",
@@ -71594,7 +72082,7 @@
     "gasUsed": "722330",
     "gasPrice": "105138684",
     "totalGasCost": "75944825613720",
-    "profitUSD": 585.6392861275508,
+    "profitUSD": 432.030163093074,
     "breakdown": {
       "collateralUSD": 10190.276965712555,
       "debtUSD": 9604.637679585005,
@@ -71604,7 +72092,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "432.030163093074",
+    "_fixed": true
   },
   {
     "txHash": "0xf72500ab6c2fcdc6eafb40c7e7e58609cbe970341cc010355ad33ee30a6fd9b2",
@@ -71620,7 +72110,7 @@
     "gasUsed": "923599",
     "gasPrice": "105138683",
     "totalGasCost": "97105982480117",
-    "profitUSD": 357.9754004718325,
+    "profitUSD": 263.9464356604725,
     "breakdown": {
       "collateralUSD": 6228.865726957639,
       "debtUSD": 5870.890326485806,
@@ -71630,7 +72120,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "263.9464356604725",
+    "_fixed": true
   },
   {
     "txHash": "0x04ac5ef902ef0273aca5bd66484fc95baa5fef58903904bbd099f667855c139a",
@@ -71646,7 +72138,7 @@
     "gasUsed": "606934",
     "gasPrice": "178937670",
     "totalGasCost": "108603355803780",
-    "profitUSD": 0.6130458100010685,
+    "profitUSD": 0.16426015994821858,
     "breakdown": {
       "collateralUSD": 10.667157659262449,
       "debtUSD": 10.05411184926138,
@@ -71656,7 +72148,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "0.16426015994821858",
+    "_fixed": true
   },
   {
     "txHash": "0x1ad9cf576fb43ba5969df1c9cf2232cbd284ea8646b2676cbe7da98e5a22a670",
@@ -71672,7 +72166,7 @@
     "gasUsed": "1129951",
     "gasPrice": "134415392",
     "totalGasCost": "151882806605792",
-    "profitUSD": 3657.1361744799215,
+    "profitUSD": 2700.86688161307,
     "breakdown": {
       "collateralUSD": 53677.97055788039,
       "debtUSD": 50020.83438340047,
@@ -71682,7 +72176,9 @@
       "collateralPrice": 3302.22826015,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "2700.86688161307",
+    "_fixed": true
   },
   {
     "txHash": "0x4c94d77e639e942b61064154cfc61232176cf1b7fd753cab8cf0414c198c5ffb",
@@ -71698,7 +72194,7 @@
     "gasUsed": "895972",
     "gasPrice": "134415392",
     "totalGasCost": "120432427601024",
-    "profitUSD": 479.71833581087503,
+    "profitUSD": 337.26990400115704,
     "breakdown": {
       "collateralUSD": 7981.2880124997,
       "debtUSD": 7501.569676688825,
@@ -71708,7 +72204,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "337.26990400115704",
+    "_fixed": true
   },
   {
     "txHash": "0x99b110ec64f6682faad9a5627d184dba969fc80e624c747bb973e1ce4c42d6d1",
@@ -71724,7 +72222,7 @@
     "gasUsed": "812333",
     "gasPrice": "170796608",
     "totalGasCost": "138743720966464",
-    "profitUSD": 7.599060475452134,
+    "profitUSD": 4.984931336927778,
     "breakdown": {
       "collateralUSD": 126.5342599380459,
       "debtUSD": 118.93519946259377,
@@ -71734,7 +72232,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 1,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "4.984931336927778",
+    "_fixed": true
   },
   {
     "txHash": "0x53358e10902c9be385967e4fd3edb015c6e0bf189159b5d7051d175445a3b0c1",
@@ -71750,7 +72250,7 @@
     "gasUsed": "681639",
     "gasPrice": "161715743",
     "totalGasCost": "110231757342777",
-    "profitUSD": 104.9516716129474,
+    "profitUSD": 69.75102722745522,
     "breakdown": {
       "collateralUSD": 1661.352794596175,
       "debtUSD": 1556.4011229832277,
@@ -71760,7 +72260,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "69.75102722745522",
+    "_fixed": true
   },
   {
     "txHash": "0x078bebfa9cdc90cdb39a47dc3379cfc275599aa77b2ba730f002a947bb6aa8c1",
@@ -71776,7 +72278,7 @@
     "gasUsed": "1109934",
     "gasPrice": "160603239",
     "totalGasCost": "178258995476226",
-    "profitUSD": 317.1270941318362,
+    "profitUSD": 211.1714735993702,
     "breakdown": {
       "collateralUSD": 5020.024702618401,
       "debtUSD": 4702.897608486564,
@@ -71786,7 +72288,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "211.1714735993702",
+    "_fixed": true
   },
   {
     "txHash": "0x147095d570739ea8f5d09c550d25f4bc0b9942a87e480a79194b00923d716ada",
@@ -71802,7 +72306,7 @@
     "gasUsed": "859604",
     "gasPrice": "161369149",
     "totalGasCost": "138713565956996",
-    "profitUSD": 176.70477747112955,
+    "profitUSD": 117.56189655944085,
     "breakdown": {
       "collateralUSD": 2797.1824684490325,
       "debtUSD": 2620.477690977903,
@@ -71812,7 +72316,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "117.56189655944085",
+    "_fixed": true
   },
   {
     "txHash": "0xeb079634e643fc2f18642a8efb1a57d16a47cf2d4a93cb26ca01cbbdfc0ab18e",
@@ -71828,7 +72334,7 @@
     "gasUsed": "952714",
     "gasPrice": "161660965",
     "totalGasCost": "154016664609010",
-    "profitUSD": 98.79202168012739,
+    "profitUSD": 65.52476267562164,
     "breakdown": {
       "collateralUSD": 1563.8474240541593,
       "debtUSD": 1465.055402374032,
@@ -71838,7 +72344,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "65.52476267562164",
+    "_fixed": true
   },
   {
     "txHash": "0x812f58a5be136478c6a9411b182cf4cf84b4ba22b6bb0339d283d64cb2e0d8c3",
@@ -71854,7 +72362,7 @@
     "gasUsed": "763494",
     "gasPrice": "858843448",
     "totalGasCost": "655721819487312",
-    "profitUSD": 9.398509163934193,
+    "profitUSD": 4.542747909484224,
     "breakdown": {
       "collateralUSD": 148.7755194802785,
       "debtUSD": 139.3770103163443,
@@ -71864,7 +72372,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 0.99967167,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "4.542747909484224",
+    "_fixed": true
   },
   {
     "txHash": "0x3a348a3505f6714f4f9cc8ace58527d9b74f5664ccce93920b236667b5bb9d07",
@@ -71880,7 +72390,7 @@
     "gasUsed": "1364831",
     "gasPrice": "565279852",
     "totalGasCost": "771511465685012",
-    "profitUSD": 34.423430800072595,
+    "profitUSD": 20.95640750152991,
     "breakdown": {
       "collateralUSD": 545.342742841871,
       "debtUSD": 510.9193120417984,
@@ -71890,7 +72400,9 @@
       "collateralPrice": 2694.10644,
       "debtPrice": 1,
       "ethPrice": 2694.10644
-    }
+    },
+    "estimatedProfit": "20.95640750152991",
+    "_fixed": true
   },
   {
     "txHash": "0x54efbea2f9863347eeda8a6fb554bc356972854aa4408c36b948bad15268be30",
