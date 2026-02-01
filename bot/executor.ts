@@ -210,7 +210,13 @@ export async function findBestLiquidationPair(user: string): Promise<{
             }
         }
 
-        if (!maxCollateral.address || !maxDebt.address) return null;
+        if (!maxCollateral.address || !maxDebt.address) {
+            console.log(`   ❌ FIND PAIR FAILED: ${user.slice(0, 8)}`);
+            console.log(`      Tokens Scanned: ${tokens.length}`);
+            console.log(`      Max Collateral: $${maxCollateral.valueUSD.toFixed(2)} (${maxCollateral.address})`);
+            console.log(`      Max Debt:       $${maxDebt.valueUSD.toFixed(2)} (${maxDebt.address})`);
+            return null;
+        }
 
         console.log(`   🔎 Found best pair for ${user.slice(0, 8)}: Collateral ${maxCollateral.address.slice(0, 6)} ($${maxCollateral.valueUSD.toFixed(2)}) / Debt ${maxDebt.address.slice(0, 6)} ($${maxDebt.valueUSD.toFixed(2)})`);
 

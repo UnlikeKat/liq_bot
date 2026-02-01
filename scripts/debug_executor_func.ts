@@ -5,7 +5,8 @@ config();
 
 async function main() {
     // User from Forensic Report (Jan 31, $440 profit)
-    const TARGET_USER = '0xa7b0536fb02c422b209868d18447833c6980db18';
+    // User from active_users.json (First entry)
+    const TARGET_USER = '0xc4c00d8b323f37527eeda27c87412378be9f68ec';
 
     console.log(`🕵️‍♂️ Testing Asset Discovery for ${TARGET_USER}...`);
 
