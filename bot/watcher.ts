@@ -60,6 +60,23 @@ export function startBatcher() {
 
 // And call startBatcher() inside startWatcher() logic or export it.
 
+const AAVE_ORACLE_ABI = [
+    {
+        type: 'function',
+        name: 'getAssetPrice',
+        inputs: [{ name: 'asset', type: 'address' }],
+        outputs: [{ name: 'price', type: 'uint256' }],
+        stateMutability: 'view'
+    },
+    {
+        type: 'function',
+        name: 'getAssetsPrices',
+        inputs: [{ name: 'assets', type: 'address[]' }],
+        outputs: [{ name: 'prices', type: 'uint256[]' }],
+        stateMutability: 'view'
+    }
+] as const;
+
 
 const AAVE_POOL_ABI = [
     {
@@ -354,18 +371,39 @@ export async function startWatcher() {
                     const debtToCoverNum = Number(formatUnits(args.debtToCover, debtDecimals));
                     const gasCostETH = Number(formatUnits(BigInt(totalGasCost), 18));
 
-                    // Simple Profit Estimate: Collateral Value - Debt Value - Gas Cost
-                    // Note: This assumes 1:1 price for simplicity in logs, but precise calculation would need Oracle prices.
-                    // However, avoiding $60B errors comes from using correct decimals.
-                    const profitUSD = (liquidatedCollateralNum * CONFIG.PRICES.WETH) - (debtToCoverNum * 1) - (gasCostETH * CONFIG.PRICES.WETH);
-                    // ^ This is a rough heuristic. Ideally fetch oracle price for collateral if not WETH.
-                    // For now, primary fix is Decimals. Assuming WETH collateral roughly.
-                    // Better: Just report "Profit in ETH terms" or keep USD but fixed decimals.
+                    // 🔍 ORACLE INTEGRATION: Time-Travel Pricing
+                    // Fetch EXACT prices at the moment of liquidation (Historical Block)
+                    const wethAddr = CONFIG.TOKENS.WETH as `0x${string}`;
+                    const assetsToFetch = [collateralAddr, debtAddr, wethAddr];
 
-                    // Revised: Use Oracle price if possible, or just raw difference if stable-stable. 
-                    // Let's stick to the user's issue: The numbers were massive because of 8 vs 18 decimals.
-                    // Using correct decimals will fix the magnitude.
-                    const estimatedProfitUSD = (liquidatedCollateralNum * (args.collateralAsset === CONFIG.TOKENS.USDC ? 1 : 3000)) - (debtToCoverNum * (args.debtAsset === CONFIG.TOKENS.USDC ? 1 : 3000)) - (gasCostETH * 3000);
+                    // Use multicall for efficiency (3 calls in 1)
+                    // Note: getAssetsPrices is safer if available, but getAssetPrice is standard v3
+                    // We'll use individual calls via multicall to be safe with standard ABI
+                    const priceResults = await publicClient.multicall({
+                        contracts: assetsToFetch.map(asset => ({
+                            address: CONFIG.AAVE_ORACLE as `0x${string}`,
+                            abi: AAVE_ORACLE_ABI,
+                            functionName: 'getAssetPrice',
+                            args: [asset],
+                        })),
+                        blockNumber: log.blockNumber // 🕰️ TIME TRAVEL
+                    });
+
+                    // Extract Prices (Base Currency usually USD 8 decimals on Aave v3)
+                    const collateralPrice = priceResults[0].status === 'success' ? Number(formatUnits(priceResults[0].result as bigint, 8)) : 0;
+                    const debtPrice = priceResults[1].status === 'success' ? Number(formatUnits(priceResults[1].result as bigint, 8)) : 0;
+                    const wethPrice = priceResults[2].status === 'success' ? Number(formatUnits(priceResults[2].result as bigint, 8)) : 0;
+
+                    if (collateralPrice === 0 || debtPrice === 0) {
+                        console.warn(`⚠️ Oracle failed to fetch prices for ${args.collateralAsset} / ${args.debtAsset}`);
+                    }
+
+                    // 🧮 PRECISE CALCULATION
+                    const collatValueUSD = liquidatedCollateralNum * collateralPrice;
+                    const debtValueUSD = debtToCoverNum * debtPrice;
+                    const gasCostUSD = gasCostETH * wethPrice;
+
+                    const estimatedProfitUSD = collatValueUSD - debtValueUSD - gasCostUSD;
 
                     const record = {
                         txHash: log.transactionHash,
