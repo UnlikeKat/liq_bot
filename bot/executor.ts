@@ -366,7 +366,10 @@ export async function executeLiquidation(target: LiquidationTarget): Promise<boo
             gasPrice: adjustedGasPrice,
         });
 
+        // 🚀 UI FEEDBACK: Show Link IMMEDIATELY
         console.log(`   Transaction hash: ${hash}`);
+        dashboard.logSniper(true, `🚀 SENT FORCE TX | Target: ${target.user.slice(0, 8)} | Tx: ${hash}`);
+
         console.log('   ⏳ Waiting for confirmation (Premium)...\n');
 
         const receipt = await premiumClient.waitForTransactionReceipt({ hash });
@@ -590,6 +593,7 @@ export async function checkAndExecute(position: UserPosition, force: boolean = f
     const target = await analyzeLiquidation(position);
 
     if (!target) {
+        if (force) dashboard.logSniper(false, `❌ FORCE FAILED: No assets found for ${position.address.slice(0, 8)}`);
         return;
     }
 
