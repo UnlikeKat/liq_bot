@@ -122,6 +122,11 @@ export async function initializeLiquidationHistory(): Promise<LiquidationRecord[
     // Load existing history
     const history = await loadHistory();
 
+    // 🚀 UX OPTIMIZATION: Broadcast immediately so UI doesn't hang
+    if (history.length > 0) {
+        bridge.broadcast('LIQUIDATION_HISTORY', history);
+    }
+
     if (history.length === 0) {
         console.log('📭 No existing history found, fetching initial 90 days...');
         bridge.broadcast('PROGRESS', {
