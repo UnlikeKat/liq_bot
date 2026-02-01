@@ -488,12 +488,18 @@ export default function App({ socketState }: { socketState?: any }) {
               </div>
               <div className="flex-1 overflow-y-auto p-2 font-mono text-[10px] space-y-1 custom-scrollbar">
                 <AnimatePresence initial={false}>
-                  {state.sniperLogs.filter((l: any) => l.message.toLowerCase().includes('batch')).length === 0 && (
-                    <div className="flex items-center justify-center h-full text-zinc-700 uppercase font-black tracking-widest italic text-[9px]">
-                      Waiting for Batch Ops...
-                    </div>
-                  )}
-                  {state.sniperLogs.filter((l: any) => l.message.toLowerCase().includes('batch')).map((log: any, i: number) => {
+                  {state.sniperLogs.filter((l: any) => {
+                    const msg = l.message.toLowerCase();
+                    return msg.includes('batch') || msg.includes('force') || msg.includes('tx') || msg.includes('sent');
+                  }).length === 0 && (
+                      <div className="flex items-center justify-center h-full text-zinc-700 uppercase font-black tracking-widest italic text-[9px]">
+                        Waiting for Batch Ops...
+                      </div>
+                    )}
+                  {state.sniperLogs.filter((l: any) => {
+                    const msg = l.message.toLowerCase();
+                    return msg.includes('batch') || msg.includes('force') || msg.includes('tx') || msg.includes('sent');
+                  }).map((log: any, i: number) => {
                     const txHash = log.message.match(/0x[a-fA-F0-9]{64}/)?.[0];
                     return (
                       <motion.div

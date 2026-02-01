@@ -325,19 +325,23 @@ export async function executeLiquidation(target: LiquidationTarget, force: boole
 
     dashboard.logSniper(true, `🎯 TARGETING: ${target.user.slice(0, 8)} | Debt: ${Number(formatUnits(target.debtToCover, 6)).toFixed(4)} ${debtLabel} | Src: ${target.flashSource?.source}`);
 
+    dashboard.logSniper(true, `🎯 TARGETING: ${target.user.slice(0, 8)} | Debt: ${Number(formatUnits(target.debtToCover, 6)).toFixed(4)} ${debtLabel} | Src: ${target.flashSource?.source}`);
+
     try {
         // ⛽ GAS STRATEGY
-        // - Normal: Fixed low gas (0.0005) for dust efficiency
-        // - Force: Boosted gas to ensure it lands (0.1 Gwei)
-        const baseGas = parseUnits((CONFIG.BOT as any).FIXED_GAS_PRICE_GWEI.toString(), 9);
-        const fixedGasPrice = force ? parseUnits('0.1', 9) : baseGas;
+        let adjustedGasPrice = parseUnits((CONFIG.BOT as any).FIXED_GAS_PRICE_GWEI.toString(), 9);
 
-        // 🔥 Dynamic Gas Strategy (Updated by Background Monitor)
+        // Dynamic Gas Check (Background Monitor)
         const dynamicPrice = (CONFIG.BOT as any).DYNAMIC_GAS_PRICE || 0n;
-        const adjustedGasPrice = dynamicPrice > 0n ? dynamicPrice : fixedGasPrice;
 
-        if (dynamicPrice > 0n) {
-            console.log(`   ⛽ Using Dynamic Gas: ${Number(formatUnits(dynamicPrice, 9)).toFixed(4)} Gwei`);
+        if (force) {
+            // 💪 MSG: User wants "Dynamic Gas" immediately
+            const currentGas = await premiumClient.getGasPrice();
+            adjustedGasPrice = (currentGas * 150n) / 100n; // 1.5x Multiplier
+            console.log(`   ⛽ FORCE GAS: Using Real-Time Network Price: ${Number(formatUnits(adjustedGasPrice, 9)).toFixed(4)} Gwei`);
+        } else if (dynamicPrice > 0n) {
+            adjustedGasPrice = dynamicPrice;
+            console.log(`   ⛽ Using Dynamic Gas (Monitor): ${Number(formatUnits(dynamicPrice, 9)).toFixed(4)} Gwei`);
         }
 
         const source = target.flashSource?.source || 0;
