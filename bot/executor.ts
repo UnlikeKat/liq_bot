@@ -326,7 +326,14 @@ export async function executeLiquidation(target: LiquidationTarget): Promise<boo
 
     try {
         const fixedGasPrice = parseUnits((CONFIG.BOT as any).FIXED_GAS_PRICE_GWEI.toString(), 9);
-        const adjustedGasPrice = fixedGasPrice;
+
+        // 🔥 Dynamic Gas Strategy (Updated by Background Monitor)
+        const dynamicPrice = (CONFIG.BOT as any).DYNAMIC_GAS_PRICE || 0n;
+        const adjustedGasPrice = dynamicPrice > 0n ? dynamicPrice : fixedGasPrice;
+
+        if (dynamicPrice > 0n) {
+            console.log(`   ⛽ Using Dynamic Gas: ${Number(formatUnits(dynamicPrice, 9)).toFixed(4)} Gwei`);
+        }
 
         const source = target.flashSource?.source || 0;
         const pool = target.flashSource?.pool || '0x0000000000000000000000000000000000000000';
@@ -526,7 +533,7 @@ async function processBatch(debtAsset: string) {
         if (state) {
             state.blocked = true;
             state.executing = false; // UNLOCK
-            state.lastSize = queue.length;
+            state.lastSize = queue.length; // Record size to check for increase later
             console.log(`   ⏳ Batch Logic: Paused until new position added (Current: ${queue.length})`);
         }
     }

@@ -29,14 +29,18 @@ export const CONFIG = {
         LIQUIDATION_THRESHOLD: 1.0, // Execute when HF < 1.0
 
         // Gas strategy
-        GAS_MULTIPLIER: 1.05, // Conservative multiplier
+        // Gas strategy
+        GAS_MULTIPLIER: 150n, // 150% (1.5x) of Base Fee
         FIXED_GAS_PRICE_GWEI: 0.0005, // Base ultra-aggressive floor for tiny profit
+        DYNAMIC_GAS_PRICE: 0n, // Updated by Gas Monitor [New]
+        MAX_GAS_PRICE_GWEI: 500n, // Cap to prevent draining ETH
 
         // Discovery interval (milliseconds)
         DISCOVERY_INTERVAL: 30 * 60 * 1000, // 30 minutes
 
         // Minimum profit threshold (in USD)
         MIN_PROFIT_USD: 0.1, // $0.10 threshold for noise reduction
+        MIN_PROFITABLE_DEBT_USD: 20, // $20.00 Minimum Debt to avoid dust/unprofitable gas wars
 
         // Max liquidation percentage (Aave allows 50%)
         MAX_LIQUIDATION_PERCENT: 0.5,

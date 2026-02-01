@@ -1,0 +1,41 @@
+
+/**
+ * ⛽ GAS MONITOR: Updates Dynamic Gas Price every 3s
+ * Ensures we are always paying slightly above market to clear instantly.
+ */
+export async function startGasMonitor() {
+    console.log('⛽ Starting Gas Monitor (Every 3s)...');
+    
+    const updateGas = async () => {
+        try {
+            const block = await publicClient.getBlock();
+            const baseFee = block.baseFeePerGas;
+
+            if (baseFee) {
+                // Strategy: BaseFee * 1.5 (Aggressive buffer for volatility)
+                // This ensures we are virtually immune to "pending stuck" unless block fills 100% instantly
+                const aggressiveFee = (baseFee * 150n) / 100n; // 1.5x
+                
+                // Safety Cap: Don't pay more than 500 Gwei (Sanity check)
+                const MAX_CAP = 500_000_000_000n; 
+                
+                if (aggressiveFee > MAX_CAP) {
+                    CONFIG.BOT.DYNAMIC_GAS_PRICE = MAX_CAP;
+                    // console.warn('⚠️ Gas Cap Hit!');
+                } else {
+                    CONFIG.BOT.DYNAMIC_GAS_PRICE = aggressiveFee;
+                }
+                
+                // console.log(`⛽ Gas Updated: ${(Number(aggressiveFee) / 1e9).toFixed(4)} Gwei (Base: ${(Number(baseFee)/1e9).toFixed(4)})`);
+            }
+        } catch (e) {
+            console.error('Gas Monitor Failed:', e);
+        }
+    };
+
+    // Initial Run
+    await updateGas();
+
+    // Loop
+    setInterval(updateGas, 3000);
+}

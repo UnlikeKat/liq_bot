@@ -42,24 +42,6 @@ export function startBatcher() {
     }, 1000);
 }
 
-// ... (Modify checkAndExecute calls below)
-
-// In batchUpdateHealthFactorsGeneric (Around line 199)
-// if (hf < CONFIG.BOT.LIQUIDATION_THRESHOLD && hf > 0) {
-//     dashboard.logEvent(`🚨 OPPORTUNITY: ${addr.slice(0, 8)} (HF: ${hf.toFixed(4)})`, 'Market');
-//     // checkAndExecute(position)... REPLACE WITH:
-//     liquidationQueue.push(position);
-// }
-
-// In updateHealthFactorCache (Around line 239)
-// if (hf < CONFIG.BOT.LIQUIDATION_THRESHOLD && hf > 0) {
-//     dashboard.logEvent(`🚨 OPPORTUNITY: ${userAddress.slice(0, 8)} (HF: ${hf.toFixed(4)})`, 'Market');
-//     // checkAndExecute(position)... REPLACE WITH:
-//     liquidationQueue.push(position);
-// }
-
-// And call startBatcher() inside startWatcher() logic or export it.
-
 const AAVE_ORACLE_ABI = [
     {
         type: 'function',
@@ -162,12 +144,12 @@ export async function batchUpdateHealthFactorsBasic(addresses: string[], categor
                     const addr = batch[index].toLowerCase();
 
                     // Skip users with no debt or debt below minimum threshold
-                    const debtUSD = Number(formatUnits(totalDebtBase, 8)); // Debt in 8 decimals
-                    if (debtUSD < MIN_DEBT_USD) return;
+
 
                     // Skip zombie positions: no collateral = no profit opportunity
-                    const collateralUSD = Number(formatUnits(totalCollateralBase, 8));
-                    if (collateralUSD < MIN_DEBT_USD) return;
+                    // Skip dust positions: debt < $20 is rarely profitable
+                    const debtUSD = Number(formatUnits(totalDebtBase, 8));
+                    if (debtUSD < (CONFIG.BOT as any).MIN_PROFITABLE_DEBT_USD) return;
 
                     const position: UserPosition = {
                         address: addr,
@@ -213,7 +195,6 @@ export async function batchUpdateHealthFactorsBasic(addresses: string[], categor
 async function batchUpdateHealthFactorsGeneric(addresses: string[], client: any, metric: 'PREMIUM' | 'WSS') {
     if (addresses.length === 0) return;
 
-    const MIN_DEBT_USD = 0.000001;
     const toDemote: string[] = [];
 
     // Multicall
@@ -240,7 +221,7 @@ async function batchUpdateHealthFactorsGeneric(addresses: string[], client: any,
                 const collateralUSD = Number(formatUnits(totalCollateralBase, 8));
                 const hf = Number(formatUnits(healthFactor, 18));
 
-                if (debtUSD < MIN_DEBT_USD || collateralUSD < MIN_DEBT_USD) {
+                if (debtUSD < (CONFIG.BOT as any).MIN_PROFITABLE_DEBT_USD) {
                     toDemote.push(addr);
                     healthFactorCache.delete(addr);
                     return;
@@ -279,7 +260,7 @@ async function batchUpdateHealthFactorsGeneric(addresses: string[], client: any,
         toDemote.forEach(addr => {
             killList.delete(addr);
             const debtUSD = Number(formatUnits(healthFactorCache.get(addr)?.totalDebtBase || 0n, 8));
-            if (debtUSD >= MIN_DEBT_USD && !safeUsers.includes(addr)) {
+            if (debtUSD >= (CONFIG.BOT as any).MIN_PROFITABLE_DEBT_USD && !safeUsers.includes(addr)) {
                 safeUsers.push(addr);
             }
         });
@@ -313,6 +294,7 @@ async function updateHealthFactorCache(userAddress: string) {
  */
 export async function startWatcher() {
     const { appendRecords } = await import('./storage/liquidation_history.js');
+    startGasMonitor(); // ⛽ Start Background Gas Monitor
     // startBatcher(); // Re-enabled if needed, but currently executor handles its own queue
     dashboard.logEvent('👀 Watcher: Listening for Aave V3 events...');
 
@@ -324,18 +306,27 @@ export async function startWatcher() {
             const txHash = logs[0]?.transactionHash;
             dashboard.logEvent(`📡 RPC: Detected ${logs.length} Price/Reserve updates`, 'Market');
 
-            // 🚀 OPTIMIZATION: Only update Top 24 candidates on Premium RPC
-            // All other users will be caught by the Background Scanner (WSS) 10s loop.
+            // 🚀 OPTIMIZATION: 3-Tier Strategy (User Configured)
+            // 1. Top 23 -> Alchemy Premium (1s latency, high reliability)
+            // 2. Rank 24-100 -> DRPC WSS (1s latency, lower cost)
+            // 3. Rank 101+ -> Background Scanner (5s latency)
+
             const sortedTargets = Array.from(killList)
                 .map(addr => healthFactorCache.get(addr))
                 .filter(p => p !== undefined)
                 .sort((a, b) => Number(a!.healthFactor) - Number(b!.healthFactor)) as UserPosition[];
 
-            const top24 = sortedTargets.slice(0, 24).map(u => u.address);
+            // Tier 1: Top 23 (Alchemy Limit)
+            const tier1 = sortedTargets.slice(0, 23).map(u => u.address);
+            if (tier1.length > 0) {
+                await batchUpdateHealthFactorsGeneric(tier1, premiumClient, 'PREMIUM');
+            }
 
-            if (top24.length > 0) {
-                // Batch Update (1 Call) instead of Loop (24 Calls)
-                await batchUpdateHealthFactorsGeneric(top24, premiumClient, 'PREMIUM');
+            // Tier 2: Rank 24-100 (DRPC / WSS)
+            const tier2 = sortedTargets.slice(23, 100).map(u => u.address);
+            if (tier2.length > 0) {
+                // Fire and forget / Parallel execution for Tier 2 to not block Tier 1 next tick
+                batchUpdateHealthFactorsGeneric(tier2, wssClient, 'WSS').catch(console.error);
             }
         },
     });
@@ -603,4 +594,45 @@ export async function periodicBasicRefresh() {
 
         dashboard.updateKillList(Array.from(healthFactorCache.values()));
     }, 300000);
+}
+
+/**
+ * ⛽ GAS MONITOR: Updates Dynamic Gas Price every 3s
+ * Ensures we are always paying slightly above market to clear instantly.
+ */
+export async function startGasMonitor() {
+    console.log('⛽ Starting Gas Monitor (Every 3s)...');
+
+    const updateGas = async () => {
+        try {
+            const block = await publicClient.getBlock();
+            const baseFee = block.baseFeePerGas;
+
+            if (baseFee) {
+                // Strategy: BaseFee * Multiplier (Aggressive buffer for volatility)
+                // This ensures we are virtually immune to "pending stuck" unless block fills 100% instantly
+                const aggressiveFee = (baseFee * (CONFIG.BOT as any).GAS_MULTIPLIER) / 100n;
+
+                // Safety Cap
+                const MAX_CAP = (CONFIG.BOT as any).MAX_GAS_PRICE_GWEI * 1_000_000_000n; // Convert Gwei to Wei
+
+                if (aggressiveFee > MAX_CAP) {
+                    CONFIG.BOT.DYNAMIC_GAS_PRICE = MAX_CAP;
+                    // console.warn('⚠️ Gas Cap Hit!');
+                } else {
+                    CONFIG.BOT.DYNAMIC_GAS_PRICE = aggressiveFee;
+                }
+
+                // console.log(`⛽ Gas Updated: ${(Number(aggressiveFee) / 1e9).toFixed(4)} Gwei (Base: ${(Number(baseFee)/1e9).toFixed(4)})`);
+            }
+        } catch (e) {
+            console.error('Gas Monitor Failed:', e);
+        }
+    };
+
+    // Initial Run
+    await updateGas();
+
+    // Loop
+    setInterval(updateGas, 3000);
 }
