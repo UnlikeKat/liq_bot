@@ -9,6 +9,7 @@ interface BotStats {
     premiumRpcCalls?: number;  // Premium RPC tier (Alchemy)
     rpcCalls?: number;         // Legacy - will be removed
     lastPulse: number;
+    lastScanTime?: number;
 }
 
 interface BotState {
@@ -41,7 +42,8 @@ export class BridgeServer {
             failedCount: 0,
             totalProfitUSD: 0,
             rpcCalls: 0,
-            lastPulse: Date.now()
+            lastPulse: Date.now(),
+            lastScanTime: 0
         },
         progress: {}
     };

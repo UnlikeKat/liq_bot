@@ -75,7 +75,7 @@ function AppWithNav() {
       <div className="flex-1 overflow-hidden overflow-y-auto custom-scrollbar pb-16 md:pb-0">
         <Routes>
           <Route path="/" element={<App socketState={{ state, connected, sendCommand }} />} />
-          <Route path="/history" element={<LiquidationHistoryPage history={state.liquidationHistory} progress={state.progress} />} />
+          <Route path="/history" element={<LiquidationHistoryPage history={state.liquidationHistory} progress={state.progress} lastScanTime={state.stats.lastScanTime} />} />
           <Route path="/analytics" element={<AnalyticsPageWrapper state={state} />} />
           <Route path="/analytics/:id" element={<DetailPageWrapper state={state} />} />
         </Routes>

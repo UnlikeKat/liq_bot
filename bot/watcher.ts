@@ -453,8 +453,9 @@ export async function startPriorityScanner() {
         // 3. Take Top 23 (Leaving 2 slots for Execution/Gas checks)
         const top23 = premiumTargets.slice(0, 23).map(u => u.address);
 
-        if (top23.length > 0) {
-            await batchUpdateHealthFactorsGeneric(top23, premiumClient, 'PREMIUM');
+        if (premiumTargets.length > 0) {
+            await batchUpdateHealthFactorsGeneric(premiumTargets.map(t => t.address), premiumClient, 'PREMIUM');
+            bridge.updateStats({ lastScanTime: Date.now() }); // ⏱️ Signal Fresh Scan
         }
     }, 1000); // 1 Second (User Confirmed 25 req/s limit)
 }
@@ -498,6 +499,7 @@ export async function startBackgroundScanner() {
                         batchUpdateHealthFactorsGeneric(batch, wssClient, 'WSS'),
                         timeoutPromise
                     ]);
+                    bridge.updateStats({ lastScanTime: Date.now() }); // ⏱️ Signal Fresh Scan
                 } catch (e: any) {
                     if (e.message === 'WSS Timeout') {
                         console.warn('⚠️ Background Scanner Timeout - Skipping batch');

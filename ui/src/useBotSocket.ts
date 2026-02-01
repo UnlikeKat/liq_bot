@@ -7,7 +7,7 @@ export function useBotSocket() {
         eventLogs: [] as any[],
         liquidationHistory: [] as any[],
         status: { wallet: '0.00', gas: '0', uptime: '0h 0m 0s', network: 'BASE MAINNET', heartbeat: 0 },
-        stats: { totalAttempts: 0, successCount: 0, failedCount: 0, totalProfitUSD: 0, basicRpcCalls: 0, premiumRpcCalls: 0, lastPulse: Date.now() },
+        stats: { totalAttempts: 0, successCount: 0, failedCount: 0, totalProfitUSD: 0, basicRpcCalls: 0, premiumRpcCalls: 0, lastPulse: Date.now(), lastScanTime: 0 },
         progress: {} as Record<string, number>,
         safeUsers: { count: 0, lastUpdate: 0, removed: 0, promoted: 0 }
     });

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, Download, ExternalLink, Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
 import type { LiquidationRecord } from '../../bot/storage/liquidation_history';
@@ -71,9 +71,21 @@ function shortenAddress(addr: string): string {
 interface LiquidationHistoryPageProps {
     history: LiquidationRecord[];
     progress?: Record<string, number>;
+    lastScanTime?: number;
 }
 
-export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHistoryPageProps) {
+function RelativeTime({ timestamp }: { timestamp: number }) {
+    const [now, setNow] = useState(Date.now());
+    useEffect(() => {
+        const interval = setInterval(() => setNow(Date.now()), 1000);
+        return () => clearInterval(interval);
+    }, []);
+    if (!timestamp) return <span>-</span>;
+    const diff = Math.floor((now - timestamp) / 1000);
+    return <span>{diff}s ago</span>;
+}
+
+export function LiquidationHistoryPage({ history, progress = {}, lastScanTime }: LiquidationHistoryPageProps) {
     const [searchTerm, setSearchTerm] = useState('');
     const [dateFilter, setDateFilter] = useState('7'); // 7, 30, 90 days
     const [hideDust, setHideDust] = useState(true); // Default hide dust (< $0.05)
@@ -157,7 +169,14 @@ export function LiquidationHistoryPage({ history, progress = {} }: LiquidationHi
                         <Trophy className="w-8 h-8 text-yellow-500" />
                         <div>
                             <h1 className="text-3xl font-black tracking-tight">90-Day Liquidation History</h1>
-                            <p className="text-sm text-zinc-500">Complete on-chain liquidation analytics</p>
+                            <p className="text-sm text-zinc-500 flex items-center gap-2">
+                                Complete on-chain liquidation analytics
+                                {lastScanTime && (
+                                    <span className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-0.5 rounded font-mono">
+                                        Last Scan: <RelativeTime timestamp={lastScanTime} />
+                                    </span>
+                                )}
+                            </p>
                         </div>
                     </div>
                     <button
