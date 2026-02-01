@@ -132,10 +132,13 @@ const CACHE_DURATION = 60 * 60 * 1000; // 1 hour
  * Dynamically finds the best Collateral/Debt pair for a user
  * Selection is based on USD Value (Balance * Price)
  */
-export async function findBestLiquidationPair(user: string): Promise<{
+// Update signature
+export async function findBestLiquidationPair(user: string, debug: boolean = false): Promise<{
     collateral: string,
     debt: string,
     debtDecimals: number,
+    debtPrice: bigint,
+    collateralDecimals: number,
     debtPrice: bigint,
     collateralDecimals: number,
     collateralPrice: bigint
@@ -211,10 +214,12 @@ export async function findBestLiquidationPair(user: string): Promise<{
         }
 
         if (!maxCollateral.address || !maxDebt.address) {
-            console.log(`   ❌ FIND PAIR FAILED: ${user.slice(0, 8)}`);
-            console.log(`      Tokens Scanned: ${tokens.length}`);
-            console.log(`      Max Collateral: $${maxCollateral.valueUSD.toFixed(2)} (${maxCollateral.address})`);
-            console.log(`      Max Debt:       $${maxDebt.valueUSD.toFixed(2)} (${maxDebt.address})`);
+            if (debug) {
+                dashboard.logSniper(false, `❌ FAILURE DETAILS for ${user.slice(0, 8)}`);
+                dashboard.logSniper(false, `   Tokens Scanned: ${tokens.length}`);
+                dashboard.logSniper(false, `   Max Col: $${maxCollateral.valueUSD.toFixed(2)} (${maxCollateral.address})`);
+                dashboard.logSniper(false, `   Max Debt: $${maxDebt.valueUSD.toFixed(2)} (${maxDebt.address})`);
+            }
             return null;
         }
 
@@ -239,7 +244,8 @@ export async function findBestLiquidationPair(user: string): Promise<{
  * Analyzes a user position to determine the best liquidation strategy
  * In production, this should query user's collateral and debt details
  */
-export async function analyzeLiquidation(position: UserPosition, skipProfitCheck = false): Promise<LiquidationTarget | null> {
+// Update signature
+export async function analyzeLiquidation(position: UserPosition, skipProfitCheck = false, debug: boolean = false): Promise<LiquidationTarget | null> {
     // Simplified: In production, you need to:
     // 1. Get user's collateral assets (via getUserConfiguration + reserve list)
     // 2. Get user's debt assets
@@ -251,7 +257,7 @@ export async function analyzeLiquidation(position: UserPosition, skipProfitCheck
     // const debtAsset = CONFIG.TOKENS.USDC;
 
     // 🔥 DYANMIC ASSET SELECTION
-    const bestPair = await findBestLiquidationPair(position.address);
+    const bestPair = await findBestLiquidationPair(position.address, debug);
     if (!bestPair) {
         console.log(`   ⚠️ Could not identify assets for ${position.address}`);
         return null;
@@ -605,7 +611,8 @@ export async function checkAndExecute(position: UserPosition, force: boolean = f
     }
 
     // Analyze liquidation opportunity
-    const target = await analyzeLiquidation(position);
+    // Pass force as debug flag
+    const target = await analyzeLiquidation(position, false, force);
 
     if (!target) {
         if (force) dashboard.logSniper(false, `❌ FORCE FAILED: No assets found for ${position.address.slice(0, 8)}`);
