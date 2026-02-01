@@ -318,14 +318,19 @@ export async function analyzeLiquidation(position: UserPosition, skipProfitCheck
 /**
  * Executes a liquidation transaction
  */
-export async function executeLiquidation(target: LiquidationTarget): Promise<boolean> {
+// Update signature to match
+export async function executeLiquidation(target: LiquidationTarget, force: boolean = false): Promise<boolean> {
     const debtLabel = target.debtAsset.toLowerCase() === CONFIG.TOKENS.USDC.toLowerCase() ? "USDC" :
         target.debtAsset.toLowerCase() === CONFIG.TOKENS.WETH.toLowerCase() ? "WETH" : "ASSET";
 
     dashboard.logSniper(true, `🎯 TARGETING: ${target.user.slice(0, 8)} | Debt: ${Number(formatUnits(target.debtToCover, 6)).toFixed(4)} ${debtLabel} | Src: ${target.flashSource?.source}`);
 
     try {
-        const fixedGasPrice = parseUnits((CONFIG.BOT as any).FIXED_GAS_PRICE_GWEI.toString(), 9);
+        // ⛽ GAS STRATEGY
+        // - Normal: Fixed low gas (0.0005) for dust efficiency
+        // - Force: Boosted gas to ensure it lands (0.1 Gwei)
+        const baseGas = parseUnits((CONFIG.BOT as any).FIXED_GAS_PRICE_GWEI.toString(), 9);
+        const fixedGasPrice = force ? parseUnits('0.1', 9) : baseGas;
 
         // 🔥 Dynamic Gas Strategy (Updated by Background Monitor)
         const dynamicPrice = (CONFIG.BOT as any).DYNAMIC_GAS_PRICE || 0n;
@@ -604,6 +609,6 @@ export async function checkAndExecute(position: UserPosition, force: boolean = f
     if (!force && debtUSD < 15.0) {
         await addToBatchQueue(target);
     } else {
-        await executeLiquidation(target);
+        await executeLiquidation(target, force);
     }
 }

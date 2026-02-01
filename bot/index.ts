@@ -34,6 +34,22 @@ async function main() {
         console.log('==================================================\n');
 
         bridge.start(); // Start WebSocket Server
+
+        // 2a. Register Command Hook Immediately (to handle clicks during startup)
+        bridge.onCommand = async (cmd) => {
+            if (cmd.action === 'LIQUIDATE_USER') {
+                const userAddr = cmd.data.address;
+                const position = healthFactorCache.get(userAddr);
+                if (position) {
+                    dashboard.logEvent(`🕹️ GUI: Manual Liquidation triggered for ${userAddr.slice(0, 10)}`, 'System');
+                    // Force Snipe = true
+                    await checkAndExecute(position, true);
+                } else {
+                    // Log to SNIPER panel so user sees why nothing happened
+                    dashboard.logSniper(false, `❌ FORCE FAILED: ${userAddr.slice(0, 10)} not found in cache (Bot loading?)`);
+                }
+            }
+        };
         await startWatcher();
         startPriorityScanner();    // Premium RPC: 1s refresh for TOP 25
         startBackgroundScanner();  // WSS RPC: 10s refresh for REST
@@ -110,19 +126,7 @@ async function main() {
         }, 10000);
 
 
-        // 6. Manual Command Hook
-        bridge.onCommand = async (cmd) => {
-            if (cmd.action === 'LIQUIDATE_USER') {
-                const userAddr = cmd.data.address;
-                const position = healthFactorCache.get(userAddr);
-                if (position) {
-                    dashboard.logEvent(`🕹️ GUI: Manual Liquidation triggered for ${userAddr.slice(0, 10)}`, 'System');
-                    await checkAndExecute(position, true);
-                } else {
-                    dashboard.logEvent(`⚠️ GUI: Manual Trigger failed - ${userAddr.slice(0, 10)} not in active cache`, 'System');
-                }
-            }
-        };
+
 
         if (!isGuiMode) {
             dashboard.logEvent('🚀 Bot Heartbeat: Active', 'System');
