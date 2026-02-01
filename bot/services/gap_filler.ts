@@ -14,12 +14,28 @@ export interface DateRange {
  * Detects gaps ONLY at the end of the history (bot downtime)
  * Ignores holes in the past to avoid re-fetching empty days
  */
-export function detectGaps(records: LiquidationRecord[]): DateRange[] {
+export async function detectGaps(records: LiquidationRecord[]): Promise<DateRange[]> {
+    const { loadSyncState } = await import('../storage/sync_state.js');
+    const syncState = await loadSyncState();
+    const now = new Date(); // Use local system time as anchor
+
+    // 1. Prefer Explicit Sync State (Precision Mode)
+    if (syncState) {
+        const lastScanned = new Date(syncState.lastScannedTimestamp);
+        const diffMs = now.getTime() - lastScanned.getTime();
+
+        // If we haven't scanned for > 10 mins, we need to catch up.
+        // This is safe now because we KNOW exactly when we last stopped checking.
+        if (diffMs > 10 * 60 * 1000) {
+            console.log(`⏱️ Last sync was at ${lastScanned.toISOString()} (${Math.floor(diffMs / 60000)} mins ago)`);
+            return [{ start: lastScanned, end: now }];
+        }
+        return [];
+    }
+
+    // 2. Fallback to Last Record Heuristic (Legacy Mode)
     if (records.length === 0) return [];
 
-    const now = new Date();
-
-    // Find the most recent liquidation timestamp
     let maxTimestamp = 0;
     for (const record of records) {
         if (record.timestamp > maxTimestamp) {
@@ -32,13 +48,10 @@ export function detectGaps(records: LiquidationRecord[]): DateRange[] {
     const lastRecordDate = new Date(maxTimestamp * 1000);
     const diffMs = now.getTime() - lastRecordDate.getTime();
 
-    // If the last record is older than 10 minutes, considering it a gap (downtime)
-    // We use 10 mins to avoid tiny overlaps with real-time watcher
-    if (diffMs > 10 * 60 * 1000) {
-        console.log(`⏱️ Last liquidation was at ${lastRecordDate.toISOString()} (${Math.floor(diffMs / 60000)} mins ago)`);
-
+    // If using heuristic, keep the 60 min buffer to avoid false positives on quiet days
+    if (diffMs > 60 * 60 * 1000) {
+        console.log(`⏱️ Last liquidation record was ${Math.floor(diffMs / 60000)} mins ago (Heuristic Gap)`);
         return [{
-            // Start 1 second after last record to avoid dupes
             start: new Date(lastRecordDate.getTime() + 1000),
             end: now
         }];
@@ -147,12 +160,21 @@ export async function initializeLiquidationHistory(): Promise<LiquidationRecord[
     console.log(`   Oldest: ${range.oldest?.toISOString()}`);
     console.log(`   Newest: ${range.newest?.toISOString()}`);
 
-    const gaps = detectGaps(history);
+    const gaps = await detectGaps(history);
 
     if (gaps.length > 0) {
         await fillGaps(gaps);
         return await loadHistory(); // Reload after filling
     }
+
+    const { saveSyncState } = await import('../storage/sync_state.js');
+    const { publicClient } = await import('../config.js');
+    const latestBlock = await publicClient.getBlockNumber();
+
+    await saveSyncState({
+        lastScannedBlock: Number(latestBlock),
+        lastScannedTimestamp: Date.now()
+    });
 
     return history;
 }
