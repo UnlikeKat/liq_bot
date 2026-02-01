@@ -565,12 +565,16 @@ const FLASH_LIQUIDATOR_ABI_BATCH = [
 /**
  * Checks if a position should be liquidated and executes if profitable
  */
-export async function checkAndExecute(position: UserPosition): Promise<void> {
+export async function checkAndExecute(position: UserPosition, force: boolean = false): Promise<void> {
     const hf = Number(formatUnits(position.healthFactor, 18));
 
-    // Only liquidate if HF < 1.0
-    if (hf >= CONFIG.BOT.LIQUIDATION_THRESHOLD) {
+    // Only liquidate if HF < 1.0 OR Forced
+    if (!force && hf >= CONFIG.BOT.LIQUIDATION_THRESHOLD) {
         return;
+    }
+
+    if (force) {
+        console.log(`💪 FORCE SNIPE ENABLED: Bypassing Health Factor Check (HF: ${hf.toFixed(4)})`);
     }
 
     // 🛑 SPAM PREVENTION: Check if already in batch queue

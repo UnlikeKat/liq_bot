@@ -117,7 +117,7 @@ async function main() {
                 const position = healthFactorCache.get(userAddr);
                 if (position) {
                     dashboard.logEvent(`🕹️ GUI: Manual Liquidation triggered for ${userAddr.slice(0, 10)}`, 'System');
-                    await checkAndExecute(position);
+                    await checkAndExecute(position, true);
                 } else {
                     dashboard.logEvent(`⚠️ GUI: Manual Trigger failed - ${userAddr.slice(0, 10)} not in active cache`, 'System');
                 }
